@@ -1,92 +1,54 @@
 {
-"skeleton": { "hash": "LEUsTJ8ZDoZ2EvFmefshdoom4RQ", "spine": "3.8.99", "width": 1024, "height": 576, "images": "../output/", "audio": "../output/" },
+"skeleton": { "hash": "FAmDfPGSb/Q", "spine": "4.0.52", "width": 1024, "height": 576, "images": "", "audio": "" },
 "bones": [
-	{ "name": "root", "x": 512, "y": 288 },
-	{ "name": "ray3k-logo", "parent": "root", "length": 196.01, "x": 119.05 },
-	{ "name": "ray3k-line", "parent": "root", "length": 160.73, "x": -0.36 },
-	{ "name": "ray3k-spot", "parent": "root", "length": 144.95, "x": -1.11 }
+	{ "name": "root" },
+	{ "name": "ray3k/spray", "parent": "root", "length": 169.73, "rotation": 1.66, "x": 162.05, "y": 256.01 }
 ],
 "slots": [
-	{ "name": "white", "bone": "root", "color": "000000ff" },
-	{ "name": "ray3k-spot", "bone": "ray3k-spot", "attachment": "logo/ray3k-spot" },
-	{ "name": "ray3k-line", "bone": "ray3k-line", "attachment": "logo/ray3k-line" },
-	{ "name": "ray3k-logo", "bone": "ray3k-logo", "attachment": "logo/ray3k-logo" }
+	{ "name": "bg", "bone": "root", "color": "2b2b2bff" },
+	{ "name": "ray3k", "bone": "root", "attachment": "ray3k/ray3k" },
+	{ "name": "ray3k/spray", "bone": "ray3k/spray", "attachment": "ray3k/spray" }
 ],
 "skins": [
 	{
 		"name": "default",
 		"attachments": {
-			"ray3k-line": {
-				"logo/ray3k-line": { "x": 0.36, "width": 551, "height": 31 }
+			"ray3k": {
+				"ray3k/ray3k": { "x": 517.35, "y": 296.58, "width": 362, "height": 404 }
 			},
-			"ray3k-logo": {
-				"logo/ray3k-logo": { "x": -119.05, "width": 530, "height": 150 }
-			},
-			"ray3k-spot": {
-				"logo/ray3k-spot": { "x": 1.11, "width": 90, "height": 90 }
+			"ray3k/spray": {
+				"ray3k/spray": { "x": 4.84, "y": -2.6, "rotation": -1.66, "width": 279, "height": 285 }
 			}
 		}
 	}
 ],
 "events": {
-	"swoosh": { "audio": "swoosh.mp3" },
-	"tv": { "audio": "tv.mp3" }
+	"sfx/can-pop": { "audio": "sfx/can-pop.mp3" },
+	"sfx/can-shake": { "audio": "sfx/can-shake.mp3" },
+	"sfx/can-spray": { "audio": "sfx/can-spray.mp3" }
 },
 "animations": {
 	"animation": {
 		"bones": {
-			"ray3k-line": {
-				"scale": [
-					{ "y": 0, "curve": "stepped" },
-					{ "time": 1.7667, "y": 0 },
-					{ "time": 1.8667 },
-					{ "time": 1.9667, "x": 0 }
-				]
-			},
-			"ray3k-spot": {
-				"scale": [
-					{ "y": 0, "curve": "stepped" },
-					{ "time": 1.7667, "y": 0 },
-					{ "time": 1.8667 },
-					{ "time": 1.9667, "x": 1.5, "y": 1.5 },
-					{ "time": 2.2333, "x": 0, "y": 0 }
-				]
-			},
-			"ray3k-logo": {
-				"scale": [
-					{ "time": 1.6667 },
-					{ "time": 1.8667, "y": 0 }
-				],
-				"shear": [
-					{ "x": 90, "curve": "stepped" },
-					{ "time": 0.1667, "x": 90 },
-					{ "time": 0.4 }
+			"ray3k/spray": {
+				"translate": [
+					{ "time": 1.9333 },
+					{ "time": 2.3333, "x": 510.21, "y": 378.66, "curve": "stepped" },
+					{ "time": 2.6, "x": 673.72, "y": 239.74 },
+					{ "time": 3, "x": 121.71, "y": -249.57, "curve": "stepped" },
+					{ "time": 3.2667, "x": 224.98, "y": -350.38 },
+					{ "time": 3.6667, "x": 703.23, "y": 47.95 }
 				]
 			}
 		},
 		"events": [
-			{ "name": "swoosh" },
-			{ "time": 1.5, "name": "tv" }
+			{ "name": "sfx/can-shake" },
+			{ "time": 1.3333, "name": "sfx/can-pop" },
+			{ "time": 1.9333, "name": "sfx/can-spray" },
+			{ "time": 2.6, "name": "sfx/can-spray" },
+			{ "time": 3.2667, "name": "sfx/can-spray" }
 		]
 	},
-	"stand": {
-		"bones": {
-			"ray3k-line": {
-				"scale": [
-					{ "y": 0 }
-				]
-			},
-			"ray3k-spot": {
-				"scale": [
-					{ "y": 0 }
-				]
-			},
-			"ray3k-logo": {
-				"shear": [
-					{ "x": 90 }
-				]
-			}
-		}
-	}
+	"stand": {}
 }
 }
