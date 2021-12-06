@@ -26,7 +26,7 @@ import static com.ray3k.template.Resources.SpineLibgdx.*;
 public class LibgdxScreen extends JamScreen {
     private Stage stage;
     private Array<SpineDrawable> spineDrawables;
-    private final static Color BG_COLOR = new Color(Color.WHITE);
+    private final static Color BG_COLOR = new Color(Color.GREEN);
     private ObjectSet<Sound> sounds;
     
     @Override
@@ -37,6 +37,7 @@ public class LibgdxScreen extends JamScreen {
         sounds = new ObjectSet<>();
         
         var spineDrawable = new SpineDrawable(skeletonRenderer, skeletonData, animationData);
+        spineDrawable.setCrop(0, 0, 1024, 576);
         spineDrawable.getAnimationState().setAnimation(0, animationStand, false);
         spineDrawable.getAnimationState().apply(spineDrawable.getSkeleton());
         spineDrawables.add(spineDrawable);
@@ -47,10 +48,10 @@ public class LibgdxScreen extends JamScreen {
         Table root = new Table();
         root.setFillParent(true);
         stage.addActor(root);
-    
+        
         Image image = new Image(spineDrawable);
-        image.setScaling(Scaling.fit);
-        root.add(image).grow();
+        image.setScaling(Scaling.stretch);
+        root.add(image).size(1024, 576);
         spineDrawable.getAnimationState().setAnimation(0, animationAnimation, false);
     
         spineDrawable.getAnimationState().addListener(new AnimationState.AnimationStateAdapter() {
