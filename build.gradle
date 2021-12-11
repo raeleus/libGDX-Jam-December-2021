@@ -26,7 +26,7 @@ configure(subprojects) {
 
 subprojects {
 	version = '0.0.1'
-	ext.appName = 'ray3k-jam-template'
+	ext.appName = 'libgdx-jam-december-2021'
 	repositories {
 		mavenLocal()
 		mavenCentral()
