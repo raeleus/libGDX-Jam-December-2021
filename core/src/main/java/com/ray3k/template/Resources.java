@@ -29,6 +29,8 @@ public class Resources {
 
     public static Sound sfx_canSpray;
 
+    public static Sound sfx_click;
+
     public static Sound sfx_crack;
 
     public static Sound sfx_good;
@@ -96,6 +98,7 @@ public class Resources {
         sfx_canPop = assetManager.get("sfx/can-pop.mp3");
         sfx_canShake = assetManager.get("sfx/can-shake.mp3");
         sfx_canSpray = assetManager.get("sfx/can-spray.mp3");
+        sfx_click = assetManager.get("sfx/click.mp3");
         sfx_crack = assetManager.get("sfx/crack.mp3");
         sfx_good = assetManager.get("sfx/good.mp3");
         sfx_grinder = assetManager.get("sfx/grinder.mp3");

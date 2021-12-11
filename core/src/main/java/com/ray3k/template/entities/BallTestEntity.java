@@ -27,7 +27,7 @@ public class BallTestEntity extends Entity {
         gameScreen = GameScreen.gameScreen;
         viewport = gameScreen.viewport;
         camera = gameScreen.camera;
-        shapeDrawer = JamGame.shapeDrawer;
+        shapeDrawer = GameScreen.gameScreen.shapeDrawer;
         
         color.set(Color.RED);
         
@@ -63,8 +63,8 @@ public class BallTestEntity extends Entity {
             camera.position.y = y;
         }
         
-        if (gameScreen.isButtonPressed(Input.Buttons.LEFT)) {
-            if (Utils.pointDistance(x, y, gameScreen.mouseX, gameScreen.mouseY) <= 50) {
+        if (isButtonPressed(Input.Buttons.LEFT)) {
+            if (Utils.pointDistance(x, y, mouseX, mouseY) <= 50) {
                 color.set(Color.BLUE);
             } else {
                 color.set(Color.YELLOW);

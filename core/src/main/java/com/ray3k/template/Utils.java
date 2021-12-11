@@ -19,7 +19,8 @@ import com.badlogic.gdx.utils.FloatArray;
 import com.badlogic.gdx.utils.ShortArray;
 import com.esotericsoftware.spine.SkeletonBounds;
 import com.esotericsoftware.spine.attachments.BoundingBoxAttachment;
-import com.ray3k.template.JamScreen.*;
+import com.ray3k.template.Core.*;
+import com.ray3k.template.entities.*;
 import regexodus.Matcher;
 import regexodus.Pattern;
 
@@ -184,11 +185,24 @@ public class Utils {
     }
     
     public static String controllerButtonToString(ControllerValue controllerValue) {
-        return controllerValue == JamScreen.ANY_CONTROLLER_BUTTON ? "ANY CONTROLLER BUTTON" : "Pad" + (controllerValue.controller == null ? "?" : Controllers.getControllers().indexOf(controllerValue.controller, true)) + " Button " + controllerValue.value;
+        return controllerValue == Core.ANY_CONTROLLER_BUTTON ? "ANY CONTROLLER BUTTON" : "Pad" + (controllerValue.controller == null ? "?" : Controllers.getControllers().indexOf(controllerValue.controller, true)) + " Button " + controllerValue.value;
     }
     
     public static String controllerAxisToString(ControllerValue controllerValue) {
-        return controllerValue == JamScreen.ANY_CONTROLLER_AXIS ? "ANY CONTROLLER AXIS" : "Pad" + (controllerValue.controller == null ? "?" : Controllers.getControllers().indexOf(controllerValue.controller, true)) + " Axis " + controllerValue.axisCode + " " + controllerValue.value;
+        return controllerValue == Core.ANY_CONTROLLER_AXIS ? "ANY CONTROLLER AXIS" : "Pad" + (controllerValue.controller == null ? "?" : Controllers.getControllers().indexOf(controllerValue.controller, true)) + " Axis " + controllerValue.axisCode + " " + controllerValue.value;
+    }
+    
+    public static float distanceBetween(Entity entity, Entity other) {
+        var right = entity.getBboxRight();
+        var left = entity.getBboxLeft();
+        var top = entity.getBboxTop();
+        var bottom = entity.getBboxBottom();
+        var otherRight = entity.getBboxRight();
+        var otherLeft = entity.getBboxLeft();
+        var otherTop = entity.getBboxTop();
+        var otherBottom = entity.getBboxBottom();
+        vector2.set(right < otherLeft ? right : left, top < otherBottom ? top : bottom);
+        return vector2.dst(right < otherLeft ? otherLeft : otherRight, top < otherBottom ? otherBottom : otherTop);
     }
     
     public static float pointDistance(float x1, float y1, float x2, float y2) {
@@ -196,10 +210,86 @@ public class Utils {
         return vector2.dst(x2, y2);
     }
     
+    public static float pointDistance(Entity entity, Entity other) {
+        return pointDistance(entity.x, entity.y, other.x, other.y);
+    }
+    
     public static float pointDirection(float x1, float y1, float x2, float y2) {
         vector2.set(x2, y2);
         vector2.sub(x1, y1);
         return vector2.angleDeg();
+    }
+    
+    private static final Vector2 temp1 = new Vector2();
+    private static final Vector2 temp2 = new Vector2();
+    public static float angleToHitMovingTarget(float projectileX, float projectileY, float projectileSpeed, float enemyX, float enemyY, float enemyDeltaX, float enemyDeltaY) {
+        temp1.set(enemyX, enemyY);
+        temp1.sub(projectileX, projectileY);
+        
+        temp2.set(enemyDeltaX, enemyDeltaY);
+        float a = temp2.dot(enemyDeltaX, enemyDeltaY) - projectileSpeed * projectileSpeed;
+        temp2.set(enemyDeltaX, enemyDeltaY);
+        float b = 2 * temp2.dot(temp1);
+        temp2.set(temp1);
+        float c = temp2.dot(temp1);
+        
+        float p = -b / 2 * a;
+        float q = (float) Math.sqrt((b * b) - 4 * a * c) / (2 * a);
+        
+        float t1 = p - q;
+        float t2 = p + q;
+        float t;
+        
+        if (t1 > t2 && t2 > 0)
+        {
+            t = t2;
+        }
+        else
+        {
+            t = t1;
+        }
+        
+        temp1.set(enemyX, enemyY);
+        temp2.set(enemyDeltaX, enemyDeltaY);
+        temp2.scl(t);
+        temp1.add(temp2);
+        temp1.sub(projectileX, projectileY);
+        return temp1.angleDeg();
+    }
+    
+    public static Vector2 positionToHitMovingTarget(float projectileX, float projectileY, float projectileSpeed, float enemyX, float enemyY, float enemyDeltaX, float enemyDeltaY, Vector2 result) {
+        temp1.set(enemyX, enemyY);
+        temp1.sub(projectileX, projectileY);
+        
+        temp2.set(enemyDeltaX, enemyDeltaY);
+        float a = temp2.dot(enemyDeltaX, enemyDeltaY) - projectileSpeed * projectileSpeed;
+        temp2.set(enemyDeltaX, enemyDeltaY);
+        float b = 2 * temp2.dot(temp1);
+        temp2.set(temp1);
+        float c = temp2.dot(temp1);
+        
+        float p = -b / 2 * a;
+        float q = (float) Math.sqrt((b * b) - 4 * a * c) / (2 * a);
+        
+        float t1 = p - q;
+        float t2 = p + q;
+        float t;
+        
+        if (t1 > t2 && t2 > 0)
+        {
+            t = t2;
+        }
+        else
+        {
+            t = t1;
+        }
+        
+        temp1.set(enemyX, enemyY);
+        temp2.set(enemyDeltaX, enemyDeltaY);
+        temp2.scl(t);
+        temp1.add(temp2);
+        result.set(temp1);
+        return result;
     }
     
     public static float approach(float start, float target, float increment) {
@@ -250,13 +340,13 @@ public class Utils {
         
         rectToBoundingBox(rectangle.x, rectangle.y, 0, rectangle.height, bboxTemp);
         if (Intersector.intersectRayBounds(rayTemp, bboxTemp, intersection)) return true;
-    
+        
         rectToBoundingBox(rectangle.x, rectangle.y + rectangle.height, rectangle.width, 0, bboxTemp);
         if (Intersector.intersectRayBounds(rayTemp, bboxTemp, intersection)) return true;
-    
+        
         rectToBoundingBox(rectangle.x + rectangle.width, rectangle.y, 0, rectangle.height, bboxTemp);
         if (Intersector.intersectRayBounds(rayTemp, bboxTemp, intersection)) return true;
-    
+        
         rectToBoundingBox(rectangle.x, rectangle.y, rectangle.width, 0, bboxTemp);
         if (Intersector.intersectRayBounds(rayTemp, bboxTemp, intersection)) return true;
         

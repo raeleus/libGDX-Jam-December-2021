@@ -110,9 +110,17 @@ public class OgmoReader {
                     String folder = child.getString("folder");
                     for (JsonValue decal : child.get("decals").iterator()) {
                         for (OgmoListener ogmoListener : ogmoListeners) {
-                            ogmoListener.decal(decal.getInt("x"), levelHeight - decal.getInt("y"),
+                            valuesMap = new ObjectMap<>();
+                            if (decal.has("values")) for (JsonValue value : decal.get("values")) {
+                                OgmoValue ogmoValue = new OgmoValue();
+                                ogmoValue.name = value.name;
+                                ogmoValue.value = value.asString();
+                                valuesMap.put(value.name, ogmoValue);
+                            }
+                            
+                            ogmoListener.decal(decal.getInt("x"), levelHeight - decal.getInt("y"), decal.getFloat("originX", .5f), decal.getFloat("originY", .5f),
                                     decal.getFloat("scaleX", 1f), decal.getFloat("scaleY", 1f),
-                                    (360 - decal.getInt("rotation", 0)) % 360, decal.getString("texture"), folder);
+                                    (360 - decal.getInt("rotation", 0)) % 360, decal.getString("texture"), folder, valuesMap);
                         }
                     }
                 } else if (child.has("data")) {
@@ -270,15 +278,17 @@ public class OgmoReader {
         
         /**
          * Called for every decal image placed in a decal layer.
-         * @param centerX The x coordinate of the decal.
-         * @param centerY The y coordinate of the decal, adjusted to y-up coordinates.
+         * @param x The x coordinate of the decal.
+         * @param y The y coordinate of the decal, adjusted to y-up coordinates.
+         * @param originX The origin as percentage of the total width;
+         * @param originY The origin as percentage of the total height;
          * @param scaleX The horizontal scale multiplier. 1.0f is the original scale of the image.
          * @param scaleY The vertical scale multiplier. 1.0f is the original scale of the image.
          * @param rotation The rotation of the decal in degrees wound CCW.
          * @param texture The name of the texture linked by the decal.
          * @param folder The name of the folder that the decal layer is linked to.
          */
-        void decal(int centerX, int centerY, float scaleX, float scaleY, int rotation, String texture, String folder);
+        void decal(int x, int y, float originX, float originY, float scaleX, float scaleY, int rotation, String texture, String folder, ObjectMap<String, OgmoValue> valuesMap);
         
         /**
          * Called for every tile placed in a tile layer when the layer uses id's.
@@ -383,8 +393,10 @@ public class OgmoReader {
         /**
          * Called for every decal image placed in a decal layer.
          *
-         * @param centerX        The x coordinate of the decal.
-         * @param centerY        The y coordinate of the decal, adjusted to y-up coordinates.
+         * @param x The x coordinate of the decal.
+         * @param y The y coordinate of the decal, adjusted to y-up coordinates.
+         * @param originX The origin as percentage of the total width;
+         * @param originY The origin as percentage of the total height;
          * @param scaleX   The horizontal scale multiplier. 1.0f is the original scale of the image.
          * @param scaleY   The vertical scale multiplier. 1.0f is the original scale of the image.
          * @param rotation The rotation of the decal in degrees wound CCW.
@@ -392,7 +404,7 @@ public class OgmoReader {
          * @param folder   The name of the folder that the decal layer is linked to.
          */
         @Override
-        public void decal(int centerX, int centerY, float scaleX, float scaleY, int rotation, String texture, String folder) {
+        public void decal(int x, int y, float originX, float originY, float scaleX, float scaleY, int rotation, String texture, String folder, ObjectMap<String, OgmoValue> valuesMap) {
         
         }
         

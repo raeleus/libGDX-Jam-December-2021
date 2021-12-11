@@ -1,6 +1,7 @@
 package com.ray3k.template.entities;
 
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
 import com.dongbat.jbump.CollisionFilter;
 import com.dongbat.jbump.Collisions;
@@ -21,6 +22,10 @@ public abstract class Entity {
     public CollisionFilter collisionFilter;
     public float x;
     public float y;
+    public float moveTargetX;
+    public float moveTargetY;
+    public float moveTargetSpeed;
+    public boolean moveTargetActivated;
     public float bboxX;
     public float bboxY;
     public float bboxWidth;
@@ -30,9 +35,11 @@ public abstract class Entity {
     public boolean destroy;
     public float gravityX;
     public float gravityY;
-    public boolean visible;
+    public boolean visible = true;
     public float depth;
     public Color collisionBoxDebugColor;
+    public boolean sleepable = true;
+    public boolean sleeping;
     
     public abstract void create();
     public abstract void actBefore(float delta);
@@ -41,10 +48,6 @@ public abstract class Entity {
     public abstract void destroy();
     public abstract void projectedCollision(Result result);
     public abstract void collision(Collisions collisions);
-    
-    public Entity() {
-        visible = true;
-    }
     
     public void setMotion(float speed, float direction) {
         temp1.set(speed, 0);
@@ -67,9 +70,31 @@ public abstract class Entity {
     }
     
     public void moveTowards(float speed, float x, float y, float delta) {
-        temp1.set(x, y);
-        temp1.sub(this.x, this.y);
-        setMotion(Math.min(speed, temp1.len() / delta), temp1.angleDeg());
+        if (MathUtils.isEqual(this.x, x)) this.x = x;
+        if (MathUtils.isEqual(this.y, y)) this.y = y;
+        
+        if (MathUtils.isEqual(this.x, x) && MathUtils.isEqual(this.y, y)) {
+            deltaX = 0;
+            deltaY = 0;
+        } else {
+            temp1.set(x, y);
+            temp1.sub(this.x, this.y);
+            setMotion(Math.min(speed, temp1.len() / delta), temp1.angleDeg());
+        }
+    }
+    
+    public boolean moveTowardsTarget(float speed, float targetX, float targetY) {
+        moveTargetSpeed = speed;
+        moveTargetX = targetX;
+        moveTargetY = targetY;
+        
+        moveTargetActivated = !MathUtils.isEqual(x, moveTargetX) || !MathUtils.isEqual(y, moveTargetY);
+        if (!moveTargetActivated) setSpeed(0);
+        return moveTargetActivated;
+    }
+    
+    public void moveTowardsTarget(boolean activated) {
+        moveTargetActivated = activated;
     }
     
     public void setPosition(float x, float y) {
@@ -177,51 +202,70 @@ public abstract class Entity {
                 if (verts[i+1] > maxY) maxY = verts[i+1];
             }
         }
-        
-        setCollisionBox(minX, minY, maxX - minX, maxY - minY, collisionFilter);
+        setCollisionBox(minX - x, minY - y, maxX - minX, maxY - minY, collisionFilter);
+    }
+    
+    public boolean isOutside(float left, float bottom, float width, float height) {
+        return isOutside(left, bottom, width, height, 0);
+    }
+    
+    public boolean isInside(float left, float bottom, float width, float height, float border) {
+        return !isOutside(left, bottom, width, height, border);
+    }
+    
+    public boolean isInside(float left, float bottom, float width, float height) {
+        return !isOutside(left, bottom, width, height);
     }
     
     public boolean isOutside(float left, float bottom, float width, float height, float border) {
-        return x < left - border || x > left + width + border || y < bottom - border || y > bottom + height + border;
+        return getBboxRight() < left - border || getBboxLeft() > left + width + border || getBboxTop() < bottom - border || getBboxBottom() > bottom + height + border;
     }
     
-    public float getCollisionBoxLeft() {
+    public float getBboxLeft() {
         return x + bboxX;
     }
     
-    public float getCollisionBoxRight() {
+    public float getBboxRight() {
         return x + bboxX + bboxWidth;
     }
     
-    public float getCollisionBoxBottom() {
+    public float getBboxBottom() {
         return y + bboxY;
     }
     
-    public float getCollisionBoxTop() {
+    public float getBboxTop() {
         return y + bboxY + bboxHeight;
     }
     
-    public float getCollisionBoxCenterX() {
+    public float getBboxCenterX() {
         return x + bboxX + bboxWidth / 2;
     }
     
-    public float getCollisionBoxCenterY() {
+    public float getBboxCenterY() {
         return y + bboxY + bboxHeight / 2;
     }
     
-    public void setCollisionBoxLeft(float x) {
+    public void setBboxLeft(float x) {
         this.x = x - bboxX;
     }
     
-    public void setCollisionBoxRight(float x) {
+    public void setBboxRight(float x) {
         this.x = x - bboxX - bboxWidth;
     }
     
-    public void setCollisionBoxBottom(float y) {
+    public void setBboxBottom(float y) {
         this.y = y - bboxY;
     }
     
-    public void setCollisionBoxTop(float y) {
+    public void setBboxTop(float y) {
         this.y = y - bboxY - bboxHeight;
+    }
+    
+    public void setBboxCenterX(float x) {
+        this.x = x - bboxX - bboxWidth / 2;
+    }
+    
+    public void setBboxCenterY(float y) {
+        this.y = y - bboxY - bboxHeight / 2;
     }
 }

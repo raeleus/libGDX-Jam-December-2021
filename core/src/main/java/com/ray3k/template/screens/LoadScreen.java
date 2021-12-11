@@ -19,7 +19,6 @@ import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.ray3k.template.*;
 
 import static com.ray3k.template.Core.*;
-import static com.ray3k.template.JamGame.*;
 
 public class LoadScreen extends JamScreen {
     private ProgressBar progressBar;
@@ -110,5 +109,20 @@ public class LoadScreen extends JamScreen {
         progressBar = new ProgressBar(0, 1, .01f, false, skin);
         progressBar.setAnimateDuration(.5f);
         root.add(progressBar).growX();
+    }
+    
+    @Override
+    public void pause() {
+    
+    }
+    
+    @Override
+    public void resume() {
+    
+    }
+    
+    @Override
+    public void dispose() {
+    
     }
 }

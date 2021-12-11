@@ -15,7 +15,6 @@ import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.ray3k.template.*;
 
 import static com.ray3k.template.Core.*;
-import static com.ray3k.template.JamGame.*;
 import static com.ray3k.template.Resources.*;
 
 public class OptionsScreen extends JamScreen {
@@ -119,5 +118,20 @@ public class OptionsScreen extends JamScreen {
     @Override
     public void resize(int width, int height) {
         stage.getViewport().update(width, height, true);
+    }
+    
+    @Override
+    public void pause() {
+    
+    }
+    
+    @Override
+    public void resume() {
+    
+    }
+    
+    @Override
+    public void dispose() {
+    
     }
 }

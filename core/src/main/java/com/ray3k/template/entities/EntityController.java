@@ -7,7 +7,6 @@ import com.dongbat.jbump.Rect;
 import java.util.Comparator;
 
 import static com.ray3k.template.Core.*;
-import static com.ray3k.template.JamGame.*;
 
 public class EntityController implements Disposable {
     public Array<Entity> entities;
@@ -19,6 +18,64 @@ public class EntityController implements Disposable {
         sortedEntities = new Array<>();
         
         depthComparator = (o1, o2) -> Float.compare(o2.depth, o1.depth);
+    }
+    
+    public void sleepAll() {
+        for (int i = 0; i < entities.size; i++) {
+            var entity = entities.get(i);
+            sleep(entity);
+        }
+    }
+    
+    public void sleepInside(float left, float bottom, float width, float height, float border) {
+        for (int i = 0; i < entities.size; i++) {
+            var entity = entities.get(i);
+            if (entity.isInside(left, bottom, width, height, border)) sleep(entity);
+        }
+    }
+    
+    public void sleepOutside(float left, float bottom, float width, float height, float border) {
+        for (int i = 0; i < entities.size; i++) {
+            var entity = entities.get(i);
+            if (entity.isOutside(left, bottom, width, height, border)) sleep(entity);
+        }
+    }
+    
+    public void wakeAll() {
+        for (int i = 0; i < entities.size; i++) {
+            var entity = entities.get(i);
+            wake(entity);
+        }
+    }
+    
+    public void wakeInside(float left, float bottom, float width, float height, float border) {
+        for (int i = 0; i < entities.size; i++) {
+            var entity = entities.get(i);
+            if (entity.isInside(left, bottom, width, height, border)) wake(entity);
+        }
+    }
+    
+    public void wakeOutside(float left, float bottom, float width, float height, float border) {
+        for (int i = 0; i < entities.size; i++) {
+            var entity = entities.get(i);
+            if (entity.isOutside(left, bottom, width, height, border)) wake(entity);
+        }
+    }
+    
+    public void sleep(Entity entity) {
+        if (entity.sleepable) {
+            entity.sleeping = true;
+            if (entity.item != null) {
+                world.remove(entity.item);
+            }
+        }
+    }
+    
+    public void wake(Entity entity) {
+        entity.sleeping = false;
+        if (entity.item != null) {
+            world.add(entity.item, entity.x + entity.bboxX, entity.y + entity.bboxY, entity.bboxWidth, entity.bboxHeight);
+        }
     }
     
     public void add(Entity entity) {
