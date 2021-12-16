@@ -7,7 +7,7 @@
 				"child": {
 					"class": "Image",
 					"name": null,
-					"drawable": "libgdx-animation",
+					"drawable": "title",
 					"scaling": "none",
 					"touchable": "enabled",
 					"visible": true

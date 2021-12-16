@@ -9,7 +9,7 @@
 					"name": null,
 					"style": {
 						"clazz": "com.badlogic.gdx.scenes.scene2d.ui.Label",
-						"name": "default"
+						"name": "large"
 					},
 					"text": "CLICK HERE TO PLAY",
 					"textAlignment": 8,
@@ -62,7 +62,7 @@
 		"visible": true
 	}
 ],
-"backgroundColor": null,
+"backgroundColor": "black",
 "skinPath": "skin.json",
 "packageString": "com.mygdx.game",
 "classString": "Core"

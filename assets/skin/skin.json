@@ -1,7 +1,13 @@
 {
 "com.badlogic.gdx.graphics.g2d.BitmapFont": {
-	"font": {
-		"file": "font.fnt"
+	"font-button": {
+		"file": "font-button.fnt"
+	},
+	"font-script": {
+		"file": "font-script.fnt"
+	},
+	"font-small": {
+		"file": "font-small.fnt"
 	}
 },
 "com.badlogic.gdx.graphics.Color": {
@@ -11,28 +17,10 @@
 		"b": 0,
 		"a": 1
 	},
-	"dark-gray": {
-		"r": 0.14666666,
-		"g": 0.14373332,
-		"b": 0.14373332,
-		"a": 1
-	},
 	"gray": {
-		"r": 0.5133333,
-		"g": 0.5133333,
-		"b": 0.5133333,
-		"a": 1
-	},
-	"light-gray": {
-		"r": 0.91,
-		"g": 0.91,
-		"b": 0.91,
-		"a": 1
-	},
-	"red": {
-		"r": 1,
-		"g": 0,
-		"b": 0,
+		"r": 0.82333344,
+		"g": 0.82333344,
+		"b": 0.82333344,
 		"a": 1
 	},
 	"white": {
@@ -42,268 +30,181 @@
 		"a": 1
 	}
 },
-"com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable": {
-	"slider": {
-		"region": "slider",
-		"minWidth": 398,
-		"minHeight": 43
-	}
-},
 "com.badlogic.gdx.scenes.scene2d.ui.Skin$TintedDrawable": {
 	"black": {
 		"name": "white",
-		"color": {
-			"r": 0,
-			"g": 0,
-			"b": 0,
-			"a": 1
-		}
+		"color": "black"
 	},
 	"gray": {
 		"name": "white",
 		"color": "gray"
-	},
-	"light-gray": {
-		"name": "white",
-		"color": "light-gray"
 	}
 },
 "com.ray3k.tenpatch.TenPatchDrawable": {
+	"button-10": {
+		"region": "button",
+		"horizontalStretchAreas": [ 46, 226 ],
+		"verticalStretchAreas": [ 0, 72 ],
+		"tiling": false,
+		"minWidth": 272,
+		"minHeight": 73,
+		"rightWidth": 19,
+		"leftWidth": 14,
+		"bottomHeight": 11,
+		"topHeight": 6,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"scroll-horizontal-10": {
+		"region": "scroll-horizontal",
+		"horizontalStretchAreas": [ 13, 93 ],
+		"verticalStretchAreas": [ 11, 15 ],
+		"tiling": false,
+		"minWidth": 107,
+		"minHeight": 19,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"scroll-vertical-10": {
+		"region": "scroll-vertical",
+		"horizontalStretchAreas": [ 2, 7 ],
+		"verticalStretchAreas": [ 21, 94 ],
+		"tiling": false,
+		"minWidth": 19,
+		"minHeight": 106,
+		"rightWidth": 0,
+		"leftWidth": 0,
+		"bottomHeight": 0,
+		"topHeight": 0,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"text-field-10": {
+		"region": "text-field",
+		"horizontalStretchAreas": [ 6, 100 ],
+		"verticalStretchAreas": [ 13, 35 ],
+		"tiling": false,
+		"minWidth": 113,
+		"minHeight": 45,
+		"rightWidth": 13,
+		"leftWidth": 6,
+		"bottomHeight": 12,
+		"topHeight": 5,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
 	"window-10": {
 		"region": "window",
-		"horizontalStretchAreas": [ 17, 436 ],
-		"verticalStretchAreas": [ 24, 438 ],
+		"horizontalStretchAreas": [ 0, 168 ],
+		"verticalStretchAreas": [ 0, 127 ],
 		"tiling": false,
-		"minWidth": 455,
-		"minHeight": 455,
-		"rightWidth": 20,
-		"leftWidth": 18,
-		"bottomHeight": 24,
-		"topHeight": 20,
+		"minWidth": 169,
+		"minHeight": 128,
+		"rightWidth": 4,
+		"leftWidth": 4,
+		"bottomHeight": 3,
+		"topHeight": 3,
 		"offsetX": 0,
 		"offsetY": 0,
 		"offsetXspeed": 0,
 		"offsetYspeed": 0,
 		"frameDuration": 0.03,
 		"regions": [],
-		"playMode": 2
+		"playMode": 2,
+		"crushMode": 0
 	},
-	"coin": {
-		"region": "coin-01",
-		"horizontalStretchAreas": [ 0, 202 ],
-		"verticalStretchAreas": [ 0, 214 ],
+	"button-pressed-10": {
+		"region": "button-pressed",
+		"horizontalStretchAreas": [ 46, 226 ],
+		"verticalStretchAreas": [ 0, 72 ],
 		"tiling": false,
-		"minWidth": 203,
-		"minHeight": 215,
-		"rightWidth": 0,
-		"leftWidth": 0,
-		"bottomHeight": 0,
-		"topHeight": 0,
-		"offsetX": 0,
-		"offsetY": 0,
-		"offsetXspeed": 0,
-		"offsetYspeed": 0,
-		"frameDuration": 0.11,
-		"regions": [
-			"coin-01",
-			"coin-02",
-			"coin-03",
-			"coin-04",
-			"coin-05",
-			"coin-06"
-		],
-		"playMode": 2
-	},
-	"marquee": {
-		"region": "marquee-01",
-		"horizontalStretchAreas": [ 13, 478 ],
-		"verticalStretchAreas": [ 11, 454 ],
-		"tiling": false,
-		"minWidth": 494,
-		"minHeight": 465,
-		"rightWidth": 0,
-		"leftWidth": 0,
-		"bottomHeight": 0,
-		"topHeight": 0,
-		"offsetX": 0,
-		"offsetY": 0,
-		"offsetXspeed": 0,
-		"offsetYspeed": 0,
-		"frameDuration": 0.08,
-		"regions": [
-			"marquee-01",
-			"marquee-02",
-			"marquee-03"
-		],
-		"playMode": 2
-	},
-	"text-button-10": {
-		"region": "text-button",
-		"horizontalStretchAreas": [ 12, 251 ],
-		"verticalStretchAreas": [ 29, 95 ],
-		"tiling": false,
-		"minWidth": 267,
-		"minHeight": 107,
-		"rightWidth": 14,
-		"leftWidth": 11,
-		"bottomHeight": 29,
-		"topHeight": 12,
+		"minWidth": 272,
+		"minHeight": 74,
+		"rightWidth": 19,
+		"leftWidth": 14,
+		"bottomHeight": 9,
+		"topHeight": 9,
 		"offsetX": 0,
 		"offsetY": 0,
 		"offsetXspeed": 0,
 		"offsetYspeed": 0,
 		"frameDuration": 0.03,
 		"regions": [],
-		"playMode": 2
+		"playMode": 2,
+		"crushMode": 0
 	},
-	"text-button-disabled": {
-		"region": "text-button",
-		"color": "dark-gray",
-		"horizontalStretchAreas": [ 12, 251 ],
-		"verticalStretchAreas": [ 29, 95 ],
+	"dialog-10": {
+		"region": "dialog",
+		"horizontalStretchAreas": [ 12, 866 ],
+		"verticalStretchAreas": [ 15, 171 ],
 		"tiling": false,
-		"minWidth": 267,
-		"minHeight": 107,
-		"rightWidth": 14,
-		"leftWidth": 11,
-		"bottomHeight": 29,
-		"topHeight": 12,
+		"minWidth": 879,
+		"minHeight": 184,
+		"rightWidth": 7,
+		"leftWidth": 7,
+		"bottomHeight": 14,
+		"topHeight": 8,
 		"offsetX": 0,
 		"offsetY": 0,
 		"offsetXspeed": 0,
 		"offsetYspeed": 0,
 		"frameDuration": 0.03,
 		"regions": [],
-		"playMode": 2
+		"playMode": 2,
+		"crushMode": 0
 	}
 },
-"com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle": {
+"com.badlogic.gdx.scenes.scene2d.ui.CheckBox$CheckBoxStyle": {
 	"default": {
-		"imageUp": "ok-button",
-		"pressedOffsetY": -2
-	},
-	"ok": {
-		"imageUp": "ok-button",
-		"pressedOffsetY": -2
-	},
-	"options": {
-		"imageUp": "options-button",
-		"pressedOffsetY": -2
-	},
-	"play": {
-		"imageUp": "play-button",
-		"pressedOffsetY": -2
-	},
-	"credits": {
-		"imageUp": "credits-button",
-		"pressedOffsetY": -2
-	},
-	"defaults": {
-		"imageUp": "defaults-button",
-		"pressedOffsetY": -2
-	},
-	"militia": {
-		"imageUp": "button-militia",
-		"pressedOffsetY": -2
-	},
-	"assault": {
-		"imageUp": "button-assault",
-		"pressedOffsetY": -2
-	},
-	"heavy": {
-		"imageUp": "button-heavy",
-		"pressedOffsetY": -2
-	},
-	"bomb": {
-		"imageUp": "button-bomb",
-		"pressedOffsetY": -2
-	},
-	"sniper": {
-		"imageUp": "button-sniper",
-		"pressedOffsetY": -2
-	},
-	"mine": {
-		"imageUp": "button-mine",
-		"pressedOffsetY": -2
-	},
-	"mortar": {
-		"imageUp": "button-mortar",
-		"pressedOffsetY": -2
-	},
-	"level-1": {
-		"imageUp": "level-1-thumb",
-		"pressedOffsetY": -2
-	},
-	"level-2": {
-		"imageUp": "level-2-thumb",
-		"pressedOffsetY": -2
-	},
-	"level-3": {
-		"imageUp": "level-3-thumb",
-		"pressedOffsetY": -2
-	},
-	"level-4": {
-		"imageUp": "level-4-thumb",
-		"pressedOffsetY": -2
-	},
-	"level-5": {
-		"imageUp": "level-5-thumb",
-		"pressedOffsetY": -2
-	},
-	"level-6": {
-		"imageUp": "level-6-thumb",
-		"pressedOffsetY": -2
-	},
-	"level-7": {
-		"imageUp": "level-7-thumb",
-		"pressedOffsetY": -2
-	},
-	"level-8": {
-		"imageUp": "level-8-thumb",
-		"pressedOffsetY": -2
-	},
-	"level-9": {
-		"imageUp": "level-9-thumb",
-		"pressedOffsetY": -2
-	},
-	"level-10": {
-		"imageUp": "level-10-thumb",
-		"pressedOffsetY": -2
-	},
-	"level-11": {
-		"imageUp": "level-11-thumb",
-		"pressedOffsetY": -2
-	},
-	"level-12": {
-		"imageUp": "level-12-thumb",
-		"pressedOffsetY": -2
-	},
-	"level-13": {
-		"imageUp": "level-13-thumb",
-		"pressedOffsetY": -2
-	},
-	"level-14": {
-		"imageUp": "level-14-thumb",
-		"pressedOffsetY": -2
-	},
-	"level-15": {
-		"imageUp": "level-15-thumb",
-		"pressedOffsetY": -2
-	},
-	"bindings": {
-		"imageUp": "bindings-button",
-		"pressedOffsetY": -2
+		"checkboxOn": "checkbox-pressed",
+		"checkboxOff": "checkbox",
+		"font": "font-small",
+		"fontColor": "black"
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
 	"default": {
-		"font": "font"
+		"font": "font-small"
+	},
+	"large": {
+		"font": "font-button"
+	},
+	"script": {
+		"font": "font-script"
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle": {
 	"default": {
-		"hScrollKnob": "slider-knob",
-		"vScrollKnob": "slider-knob"
+		"hScrollKnob": "scroll-horizontal-10",
+		"vScrollKnob": "scroll-vertical-10"
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.Slider$SliderStyle": {
@@ -314,24 +215,17 @@
 },
 "com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle": {
 	"default": {
-		"font": "font",
+		"font": "font-button",
 		"fontColor": "black",
-		"up": "text-button-10",
-		"disabled": "text-button-disabled",
-		"pressedOffsetY": -2
-	},
-	"toggle": {
-		"font": "font",
-		"fontColor": "black",
-		"checkedFontColor": "red",
-		"pressedOffsetY": -2
+		"up": "button-10",
+		"down": "button-pressed-10"
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle": {
 	"default": {
-		"font": "font",
+		"font": "font-small",
 		"fontColor": "black",
-		"background": "light-gray",
+		"background": "text-field-10",
 		"cursor": "black",
 		"selection": "gray"
 	}
@@ -344,7 +238,7 @@
 "com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle": {
 	"default": {
 		"background": "window-10",
-		"titleFont": "font"
+		"titleFont": "font-small"
 	}
 }
 }
