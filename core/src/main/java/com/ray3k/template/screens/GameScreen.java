@@ -21,8 +21,10 @@ import com.ray3k.template.OgmoReader.*;
 import com.ray3k.template.entities.*;
 import com.ray3k.template.screens.DialogDebug.*;
 import com.ray3k.template.screens.DialogPause.*;
+import space.earlygrey.shapedrawer.ShapeDrawer;
 
 import static com.ray3k.template.Core.*;
+import static com.ray3k.template.Resources.*;
 
 public class GameScreen extends JamScreen {
     public static GameScreen gameScreen;
@@ -84,6 +86,7 @@ public class GameScreen extends JamScreen {
         viewport = new FitViewport(1024, 576, camera);
     
         entityController.clear();
+        shapeDrawer = new ShapeDrawer(batch, textures_textures.findRegion("game/white"));
         loadLevel("level1");
     }
     
@@ -115,15 +118,32 @@ public class GameScreen extends JamScreen {
                 switch (name) {
                     case "player":
                         var player = new PlayerEntity();
+                        entityController.add(player);
                         player.teleport(x, y);
                         player.depth = DEPTH_PLAYER;
-                        entityController.add(player);
                         
                         var cam = new CameraEntity(player, levelWidth, levelHeight);
                         
                         entityController.add(cam);
                         break;
+                    case "bounds":
+                        var bounds = new BoundsEntity();
+                        float minX = x;
+                        float minY = y;
+                        float maxX = x;
+                        float maxY = y;
                         
+                        for (var node : nodes) {
+                            if (node.x < minX) minX = node.x;
+                            if (node.x > maxX) maxX = node.x;
+                            if (node.y < minY) minY = node.y;
+                            if (node.y > maxY) maxY = node.y;
+                        }
+                        bounds.setCollisionBox(0, 0, maxX - minX, maxY - minY, nullCollisionFilter);
+                        entityController.add(bounds);
+                        bounds.teleport(minX, minY);
+                        bounds.depth = DEPTH_DEBUG;
+                        break;
                 }
             }
     

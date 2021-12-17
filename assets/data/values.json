@@ -1,5 +1,11 @@
 {
   "player max speed" : 700.0,
   "player acceleration" : 2600,
-  "player deceleration" : 2400
+  "player acceleration while jumping" : 1500,
+  "player deceleration" : 2400,
+  "player deceleration while jumping" : 800,
+  "player gravity" : -3000,
+  "player jump speed" : 700,
+  "player jump hold time" : 0.4,
+  "debugging" : true
 }

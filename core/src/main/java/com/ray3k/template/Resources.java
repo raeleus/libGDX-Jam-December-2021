@@ -985,7 +985,19 @@ public class Resources {
 
         public static int playerAcceleration = 2600;
 
+        public static int playerAccelerationWhileJumping = 1500;
+
         public static int playerDeceleration = 2400;
+
+        public static int playerDecelerationWhileJumping = 800;
+
+        public static int playerGravity = -3000;
+
+        public static int playerJumpSpeed = 700;
+
+        public static float playerJumpHoldTime = 0.4f;
+
+        public static boolean debugging = true;
     }
 
     public static class Range {

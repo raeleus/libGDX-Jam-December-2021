@@ -81,6 +81,7 @@ public class Core extends JamGame {
     public static final float DEPTH_PLAYER = 100;
     public static final float DEPTH_BACKGROUND = 2000;
     public static final float DEPTH_FOREGROUND = 50;
+    public static final float DEPTH_DEBUG = -1000;
     public static AssetManager assetManager;
     public static TransitionEngine transitionEngine;
     public static TwoColorPolygonBatch batch;
@@ -701,6 +702,7 @@ public class Core extends JamGame {
         }));
         defaultTransition = Transitions.colorFade(Color.BLACK);
         defaultTransitionDuration = .5f;
+        
     }
     
     @Override
