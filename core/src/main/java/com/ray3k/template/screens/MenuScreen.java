@@ -10,6 +10,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.ray3k.template.*;
+import com.ray3k.template.entities.*;
+import com.ray3k.template.entities.PlayerEntity.*;
 
 import static com.ray3k.template.Core.*;
 import static com.ray3k.template.Resources.*;
@@ -39,6 +41,9 @@ public class MenuScreen extends JamScreen {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
                 Gdx.input.setInputProcessor(null);
+                Values.playerMaxJumps = 1;
+                PlayerEntity.enabledWeapons.clear();
+                PlayerEntity.enabledWeapons.add(Weapon.WHIP);
                 bgm.stop();
                 core.transition(new GameScreen());
             }

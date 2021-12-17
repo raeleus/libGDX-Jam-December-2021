@@ -89,6 +89,7 @@ public class Core extends JamGame {
     public static VfxManager vfxManager;
     public static SceneComposerStageBuilder sceneBuilder;
     public static ShapeDrawer shapeDrawer;
+    public static float deltaMultiplier = 1f;
     
     public static boolean isKeyJustPressed(int key) {
         return key == Keys.ANY_KEY ? keysJustPressed.size > 0 : keysJustPressed.contains(key);
@@ -660,7 +661,7 @@ public class Core extends JamGame {
     }
     
     public enum Binding {
-        LEFT, RIGHT, UP, DOWN, SHOOT, SPECIAL, SHIELD;
+        LEFT, RIGHT, JUMP, DOWN, ATTACK, INVENTORY;
     }
     public static float bgm;
     public static float sfx;
@@ -669,7 +670,6 @@ public class Core extends JamGame {
     @Override
     public void create() {
         super.create();
-        var file = Gdx.files.internal("spine/libgdx.json");
         core = this;
         
         preferences = Gdx.app.getPreferences(PROJECT_NAME);
@@ -747,11 +747,10 @@ public class Core extends JamGame {
     public void setDefaultBindings() {
         addKeyBinding(Binding.LEFT, Keys.LEFT);
         addKeyBinding(Binding.RIGHT, Keys.RIGHT);
-        addKeyBinding(Binding.UP, Keys.UP);
+        addKeyBinding(Binding.JUMP, Keys.UP);
         addKeyBinding(Binding.DOWN, Keys.DOWN);
-        addKeyBinding(Binding.SHOOT, Keys.Z);
-        addKeyBinding(Binding.SHIELD, Keys.X);
-        addKeyBinding(Binding.SPECIAL, Keys.C);
+        addKeyBinding(Binding.ATTACK, Keys.Z);
+        addKeyBinding(Binding.INVENTORY, Keys.X);
     }
     
     public static class ControllerHandler implements ControllerListener {

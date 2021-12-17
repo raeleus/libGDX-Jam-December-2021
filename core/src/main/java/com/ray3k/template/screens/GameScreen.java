@@ -6,19 +6,25 @@ import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.scenes.scene2d.InputEvent;
-import com.badlogic.gdx.scenes.scene2d.InputListener;
-import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.math.Interpolation;
+import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.scenes.scene2d.*;
+import com.badlogic.gdx.scenes.scene2d.actions.Actions;
+import com.badlogic.gdx.scenes.scene2d.actions.TemporalAction;
+import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
+import com.badlogic.gdx.scenes.scene2d.ui.Stack;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ObjectMap;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
+import com.ray3k.stripe.PopTable;
 import com.ray3k.template.*;
 import com.ray3k.template.OgmoReader.*;
 import com.ray3k.template.entities.*;
+import com.ray3k.template.entities.PlayerEntity.*;
 import com.ray3k.template.screens.DialogDebug.*;
 import com.ray3k.template.screens.DialogPause.*;
 import space.earlygrey.shapedrawer.ShapeDrawer;
@@ -32,6 +38,7 @@ public class GameScreen extends JamScreen {
     public Stage stage;
     public boolean paused;
     private Label fpsLabel;
+    public Action slowAction;
     
     @Override
     public void show() {
@@ -165,11 +172,136 @@ public class GameScreen extends JamScreen {
         ogmoReader.readFile(Gdx.files.internal("levels/" + name + ".json"));
     }
     
+    private final static Vector2 temp = new Vector2();
+    
+    public void showInventory() {
+        if (slowAction != null) stage.getRoot().removeAction(slowAction);
+        slowAction = new TemporalAction(.5f, Interpolation.smooth) {
+            @Override
+            protected void update(float percent) {
+                deltaMultiplier = (1 - percent) *  (1 - .05f) + .05f;
+            }
+        };
+        stage.addAction(slowAction);
+        var selectionImage = new Image(skin.getDrawable("powerup-selection"));
+        var whipImage = new Image(skin.getDrawable("powerup-whip"));
+        var shotgunImage = new Image(skin.getDrawable("powerup-shotgun"));
+        var grenadeImage = new Image(skin.getDrawable("powerup-grenade"));
+        var crossImage = new Image(skin.getDrawable("powerup-cross"));
+        
+        var popTable = new PopTable() {
+            float hideTimer;
+            boolean stopInput;
+            @Override
+            public void act(float delta) {
+                super.act(delta);
+                
+                if (!stopInput) {
+                    if (PlayerEntity.enabledWeapons.contains(Weapon.WHIP, false) && isBindingJustPressed(Binding.JUMP)) {
+                        temp.set(whipImage.getX(Align.center) - selectionImage.getWidth() / 2,
+                                whipImage.getY(Align.center) - selectionImage.getHeight() / 2);
+                        whipImage.localToActorCoordinates(this, temp);
+                        selectionImage.addAction(Actions.moveTo(temp.x, temp.y, .2f, Interpolation.smooth));
+                        hideTimer = .1f;
+                        PlayerEntity.player.weapon = Weapon.WHIP;
+                    } else if (PlayerEntity.enabledWeapons.contains(Weapon.SHOTGUN, false) && isBindingJustPressed(Binding.LEFT)) {
+                        temp.set(shotgunImage.getX(Align.center) - selectionImage.getWidth() / 2,
+                                shotgunImage.getY(Align.center) - selectionImage.getHeight() / 2);
+                        shotgunImage.localToActorCoordinates(this, temp);
+                        selectionImage.addAction(Actions.moveTo(temp.x, temp.y, .2f, Interpolation.smooth));
+                        hideTimer = .1f;
+                        PlayerEntity.player.weapon = Weapon.SHOTGUN;
+                    } else if (PlayerEntity.enabledWeapons.contains(Weapon.GRENADE, false) && isBindingJustPressed(Binding.RIGHT)) {
+                        temp.set(grenadeImage.getX(Align.center) - selectionImage.getWidth() / 2,
+                                grenadeImage.getY(Align.center) - selectionImage.getHeight() / 2);
+                        grenadeImage.localToActorCoordinates(this, temp);
+                        selectionImage.addAction(Actions.moveTo(temp.x, temp.y, .2f, Interpolation.smooth));
+                        hideTimer = .1f;
+                        PlayerEntity.player.weapon = Weapon.GRENADE;
+                    } else if (PlayerEntity.enabledWeapons.contains(Weapon.CROSS, false) && isBindingJustPressed(Binding.DOWN)) {
+                        temp.set(crossImage.getX(Align.center) - selectionImage.getWidth() / 2,
+                                crossImage.getY(Align.center) - selectionImage.getHeight() / 2);
+                        crossImage.localToActorCoordinates(this, temp);
+                        selectionImage.addAction(Actions.moveTo(temp.x, temp.y, .2f, Interpolation.smooth));
+                        hideTimer = .1f;
+                        PlayerEntity.player.weapon = Weapon.CROSS;
+                    }
+    
+                    if (isBindingPressed(Binding.INVENTORY)) {
+                        hideTimer = .1f;
+                    }
+                }
+                
+                if (hideTimer > 0) {
+                    hideTimer -= delta;
+                    if (hideTimer < 0) {
+                        stopInput = true;
+                        hide();
+                        PlayerEntity.player.selectingWeapon = false;
+                        if (slowAction != null) stage.getRoot().removeAction(slowAction);
+                        slowAction = Actions.sequence(new TemporalAction(1f, Interpolation.smooth) {
+                            @Override
+                            protected void update(float percent) {
+                                deltaMultiplier = percent *  (1 - .05f) + .05f;
+                            }
+                        });
+                        stage.addAction(slowAction);
+                    }
+                }
+            }
+        };
+        popTable.setKeepCenteredInWindow(true);
+        
+        popTable.defaults().uniform().space(30);
+        
+        var stack = new Stack();
+        if (PlayerEntity.enabledWeapons.contains(Weapon.WHIP, false)) stack.add(whipImage);
+        popTable.add(stack).colspan(3);
+        if (PlayerEntity.player.weapon == Weapon.WHIP) {
+            var image = new Image(skin.getDrawable("powerup-selected"));
+            stack.add(image);
+        }
+        
+        popTable.row();
+        stack = new Stack();
+        if (PlayerEntity.enabledWeapons.contains(Weapon.SHOTGUN, false)) stack.add(shotgunImage);
+        popTable.add(stack);
+        if (PlayerEntity.player.weapon == Weapon.SHOTGUN) {
+            var image = new Image(skin.getDrawable("powerup-selected"));
+            stack.add(image);
+        }
+    
+        popTable.add();
+        
+        stack = new Stack();
+        if (PlayerEntity.enabledWeapons.contains(Weapon.GRENADE, false)) stack.add(grenadeImage);
+        popTable.add(stack);
+        if (PlayerEntity.player.weapon == Weapon.GRENADE) {
+            var image = new Image(skin.getDrawable("powerup-selected"));
+            stack.add(image);
+        }
+        
+        popTable.row();
+        stack = new Stack();
+        if (PlayerEntity.enabledWeapons.contains(Weapon.CROSS, false)) stack.add(crossImage);
+        popTable.add(stack).colspan(3);
+        if (PlayerEntity.player.weapon == Weapon.CROSS) {
+            var image = new Image(skin.getDrawable("powerup-selected"));
+            stack.add(image);
+        }
+        
+        popTable.show(stage);
+        
+        selectionImage.setPosition(popTable.getWidth() / 2, popTable.getHeight() / 2, Align.center);
+        popTable.addActor(selectionImage);
+        
+    }
+    
     @Override
     public void act(float delta) {
         if (!paused) {
-            entityController.act(delta);
-            vfxManager.update(delta);
+            entityController.act(delta * deltaMultiplier);
+            vfxManager.update(delta * deltaMultiplier);
         }
         stage.act(delta);
         
