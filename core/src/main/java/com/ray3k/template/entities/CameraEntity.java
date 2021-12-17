@@ -1,10 +1,7 @@
 package com.ray3k.template.entities;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input.Buttons;
 import com.dongbat.jbump.Collisions;
 import com.dongbat.jbump.Response.Result;
-import com.ray3k.template.*;
 
 import static com.ray3k.template.Core.*;
 
@@ -12,7 +9,7 @@ public class CameraEntity extends Entity {
     private PlayerEntity player;
     private float levelWidth;
     private float levelHeight;
-    public float zoom;
+    public float zoom = 1f;
     
     public CameraEntity(PlayerEntity player, float levelWidth, float levelHeight) {
         this.player = player;
