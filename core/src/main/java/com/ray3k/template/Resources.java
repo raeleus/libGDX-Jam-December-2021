@@ -983,9 +983,9 @@ public class Resources {
     public static class Values {
         public static float playerMaxSpeed = 700.0f;
 
-        public static float playerAcceleration = 1000.0f;
+        public static int playerAcceleration = 2600;
 
-        public static float playerDeceleration = 800.0f;
+        public static int playerDeceleration = 2400;
     }
 
     public static class Range {

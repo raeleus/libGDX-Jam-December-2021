@@ -20,6 +20,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.*;
 import com.badlogic.gdx.utils.ObjectIntMap.Entry;
 import com.badlogic.gdx.utils.viewport.ExtendViewport;
+import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.dongbat.jbump.CollisionFilter;
 import com.dongbat.jbump.Response;
 import com.dongbat.jbump.World;
@@ -68,7 +69,7 @@ public class Core extends JamGame {
     public static CrossPlatformWorker crossPlatformWorker;
     public static float mouseX;
     public static float mouseY;
-    public static ExtendViewport viewport;
+    public static FitViewport viewport;
     public static OrthographicCamera camera;
     public static final float DEPTH_PLAYER = 100;
     public static final float DEPTH_BACKGROUND = 2000;

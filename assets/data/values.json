@@ -1,5 +1,5 @@
 {
   "player max speed" : 700.0,
-  "player acceleration" : 1000.0,
-  "player deceleration" : 800.0
+  "player acceleration" : 2600,
+  "player deceleration" : 2400
 }

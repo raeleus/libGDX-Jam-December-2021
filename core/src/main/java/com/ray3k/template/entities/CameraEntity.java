@@ -12,6 +12,7 @@ public class CameraEntity extends Entity {
     private PlayerEntity player;
     private float levelWidth;
     private float levelHeight;
+    public float zoom;
     
     public CameraEntity(PlayerEntity player, float levelWidth, float levelHeight) {
         this.player = player;
@@ -32,14 +33,13 @@ public class CameraEntity extends Entity {
     @Override
     public void act(float delta) {
         setPosition(player.x, player.y + 150);
-        if (Core.isButtonPressed(Buttons.LEFT)) camera.zoom = 2f;
-        else camera.zoom = 1f;
         
-        viewport.setMinWorldWidth(1024 / camera.zoom);
-        viewport.setMaxWorldWidth(levelWidth / camera.zoom);
-        viewport.setMinWorldHeight(576 / camera.zoom);
-        viewport.setMaxWorldHeight(levelHeight / camera.zoom);
-        viewport.update(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+        camera.zoom = zoom;
+        if (camera.viewportWidth < camera.viewportHeight) {
+            if (camera.zoom * camera.viewportWidth > levelWidth) camera.zoom = levelWidth / camera.viewportWidth;
+        } else {
+            if (camera.zoom * camera.viewportHeight > levelHeight) camera.zoom = levelHeight / camera.viewportHeight;
+        }
         
         if (camera.viewportWidth * camera.zoom > levelWidth) x = levelWidth / 2;
         else {

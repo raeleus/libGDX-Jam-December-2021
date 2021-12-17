@@ -4,6 +4,7 @@
   "height": 848,
   "offsetX": 0,
   "offsetY": 0,
+  "values": {"zoom": 2},
   "layers": [
     {
       "name": "entities",

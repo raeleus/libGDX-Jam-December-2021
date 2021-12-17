@@ -15,6 +15,7 @@ import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ObjectMap;
 import com.badlogic.gdx.utils.viewport.ExtendViewport;
+import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.ray3k.template.*;
 import com.ray3k.template.OgmoReader.*;
@@ -81,7 +82,7 @@ public class GameScreen extends JamScreen {
         Gdx.input.setInputProcessor(inputMultiplexer);
     
         camera = new OrthographicCamera();
-        viewport = new ExtendViewport(1024, 576, camera);
+        viewport = new FitViewport(1024, 576, camera);
     
         entityController.clear();
         loadLevel("level1");
@@ -93,14 +94,14 @@ public class GameScreen extends JamScreen {
             String layerName;
             float levelWidth;
             float levelHeight;
+            float levelZoom;
     
             @Override
             public void level(String ogmoVersion, int width, int height, int offsetX, int offsetY,
                               ObjectMap<String, OgmoValue> valuesMap) {
-                viewport.setMaxWorldWidth(width);
-                viewport.setMaxWorldHeight(height);
                 levelWidth = width;
                 levelHeight = height;
+                levelZoom = valuesMap.get("zoom").asFloat();
             }
     
             @Override
@@ -120,6 +121,7 @@ public class GameScreen extends JamScreen {
                         entityController.add(player);
                         
                         var cam = new CameraEntity(player, levelWidth, levelHeight);
+                        
                         entityController.add(cam);
                         break;
                         
