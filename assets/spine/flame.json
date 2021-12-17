@@ -1,0 +1,52 @@
+{
+"skeleton": {
+	"hash": "sU2FXJm7af0",
+	"spine": "4.0.55",
+	"x": -98.91,
+	"y": -82.32,
+	"width": 190,
+	"height": 387,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/flame-Layer-1", "bone": "root", "attachment": "game/flame-Layer-7" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"game/flame-Layer-1": {
+				"game/flame-Layer-1": { "x": -3.91, "y": 111.18, "width": 190, "height": 387 },
+				"game/flame-Layer-2": { "x": -3.91, "y": 111.18, "width": 190, "height": 387 },
+				"game/flame-Layer-3": { "x": -3.91, "y": 111.18, "width": 190, "height": 387 },
+				"game/flame-Layer-4": { "x": -3.91, "y": 111.18, "width": 190, "height": 387 },
+				"game/flame-Layer-5": { "x": -3.91, "y": 111.18, "width": 190, "height": 387 },
+				"game/flame-Layer-6": { "x": -3.91, "y": 111.18, "width": 190, "height": 387 },
+				"game/flame-Layer-7": { "x": -3.91, "y": 111.18, "width": 190, "height": 387 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"game/flame-Layer-1": {
+				"attachment": [
+					{ "name": "game/flame-Layer-1" },
+					{ "time": 0.0333, "name": "game/flame-Layer-2" },
+					{ "time": 0.0667, "name": "game/flame-Layer-3" },
+					{ "time": 0.1, "name": "game/flame-Layer-4" },
+					{ "time": 0.1333, "name": "game/flame-Layer-5" },
+					{ "time": 0.1667, "name": "game/flame-Layer-6" },
+					{ "time": 0.2, "name": "game/flame-Layer-7" },
+					{ "time": 0.2333, "name": "game/flame-Layer-1" }
+				]
+			}
+		}
+	}
+}
+}

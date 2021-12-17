@@ -1,0 +1,916 @@
+{
+"skeleton": {
+	"hash": "7OuWbsMw3Vw",
+	"spine": "4.0.55",
+	"x": -100.68,
+	"y": -11.89,
+	"width": 566.29,
+	"height": 439.3,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/lyze-hip", "parent": "root", "length": 74.07, "rotation": 0.54, "x": -24.29, "y": 198.95 },
+	{ "name": "game/lyze-body", "parent": "game/lyze-hip", "length": 103.45, "rotation": 91.01, "x": 35.16, "y": 24.12 },
+	{ "name": "game/lyze-head", "parent": "game/lyze-body", "length": 96.43, "rotation": -1.96, "x": 98.78, "y": 8.51 },
+	{ "name": "game/lyze-arm-left", "parent": "game/lyze-body", "length": 169.16, "rotation": -89.89, "x": 66.98, "y": 47.12 },
+	{ "name": "game/lyze-arm-right", "parent": "game/lyze-body", "length": 176.08, "rotation": -91.78, "x": 63.48, "y": -30.37 },
+	{ "name": "game/lyze-leg-left", "parent": "game/lyze-hip", "length": 97.32, "rotation": -94.25, "x": 8.98, "y": -10.57 },
+	{ "name": "game/lyze-foreleg-left", "parent": "game/lyze-leg-left", "length": 60.13, "rotation": 5.7, "x": 95.32, "y": -1.53 },
+	{ "name": "game/lyze-foot-left", "parent": "game/lyze-foreleg-left", "length": 42.55, "rotation": -31.51, "x": 63.81, "y": 5.46 },
+	{ "name": "game/lyze-leg-right", "parent": "game/lyze-hip", "length": 99.32, "rotation": -83.27, "x": 49.52, "y": -9.55 },
+	{ "name": "game/lyze-foreleg-right", "parent": "game/lyze-leg-right", "length": 58.03, "rotation": -9.35, "x": 98.27, "y": -2.68 },
+	{ "name": "game/lyze-foot-right", "parent": "game/lyze-foreleg-right", "length": 57.59, "rotation": 56.45, "x": 60.23, "y": -2.72 },
+	{ "name": "game/lyze-key", "parent": "game/lyze-arm-left", "length": 287.17, "rotation": -1.52, "x": 242.59, "y": 49.6 }
+],
+"slots": [
+	{ "name": "game/lyze-tail", "bone": "game/lyze-hip", "dark": "000000", "attachment": "game/lyze-tail" },
+	{ "name": "game/lyze-arm-right", "bone": "game/lyze-arm-right", "dark": "000000", "attachment": "game/lyze-arm-right" },
+	{ "name": "game/lyze-foot-right", "bone": "game/lyze-foot-right", "dark": "000000", "attachment": "game/lyze-foot-right" },
+	{ "name": "game/lyze-foreleg-left", "bone": "game/lyze-foreleg-left", "dark": "000000", "attachment": "game/lyze-foreleg-left" },
+	{ "name": "game/lyze-foreleg-right", "bone": "game/lyze-foreleg-right", "dark": "000000", "attachment": "game/lyze-foreleg-right" },
+	{ "name": "game/lyze-shirt", "bone": "game/lyze-body", "dark": "000000", "attachment": "game/lyze-shirt" },
+	{ "name": "game/lyze-hip", "bone": "game/lyze-hip", "dark": "000000", "attachment": "game/lyze-hip" },
+	{ "name": "game/lyze-leg-right", "bone": "game/lyze-leg-right", "dark": "000000", "attachment": "game/lyze-leg-right" },
+	{ "name": "game/lyze-leg-left", "bone": "game/lyze-leg-left", "dark": "000000", "attachment": "game/lyze-leg-left" },
+	{ "name": "game/lyze-foot-left", "bone": "game/lyze-foot-left", "dark": "000000", "attachment": "game/lyze-foot-left" },
+	{ "name": "game/lyze-hip-front", "bone": "game/lyze-hip", "dark": "000000", "attachment": "game/lyze-hip-front" },
+	{ "name": "game/lyze-body", "bone": "game/lyze-body", "dark": "000000", "attachment": "game/lyze-body" },
+	{ "name": "game/lyze-head", "bone": "game/lyze-head", "dark": "000000", "attachment": "game/lyze-head" },
+	{ "name": "game/lyze-thumb", "bone": "game/lyze-arm-left", "dark": "000000", "attachment": "game/lyze-thumb" },
+	{ "name": "game/lyze-gun", "bone": "game/lyze-key", "dark": "000000", "attachment": "game/lyze-gun" },
+	{ "name": "game/lyze-key", "bone": "game/lyze-key", "dark": "000000", "attachment": "game/lyze-key" },
+	{ "name": "game/lyze-arm-left", "bone": "game/lyze-arm-left", "dark": "000000", "attachment": "game/lyze-arm-left" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -45.11, 0.63, -48.81, 390.86, 64.8, 394.56, 74.68, -1.84 ]
+				}
+			},
+			"game/lyze-arm-left": {
+				"game/lyze-arm-left": { "x": 80.59, "y": -5.19, "rotation": -1.66, "width": 192, "height": 98 }
+			},
+			"game/lyze-arm-right": {
+				"game/lyze-arm-right": { "x": 92.39, "y": 11.95, "rotation": 0.23, "width": 220, "height": 113 }
+			},
+			"game/lyze-body": {
+				"game/lyze-body": { "x": 47.04, "y": 10.16, "rotation": -91.55, "width": 92, "height": 117 }
+			},
+			"game/lyze-foot-left": {
+				"game/lyze-foot-left": { "x": 23.83, "y": -6.59, "rotation": 119.51, "width": 68, "height": 58 }
+			},
+			"game/lyze-foot-right": {
+				"game/lyze-foot-right": { "x": 23.79, "y": 0.07, "rotation": 35.62, "width": 105, "height": 42 }
+			},
+			"game/lyze-foreleg-left": {
+				"game/lyze-foreleg-left": { "x": 27.54, "y": 0.6, "rotation": 88, "width": 35, "height": 68 }
+			},
+			"game/lyze-foreleg-right": {
+				"game/lyze-foreleg-right": { "x": 24.27, "y": -6.25, "rotation": 92.07, "width": 53, "height": 72 }
+			},
+			"game/lyze-gun": {
+				"game/lyze-gun": {
+					"x": 81.09,
+					"y": -2.37,
+					"scaleX": 0.6402,
+					"scaleY": 0.6402,
+					"rotation": -0.14,
+					"width": 575,
+					"height": 174
+				}
+			},
+			"game/lyze-head": {
+				"game/lyze-head": { "x": 44.49, "y": -0.55, "rotation": -89.58, "width": 84, "height": 113 }
+			},
+			"game/lyze-hip": {
+				"game/lyze-hip": { "x": 23.65, "y": -5.53, "rotation": -0.54, "width": 99, "height": 50 }
+			},
+			"game/lyze-hip-front": {
+				"game/lyze-hip-front": { "x": 23.65, "y": -5.53, "rotation": -0.54, "width": 99, "height": 50 }
+			},
+			"game/lyze-key": {
+				"game/lyze-key": {
+					"x": -7.49,
+					"y": -14.9,
+					"scaleX": 0.6402,
+					"scaleY": 0.6402,
+					"rotation": -0.14,
+					"width": 546,
+					"height": 155
+				}
+			},
+			"game/lyze-leg-left": {
+				"game/lyze-leg-left": { "x": 44.79, "y": -3.65, "rotation": 93.7, "width": 60, "height": 116 }
+			},
+			"game/lyze-leg-right": {
+				"game/lyze-leg-right": { "x": 44.7, "y": 2.2, "rotation": 82.72, "width": 59, "height": 116 }
+			},
+			"game/lyze-shirt": {
+				"game/lyze-shirt": { "x": -5.19, "y": -1.54, "rotation": -91.55, "width": 44, "height": 32 }
+			},
+			"game/lyze-tail": {
+				"game/lyze-tail": { "x": -31.08, "y": -19.97, "rotation": -0.54, "width": 91, "height": 81 }
+			},
+			"game/lyze-thumb": {
+				"game/lyze-thumb": { "x": 160.07, "y": 30.39, "rotation": -1.66, "width": 47, "height": 26 }
+			}
+		}
+	}
+],
+"animations": {
+	"die": {
+		"slots": {
+			"game/lyze-arm-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-arm-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-foot-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-foot-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-foreleg-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-foreleg-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-gun": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-hip": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-hip-front": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-key": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-leg-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-leg-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-shirt": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-tail": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-thumb": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"game/lyze-arm-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-arm-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-foot-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-foot-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-foreleg-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-foreleg-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-gun": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-hip": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-hip-front": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-key": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-leg-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-leg-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-shirt": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-tail": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-thumb": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"jump": {
+		"slots": {
+			"game/lyze-arm-left": {
+				"rgba2": [
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.5667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-arm-right": {
+				"rgba2": [
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.5667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-body": {
+				"rgba2": [
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.5667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-foot-left": {
+				"rgba2": [
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.5667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-foot-right": {
+				"rgba2": [
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.5667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-foreleg-left": {
+				"rgba2": [
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.5667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-foreleg-right": {
+				"rgba2": [
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.5667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-gun": {
+				"rgba2": [
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.5667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-head": {
+				"rgba2": [
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.5667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-hip": {
+				"rgba2": [
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.5667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-hip-front": {
+				"rgba2": [
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.5667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-key": {
+				"rgba2": [
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.5667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-leg-left": {
+				"rgba2": [
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.5667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-leg-right": {
+				"rgba2": [
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.5667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-shirt": {
+				"rgba2": [
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.5667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-tail": {
+				"rgba2": [
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.5667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/lyze-thumb": {
+				"rgba2": [
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.5667, "light": "00000000", "dark": "000000" }
+				]
+			}
+		},
+		"bones": {
+			"game/lyze-hip": {
+				"translate": [
+					{ "y": 4.5 },
+					{ "time": 0.0667, "y": -14.27 },
+					{ "time": 0.1, "y": -56.98 },
+					{
+						"time": 0.1667,
+						"y": -27.81,
+						"curve": [ 0.297, 0, 0.436, 0, 0.214, -15, 0.325, 920.39 ]
+					},
+					{ "time": 0.5667, "y": 920.39 }
+				]
+			},
+			"game/lyze-foreleg-left": {
+				"rotate": [
+					{ "value": 2.66 },
+					{ "time": 0.1, "value": 37.72 },
+					{ "time": 0.2333, "value": 1.57 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.1, "x": 0.748 },
+					{ "time": 0.2333 }
+				]
+			},
+			"game/lyze-leg-left": {
+				"rotate": [
+					{ "value": -1.11 },
+					{ "time": 0.1, "value": -29.78 },
+					{ "time": 0.2333, "value": -3.06 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.1, "x": 0.862 },
+					{ "time": 0.2333 }
+				]
+			},
+			"game/lyze-leg-right": {
+				"rotate": [
+					{ "value": 0.81 },
+					{ "time": 0.1, "value": 50.5 },
+					{ "time": 0.2333, "value": 4.17 }
+				]
+			},
+			"game/lyze-foreleg-right": {
+				"rotate": [
+					{ "value": -0.28 },
+					{ "time": 0.1, "value": -85.84 },
+					{ "time": 0.2333, "value": -21.44 }
+				]
+			},
+			"game/lyze-foot-right": {
+				"rotate": [
+					{ "value": -1.55 },
+					{ "time": 0.1, "value": 30.39 },
+					{ "time": 0.2333, "value": -26.07 }
+				]
+			},
+			"game/lyze-foot-left": {
+				"rotate": [
+					{ "value": -2.13 },
+					{ "time": 0.1, "value": -13.84 },
+					{ "time": 0.2333, "value": 20.94 }
+				]
+			},
+			"game/lyze-arm-left": {
+				"rotate": [
+					{ "time": 0.1667, "value": -35.8 },
+					{ "time": 0.5667, "value": 130.2 }
+				]
+			},
+			"game/lyze-arm-right": {
+				"rotate": [
+					{ "time": 0.1667, "value": -29.2 },
+					{ "time": 0.5667, "value": 42.69 }
+				]
+			}
+		}
+	},
+	"land": {
+		"slots": {
+			"game/lyze-arm-left": {
+				"rgba2": [
+					{ "light": "00000000", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-arm-right": {
+				"rgba2": [
+					{ "light": "00000000", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-body": {
+				"rgba2": [
+					{ "light": "00000000", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-foot-left": {
+				"rgba2": [
+					{ "light": "00000000", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-foot-right": {
+				"rgba2": [
+					{ "light": "00000000", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-foreleg-left": {
+				"rgba2": [
+					{ "light": "00000000", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-foreleg-right": {
+				"rgba2": [
+					{ "light": "00000000", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-gun": {
+				"rgba2": [
+					{ "light": "00000000", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffff00", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.1667, "light": "ffffff00", "dark": "000000" },
+					{ "time": 1.6667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-head": {
+				"rgba2": [
+					{ "light": "00000000", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-hip": {
+				"rgba2": [
+					{ "light": "00000000", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-hip-front": {
+				"rgba2": [
+					{ "light": "00000000", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-key": {
+				"rgba2": [
+					{ "light": "00000000", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffff00", "dark": "000000", "curve": "stepped" },
+					{ "time": 0.8, "light": "ffffff00", "dark": "000000" },
+					{ "time": 1.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-leg-left": {
+				"rgba2": [
+					{ "light": "00000000", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-leg-right": {
+				"rgba2": [
+					{ "light": "00000000", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-shirt": {
+				"rgba2": [
+					{ "light": "00000000", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-tail": {
+				"rgba2": [
+					{ "light": "00000000", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/lyze-thumb": {
+				"rgba2": [
+					{ "light": "00000000", "dark": "000000" },
+					{ "time": 0.1667, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		},
+		"bones": {
+			"game/lyze-hip": {
+				"translate": [
+					{
+						"y": 920.39,
+						"curve": [ 0.189, 0, 0.378, 0, 0.349, 920.39, 0.498, -14.33 ]
+					},
+					{ "time": 0.5667, "y": -27.81 },
+					{ "time": 0.6667, "y": -56.98 },
+					{ "time": 0.7333, "y": -14.27 },
+					{ "time": 0.8, "y": 4.5 }
+				]
+			},
+			"game/lyze-foreleg-left": {
+				"rotate": [
+					{ "value": 1.57, "curve": "stepped" },
+					{ "time": 0.5, "value": 1.57 },
+					{ "time": 0.6667, "value": 37.72 },
+					{ "time": 0.8, "value": 2.66 }
+				],
+				"scale": [
+					{ "time": 0.5 },
+					{ "time": 0.6667, "x": 0.748 },
+					{ "time": 0.8 }
+				]
+			},
+			"game/lyze-leg-left": {
+				"rotate": [
+					{ "value": -3.06, "curve": "stepped" },
+					{ "time": 0.5, "value": -3.06 },
+					{ "time": 0.6667, "value": -29.78 },
+					{ "time": 0.8, "value": -1.11 }
+				],
+				"scale": [
+					{ "time": 0.5 },
+					{ "time": 0.6667, "x": 0.862 },
+					{ "time": 0.8 }
+				]
+			},
+			"game/lyze-leg-right": {
+				"rotate": [
+					{ "value": 4.17, "curve": "stepped" },
+					{ "time": 0.5, "value": 4.17 },
+					{ "time": 0.6667, "value": 50.5 },
+					{ "time": 0.8, "value": 0.81 }
+				]
+			},
+			"game/lyze-foreleg-right": {
+				"rotate": [
+					{ "value": -21.44, "curve": "stepped" },
+					{ "time": 0.5, "value": -21.44 },
+					{ "time": 0.6667, "value": -85.84 },
+					{ "time": 0.8, "value": -0.28 }
+				]
+			},
+			"game/lyze-foot-right": {
+				"rotate": [
+					{ "value": -26.07, "curve": "stepped" },
+					{ "time": 0.5, "value": -26.07 },
+					{ "time": 0.6667, "value": 30.39 },
+					{ "time": 0.8, "value": -1.55 }
+				]
+			},
+			"game/lyze-foot-left": {
+				"rotate": [
+					{ "value": 20.94, "curve": "stepped" },
+					{ "time": 0.5, "value": 20.94 },
+					{ "time": 0.6667, "value": -13.84 },
+					{ "time": 0.8, "value": -2.13 }
+				]
+			},
+			"game/lyze-arm-left": {
+				"rotate": [
+					{ "value": 130.2 },
+					{ "time": 0.5667, "value": -35.8, "curve": "stepped" },
+					{ "time": 1.6667, "value": -35.8 },
+					{ "time": 2.1667, "value": -2.94 }
+				]
+			},
+			"game/lyze-arm-right": {
+				"rotate": [
+					{ "value": 42.69 },
+					{ "time": 0.5667, "value": -29.2, "curve": "stepped" },
+					{ "time": 1.6667, "value": -29.2 },
+					{ "time": 2.1667, "value": -89.47 }
+				]
+			},
+			"game/lyze-key": {
+				"rotate": [
+					{ "time": 0.8 },
+					{ "time": 1.1667, "value": -717.57 }
+				],
+				"translate": [
+					{ "time": 0.8, "x": -527.06, "y": 777.2 },
+					{ "time": 1.1667, "x": -5.58, "y": 8.22 }
+				]
+			}
+		}
+	},
+	"shoot": {
+		"bones": {
+			"game/lyze-hip": {
+				"translate": [
+					{ "y": 4.5 }
+				]
+			},
+			"game/lyze-foreleg-left": {
+				"rotate": [
+					{ "value": 2.66 }
+				]
+			},
+			"game/lyze-leg-left": {
+				"rotate": [
+					{ "value": -1.11 }
+				]
+			},
+			"game/lyze-leg-right": {
+				"rotate": [
+					{ "value": 0.81 }
+				]
+			},
+			"game/lyze-foreleg-right": {
+				"rotate": [
+					{ "value": -0.28 }
+				]
+			},
+			"game/lyze-foot-right": {
+				"rotate": [
+					{ "value": -1.55 }
+				]
+			},
+			"game/lyze-foot-left": {
+				"rotate": [
+					{ "value": -2.13 }
+				]
+			},
+			"game/lyze-arm-left": {
+				"rotate": [
+					{ "value": -2.94 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.1, "x": 0.737 },
+					{ "time": 0.2 }
+				]
+			},
+			"game/lyze-arm-right": {
+				"rotate": [
+					{ "value": -89.47 }
+				]
+			},
+			"game/lyze-key": {
+				"rotate": [
+					{ "value": -717.57 }
+				],
+				"translate": [
+					{ "x": -5.58, "y": 8.22 }
+				]
+			}
+		}
+	}
+}
+}

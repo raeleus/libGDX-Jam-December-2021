@@ -1,0 +1,309 @@
+{
+"skeleton": {
+	"hash": "jSveLyF6lBY",
+	"spine": "4.0.55",
+	"x": -183.41,
+	"y": 57.59,
+	"width": 358,
+	"height": 370,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/clock-body", "parent": "root", "length": 204.95, "rotation": 0.28, "x": -6.8, "y": 61.87 },
+	{ "name": "game/clock-hour", "parent": "game/clock-body", "length": 101.97, "rotation": -0.28, "x": 5.94, "y": 180.69 },
+	{ "name": "game/clock-minute", "parent": "game/clock-body", "length": 153.51, "rotation": 88.21, "x": 4.93, "y": 180.7 },
+	{ "name": "weapon-rotator", "parent": "game/clock-body", "length": 290.16, "rotation": 0.39, "x": 6.82, "y": 178.95 },
+	{
+		"name": "game/clock-axe2",
+		"parent": "weapon-rotator",
+		"length": 370.58,
+		"rotation": -0.76,
+		"x": -2.92,
+		"y": -1.26,
+		"scaleX": 0.01
+	},
+	{
+		"name": "game/clock-axe",
+		"parent": "weapon-rotator",
+		"length": 372.6,
+		"rotation": -179.11,
+		"x": -3.92,
+		"y": -0.24,
+		"scaleX": 0.01
+	},
+	{
+		"name": "game/clock-sword2",
+		"parent": "weapon-rotator",
+		"length": 355.39,
+		"rotation": -91.47,
+		"x": 0.06,
+		"y": -5.33,
+		"scaleX": 0.01
+	},
+	{
+		"name": "game/clock-sword",
+		"parent": "weapon-rotator",
+		"length": 366.69,
+		"rotation": 87.44,
+		"x": 0.09,
+		"y": -2.3,
+		"scaleX": 0.01
+	}
+],
+"slots": [
+	{ "name": "game/clock-sword", "bone": "game/clock-sword", "dark": "000000", "attachment": "game/clock-sword" },
+	{ "name": "game/clock-axe", "bone": "game/clock-axe", "dark": "000000", "attachment": "game/clock-axe" },
+	{ "name": "game/clock-sword2", "bone": "game/clock-sword2", "dark": "000000", "attachment": "game/clock-sword" },
+	{ "name": "game/clock-axe2", "bone": "game/clock-axe2", "dark": "000000", "attachment": "game/clock-axe" },
+	{ "name": "game/clock-body", "bone": "game/clock-body", "dark": "000000", "attachment": "game/clock-body" },
+	{ "name": "game/clock-hour", "bone": "game/clock-hour", "dark": "000000", "attachment": "game/clock-hour" },
+	{ "name": "game/clock-minute", "bone": "game/clock-minute", "dark": "000000", "attachment": "game/clock-minute" },
+	{ "name": "game/clock-spoke", "bone": "game/clock-body", "dark": "000000", "attachment": "game/clock-spoke" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -167.18, 73.41, -164.01, 402.6, 147.18, 401.54, 147.18, 70.24 ]
+				}
+			},
+			"game/clock-axe": {
+				"game/clock-axe": { "x": 160.63, "y": -4.83, "rotation": -89.07, "width": 276, "height": 429 }
+			},
+			"game/clock-axe2": {
+				"game/clock-axe": { "x": 160.6, "y": -2.8, "rotation": -89.06, "width": 276, "height": 429 }
+			},
+			"game/clock-body": {
+				"game/clock-body": { "x": 3.29, "y": 180.71, "rotation": -0.28, "width": 358, "height": 370 }
+			},
+			"game/clock-hour": {
+				"game/clock-hour": { "x": 40.76, "y": -1.01, "width": 108, "height": 30 }
+			},
+			"game/clock-minute": {
+				"game/clock-minute": { "x": 66.7, "y": -1.65, "rotation": -88.49, "width": 39, "height": 163 }
+			},
+			"game/clock-spoke": {
+				"game/clock-spoke": { "x": 6.31, "y": 179.68, "rotation": -0.28, "width": 37, "height": 37 }
+			},
+			"game/clock-sword": {
+				"game/clock-sword": { "x": 170.78, "y": -1.8, "rotation": -88.11, "width": 167, "height": 386 }
+			},
+			"game/clock-sword2": {
+				"game/clock-sword": { "x": 164.59, "y": -6.98, "rotation": -89.84, "width": 167, "height": 386 }
+			}
+		}
+	}
+],
+"animations": {
+	"attack": {
+		"bones": {
+			"game/clock-axe": {
+				"translate": [
+					{},
+					{ "time": 0.5667, "x": -188.35, "y": -4.18, "curve": "stepped" },
+					{ "time": 1.5, "x": -188.35, "y": -4.18 },
+					{ "time": 2.0667 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.5667, "x": 100, "curve": "stepped" },
+					{ "time": 1.5, "x": 100 },
+					{ "time": 2.0667 }
+				]
+			},
+			"game/clock-axe2": {
+				"translate": [
+					{},
+					{ "time": 0.5667, "x": 160.06, "y": -1.04, "curve": "stepped" },
+					{ "time": 1.5, "x": 160.06, "y": -1.04 },
+					{ "time": 2.0667 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.5667, "x": 100, "curve": "stepped" },
+					{ "time": 1.5, "x": 100 },
+					{ "time": 2.0667 }
+				]
+			},
+			"game/clock-sword": {
+				"translate": [
+					{},
+					{ "time": 0.5667, "x": 6.34, "y": 167, "curve": "stepped" },
+					{ "time": 1.5, "x": 6.34, "y": 167 },
+					{ "time": 2.0667 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.5667, "x": 100, "curve": "stepped" },
+					{ "time": 1.5, "x": 100 },
+					{ "time": 2.0667 }
+				]
+			},
+			"game/clock-sword2": {
+				"translate": [
+					{},
+					{ "time": 0.5667, "x": -3.12, "y": -164.4, "curve": "stepped" },
+					{ "time": 1.5, "x": -3.12, "y": -164.4 },
+					{ "time": 2.0667 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.5667, "x": 100, "curve": "stepped" },
+					{ "time": 1.5, "x": 100 },
+					{ "time": 2.0667 }
+				]
+			},
+			"weapon-rotator": {
+				"rotate": [
+					{ "value": -0.39, "curve": "stepped" },
+					{
+						"time": 0.5667,
+						"value": -0.39,
+						"curve": [ 1.188, 1.61, 0.822, 352.61 ]
+					},
+					{ "time": 1.5, "value": 359.61 }
+				]
+			}
+		}
+	},
+	"die": {
+		"slots": {
+			"game/clock-axe": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/clock-axe2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/clock-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/clock-hour": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/clock-minute": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/clock-spoke": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/clock-sword": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/clock-sword2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"game/clock-axe": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/clock-axe2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/clock-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/clock-hour": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/clock-minute": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/clock-spoke": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/clock-sword": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/clock-sword2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"stand": {
+		"bones": {
+			"game/clock-minute": {
+				"rotate": [
+					{ "value": 1.51 },
+					{ "time": 0.8, "value": -358.49 },
+					{ "time": 1.6, "value": -718.49 },
+					{ "time": 2.4, "value": -1078.49 },
+					{ "time": 3.2, "value": -1438.49 },
+					{ "time": 4, "value": -1798.49 }
+				]
+			},
+			"game/clock-hour": {
+				"rotate": [
+					{},
+					{ "time": 4, "value": -360 }
+				]
+			}
+		}
+	}
+}
+}

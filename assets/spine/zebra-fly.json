@@ -1,0 +1,96 @@
+{
+"skeleton": {
+	"hash": "Azpbdxn6vYk",
+	"spine": "4.0.55",
+	"x": 1118.65,
+	"y": 762.38,
+	"width": 1038,
+	"height": 902,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/zebra-fly", "parent": "root", "length": 468.69, "x": 1574.43, "y": 1141.37 },
+	{ "name": "game/zebra-thruster-forward", "parent": "game/zebra-fly", "length": 431.67, "x": 11.95, "y": 72.25 }
+],
+"slots": [
+	{ "name": "game/zebra-thruster-forward", "bone": "game/zebra-thruster-forward", "attachment": "game/zebra-thruster-forward" },
+	{ "name": "game/zebra-fly", "bone": "game/zebra-fly", "attachment": "game/zebra-fly" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"game/zebra-fly": {
+				"game/zebra-fly": { "x": 63.22, "y": 168.43, "width": 1038, "height": 699 }
+			},
+			"game/zebra-thruster-forward": {
+				"game/zebra-thruster-forward": { "x": 7.12, "y": -0.23, "width": 909, "height": 902 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"game/zebra-fly": {
+				"rgba": [
+					{ "color": "000000ff" },
+					{ "time": 0.2, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.1, "color": "ffffffff" },
+					{ "time": 1.4667, "color": "000000ff" }
+				]
+			},
+			"game/zebra-thruster-forward": {
+				"rgba": [
+					{ "time": 1.1, "color": "ffffffff" },
+					{ "time": 1.4667, "color": "000000ff" }
+				]
+			}
+		},
+		"bones": {
+			"game/zebra-thruster-forward": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 0.2, "value": -6.96, "curve": "stepped" },
+					{ "time": 0.3667, "value": 24.01, "curve": "stepped" },
+					{ "time": 0.5667, "value": 0.27, "curve": "stepped" },
+					{ "time": 0.7333, "value": -15.64, "curve": "stepped" },
+					{ "time": 0.9333, "value": -32.22, "curve": "stepped" },
+					{ "time": 1.1, "value": 45.8, "curve": "stepped" },
+					{ "time": 1.3, "value": -3.12 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 0.2, "x": 0.881, "y": 0.881, "curve": "stepped" },
+					{ "time": 0.3667, "x": 1.115, "y": 1.115, "curve": "stepped" },
+					{ "time": 0.5667, "x": 0.92, "y": 0.92, "curve": "stepped" },
+					{ "time": 0.7333, "x": 1.244, "y": 1.244, "curve": "stepped" },
+					{ "time": 0.9333, "x": 0.92, "y": 0.92, "curve": "stepped" },
+					{ "time": 1.1, "x": 1.113, "y": 1.113, "curve": "stepped" },
+					{ "time": 1.3, "x": 0.974, "y": 0.974 }
+				]
+			},
+			"game/zebra-fly": {
+				"translate": [
+					{
+						"curve": [ 0.247, 0, 0.486, -868, 0.247, 0, 0.486, -245.02 ]
+					},
+					{
+						"time": 0.7333,
+						"x": -868,
+						"y": -441.03,
+						"curve": [ 0.98, -868, 1.22, -445.56, 0.98, -637.05, 1.22, -710.8 ]
+					},
+					{ "time": 1.4667, "x": -234.34, "y": -906.81 }
+				],
+				"scale": [
+					{ "x": 0, "y": 0 },
+					{ "time": 1.1 }
+				]
+			}
+		}
+	}
+}
+}

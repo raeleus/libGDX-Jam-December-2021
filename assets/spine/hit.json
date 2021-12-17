@@ -1,0 +1,64 @@
+{
+"skeleton": {
+	"hash": "TYW217fwoSA",
+	"spine": "4.0.55",
+	"x": -240.61,
+	"y": -225.42,
+	"width": 430,
+	"height": 427,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/hit-Layer-1", "bone": "root", "attachment": "game/hit-Layer-13" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"game/hit-Layer-1": {
+				"game/hit-Layer-1": { "x": -25.61, "y": -11.92, "width": 430, "height": 427 },
+				"game/hit-Layer-2": { "x": -25.61, "y": -11.92, "width": 430, "height": 427 },
+				"game/hit-Layer-3": { "x": -25.61, "y": -11.92, "width": 430, "height": 427 },
+				"game/hit-Layer-4": { "x": -25.61, "y": -11.92, "width": 430, "height": 427 },
+				"game/hit-Layer-5": { "x": -25.61, "y": -11.92, "width": 430, "height": 427 },
+				"game/hit-Layer-6": { "x": -25.61, "y": -11.92, "width": 430, "height": 427 },
+				"game/hit-Layer-7": { "x": -25.61, "y": -11.92, "width": 430, "height": 427 },
+				"game/hit-Layer-8": { "x": -25.61, "y": -11.92, "width": 430, "height": 427 },
+				"game/hit-Layer-9": { "x": -25.61, "y": -11.92, "width": 430, "height": 427 },
+				"game/hit-Layer-10": { "x": -25.61, "y": -11.92, "width": 430, "height": 427 },
+				"game/hit-Layer-11": { "x": -25.61, "y": -11.92, "width": 430, "height": 427 },
+				"game/hit-Layer-12": { "x": -25.61, "y": -11.92, "width": 430, "height": 427 },
+				"game/hit-Layer-13": { "x": -25.61, "y": -11.92, "width": 430, "height": 427 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"game/hit-Layer-1": {
+				"attachment": [
+					{ "name": "game/hit-Layer-1" },
+					{ "time": 0.0333, "name": "game/hit-Layer-2" },
+					{ "time": 0.0667, "name": "game/hit-Layer-3" },
+					{ "time": 0.1, "name": "game/hit-Layer-4" },
+					{ "time": 0.1333, "name": "game/hit-Layer-5" },
+					{ "time": 0.1667, "name": "game/hit-Layer-6" },
+					{ "time": 0.2, "name": "game/hit-Layer-7" },
+					{ "time": 0.2333, "name": "game/hit-Layer-8" },
+					{ "time": 0.2667, "name": "game/hit-Layer-9" },
+					{ "time": 0.3, "name": "game/hit-Layer-10" },
+					{ "time": 0.3333, "name": "game/hit-Layer-11" },
+					{ "time": 0.3667, "name": "game/hit-Layer-12" },
+					{ "time": 0.4, "name": "game/hit-Layer-13" },
+					{ "time": 0.4333, "name": null }
+				]
+			}
+		}
+	}
+}
+}

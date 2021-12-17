@@ -1,0 +1,130 @@
+{
+"skeleton": {
+	"hash": "fttAEThpxo8",
+	"spine": "4.0.55",
+	"x": -95.13,
+	"y": -152.09,
+	"width": 282.89,
+	"height": 396.24,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/bat-wing", "parent": "root", "length": 142.7, "rotation": 0.7, "x": -1.21, "y": 61.26 },
+	{ "name": "game/bat-wing2", "parent": "root", "length": 142.7, "rotation": 0.7, "x": 10.92, "y": 61.26 }
+],
+"slots": [
+	{ "name": "game/bat-wing2", "bone": "game/bat-wing2", "dark": "000000", "attachment": "game/bat-wing" },
+	{ "name": "game/bat-body", "bone": "root", "dark": "000000", "attachment": "game/bat-body" },
+	{ "name": "game/bat-head", "bone": "root", "dark": "000000", "attachment": "game/bat-head" },
+	{ "name": "game/bat-wing", "bone": "game/bat-wing", "dark": "000000", "attachment": "game/bat-wing" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -59.36, -106.11, -57.78, 234.74, 66.88, 234.74, 66.88, -106.11 ]
+				}
+			},
+			"game/bat-body": {
+				"game/bat-body": { "x": -9.88, "y": -0.56, "width": 115, "height": 245 }
+			},
+			"game/bat-head": {
+				"game/bat-head": { "x": -26.63, "y": 157.15, "width": 137, "height": 174 }
+			},
+			"game/bat-wing": {
+				"game/bat-wing": { "x": 83.94, "y": -33.37, "rotation": -0.7, "width": 185, "height": 362 }
+			},
+			"game/bat-wing2": {
+				"game/bat-wing": { "x": 84.12, "y": -18.35, "rotation": -0.7, "width": 185, "height": 362 }
+			}
+		}
+	}
+],
+"animations": {
+	"die": {
+		"slots": {
+			"game/bat-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/bat-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/bat-wing": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/bat-wing2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"fly": {
+		"bones": {
+			"game/bat-wing2": {
+				"scale": [
+					{},
+					{ "time": 0.1667, "x": 0.341 },
+					{ "time": 0.3 }
+				]
+			},
+			"game/bat-wing": {
+				"scale": [
+					{},
+					{ "time": 0.1667, "x": 0.261 },
+					{ "time": 0.3 }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"game/bat-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/bat-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/bat-wing": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/bat-wing2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	}
+}
+}

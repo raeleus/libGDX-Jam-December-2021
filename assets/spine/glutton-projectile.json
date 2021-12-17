@@ -1,0 +1,39 @@
+{
+"skeleton": {
+	"hash": "GJGWHuVP29g",
+	"spine": "4.0.55",
+	"x": -57.64,
+	"y": -33.4,
+	"width": 112.25,
+	"height": 66.42,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/glutton-projectile", "bone": "root", "attachment": "game/glutton-projectile" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -58.74, -31.86, -59.48, 31.87, 61.29, 31.87, 59.07, -32.6 ]
+				}
+			},
+			"game/glutton-projectile": {
+				"game/glutton-projectile": { "x": -1.51, "y": -0.18, "rotation": -179.78, "width": 112, "height": 66 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

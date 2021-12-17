@@ -1,0 +1,88 @@
+{
+"skeleton": {
+	"hash": "9nl4W3YF9qQ",
+	"spine": "4.0.55",
+	"x": -96.99,
+	"y": -3.49,
+	"width": 245.12,
+	"height": 176,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/toaster-lever", "parent": "root", "length": 74.56, "rotation": 2.01, "x": 112.87, "y": 117.19 }
+],
+"slots": [
+	{ "name": "game/toaster", "bone": "root", "dark": "000000", "attachment": "game/toaster" },
+	{ "name": "game/toaster-lever", "bone": "game/toaster-lever", "dark": "000000", "attachment": "game/toaster-lever" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -94.5, -0.6, -94.5, 172.28, 127.78, 172.28, 121.6, 1.87 ]
+				}
+			},
+			"game/toaster": {
+				"game/toaster": { "x": 13.51, "y": 84.51, "width": 221, "height": 176 }
+			},
+			"game/toaster-lever": {
+				"game/toaster-lever": { "x": 11.76, "y": -0.41, "rotation": -2.01, "width": 47, "height": 22 }
+			}
+		}
+	}
+],
+"animations": {
+	"die": {
+		"slots": {
+			"game/toaster": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.3333, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/toaster-lever": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.3333, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"game/toaster": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/toaster-lever": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"shoot": {
+		"bones": {
+			"game/toaster-lever": {
+				"translate": [
+					{},
+					{ "time": 0.5, "y": -52.29 },
+					{ "time": 0.6 }
+				]
+			}
+		}
+	}
+}
+}

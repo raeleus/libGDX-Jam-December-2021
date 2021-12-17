@@ -1,0 +1,1078 @@
+{
+"skeleton": {
+	"hash": "iqwFlMemZ/Q",
+	"spine": "4.0.55",
+	"x": -498.18,
+	"y": -27.08,
+	"width": 1424.7,
+	"height": 1376.33,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/zebra-hip", "parent": "root", "length": 277.42, "rotation": 1.41, "x": -0.07, "y": 517.41 },
+	{ "name": "game/zebra-body", "parent": "game/zebra-hip", "length": 415.06, "rotation": 91.18, "x": -19.45, "y": 41.41 },
+	{ "name": "game/zebra-leg-right", "parent": "game/zebra-hip", "length": 230.54, "rotation": -67.32, "x": 30.55, "y": -3.19 },
+	{ "name": "game/zebra-foreleg-right", "parent": "game/zebra-leg-right", "length": 202.6, "rotation": -24.83, "x": 210.54, "y": 5.63 },
+	{ "name": "game/zebra-foot-right", "parent": "game/zebra-foreleg-right", "length": 149.48, "rotation": -1.21, "x": 198.53, "y": 12.17 },
+	{ "name": "game/zebra-leg-left", "parent": "game/zebra-hip", "length": 233.29, "rotation": -110.01, "x": -33.27, "y": -14.44 },
+	{ "name": "game/zebra-foreleg-left", "parent": "game/zebra-leg-left", "length": 137.87, "rotation": 13.47, "x": 219.1, "y": 3.52 },
+	{ "name": "game/zebra-foot-left", "parent": "game/zebra-foreleg-left", "length": 214.06, "rotation": -50.23, "x": 144.32, "y": 1.06 },
+	{ "name": "game/zebra-body3", "parent": "game/zebra-body", "length": 154.73, "rotation": -136.4, "x": 306.14, "y": -124.51 },
+	{ "name": "game/zebra-forearm-right", "parent": "game/zebra-body3", "length": 170.08, "rotation": -69.34, "x": 129.07, "y": 8.3 },
+	{ "name": "game/zebra-hand-right", "parent": "game/zebra-forearm-right", "length": 136.25, "rotation": -22.31, "x": 171.35, "y": -5.24 },
+	{ "name": "game/zebra-arm-left", "parent": "game/zebra-body", "length": 228.99, "rotation": 163.96, "x": 353.45, "y": 81.58 },
+	{ "name": "game/zebra-forearm-left", "parent": "game/zebra-arm-left", "length": 127.45, "rotation": -81.09, "x": 212.95, "y": -6.55 },
+	{ "name": "game/zebra-hand-left", "parent": "game/zebra-forearm-left", "length": 175.71, "rotation": -1.46, "x": 127.21, "y": -2.61 },
+	{ "name": "game/zebra-head", "parent": "game/zebra-body", "length": 375.79, "rotation": 6.02, "x": 415.26, "y": -57.41 },
+	{ "name": "game/zebra-tail", "parent": "game/zebra-hip", "length": 36.75, "rotation": -4.25, "x": 21.18, "y": 54.74 },
+	{ "name": "game/zebra-tail2", "parent": "game/zebra-tail", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-tail3", "parent": "game/zebra-tail2", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-tail4", "parent": "game/zebra-tail3", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-tail5", "parent": "game/zebra-tail4", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-tail6", "parent": "game/zebra-tail5", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-tail7", "parent": "game/zebra-tail6", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-tail8", "parent": "game/zebra-tail7", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-tail9", "parent": "game/zebra-tail8", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-tail10", "parent": "game/zebra-tail9", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-tail11", "parent": "game/zebra-tail10", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-tail12", "parent": "game/zebra-tail11", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-tail13", "parent": "game/zebra-tail12", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-tail14", "parent": "game/zebra-tail13", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-tail15", "parent": "game/zebra-tail14", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-tail16", "parent": "game/zebra-tail15", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-tail17", "parent": "game/zebra-tail16", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-tail18", "parent": "game/zebra-tail17", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-tail19", "parent": "game/zebra-tail18", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-tail20", "parent": "game/zebra-tail19", "length": 36.75, "x": 36.75 },
+	{ "name": "game/zebra-thruster", "parent": "game/zebra-body", "length": 688.88, "rotation": 176.76, "x": 128.05, "y": -93.67 }
+],
+"slots": [
+	{ "name": "game/zebra-thruster", "bone": "game/zebra-thruster", "dark": "000000" },
+	{ "name": "game/zebra-jetpack", "bone": "game/zebra-body", "dark": "000000", "attachment": "game/zebra-jetpack" },
+	{ "name": "game/zebra-tail", "bone": "game/zebra-tail", "dark": "000000", "attachment": "game/zebra-tail" },
+	{ "name": "game/zebra-tail-hair", "bone": "game/zebra-tail20", "dark": "000000", "attachment": "game/zebra-tail-hair" },
+	{ "name": "game/zebra-hand-left", "bone": "game/zebra-hand-left", "dark": "000000", "attachment": "game/zebra-hand-left" },
+	{ "name": "game/zebra-foreleg-left", "bone": "game/zebra-foreleg-left", "dark": "000000", "attachment": "game/zebra-foreleg-left" },
+	{ "name": "game/zebra-foot-left", "bone": "game/zebra-foot-left", "dark": "000000", "attachment": "game/zebra-foot-left" },
+	{ "name": "game/zebra-foreleg-right", "bone": "game/zebra-foreleg-right", "dark": "000000", "attachment": "game/zebra-foreleg-right" },
+	{ "name": "game/zebra-foot-right", "bone": "game/zebra-foot-right", "dark": "000000", "attachment": "game/zebra-foot-right" },
+	{ "name": "game/zebra-leg-left", "bone": "game/zebra-leg-left", "dark": "000000", "attachment": "game/zebra-leg-left" },
+	{ "name": "game/zebra-leg-right", "bone": "game/zebra-leg-right", "dark": "000000", "attachment": "game/zebra-leg-right" },
+	{ "name": "game/zebra-forearm-left", "bone": "game/zebra-forearm-left", "dark": "000000", "attachment": "game/zebra-forearm-left" },
+	{ "name": "game/zebra-arm-left", "bone": "game/zebra-arm-left", "dark": "000000", "attachment": "game/zebra-arm-left" },
+	{ "name": "game/zebra-forearm-left-front", "bone": "game/zebra-forearm-left", "dark": "000000", "attachment": "game/zebra-forearm-left-front" },
+	{ "name": "pauldron-left", "bone": "game/zebra-body", "dark": "000000", "attachment": "game/zebra-pauldron" },
+	{ "name": "game/zebra-hair", "bone": "game/zebra-head", "dark": "000000", "attachment": "game/zebra-hair" },
+	{ "name": "game/zebra-neck", "bone": "game/zebra-body", "dark": "000000", "attachment": "game/zebra-neck" },
+	{ "name": "game/zebra-body", "bone": "game/zebra-body", "dark": "000000", "attachment": "game/zebra-body" },
+	{ "name": "game/zebra-hip", "bone": "game/zebra-hip", "dark": "000000", "attachment": "game/zebra-hip" },
+	{ "name": "game/zebra-forearm-right", "bone": "game/zebra-forearm-right", "dark": "000000", "attachment": "game/zebra-forearm-right" },
+	{ "name": "game/zebra-hand-right", "bone": "game/zebra-hand-right", "dark": "000000", "attachment": "game/zebra-hand-right" },
+	{ "name": "game/zebra-head", "bone": "game/zebra-head", "dark": "000000", "attachment": "game/zebra-head" },
+	{ "name": "game/zebra-mouth", "bone": "game/zebra-head", "dark": "000000", "attachment": "game/zebra-mouth" },
+	{ "name": "arm-right", "bone": "game/zebra-body3", "dark": "000000", "attachment": "game/zebra-arm-left_1" },
+	{ "name": "pauldron-right", "bone": "game/zebra-body", "dark": "000000", "attachment": "game/zebra-pauldron" },
+	{ "name": "tail-path", "bone": "game/zebra-hip", "dark": "000000", "attachment": "tail-path" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"path": [
+	{
+		"name": "tail-path",
+		"bones": [ "game/zebra-tail", "game/zebra-tail2", "game/zebra-tail3", "game/zebra-tail4", "game/zebra-tail5", "game/zebra-tail6", "game/zebra-tail7", "game/zebra-tail8", "game/zebra-tail9", "game/zebra-tail11", "game/zebra-tail10", "game/zebra-tail12", "game/zebra-tail13", "game/zebra-tail14", "game/zebra-tail15", "game/zebra-tail16", "game/zebra-tail17", "game/zebra-tail18", "game/zebra-tail19", "game/zebra-tail20" ],
+		"target": "tail-path"
+	}
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"arm-right": {
+				"game/zebra-arm-left_1": { "x": 62.2, "y": -2.26, "rotation": -3.88, "width": 200, "height": 87 }
+			},
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -153.59, 3.13, -160.22, 1330.33, 151.67, 1340.29, 191.49, -3.5 ]
+				}
+			},
+			"game/zebra-arm-left": {
+				"game/zebra-arm-left": { "x": 102.17, "y": 3.47, "rotation": 179.02, "width": 268, "height": 93 }
+			},
+			"game/zebra-body": {
+				"game/zebra-body": { "x": 200.51, "y": -5.93, "rotation": -92.59, "width": 271, "height": 449 }
+			},
+			"game/zebra-foot-left": {
+				"game/zebra-foot-left": { "x": 131.07, "y": 1.37, "rotation": 149.52, "width": 268, "height": 183 }
+			},
+			"game/zebra-foot-right": {
+				"game/zebra-foot-right": { "x": 51.9, "y": -15.54, "rotation": 94.47, "width": 162, "height": 194 }
+			},
+			"game/zebra-forearm-left": {
+				"game/zebra-forearm-left": { "x": 54.96, "y": 4.29, "rotation": 174.7, "width": 152, "height": 87 }
+			},
+			"game/zebra-forearm-left-front": {
+				"game/zebra-forearm-left-front": { "x": 54.96, "y": 4.29, "rotation": 174.7, "width": 152, "height": 87 }
+			},
+			"game/zebra-forearm-right": {
+				"game/zebra-forearm-right": { "x": 69.69, "y": 3.35, "rotation": -0.44, "width": 210, "height": 86 }
+			},
+			"game/zebra-foreleg-left": {
+				"game/zebra-foreleg-left": { "x": 51.6, "y": -7.35, "rotation": 99.28, "width": 96, "height": 195 }
+			},
+			"game/zebra-foreleg-right": {
+				"game/zebra-foreleg-right": { "x": 93.51, "y": 11.08, "rotation": 90.66, "width": 130, "height": 246 }
+			},
+			"game/zebra-hair": {
+				"game/zebra-hair": { "x": 175.69, "y": -5.22, "rotation": -98.61, "width": 313, "height": 398 }
+			},
+			"game/zebra-hand-left": {
+				"game/zebra-hand-left": { "x": 78.72, "y": 2.25, "rotation": 176.16, "width": 208, "height": 195 }
+			},
+			"game/zebra-hand-right": {
+				"game/zebra-hand-right": { "x": 51.15, "y": 6.14, "rotation": 101.63, "width": 219, "height": 194 }
+			},
+			"game/zebra-head": {
+				"game/zebra-head": { "x": 158.79, "y": 29.96, "rotation": -98.61, "width": 282, "height": 319 }
+			},
+			"game/zebra-hip": {
+				"game/zebra-hip": { "x": 11.82, "y": 9.63, "rotation": -1.41, "width": 199, "height": 131 }
+			},
+			"game/zebra-jetpack": {
+				"game/zebra-jetpack": { "x": 234.07, "y": -107.22, "rotation": -92.59, "width": 113, "height": 302 }
+			},
+			"game/zebra-leg-left": {
+				"game/zebra-leg-left": { "x": 112.97, "y": -7.15, "rotation": 102.63, "width": 146, "height": 268 }
+			},
+			"game/zebra-leg-right": {
+				"game/zebra-leg-right": { "x": 106.25, "y": -4.1, "rotation": 90.58, "width": 151, "height": 265 }
+			},
+			"game/zebra-mouth": {
+				"game/zebra-mouth": { "x": 78.45, "y": 127.94, "rotation": -98.61, "width": 164, "height": 194 },
+				"game/zebra-mouth-open": { "x": 58.68, "y": 131.04, "rotation": -98.61, "width": 164, "height": 232 }
+			},
+			"game/zebra-neck": {
+				"game/zebra-neck": { "x": 427.32, "y": -51.41, "rotation": -92.59, "width": 149, "height": 126 }
+			},
+			"game/zebra-tail": {
+				"game/zebra-tail": {
+					"type": "mesh",
+					"uvs": [ 0.09463, 1, 0.06284, 0.96516, 0.03503, 0.88561, 0.01583, 0.7724, 0.00391, 0.65613, 0, 0.54292, 6.0E-4, 0.41135, 0.01384, 0.2706, 0.02841, 0.14209, 0.05291, 0.04112, 0.08205, 0, 0.11251, 0, 0.14231, 0.0156, 0.17939, 0.035, 0.23063, 0.06673, 0.29856, 0.10879, 0.30786, 0.11456, 0.36142, 0.14852, 0.42218, 0.18705, 0.48278, 0.22548, 0.52943, 0.25507, 0.57786, 0.28579, 0.64523, 0.32851, 0.68653, 0.3547, 0.71313, 0.37157, 0.72986, 0.38268, 0.76471, 0.40583, 0.8003, 0.42948, 0.83062, 0.44961, 0.86223, 0.47061, 0.88938, 0.48865, 0.9146, 0.5054, 0.95094, 0.52954, 0.96648, 0.53986, 0.98833, 0.58881, 1, 0.67143, 1, 0.7571, 0.9923, 0.79993, 0.97906, 0.83053, 0.95522, 0.84583, 0.93726, 0.84936, 0.89206, 0.85825, 0.86571, 0.86343, 0.82877, 0.87069, 0.79636, 0.87707, 0.76495, 0.88324, 0.72882, 0.89035, 0.7004, 0.89594, 0.65387, 0.90508, 0.59867, 0.91594, 0.56843, 0.92188, 0.55064, 0.92538, 0.51954, 0.93113, 0.46855, 0.94055, 0.40836, 0.95168, 0.35804, 0.96098, 0.2792, 0.97555, 0.25265, 0.98046, 0.23003, 0.98381, 0.148, 0.99598, 0.12087, 1 ],
+					"triangles": [ 39, 33, 38, 37, 38, 35, 38, 33, 34, 36, 37, 35, 35, 38, 34, 41, 31, 40, 40, 32, 39, 40, 31, 32, 39, 32, 33, 42, 30, 41, 42, 29, 30, 41, 30, 31, 43, 44, 28, 43, 29, 42, 43, 28, 29, 44, 45, 27, 27, 45, 26, 28, 44, 27, 46, 47, 25, 46, 26, 45, 46, 25, 26, 48, 23, 47, 47, 23, 24, 25, 47, 24, 49, 22, 48, 48, 22, 23, 50, 21, 49, 49, 21, 22, 52, 20, 51, 50, 51, 21, 21, 51, 20, 53, 19, 52, 52, 19, 20, 54, 18, 53, 53, 18, 19, 54, 17, 18, 55, 17, 54, 55, 16, 17, 56, 16, 55, 56, 15, 16, 56, 57, 15, 15, 57, 14, 58, 14, 57, 58, 13, 14, 59, 60, 12, 59, 13, 58, 59, 12, 13, 12, 60, 11, 0, 1, 11, 60, 0, 11, 10, 11, 2, 11, 1, 2, 8, 9, 10, 7, 10, 2, 8, 10, 7, 3, 5, 7, 2, 3, 7, 3, 4, 5, 7, 5, 6 ],
+					"vertices": [ 5, 16, 39.65, -82.5, 0.44378, 17, 2.9, -82.5, 0.2967, 18, -33.85, -82.5, 0.23381, 19, -70.6, -82.5, 0.02466, 20, -107.35, -82.5, 0.00105, 4, 16, 15.02, -77.93, 0.65213, 17, -21.73, -77.93, 0.21673, 18, -58.48, -77.93, 0.12676, 19, -95.23, -77.93, 0.00438, 4, 16, -6.94, -65.8, 0.82469, 17, -43.69, -65.8, 0.11739, 18, -80.44, -65.8, 0.05788, 19, -117.19, -65.8, 4.0E-5, 3, 16, -22.59, -47.76, 0.94211, 17, -59.34, -47.76, 0.03883, 18, -96.09, -47.76, 0.01906, 3, 16, -32.67, -28.93, 0.99211, 17, -69.42, -28.93, 0.00453, 18, -106.17, -28.93, 0.00336, 1, 16, -36.6, -10.31, 1, 1, 16, -37.22, 11.52, 1, 2, 16, -28.24, 35.36, 0.97686, 17, -64.99, 35.36, 0.02314, 3, 16, -18.13, 57.22, 0.89934, 17, -54.88, 57.22, 0.09535, 18, -91.63, 57.22, 0.0053, 4, 16, -0.19, 74.9, 0.77001, 17, -36.94, 74.9, 0.19908, 18, -73.69, 74.9, 0.0274, 19, -110.44, 74.9, 0.00351, 5, 16, 21.79, 82.82, 0.60864, 17, -14.96, 82.82, 0.30296, 18, -51.71, 82.82, 0.07177, 19, -88.46, 82.82, 0.01662, 20, -125.21, 82.82, 1.0E-5, 5, 16, 45.12, 83.98, 0.40971, 17, 8.37, 83.98, 0.38433, 18, -28.38, 83.98, 0.15211, 19, -65.13, 83.98, 0.05085, 20, -101.88, 83.98, 0.003, 6, 16, 68.08, 82.53, 0.21618, 17, 31.33, 82.53, 0.38239, 18, -5.42, 82.53, 0.25906, 19, -42.17, 82.53, 0.12361, 20, -78.92, 82.53, 0.01849, 21, -115.67, 82.53, 2.8E-4, 6, 16, 96.65, 80.72, 0.06098, 17, 59.9, 80.72, 0.25279, 18, 23.15, 80.72, 0.32919, 19, -13.6, 80.72, 0.26936, 20, -50.35, 80.72, 0.07859, 21, -87.1, 80.72, 0.00909, 7, 16, 136.16, 77.4, 0.00199, 17, 99.41, 77.4, 0.06989, 18, 62.66, 77.4, 0.1786, 19, 25.91, 77.4, 0.37653, 20, -10.84, 77.4, 0.28216, 21, -47.59, 77.4, 0.08699, 22, -84.34, 77.4, 0.00384, 7, 17, 151.79, 73.01, 0.0024, 18, 115.04, 73.01, 0.0144, 19, 78.29, 73.01, 0.10662, 20, 41.54, 73.01, 0.33996, 21, 4.79, 73.01, 0.39139, 22, -31.96, 73.01, 0.12575, 23, -68.71, 73.01, 0.01948, 8, 17, 158.97, 72.41, 9.5E-4, 18, 122.22, 72.41, 0.00803, 19, 85.47, 72.41, 0.07684, 20, 48.72, 72.41, 0.29645, 21, 11.97, 72.41, 0.41989, 22, -24.78, 72.41, 0.16646, 23, -61.53, 72.41, 0.03111, 24, -98.28, 72.41, 2.7E-4, 7, 19, 126.78, 68.82, 0.0041, 20, 90.03, 68.82, 0.0639, 21, 53.28, 68.82, 0.26985, 22, 16.53, 68.82, 0.41562, 23, -20.22, 68.82, 0.2102, 24, -56.97, 68.82, 0.03617, 25, -93.72, 68.82, 1.6E-4, 7, 20, 136.88, 64.74, 7.9E-4, 21, 100.13, 64.74, 0.0306, 22, 63.39, 64.74, 0.18779, 23, 26.64, 64.74, 0.41378, 24, -10.11, 64.74, 0.30994, 25, -46.86, 64.74, 0.05687, 26, -83.61, 64.74, 2.3E-4, 6, 22, 110.12, 60.67, 0.01068, 23, 73.37, 60.67, 0.09356, 24, 36.62, 60.67, 0.41887, 25, -0.13, 60.67, 0.40043, 26, -36.88, 60.67, 0.07461, 27, -73.63, 60.67, 0.00185, 6, 23, 109.36, 57.54, 0.00392, 24, 72.61, 57.54, 0.11249, 25, 35.86, 57.54, 0.44838, 26, -0.89, 57.54, 0.35857, 27, -37.64, 57.54, 0.07636, 28, -74.39, 57.54, 2.8E-4, 5, 24, 109.96, 54.28, 0.00463, 25, 73.21, 54.28, 0.10726, 26, 36.46, 54.28, 0.39812, 27, -0.29, 54.28, 0.42687, 28, -37.04, 54.28, 0.06312, 5, 26, 88.42, 49.76, 0.01698, 27, 51.67, 49.76, 0.27092, 28, 14.92, 49.76, 0.57556, 29, -21.83, 49.76, 0.13275, 30, -58.58, 49.76, 0.0038, 4, 27, 83.53, 46.99, 0.02974, 28, 46.78, 46.99, 0.34954, 29, 10.03, 46.99, 0.50012, 30, -26.72, 46.99, 0.1206, 5, 27, 104.04, 45.2, 0.00145, 28, 67.29, 45.2, 0.10821, 29, 30.54, 45.2, 0.51394, 30, -6.21, 45.2, 0.3613, 31, -42.96, 45.2, 0.0151, 4, 28, 80.2, 44, 0.03592, 29, 43.45, 44, 0.35869, 30, 6.7, 44, 0.54142, 31, -30.05, 44, 0.06397, 5, 28, 107.09, 41.48, 4.0E-5, 29, 70.34, 41.48, 0.06374, 30, 33.59, 41.48, 0.52274, 31, -3.16, 41.48, 0.39627, 32, -39.91, 41.48, 0.01721, 5, 29, 97.8, 38.92, 5.4E-4, 30, 61.05, 38.92, 0.11367, 31, 24.3, 38.92, 0.633, 32, -12.45, 38.92, 0.25209, 33, -49.2, 38.92, 7.0E-4, 4, 30, 84.44, 36.73, 0.0048, 31, 47.69, 36.73, 0.26289, 32, 10.94, 36.73, 0.66249, 33, -25.81, 36.73, 0.06981, 4, 31, 72.07, 34.45, 0.01798, 32, 35.32, 34.45, 0.51211, 33, -1.43, 34.45, 0.4684, 34, -38.18, 34.45, 0.00151, 3, 32, 56.28, 32.49, 0.11273, 33, 19.53, 32.49, 0.77661, 34, -17.22, 32.49, 0.11067, 4, 32, 75.73, 30.67, 0.00281, 33, 38.98, 30.67, 0.46987, 34, 2.23, 30.67, 0.5233, 35, -34.52, 30.67, 0.00401, 3, 33, 67.02, 28.05, 0.025, 34, 30.27, 28.05, 0.69772, 35, -6.48, 28.05, 0.27727, 2, 34, 42.26, 26.93, 0.39449, 35, 5.51, 26.93, 0.60551, 2, 34, 59.4, 19.65, 0.03516, 35, 22.65, 19.65, 0.96484, 1, 35, 32.27, 6.39, 1, 1, 35, 32.97, -7.81, 1, 1, 35, 27.43, -15.21, 1, 2, 34, 54.29, -20.78, 0.07533, 35, 17.54, -20.78, 0.92467, 3, 33, 72.9, -24.22, 0.00517, 34, 36.15, -24.22, 0.53397, 35, -0.6, -24.23, 0.46086, 3, 33, 59.17, -25.49, 0.0805, 34, 22.42, -25.49, 0.79897, 35, -14.33, -25.49, 0.12053, 3, 32, 61.37, -28.68, 0.04636, 33, 24.62, -28.68, 0.81582, 34, -12.13, -28.68, 0.13782, 4, 31, 77.97, -30.55, 3.0E-4, 32, 41.22, -30.55, 0.37942, 33, 4.47, -30.55, 0.61928, 34, -32.28, -30.55, 0.001, 4, 30, 86.49, -33.15, 0.00136, 31, 49.74, -33.15, 0.20037, 32, 12.99, -33.15, 0.71971, 33, -23.76, -33.15, 0.07856, 5, 29, 98.46, -35.44, 8.0E-5, 30, 61.71, -35.44, 0.09832, 31, 24.96, -35.44, 0.65798, 32, -11.79, -35.44, 0.24328, 33, -48.54, -35.44, 3.3E-4, 4, 29, 74.45, -37.66, 0.03761, 30, 37.7, -37.66, 0.48122, 31, 0.95, -37.66, 0.46335, 32, -35.8, -37.66, 0.01782, 4, 28, 83.58, -40.21, 0.01467, 29, 46.83, -40.21, 0.33457, 30, 10.08, -40.21, 0.58508, 31, -26.67, -40.21, 0.06568, 5, 27, 98.6, -42.22, 0.00187, 28, 61.85, -42.22, 0.14591, 29, 25.1, -42.22, 0.5947, 30, -11.65, -42.22, 0.25548, 31, -48.4, -42.22, 0.00204, 5, 26, 99.79, -45.5, 0.00136, 27, 63.04, -45.5, 0.12897, 28, 26.29, -45.5, 0.61186, 29, -10.46, -45.5, 0.24805, 30, -47.21, -45.5, 0.00976, 5, 25, 94.34, -49.4, 0.01866, 26, 57.59, -49.4, 0.16667, 27, 20.84, -49.4, 0.55717, 28, -15.91, -49.4, 0.25362, 29, -52.66, -49.4, 0.00388, 5, 24, 107.97, -51.54, 0.00385, 25, 71.22, -51.54, 0.11516, 26, 34.47, -51.54, 0.40888, 27, -2.28, -51.54, 0.41022, 28, -39.03, -51.54, 0.06188, 5, 24, 94.37, -52.79, 0.0205, 25, 57.62, -52.79, 0.23392, 26, 20.87, -52.79, 0.47807, 27, -15.88, -52.79, 0.24952, 28, -52.63, -52.79, 0.01799, 6, 23, 107.34, -54.93, 0.00476, 24, 70.59, -54.93, 0.11789, 25, 33.84, -54.93, 0.48189, 26, -2.91, -54.93, 0.33041, 27, -39.65, -54.93, 0.06499, 28, -76.4, -54.93, 7.0E-5, 6, 22, 105.11, -58.43, 0.0136, 23, 68.36, -58.43, 0.13071, 24, 31.61, -58.43, 0.46028, 25, -5.14, -58.43, 0.35531, 26, -41.89, -58.43, 0.0397, 27, -78.64, -58.43, 4.1E-4, 6, 20, 132.59, -62.56, 2.9E-4, 21, 95.84, -62.56, 0.03486, 22, 59.09, -62.56, 0.22087, 23, 22.34, -62.56, 0.44343, 24, -14.41, -62.56, 0.26604, 25, -51.16, -62.56, 0.03451, 7, 19, 130.87, -66.02, 0.00469, 20, 94.12, -66.02, 0.03456, 21, 57.37, -66.02, 0.24383, 22, 20.62, -66.02, 0.44102, 23, -16.13, -66.02, 0.23588, 24, -52.88, -66.02, 0.03994, 25, -89.63, -66.02, 8.0E-5, 7, 17, 144.09, -71.43, 1.3E-4, 18, 107.34, -71.43, 0.03706, 19, 70.59, -71.43, 0.16279, 20, 33.84, -71.43, 0.33495, 21, -2.91, -71.43, 0.37135, 22, -39.66, -71.43, 0.08689, 23, -76.41, -71.43, 0.00684, 7, 17, 123.79, -73.25, 0.00428, 18, 87.04, -73.25, 0.10082, 19, 50.29, -73.25, 0.28348, 20, 13.54, -73.25, 0.36089, 21, -23.21, -73.25, 0.2231, 22, -59.96, -73.25, 0.0271, 23, -96.71, -73.25, 3.2E-4, 7, 16, 143.24, -74.67, 6.8E-4, 17, 106.49, -74.67, 0.0185, 18, 69.74, -74.67, 0.19311, 19, 32.99, -74.67, 0.36315, 20, -3.76, -74.67, 0.29772, 21, -40.51, -74.67, 0.12024, 22, -77.26, -74.67, 0.00661, 6, 16, 80.5, -79.8, 0.1338, 17, 43.75, -79.8, 0.24493, 18, 7, -79.8, 0.43944, 19, -29.75, -79.8, 0.14865, 20, -66.5, -79.8, 0.03152, 21, -103.24, -79.8, 0.00166, 5, 16, 59.75, -81.5, 0.27608, 17, 23, -81.5, 0.30866, 18, -13.75, -81.5, 0.34197, 19, -50.5, -81.5, 0.06525, 20, -87.25, -81.5, 0.00804 ],
+					"hull": 61,
+					"edges": [ 0, 2, 2, 4, 4, 6, 6, 8, 8, 10, 10, 12, 12, 14, 14, 16, 16, 18, 18, 20, 20, 22, 66, 68, 68, 70, 70, 72, 72, 74, 74, 76, 76, 78, 0, 120, 22, 24, 24, 26, 118, 120, 24, 118, 30, 32, 112, 114, 30, 112, 32, 34, 110, 112, 34, 110, 38, 106, 38, 40, 102, 104, 104, 106, 40, 104, 44, 98, 44, 46, 46, 48, 96, 98, 46, 96, 52, 92, 52, 54, 90, 92, 54, 90, 58, 86, 58, 60, 84, 86, 60, 84, 64, 66, 78, 80, 64, 80, 34, 36, 36, 38, 106, 108, 108, 110, 36, 108, 40, 42, 42, 44, 98, 100, 100, 102, 42, 100, 48, 50, 50, 52, 92, 94, 94, 96, 50, 94, 54, 56, 56, 58, 86, 88, 88, 90, 56, 88, 60, 62, 62, 64, 80, 82, 82, 84, 62, 82, 26, 28, 28, 30, 114, 116, 116, 118, 28, 116 ],
+					"width": 767,
+					"height": 166
+				}
+			},
+			"game/zebra-tail-hair": {
+				"game/zebra-tail-hair": { "x": 90.78, "y": 20.18, "rotation": 2.84, "width": 220, "height": 155 }
+			},
+			"game/zebra-thruster": {
+				"game/zebra-thruster": { "x": 342.04, "y": -5.01, "rotation": 90.64, "width": 410, "height": 741 }
+			},
+			"pauldron-left": {
+				"game/zebra-pauldron": { "x": 431.88, "y": 68.46, "scaleX": -1, "rotation": -92.59, "width": 254, "height": 220 }
+			},
+			"pauldron-right": {
+				"game/zebra-pauldron": { "x": 415.37, "y": -185.85, "rotation": -92.59, "width": 254, "height": 220 }
+			},
+			"tail-path": {
+				"tail-path": {
+					"type": "path",
+					"lengths": [ 735.4, 1470.8 ],
+					"vertexCount": 6,
+					"vertices": [ -192.51, 66.01, 27.62, 51.31, 247.75, 36.61, 541.26, 17.02, 761.39, 2.32, 981.52, -12.38 ]
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"die": {
+		"slots": {
+			"arm-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-arm-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-foot-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-foot-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-forearm-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-forearm-left-front": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-forearm-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-foreleg-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-foreleg-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-hair": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-hand-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-hand-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-hip": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-jetpack": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-leg-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-leg-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-mouth": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-neck": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-tail": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-tail-hair": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/zebra-thruster": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"pauldron-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"pauldron-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"tail-path": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.2667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.3667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.7667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 1.6667, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"fly": {
+		"slots": {
+			"game/zebra-thruster": {
+				"attachment": [
+					{ "name": "game/zebra-thruster" }
+				]
+			}
+		},
+		"bones": {
+			"game/zebra-thruster": {
+				"scale": [
+					{},
+					{ "time": 0.0667, "x": 1.136, "y": 0.887 },
+					{ "time": 0.1333 },
+					{ "time": 0.2, "x": 1.136, "y": 0.887 },
+					{ "time": 0.2667 },
+					{ "time": 0.3333, "x": 1.136, "y": 0.887 },
+					{ "time": 0.4 },
+					{ "time": 0.4667, "x": 1.136, "y": 0.887 },
+					{ "time": 0.5333 },
+					{ "time": 0.6, "x": 1.136, "y": 0.887 },
+					{ "time": 0.6667 },
+					{ "time": 0.7333, "x": 1.136, "y": 0.887 },
+					{ "time": 0.8 },
+					{ "time": 0.8667, "x": 1.136, "y": 0.887 },
+					{ "time": 0.9333 },
+					{ "time": 1, "x": 1.136, "y": 0.887 },
+					{ "time": 1.0667 },
+					{ "time": 1.1667, "x": 1.136, "y": 0.887 },
+					{ "time": 1.2333 }
+				]
+			},
+			"game/zebra-leg-left": {
+				"rotate": [
+					{ "value": -58.45 },
+					{ "time": 0.3, "value": -51.13 },
+					{ "time": 0.6, "value": -58.45 },
+					{ "time": 0.9333, "value": -51.13 },
+					{ "time": 1.2333, "value": -58.45 }
+				]
+			},
+			"game/zebra-foreleg-left": {
+				"rotate": [
+					{ "value": 88.89 },
+					{ "time": 0.3, "value": 101.19 },
+					{ "time": 0.6, "value": 88.89 },
+					{ "time": 0.9333, "value": 101.19 },
+					{ "time": 1.2333, "value": 88.89 }
+				]
+			},
+			"game/zebra-leg-right": {
+				"rotate": [
+					{ "value": 44.74 },
+					{ "time": 0.3, "value": 50.28 },
+					{ "time": 0.6, "value": 44.74 },
+					{ "time": 0.9, "value": 50.28 },
+					{ "time": 1.2333, "value": 44.74 }
+				]
+			},
+			"game/zebra-foreleg-right": {
+				"rotate": [
+					{ "value": -62.95 },
+					{ "time": 0.3, "value": -53.89 },
+					{ "time": 0.6, "value": -62.95 },
+					{ "time": 0.9, "value": -53.89 },
+					{ "time": 1.2333, "value": -62.95 }
+				]
+			},
+			"game/zebra-arm-left": {
+				"rotate": [
+					{ "value": 6.28 },
+					{ "time": 0.3, "value": 13.24 },
+					{ "time": 0.6, "value": 6.28 },
+					{ "time": 0.9, "value": 13.24 },
+					{ "time": 1.2333, "value": 6.28 }
+				]
+			},
+			"game/zebra-forearm-left": {
+				"rotate": [
+					{ "value": -21.04 },
+					{ "time": 0.3, "value": -28.93 },
+					{ "time": 0.6, "value": -21.04 },
+					{ "time": 0.9, "value": -28.93 },
+					{ "time": 1.2333, "value": -21.04 }
+				]
+			},
+			"game/zebra-body3": {
+				"rotate": [
+					{ "value": 20.24 },
+					{ "time": 0.3, "value": 0.97 },
+					{ "time": 0.6333, "value": 20.24 },
+					{ "time": 0.9333, "value": 0.97 },
+					{ "time": 1.2333, "value": 20.24 }
+				]
+			},
+			"game/zebra-forearm-right": {
+				"rotate": [
+					{ "value": -21.01 },
+					{ "time": 0.3, "value": -10.64 },
+					{ "time": 0.6333, "value": -21.01 },
+					{ "time": 0.9333, "value": -10.64 },
+					{ "time": 1.2333, "value": -21.01 }
+				]
+			}
+		},
+		"deform": {
+			"default": {
+				"tail-path": {
+					"tail-path": [
+						{
+							"offset": 6,
+							"vertices": [ 55.18617, 58.36963, -54.11053, 228.28271, -146.03462, 422.52527 ]
+						},
+						{
+							"time": 0.6,
+							"offset": 6,
+							"vertices": [ -10.74502, 91.08316, -20.84187, -118.92938, -90.32399, -265.4069 ]
+						},
+						{
+							"time": 1.2333,
+							"offset": 6,
+							"vertices": [ 55.18617, 58.36963, -54.11053, 228.28271, -146.03462, 422.52527 ]
+						}
+					]
+				}
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"arm-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-arm-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-foot-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-foot-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-forearm-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-forearm-left-front": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-forearm-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-foreleg-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-foreleg-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-hair": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-hand-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-hand-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-hip": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-jetpack": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-leg-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-leg-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-mouth": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-neck": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-tail": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-tail-hair": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/zebra-thruster": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"pauldron-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"pauldron-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"tail-path": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"shoot": {
+		"slots": {
+			"game/zebra-mouth": {
+				"attachment": [
+					{ "time": 0.1333, "name": "game/zebra-mouth-open" },
+					{ "time": 0.3333, "name": "game/zebra-mouth" },
+					{ "time": 0.6, "name": "game/zebra-mouth-open" },
+					{ "time": 0.8333, "name": "game/zebra-mouth" }
+				]
+			}
+		},
+		"bones": {
+			"game/zebra-head": {
+				"rotate": [
+					{},
+					{ "time": 0.1333, "value": -29.46, "curve": "stepped" },
+					{ "time": 0.8333, "value": -29.46 },
+					{ "time": 0.9667 }
+				]
+			},
+			"game/zebra-body": {
+				"rotate": [
+					{},
+					{ "time": 0.1333, "value": 32.89, "curve": "stepped" },
+					{ "time": 0.8333, "value": 32.89 },
+					{ "time": 0.9667 }
+				]
+			},
+			"game/zebra-arm-left": {
+				"rotate": [
+					{},
+					{ "time": 0.1333, "value": 21.7, "curve": "stepped" },
+					{ "time": 0.8333, "value": 21.7 },
+					{ "time": 0.9667 }
+				]
+			},
+			"game/zebra-forearm-left": {
+				"rotate": [
+					{},
+					{ "time": 0.1333, "value": 72.99, "curve": "stepped" },
+					{ "time": 0.8333, "value": 72.99 },
+					{ "time": 0.9667 }
+				]
+			},
+			"game/zebra-body3": {
+				"rotate": [
+					{},
+					{ "time": 0.1333, "value": -15.95, "curve": "stepped" },
+					{ "time": 0.8333, "value": -15.95 },
+					{ "time": 0.9667 }
+				]
+			},
+			"game/zebra-forearm-right": {
+				"rotate": [
+					{},
+					{ "time": 0.1333, "value": 61.22, "curve": "stepped" },
+					{ "time": 0.8333, "value": 61.22 },
+					{ "time": 0.9667 }
+				]
+			}
+		}
+	},
+	"stand": {
+		"bones": {
+			"game/zebra-hip": {
+				"translate": [
+					{},
+					{ "time": 0.1, "y": -18.13 },
+					{ "time": 0.2, "y": -49.6 },
+					{ "time": 0.3, "y": -88.69 },
+					{ "time": 0.4, "y": -49.6 },
+					{ "time": 0.5, "y": -18.13 },
+					{ "time": 0.6 },
+					{ "time": 0.7, "y": -18.13 },
+					{ "time": 0.8, "y": -49.6 },
+					{ "time": 0.9, "y": -88.69 },
+					{ "time": 1, "y": -49.6 },
+					{ "time": 1.1, "y": -18.13 },
+					{ "time": 1.2 }
+				]
+			},
+			"game/zebra-leg-left": {
+				"rotate": [
+					{},
+					{ "time": 0.3, "value": -29.22 },
+					{ "time": 0.6 },
+					{ "time": 0.9, "value": -29.22 },
+					{ "time": 1.2 }
+				]
+			},
+			"game/zebra-foreleg-left": {
+				"rotate": [
+					{},
+					{ "time": 0.3, "value": 71.37 },
+					{ "time": 0.6 },
+					{ "time": 0.9, "value": 71.37 },
+					{ "time": 1.2 }
+				]
+			},
+			"game/zebra-foot-left": {
+				"rotate": [
+					{},
+					{ "time": 0.3, "value": -43.27 },
+					{ "time": 0.6 },
+					{ "time": 0.9, "value": -43.27 },
+					{ "time": 1.2 }
+				]
+			},
+			"game/zebra-leg-right": {
+				"rotate": [
+					{},
+					{ "time": 0.3, "value": 31.01 },
+					{ "time": 0.6 },
+					{ "time": 0.9, "value": 31.01 },
+					{ "time": 1.2 }
+				]
+			},
+			"game/zebra-foreleg-right": {
+				"rotate": [
+					{},
+					{ "time": 0.3, "value": -56.4 },
+					{ "time": 0.6 },
+					{ "time": 0.9, "value": -56.4 },
+					{ "time": 1.2 }
+				]
+			},
+			"game/zebra-foot-right": {
+				"rotate": [
+					{},
+					{ "time": 0.3, "value": 25.08 },
+					{ "time": 0.6 },
+					{ "time": 0.9, "value": 25.08 },
+					{ "time": 1.2 }
+				]
+			}
+		},
+		"deform": {
+			"default": {
+				"tail-path": {
+					"tail-path": [
+						{
+							"vertices": [ 0.92298, -39.62634, 0, 0, 197.52185, 62.19476, -66.08147, -198.15332, -455.20886, -316.3105, -848.4299, -438.40692 ]
+						},
+						{
+							"time": 0.2,
+							"vertices": [ 6.22529, -67.49393, 0, 0, 63.97809, 84.82187, 36.3554, 61.08682, -117.30377, -24.82693, -234.65405, -165.6979 ]
+						},
+						{
+							"time": 0.4,
+							"vertices": [ 7.00516, 35.62925, 0, 0, 40.11163, -46.75499, -41.86122, 13.37347, -67.31847, 107.07898, -235.93504, 142.68289 ]
+						},
+						{
+							"time": 0.5333,
+							"vertices": [ 2.01544, 0.65522, 0, 0, 388.52823, -0.73652, 178.60123, 338.78632, -36.53874, 409.43338, -371.34357, 496.28186 ]
+						},
+						{
+							"time": 0.6667,
+							"vertices": [ 2.01544, 0.65522, 0, 0, 388.52823, -0.73652, 109.47299, 317.6173, -105.66698, 388.26437, -440.4718, 475.11285 ]
+						},
+						{
+							"time": 0.8,
+							"vertices": [ 7.00516, 35.62925, 0, 0, 40.11163, -46.75499, -41.86122, 13.37347, -67.31847, 107.07898, -235.93504, 142.68289 ]
+						},
+						{
+							"time": 1,
+							"vertices": [ 6.22529, -67.49393, 0, 0, 63.97809, 84.82187, 36.3554, 61.08682, -117.30377, -24.82693, -234.65405, -165.6979 ]
+						},
+						{
+							"time": 1.2,
+							"vertices": [ 0.92298, -39.62634, 0, 0, 197.52185, 62.19476, -66.08147, -198.15332, -455.20886, -316.3105, -848.4299, -438.40692 ]
+						}
+					]
+				}
+			}
+		}
+	},
+	"strike": {
+		"deform": {
+			"default": {
+				"tail-path": {
+					"tail-path": [
+						{},
+						{
+							"time": 0.1667,
+							"vertices": [ 33.99168, -133.12616, 0, 0, 213.1888, 290.393, 181.87697, 231.44986, -362.67697, -176.21896, -717.19617, -336.48236 ]
+						},
+						{
+							"time": 0.4333,
+							"vertices": [ 33.99168, -133.12616, 0, 0, 213.1888, 290.393, 219.81816, 317.1169, -324.73578, -90.55191, -679.25494, -250.8153 ]
+						},
+						{
+							"time": 0.6,
+							"vertices": [ 104.94689, 173.46832, 0, 0, -45.47563, -270.62152, -493.59897, -399.94028, -943.8264, -857.70703, -1260.5549, -1041.3552 ]
+						},
+						{ "time": 0.7667 }
+					]
+				}
+			}
+		}
+	}
+}
+}

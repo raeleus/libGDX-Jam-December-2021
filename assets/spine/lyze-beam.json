@@ -1,0 +1,67 @@
+{
+"skeleton": {
+	"hash": "/PnB+MoRaEU",
+	"spine": "4.0.55",
+	"x": -0.7,
+	"y": -42.32,
+	"width": 1024,
+	"height": 102,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/lyze-beam-Layer-2", "bone": "root", "attachment": "game/lyze-beam-Layer-11" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"game/lyze-beam-Layer-2": {
+				"game/lyze-beam-Layer-2": { "x": 511.3, "y": 8.68, "width": 1024, "height": 102 },
+				"game/lyze-beam-Layer-3": { "x": 511.3, "y": 8.68, "width": 1024, "height": 102 },
+				"game/lyze-beam-Layer-4": { "x": 511.3, "y": 8.68, "width": 1024, "height": 102 },
+				"game/lyze-beam-Layer-5": { "x": 511.3, "y": 8.68, "width": 1024, "height": 102 },
+				"game/lyze-beam-Layer-6": { "x": 511.3, "y": 8.68, "width": 1024, "height": 102 },
+				"game/lyze-beam-Layer-7": { "x": 511.3, "y": 8.68, "width": 1024, "height": 102 },
+				"game/lyze-beam-Layer-8": { "x": 511.3, "y": 8.68, "width": 1024, "height": 102 },
+				"game/lyze-beam-Layer-9": { "x": 511.3, "y": 8.68, "width": 1024, "height": 102 },
+				"game/lyze-beam-Layer-10": { "x": 511.3, "y": 8.68, "width": 1024, "height": 102 },
+				"game/lyze-beam-Layer-11": { "x": 511.3, "y": 8.68, "width": 1024, "height": 102 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"game/lyze-beam-Layer-2": {
+				"attachment": [
+					{ "name": "game/lyze-beam-Layer-2" },
+					{ "time": 0.0333, "name": "game/lyze-beam-Layer-3" },
+					{ "time": 0.0667, "name": "game/lyze-beam-Layer-4" },
+					{ "time": 0.1, "name": "game/lyze-beam-Layer-5" },
+					{ "time": 0.1333, "name": "game/lyze-beam-Layer-6" },
+					{ "time": 0.1667, "name": "game/lyze-beam-Layer-7" },
+					{ "time": 0.2, "name": "game/lyze-beam-Layer-8" },
+					{ "time": 0.2333, "name": "game/lyze-beam-Layer-9" },
+					{ "time": 0.2667, "name": "game/lyze-beam-Layer-10" },
+					{ "time": 0.3, "name": "game/lyze-beam-Layer-11" },
+					{ "time": 0.3333, "name": null }
+				]
+			}
+		}
+	},
+	"prep": {
+		"slots": {
+			"game/lyze-beam-Layer-2": {
+				"attachment": [
+					{ "name": "game/lyze-beam-Layer-2" }
+				]
+			}
+		}
+	}
+}
+}

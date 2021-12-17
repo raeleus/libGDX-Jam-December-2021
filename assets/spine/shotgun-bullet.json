@@ -1,0 +1,52 @@
+{
+"skeleton": {
+	"hash": "lj543FIul7I",
+	"spine": "4.0.55",
+	"x": -128,
+	"y": -50.91,
+	"width": 256,
+	"height": 125,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/shotgun-bullet-Layer-2", "bone": "root", "attachment": "game/shotgun-bullet-Layer-4" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -70.53, -71.19, -72.15, 79.91, 74.08, 78.29, 70.83, -69.57 ]
+				}
+			},
+			"game/shotgun-bullet-Layer-2": {
+				"game/shotgun-bullet-Layer-2": { "y": 11.59, "width": 256, "height": 125 },
+				"game/shotgun-bullet-Layer-3": { "y": 11.59, "width": 256, "height": 125 },
+				"game/shotgun-bullet-Layer-4": { "y": 11.59, "width": 256, "height": 125 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"game/shotgun-bullet-Layer-2": {
+				"attachment": [
+					{ "name": "game/shotgun-bullet-Layer-2" },
+					{ "time": 0.0667, "name": "game/shotgun-bullet-Layer-3" },
+					{ "time": 0.1333, "name": "game/shotgun-bullet-Layer-4" },
+					{ "time": 0.2, "name": "game/shotgun-bullet-Layer-2" }
+				]
+			}
+		}
+	}
+}
+}

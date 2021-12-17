@@ -1,0 +1,1419 @@
+{
+"skeleton": {
+	"hash": "WL3CL5ZcB6Q",
+	"spine": "4.0.55",
+	"x": -42.44,
+	"y": -3.27,
+	"width": 115.46,
+	"height": 297.68,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 48.77, "x": -26.66, "y": 118.68 },
+	{ "name": "game/dq-body", "parent": "bone", "length": 105.66, "rotation": 90, "x": 30.07, "y": -5.69 },
+	{ "name": "game/dq-body3", "parent": "game/dq-body", "length": 37.81, "rotation": -156.94, "x": 66.42, "y": 29.57 },
+	{ "name": "game/dq-forearm-front2", "parent": "game/dq-body3", "length": 41.4, "rotation": 81.24, "x": 33.05, "y": -1.2 },
+	{ "name": "game/dq-arm", "parent": "game/dq-body", "length": 37.49, "rotation": -157.4, "x": 62.51, "y": -14.77 },
+	{ "name": "game/dq-forearm-front", "parent": "game/dq-arm", "length": 44.98, "rotation": 80.64, "x": 31.92, "y": 0.88 },
+	{ "name": "game/dq-wing", "parent": "game/dq-body", "length": 189.08, "rotation": -89.31, "x": 75.23, "y": -5.64 },
+	{ "name": "game/dq-wing2", "parent": "game/dq-body", "length": 161.05, "rotation": 89.19, "x": 76.53, "y": 20.44 },
+	{ "name": "game/dq-leg", "parent": "bone", "length": 68.56, "rotation": -89.55, "x": 13.57, "y": -13.48 },
+	{ "name": "game/dq-foreleg-front", "parent": "game/dq-leg", "length": 47.69, "rotation": -1.81, "x": 58.9, "y": -1.53 },
+	{ "name": "game/dq-leg2", "parent": "bone", "length": 72.84, "rotation": -89.58, "x": 40.34, "y": -10.27 },
+	{ "name": "game/dq-foreleg-front2", "parent": "game/dq-leg2", "length": 47.67, "rotation": 0.22, "x": 61.58, "y": -1.52 },
+	{ "name": "game/dq-hair", "parent": "game/dq-body", "length": 72.86, "rotation": 1.34, "x": 91.31, "y": 3.53 },
+	{ "name": "weapon", "parent": "game/dq-forearm-front2", "length": 75.09, "rotation": -13.98, "x": 8.78, "y": 5.85 },
+	{ "name": "game/whip3", "parent": "weapon", "length": 33.3, "rotation": 0.04, "x": 72.21, "y": 0.02 },
+	{ "name": "game/whip3b", "parent": "game/whip3", "length": 33.3, "x": 33.3 },
+	{ "name": "game/whip3c", "parent": "game/whip3b", "length": 33.3, "x": 33.3 },
+	{ "name": "game/whip3d", "parent": "game/whip3c", "length": 33.3, "x": 33.3 },
+	{ "name": "game/whip3e", "parent": "game/whip3d", "length": 33.3, "x": 33.3 },
+	{ "name": "game/whip3f", "parent": "game/whip3e", "length": 33.3, "x": 33.3 },
+	{ "name": "game/whip3g", "parent": "game/whip3f", "length": 33.3, "x": 33.3 },
+	{ "name": "game/whip3h", "parent": "game/whip3g", "length": 33.3, "x": 33.3 },
+	{ "name": "game/whip3i", "parent": "game/whip3h", "length": 33.3, "x": 33.3 },
+	{ "name": "game/whip3j", "parent": "game/whip3i", "length": 33.3, "x": 33.3 }
+],
+"slots": [
+	{ "name": "game/dq-wing", "bone": "game/dq-wing", "dark": "000000" },
+	{ "name": "game/dq-wing2", "bone": "game/dq-wing2", "dark": "000000" },
+	{ "name": "game/dq-forearm-back", "bone": "game/dq-forearm-front", "dark": "000000", "attachment": "game/dq-forearm-back" },
+	{ "name": "game/dq-arm", "bone": "game/dq-arm", "dark": "000000", "attachment": "game/dq-arm" },
+	{ "name": "game/dq-forearm-front", "bone": "game/dq-forearm-front", "dark": "000000", "attachment": "game/dq-forearm-front" },
+	{ "name": "game/dq-hair", "bone": "game/dq-hair", "dark": "000000", "attachment": "game/dq-hair" },
+	{ "name": "game/dq-foreleg-back2", "bone": "game/dq-foreleg-front2", "dark": "000000", "attachment": "game/dq-foreleg-back" },
+	{ "name": "game/dq-leg2", "bone": "game/dq-leg2", "dark": "000000", "attachment": "game/dq-leg" },
+	{ "name": "game/dq-foreleg-front2", "bone": "game/dq-foreleg-front2", "dark": "000000", "attachment": "game/dq-foreleg-front" },
+	{ "name": "game/dq-foreleg-back", "bone": "game/dq-foreleg-front", "dark": "000000", "attachment": "game/dq-foreleg-back" },
+	{ "name": "game/dq-leg", "bone": "game/dq-leg", "dark": "000000", "attachment": "game/dq-leg" },
+	{ "name": "game/dq-foreleg-front", "bone": "game/dq-foreleg-front", "dark": "000000", "attachment": "game/dq-foreleg-front" },
+	{ "name": "game/dq-body", "bone": "game/dq-body", "dark": "000000", "attachment": "game/dq-body" },
+	{ "name": "game/dq-head", "bone": "game/dq-hair", "dark": "000000", "attachment": "game/dq-head" },
+	{ "name": "game/dq-face-smile", "bone": "game/dq-hair", "dark": "000000", "attachment": "game/dq-face-smile" },
+	{ "name": "game/dq-forearm-back2", "bone": "game/dq-forearm-front2", "dark": "000000", "attachment": "game/dq-forearm-back" },
+	{ "name": "game/dq-arm2", "bone": "game/dq-body3", "dark": "000000", "attachment": "game/dq-arm" },
+	{ "name": "game/whip", "bone": "game/whip3", "dark": "000000" },
+	{ "name": "game/shotgun", "bone": "weapon", "dark": "000000" },
+	{ "name": "game/dq-forearm-front2", "bone": "game/dq-forearm-front2", "dark": "000000", "attachment": "game/dq-forearm-front" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -25.01, -0.18, -22.43, 251.37, 44.53, 250.51, 38.52, 0.68 ]
+				}
+			},
+			"game/dq-arm": {
+				"game/dq-arm": { "x": 16.15, "y": 1.27, "rotation": 0.5, "width": 47, "height": 22 }
+			},
+			"game/dq-arm2": {
+				"game/dq-arm": { "x": 17.74, "y": 0.19, "rotation": -0.49, "width": 47, "height": 22 }
+			},
+			"game/dq-body": {
+				"game/dq-body": { "x": 44.77, "y": 3.73, "rotation": -90, "width": 79, "height": 120 }
+			},
+			"game/dq-face-smile": {
+				"game/dq-face-smile": { "x": 23.71, "y": -7.14, "rotation": -91.34, "width": 35, "height": 38 }
+			},
+			"game/dq-forearm-back": {
+				"game/dq-forearm-back": { "x": 16.42, "y": -0.57, "width": 48, "height": 20 }
+			},
+			"game/dq-forearm-back2": {
+				"game/dq-forearm-back": { "x": 14.74, "y": -0.71, "rotation": -0.9, "width": 48, "height": 20 }
+			},
+			"game/dq-forearm-front": {
+				"game/dq-forearm-front": { "x": 16.42, "y": -0.57, "width": 48, "height": 20 }
+			},
+			"game/dq-forearm-front2": {
+				"game/dq-forearm-front": { "x": 14.74, "y": -0.71, "rotation": -0.9, "width": 48, "height": 20 }
+			},
+			"game/dq-foreleg-back": {
+				"game/dq-foreleg-back": { "x": 19.55, "y": 4.41, "rotation": 88.07, "width": 33, "height": 58 }
+			},
+			"game/dq-foreleg-back2": {
+				"game/dq-foreleg-back": { "x": 18.24, "y": 4.88, "rotation": 89.36, "width": 33, "height": 58 }
+			},
+			"game/dq-foreleg-front": {
+				"game/dq-foreleg-front": { "x": 19.55, "y": 4.41, "rotation": 88.07, "width": 33, "height": 58 }
+			},
+			"game/dq-foreleg-front2": {
+				"game/dq-foreleg-front": { "x": 18.24, "y": 4.88, "rotation": 89.36, "width": 33, "height": 58 }
+			},
+			"game/dq-hair": {
+				"game/dq-hair": { "x": 19.58, "y": 3.37, "rotation": -91.34, "width": 77, "height": 88 }
+			},
+			"game/dq-head": {
+				"game/dq-head": { "x": 40.12, "y": -0.18, "rotation": -91.34, "width": 73, "height": 100 }
+			},
+			"game/dq-leg": {
+				"game/dq-leg": { "x": 27.39, "y": -0.36, "rotation": 89.55, "width": 38, "height": 87 }
+			},
+			"game/dq-leg2": {
+				"game/dq-leg": { "x": 29.39, "y": 0.19, "rotation": 89.58, "width": 38, "height": 87 }
+			},
+			"game/dq-wing": {
+				"game/dq-wing": { "x": 94.86, "y": 5.35, "rotation": -0.69, "width": 199, "height": 212 }
+			},
+			"game/dq-wing2": {
+				"game/dq-wing": { "x": 93.79, "y": -4.68, "scaleX": -1, "rotation": -179.19, "width": 199, "height": 212 }
+			},
+			"game/shotgun": {
+				"game/shotgun": { "x": 68.91, "y": 1.51, "scaleX": 0.5718, "scaleY": 0.5718, "width": 231, "height": 49 }
+			},
+			"game/whip": {
+				"game/whip": {
+					"type": "mesh",
+					"uvs": [ 0.20311, 0, 0.2066, 0.22754, 0.27648, 0.26943, 0.34856, 0.31263, 0.40816, 0.31214, 0.46171, 0.31169, 0.52131, 0.28128, 0.58683, 0.24785, 0.64731, 0.21699, 0.71781, 0.18101, 0.787, 0.18085, 0.85607, 0.18069, 0.91731, 0.18054, 0.93783, 0.18049, 0.96159, 0.20465, 0.99984, 0.24355, 1, 0.27156, 1, 0.53194, 0.96292, 0.50503, 0.91811, 0.47251, 0.85429, 0.4262, 0.78698, 0.4433, 0.7404, 0.45514, 0.71861, 0.46542, 0.64591, 0.4997, 0.5867, 0.52763, 0.52137, 0.55844, 0.46146, 0.58669, 0.44884, 0.59264, 0.40896, 0.58667, 0.34837, 0.57759, 0.27574, 0.5667, 0.22978, 0.55981, 0.21946, 0.52541, 0.20803, 0.61446, 0.20077, 0.88142, 0.13239, 0.87961, 0.12876, 0.81724, 0.04976, 0.82023, 0.03092, 1, 0.01544, 1, 0.00398, 0.89579, 0, 0.75959, 0, 0.36223, 0.01421, 0.11867, 0.04562, 0.12, 0.04351, 0.19312, 0.12154, 0.098, 0.12961, 0 ],
+					"triangles": [ 35, 36, 1, 38, 47, 37, 37, 47, 48, 38, 39, 46, 40, 43, 39, 40, 41, 42, 44, 39, 43, 1, 48, 0, 46, 44, 45, 44, 46, 39, 40, 42, 43, 37, 48, 36, 1, 36, 48, 38, 46, 47, 34, 35, 1, 34, 1, 33, 32, 33, 1, 2, 32, 1, 18, 16, 17, 19, 13, 18, 13, 14, 18, 16, 14, 15, 16, 18, 14, 20, 11, 19, 11, 12, 19, 19, 12, 13, 20, 10, 11, 21, 22, 10, 21, 10, 20, 23, 8, 9, 23, 9, 22, 10, 22, 9, 23, 24, 8, 24, 7, 8, 26, 6, 25, 25, 7, 24, 25, 6, 7, 27, 28, 5, 27, 5, 26, 4, 5, 28, 5, 6, 26, 29, 30, 4, 28, 29, 4, 30, 3, 4, 31, 2, 30, 30, 2, 3, 31, 32, 2 ],
+					"vertices": [ 1, 14, 75.4, 10.96, 1, 1, 14, 76.81, 5.47, 1, 3, 15, 33.38, 4.27, 0.51449, 16, 0.08, 4.27, 0.48551, 17, -33.22, 4.27, 0, 2, 16, 29.76, 3.04, 0.97646, 17, -3.54, 3.04, 0.02354, 1, 17, 21, 2.9, 1, 1, 18, 9.75, 2.78, 1, 3, 18, 34.3, 3.36, 0.33158, 19, 1, 3.36, 0.66842, 24, -165.48, 3.36, 0, 4, 18, 61.28, 4, 0, 19, 27.99, 4, 0.995, 20, -5.31, 4, 0.005, 24, -138.5, 4, 0, 3, 19, 52.89, 4.58, 0, 20, 19.6, 4.58, 1, 24, -113.59, 4.58, 0, 3, 19, 81.93, 5.27, 0, 21, 15.34, 5.27, 1, 22, -17.96, 5.27, 0, 1, 22, 10.53, 5.1, 1, 2, 23, 5.68, 4.93, 1, 24, -27.62, 4.93, 0, 3, 19, 164.09, 4.77, 0, 23, 30.9, 4.77, 0.81779, 24, -2.4, 4.77, 0.18221, 3, 19, 172.53, 4.72, 0, 23, 39.34, 4.72, 0.02753, 24, 6.04, 4.72, 0.97247, 2, 23, 49.12, 4.08, 3.0E-5, 24, 15.82, 4.08, 0.99997, 1, 24, 31.57, 3.05, 1, 1, 24, 31.63, 2.37, 1, 2, 19, 198.08, -3.9, 0, 24, 31.59, -3.9, 1, 1, 24, 16.33, -3.16, 1, 2, 23, 31.18, -2.26, 0.83971, 24, -2.12, -2.26, 0.16029, 2, 19, 138.09, -0.98, 0, 23, 4.91, -0.98, 1, 2, 19, 110.38, -1.22, 0, 22, 10.48, -1.22, 1, 1, 21, 24.6, -1.39, 1, 2, 21, 15.63, -1.58, 1, 24, -84.27, -1.58, 0, 1, 20, 18.98, -2.22, 1, 1, 19, 27.89, -2.75, 1, 2, 18, 34.28, -3.32, 0.31256, 19, 0.99, -3.32, 0.68744, 1, 18, 9.61, -3.85, 1, 1, 18, 4.41, -3.96, 1, 2, 17, 21.29, -3.71, 0.99927, 18, -12.01, -3.71, 7.3E-4, 2, 16, 29.64, -3.34, 0.97092, 17, -3.66, -3.34, 0.02908, 2, 15, 33.03, -2.89, 0.52148, 16, -0.27, -2.89, 0.47852, 3, 15, 14.1, -2.61, 0.7, 17, -52.49, -2.61, 0, 14, 86.31, -2.58, 0.3, 3, 15, 9.86, -1.75, 0.72571, 17, -56.74, -1.75, 0, 14, 82.07, -1.73, 0.27429, 1, 14, 77.35, -3.85, 1, 1, 14, 74.32, -10.27, 1, 1, 14, 46.17, -10.07, 1, 1, 14, 44.68, -8.56, 1, 1, 14, 12.15, -8.45, 1, 1, 14, 4.37, -12.74, 1, 1, 14, -2.01, -12.71, 1, 1, 14, -6.71, -10.17, 1, 1, 14, -8.34, -6.88, 1, 1, 14, -8.28, 2.7, 1, 1, 14, -2.4, 8.53, 1, 1, 14, 10.54, 8.43, 1, 1, 14, 9.66, 6.67, 1, 1, 14, 41.8, 8.79, 1, 1, 14, 45.14, 11.13, 1 ],
+					"hull": 49,
+					"edges": [ 0, 96, 0, 2, 30, 32, 32, 34, 64, 66, 70, 72, 72, 74, 74, 76, 76, 78, 78, 80, 80, 82, 82, 84, 84, 86, 86, 88, 88, 90, 90, 92, 92, 94, 94, 96, 2, 4, 4, 6, 62, 64, 4, 62, 6, 8, 8, 10, 56, 58, 8, 58, 10, 12, 12, 52, 12, 14, 50, 52, 14, 50, 14, 16, 16, 18, 48, 50, 16, 48, 44, 46, 46, 48, 18, 46, 18, 20, 40, 42, 42, 44, 20, 42, 20, 22, 22, 40, 22, 24, 24, 26, 38, 40, 24, 38, 26, 28, 28, 30, 34, 36, 36, 38, 28, 36, 58, 60, 60, 62, 6, 60, 52, 54, 54, 56, 66, 68, 68, 70 ],
+					"width": 564,
+					"height": 33
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"die": {
+		"slots": {
+			"game/dq-arm": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/dq-arm2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/dq-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/dq-face-smile": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/dq-forearm-back": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/dq-forearm-back2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/dq-forearm-front": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/dq-forearm-front2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/dq-foreleg-back": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/dq-foreleg-back2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/dq-foreleg-front": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/dq-foreleg-front2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/dq-hair": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/dq-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/dq-leg": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/dq-leg2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/dq-wing": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/dq-wing2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/shotgun": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			},
+			"game/whip": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.8333, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.6667, "light": "ffffffff", "dark": "ffffff" }
+				]
+			}
+		},
+		"bones": {
+			"game/dq-leg": {
+				"rotate": [
+					{},
+					{ "time": 0.8333, "value": -20.8 }
+				]
+			},
+			"game/dq-foreleg-front": {
+				"rotate": [
+					{},
+					{ "time": 0.8333, "value": -53.06 }
+				]
+			},
+			"game/dq-leg2": {
+				"rotate": [
+					{},
+					{ "time": 0.8333, "value": -7.02 }
+				]
+			},
+			"game/dq-foreleg-front2": {
+				"rotate": [
+					{},
+					{ "time": 0.8333, "value": -54.4 }
+				]
+			},
+			"game/dq-hair": {
+				"rotate": [
+					{},
+					{ "time": 0.8333, "value": 36.45 }
+				]
+			},
+			"game/dq-body3": {
+				"rotate": [
+					{},
+					{ "time": 0.8333, "value": -112.92 }
+				]
+			},
+			"game/dq-forearm-front2": {
+				"rotate": [
+					{},
+					{ "time": 0.8333, "value": -75.01 }
+				]
+			},
+			"game/dq-forearm-front": {
+				"rotate": [
+					{},
+					{ "time": 0.8333, "value": -117.21 }
+				]
+			},
+			"game/dq-arm": {
+				"rotate": [
+					{},
+					{ "time": 0.8333, "value": -47.12 }
+				]
+			},
+			"bone": {
+				"rotate": [
+					{
+						"curve": [ 0.203, 76, 0.552, 92.46 ]
+					},
+					{ "time": 0.8333, "value": 89.46 }
+				],
+				"translate": [
+					{
+						"curve": [ 0.264, 36.62, 0.556, 31.94, 0.274, 13.42, 0.317, -25.8 ]
+					},
+					{
+						"time": 0.8333,
+						"x": 34.85,
+						"y": -28.75,
+						"curve": [ 1.167, 38.33, 1.5, 38.33, 1.023, -29.83, 1.678, 112.85 ]
+					},
+					{
+						"time": 1.8333,
+						"x": 38.33,
+						"y": 122.79,
+						"curve": [ 2, 38.33, 2.5, 38.33, 1.972, 131.66, 2.351, 140.69 ]
+					},
+					{ "time": 2.6667, "x": 38.33, "y": 143.69 }
+				]
+			}
+		}
+	},
+	"flap": {
+		"slots": {
+			"game/dq-wing": {
+				"attachment": [
+					{ "name": "game/dq-wing" }
+				]
+			},
+			"game/dq-wing2": {
+				"attachment": [
+					{ "name": "game/dq-wing" }
+				]
+			}
+		},
+		"bones": {
+			"game/dq-wing": {
+				"rotate": [
+					{},
+					{ "time": 0.1, "value": 25.93 },
+					{ "time": 0.2, "value": -25.81 },
+					{ "time": 0.3, "value": -36.37 },
+					{ "time": 0.4667 }
+				],
+				"scale": [
+					{ "x": 0 },
+					{ "time": 0.1, "curve": "stepped" },
+					{ "time": 0.3 },
+					{ "time": 0.4667, "x": 0 }
+				]
+			},
+			"game/dq-wing2": {
+				"rotate": [
+					{},
+					{ "time": 0.1, "value": -26.74 },
+					{ "time": 0.2, "value": 30.31 },
+					{ "time": 0.3, "value": 42.88 },
+					{ "time": 0.4667 }
+				],
+				"scale": [
+					{ "x": 0 },
+					{ "time": 0.1, "curve": "stepped" },
+					{ "time": 0.3 },
+					{ "time": 0.4667, "x": 0 }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"game/dq-arm": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/dq-arm2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/dq-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/dq-face-smile": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/dq-forearm-back": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/dq-forearm-back2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/dq-forearm-front": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/dq-forearm-front2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/dq-foreleg-back": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/dq-foreleg-back2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/dq-foreleg-front": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/dq-foreleg-front2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/dq-hair": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/dq-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/dq-leg": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/dq-leg2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/dq-wing": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/dq-wing2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/shotgun": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/whip": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		},
+		"bones": {
+			"game/dq-hair": {
+				"rotate": [
+					{ "value": -28.85 },
+					{ "time": 0.3333 }
+				]
+			},
+			"game/dq-foreleg-front2": {
+				"rotate": [
+					{ "value": -67.79 },
+					{ "time": 0.3333 }
+				]
+			},
+			"game/dq-leg2": {
+				"rotate": [
+					{ "value": 31.1 },
+					{ "time": 0.3333 }
+				]
+			},
+			"game/dq-foreleg-front": {
+				"rotate": [
+					{ "value": -59.27 },
+					{ "time": 0.3333 }
+				]
+			},
+			"game/dq-leg": {
+				"rotate": [
+					{ "value": 25.4 },
+					{ "time": 0.3333 }
+				]
+			},
+			"game/dq-body": {
+				"rotate": [
+					{ "value": 10.65 },
+					{ "time": 0.3333 }
+				]
+			},
+			"bone": {
+				"translate": [
+					{ "y": -16.55 },
+					{ "time": 0.3333 }
+				]
+			}
+		}
+	},
+	"jump": {
+		"bones": {
+			"game/dq-foreleg-front2": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "value": -113.56 },
+					{ "time": 0.4333, "value": -59.31 },
+					{ "time": 0.7, "value": -102.37 }
+				]
+			},
+			"game/dq-leg2": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "value": 51.84 },
+					{ "time": 0.4333, "value": 14.07 },
+					{ "time": 0.7, "value": 53.72 }
+				]
+			},
+			"game/dq-foreleg-front": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "value": -118.67 },
+					{ "time": 0.4333, "value": -41.48 },
+					{ "time": 0.7, "value": -102.99 }
+				]
+			},
+			"game/dq-leg": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "value": 41.34 },
+					{ "time": 0.4333, "value": 3.45 },
+					{ "time": 0.7, "value": 32.76 }
+				]
+			},
+			"game/dq-body": {
+				"rotate": [
+					{ "value": -2.37 },
+					{ "time": 0.1667, "value": -23.48 },
+					{ "time": 0.4333, "value": -4.86 },
+					{ "time": 0.7, "value": -22.04 }
+				]
+			},
+			"bone": {
+				"translate": [
+					{ "y": -3.79 },
+					{ "time": 0.1667, "y": -44.56 },
+					{ "time": 0.4333, "y": -12.32 }
+				]
+			},
+			"game/dq-body3": {
+				"rotate": [
+					{ "value": -34.18 },
+					{ "time": 0.1667, "value": -37.23 },
+					{ "time": 0.3, "value": 43.13 },
+					{ "time": 0.4333, "value": 144.01 },
+					{ "time": 0.7, "value": 68.19 }
+				]
+			},
+			"game/dq-forearm-front2": {
+				"rotate": [
+					{ "value": -12.26 },
+					{ "time": 0.1667, "value": -93.8 },
+					{ "time": 0.3, "value": -16.47 },
+					{ "time": 0.4333, "value": -78.16 },
+					{ "time": 0.5333, "value": -78.87 },
+					{ "time": 0.7, "value": -2.61 }
+				]
+			},
+			"game/dq-arm": {
+				"rotate": [
+					{ "value": -30.17 },
+					{ "time": 0.1667, "value": -61.6 },
+					{ "time": 0.3, "value": 34.08 },
+					{ "time": 0.4333, "value": 140.02 },
+					{ "time": 0.7, "value": 83.3 }
+				]
+			},
+			"game/dq-forearm-front": {
+				"rotate": [
+					{ "value": -19.27 },
+					{ "time": 0.1667, "value": -74.47 },
+					{ "time": 0.3, "value": 4.22 },
+					{ "time": 0.4333, "value": -75.46 },
+					{ "time": 0.5333, "value": -70.31 },
+					{ "time": 0.7, "value": -5.34 }
+				]
+			}
+		}
+	},
+	"run": {
+		"bones": {
+			"game/dq-foreleg-front2": {
+				"rotate": [
+					{ "value": -84.12 },
+					{ "time": 0.0667, "value": -19.05 },
+					{ "time": 0.1333, "value": -35.83 },
+					{ "time": 0.2, "value": -28.14 },
+					{ "time": 0.2667, "value": -41.98 },
+					{ "time": 0.3333, "value": -29.53 },
+					{ "time": 0.4, "value": -63.3 },
+					{ "time": 0.4667, "value": -123.09 },
+					{ "time": 0.5333, "value": -123.11 },
+					{ "time": 0.6, "value": -106.8 },
+					{ "time": 0.6667, "value": -84.12 }
+				]
+			},
+			"game/dq-leg2": {
+				"rotate": [
+					{ "value": 64.27 },
+					{ "time": 0.0667, "value": 41.4 },
+					{ "time": 0.1333, "value": 23.36 },
+					{ "time": 0.2, "value": 8.36 },
+					{ "time": 0.2667, "value": -2.42 },
+					{ "time": 0.3333, "value": -19.37 },
+					{ "time": 0.4, "value": -21.87 },
+					{ "time": 0.4667, "value": -4.25 },
+					{ "time": 0.5333, "value": 24.06 },
+					{ "time": 0.6, "value": 50.87 },
+					{ "time": 0.6667, "value": 64.27 }
+				]
+			},
+			"game/dq-foreleg-front": {
+				"rotate": [
+					{ "value": -47.96 },
+					{ "time": 0.0667, "value": -88.51 },
+					{ "time": 0.1333, "value": -120.76 },
+					{ "time": 0.2, "value": -123.1 },
+					{ "time": 0.2667, "value": -111.46 },
+					{ "time": 0.3333, "value": -89 },
+					{ "time": 0.4, "value": -42.84 },
+					{ "time": 0.4667, "value": -44.82 },
+					{ "time": 0.5333, "value": -15.21 },
+					{ "time": 0.6, "value": -29.2 },
+					{ "time": 0.6667, "value": -47.96 }
+				]
+			},
+			"game/dq-leg": {
+				"rotate": [
+					{ "value": -11.94 },
+					{ "time": 0.0667, "value": -9.93 },
+					{ "time": 0.1333, "value": 18.25 },
+					{ "time": 0.2, "value": 41.65 },
+					{ "time": 0.2667, "value": 66.56 },
+					{ "time": 0.3333, "value": 79.47 },
+					{ "time": 0.4, "value": 60.04 },
+					{ "time": 0.4667, "value": 38.98 },
+					{ "time": 0.5333, "value": 13.74 },
+					{ "time": 0.6, "value": 3.01 },
+					{ "time": 0.6667, "value": -11.94 }
+				]
+			},
+			"game/dq-arm": {
+				"rotate": [
+					{ "value": -123.65 },
+					{ "time": 0.0667, "value": -87.48 },
+					{ "time": 0.1333, "value": -52.87 },
+					{ "time": 0.2, "value": -27.47 },
+					{ "time": 0.2667, "value": -2.64 },
+					{ "time": 0.3333, "value": 19.48 },
+					{ "time": 0.4, "value": 22.99 },
+					{ "time": 0.4667, "value": -27.57 },
+					{ "time": 0.5333, "value": -65.62 },
+					{ "time": 0.6, "value": -90.8 },
+					{ "time": 0.6667, "value": -123.65 }
+				]
+			},
+			"game/dq-forearm-front": {
+				"rotate": [
+					{ "value": 39.25 },
+					{ "time": 0.0667, "value": 25.22 },
+					{ "time": 0.1333, "value": 11.92 },
+					{ "time": 0.2, "value": 2.45 },
+					{ "time": 0.2667, "value": -4.71 },
+					{ "time": 0.3333, "value": 18.12 },
+					{ "time": 0.4, "value": 40.34 },
+					{ "time": 0.4667, "value": 46.93 },
+					{ "time": 0.5333, "value": 49.15 },
+					{ "time": 0.6, "value": 52.88 },
+					{ "time": 0.6667, "value": 39.25 }
+				]
+			},
+			"game/dq-body3": {
+				"rotate": [
+					{ "value": 15.44 },
+					{ "time": 0.0667, "value": 14.86 },
+					{ "time": 0.1333, "value": -21.36 },
+					{ "time": 0.2, "value": -46.36 },
+					{ "time": 0.2667, "value": -92.92 },
+					{ "time": 0.3333, "value": -116.85 },
+					{ "time": 0.4, "value": -107.52 },
+					{ "time": 0.4667, "value": -76.35 },
+					{ "time": 0.5333, "value": -36.08 },
+					{ "time": 0.6, "value": -16.7 },
+					{ "time": 0.6667, "value": 15.44 }
+				]
+			},
+			"game/dq-forearm-front2": {
+				"rotate": [
+					{ "value": 17.94 },
+					{ "time": 0.0667, "value": 0.29 },
+					{ "time": 0.1333, "value": -9.13 },
+					{ "time": 0.2, "value": -25.98 },
+					{ "time": 0.2667, "value": 3.74 },
+					{ "time": 0.3333, "value": 16.49 },
+					{ "time": 0.4, "value": 20.87 },
+					{ "time": 0.4667, "value": 12 },
+					{ "time": 0.5333, "value": -3.76 },
+					{ "time": 0.6, "value": 6.5 },
+					{ "time": 0.6667, "value": 17.94 }
+				]
+			},
+			"bone": {
+				"translate": [
+					{ "y": -6.63 },
+					{ "time": 0.0667, "y": -14.21 },
+					{ "time": 0.1333, "y": -4.74 },
+					{ "time": 0.2, "y": -2.84 },
+					{ "time": 0.2667, "y": -5.69 },
+					{ "time": 0.3333, "y": -5.69 },
+					{ "time": 0.4, "y": -10.42 },
+					{ "time": 0.4667, "y": -12.32 },
+					{ "time": 0.5333, "y": -2.84 },
+					{ "time": 0.6, "y": -2.84 },
+					{ "time": 0.6667, "y": -10.42 }
+				]
+			}
+		}
+	},
+	"shoot": {
+		"slots": {
+			"game/shotgun": {
+				"rgba2": [
+					{ "time": 0.2333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.4, "light": "ffffff00", "dark": "000000" }
+				],
+				"attachment": [
+					{ "name": "game/shotgun" },
+					{ "time": 0.4, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"weapon": {
+				"rotate": [
+					{ "value": 11.27 }
+				]
+			},
+			"game/dq-body3": {
+				"rotate": [
+					{ "value": 69.51 },
+					{ "time": 0.1, "value": 81.38 },
+					{ "time": 0.2333, "value": 69.51 }
+				]
+			},
+			"game/dq-forearm-front2": {
+				"rotate": [
+					{ "value": -79.27 },
+					{ "time": 0.1, "value": -26.64 },
+					{ "time": 0.2333, "value": -79.27 }
+				]
+			}
+		}
+	},
+	"shoot-down": {
+		"slots": {
+			"game/shotgun": {
+				"rgba2": [
+					{ "time": 0.2333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.4, "light": "ffffff00", "dark": "000000" }
+				],
+				"attachment": [
+					{ "name": "game/shotgun" },
+					{ "time": 0.4, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"weapon": {
+				"rotate": [
+					{ "value": 11.27 }
+				]
+			},
+			"game/dq-body3": {
+				"rotate": [
+					{ "value": -25.81 },
+					{ "time": 0.1, "value": -91.5 },
+					{ "time": 0.2333, "value": -25.81 }
+				]
+			},
+			"game/dq-forearm-front2": {
+				"rotate": [
+					{ "value": -70.59 },
+					{ "time": 0.1, "value": 29.01 },
+					{ "time": 0.2333, "value": -70.59 }
+				]
+			}
+		}
+	},
+	"shoot-up": {
+		"slots": {
+			"game/shotgun": {
+				"rgba2": [
+					{ "time": 0.2333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.4, "light": "ffffff00", "dark": "000000" }
+				],
+				"attachment": [
+					{ "name": "game/shotgun" },
+					{ "time": 0.4, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"weapon": {
+				"rotate": [
+					{ "value": 11.27 }
+				]
+			},
+			"game/dq-body3": {
+				"rotate": [
+					{ "value": 155.41 },
+					{ "time": 0.1333, "value": 57.48 },
+					{ "time": 0.2333, "value": 155.41 }
+				]
+			},
+			"game/dq-forearm-front2": {
+				"rotate": [
+					{ "value": -84.09 },
+					{ "time": 0.1333, "value": 45 },
+					{ "time": 0.2333, "value": -84.09 }
+				]
+			}
+		}
+	},
+	"stand": {
+		"bones": {
+			"game/dq-body3": {
+				"rotate": [
+					{ "value": -34.18 },
+					{ "time": 0.4333, "value": -21.8 },
+					{ "time": 0.8333, "value": -34.18 }
+				]
+			},
+			"game/dq-forearm-front2": {
+				"rotate": [
+					{ "value": -12.26 },
+					{ "time": 0.4333, "value": 5.01 },
+					{ "time": 0.8333, "value": -12.26 }
+				]
+			},
+			"game/dq-arm": {
+				"rotate": [
+					{ "value": -30.17 },
+					{ "time": 0.4333, "value": -25.82 },
+					{ "time": 0.8333, "value": -30.17 }
+				]
+			},
+			"game/dq-forearm-front": {
+				"rotate": [
+					{ "value": -19.27 },
+					{ "time": 0.4333, "value": 5.77 },
+					{ "time": 0.8333, "value": -19.27 }
+				]
+			},
+			"game/dq-leg": {
+				"rotate": [
+					{},
+					{ "time": 0.4333, "value": 15.77 },
+					{ "time": 0.8333 }
+				]
+			},
+			"game/dq-foreleg-front": {
+				"rotate": [
+					{},
+					{ "time": 0.4333, "value": -45.97 },
+					{ "time": 0.8333 }
+				]
+			},
+			"game/dq-leg2": {
+				"rotate": [
+					{},
+					{ "time": 0.4333, "value": 23.34 },
+					{ "time": 0.8333 }
+				]
+			},
+			"game/dq-foreleg-front2": {
+				"rotate": [
+					{},
+					{ "time": 0.4333, "value": -55.37 },
+					{ "time": 0.8333 }
+				]
+			},
+			"bone": {
+				"translate": [
+					{},
+					{ "time": 0.4333, "x": 0.86, "y": -11.17 },
+					{ "time": 0.8333 }
+				]
+			}
+		}
+	},
+	"throw": {
+		"bones": {
+			"game/dq-body3": {
+				"rotate": [
+					{ "value": 183.67 },
+					{ "time": 0.1667, "value": 74.38 }
+				]
+			},
+			"game/dq-forearm-front2": {
+				"rotate": [
+					{ "value": 42.43 },
+					{ "time": 0.1667, "value": -84.56 }
+				]
+			}
+		}
+	},
+	"whip": {
+		"slots": {
+			"game/whip": {
+				"rgba2": [
+					{ "time": 0.6667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "ffffff00", "dark": "000000" }
+				],
+				"attachment": [
+					{ "name": "game/whip" }
+				]
+			}
+		},
+		"bones": {
+			"game/dq-body3": {
+				"rotate": [
+					{},
+					{ "time": 0.1333, "value": 117.12 },
+					{ "time": 0.3333, "value": 68.2 }
+				]
+			},
+			"game/dq-forearm-front2": {
+				"rotate": [
+					{},
+					{ "time": 0.1333, "value": 6.44 },
+					{ "time": 0.3333, "value": -85.02 }
+				]
+			},
+			"game/whip3": {
+				"rotate": [
+					{ "value": 47.82 },
+					{ "time": 0.1333, "value": 53.06 },
+					{ "time": 0.2, "value": 2.51 },
+					{ "time": 0.2333, "value": 12.16 },
+					{ "time": 0.3333, "value": 1.74 }
+				]
+			},
+			"weapon": {
+				"rotate": [
+					{ "value": 93.99, "curve": "stepped" },
+					{ "time": 0.1333, "value": 93.99 },
+					{ "time": 0.3333, "value": 14.87 }
+				],
+				"translate": [
+					{ "x": 13.98, "y": -37.29, "curve": "stepped" },
+					{ "time": 0.1333, "x": 13.98, "y": -37.29 },
+					{ "time": 0.3333, "x": -2.52, "y": -10.44 }
+				]
+			},
+			"game/whip3b": {
+				"rotate": [
+					{ "value": 44.77 },
+					{ "time": 0.1333, "value": 25.37 },
+					{ "time": 0.2333, "value": 25.64 },
+					{ "time": 0.3333, "value": -0.43 }
+				]
+			},
+			"game/whip3c": {
+				"rotate": [
+					{ "value": 39.99 },
+					{ "time": 0.1333, "value": -4.81 },
+					{ "time": 0.2333, "value": 12.25 },
+					{ "time": 0.3333, "value": -0.18 }
+				]
+			},
+			"game/whip3d": {
+				"rotate": [
+					{ "value": 39.16 },
+					{ "time": 0.1333, "value": -22.79 },
+					{ "time": 0.1667, "value": 11.22 },
+					{ "time": 0.2333, "value": 0.79 },
+					{ "time": 0.3333, "value": 0.34 }
+				]
+			},
+			"game/whip3e": {
+				"rotate": [
+					{ "value": 39.98 },
+					{ "time": 0.1333, "value": -16.54 },
+					{ "time": 0.1667, "value": 34.56 },
+					{ "time": 0.2333, "value": 19.01 },
+					{ "time": 0.3333, "value": 0.5 }
+				]
+			},
+			"game/whip3f": {
+				"rotate": [
+					{ "value": 37.2 },
+					{ "time": 0.1333, "value": -1.56 },
+					{ "time": 0.3333, "value": 0.38 }
+				]
+			},
+			"game/whip3g": {
+				"rotate": [
+					{ "value": -25.23 },
+					{ "time": 0.1333, "value": -56.29 },
+					{ "time": 0.1667, "value": -41.71 },
+					{ "time": 0.2, "value": 17.17 },
+					{ "time": 0.2333, "value": 36.91 },
+					{ "time": 0.3333, "value": -0.78 }
+				]
+			},
+			"game/whip3h": {
+				"rotate": [
+					{ "value": -60.47 },
+					{ "time": 0.1333, "value": -31.6 },
+					{ "time": 0.2, "value": 15.94 },
+					{ "time": 0.2333, "value": 7.37 },
+					{ "time": 0.3333, "value": -0.29 }
+				]
+			},
+			"game/whip3i": {
+				"rotate": [
+					{ "value": -38.19 },
+					{ "time": 0.0333, "value": -60.56 },
+					{ "time": 0.0667, "value": -41.96 },
+					{ "time": 0.1, "value": -14.5, "curve": "stepped" },
+					{ "time": 0.1667, "value": -14.5 },
+					{ "time": 0.2333, "value": 26.53 },
+					{ "time": 0.3333, "value": 3.22 },
+					{ "time": 0.4667, "value": 2.69 }
+				]
+			},
+			"game/whip3j": {
+				"rotate": [
+					{ "value": 18.43 },
+					{ "time": 0.1333, "value": -3.34 },
+					{ "time": 0.1667, "value": -16.53 },
+					{ "time": 0.2333, "value": 31.48 },
+					{ "time": 0.2667, "value": 16.44 },
+					{ "time": 0.3333, "value": 0.15 }
+				]
+			}
+		}
+	},
+	"whip-down": {
+		"slots": {
+			"game/whip": {
+				"rgba2": [
+					{ "time": 0.6, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.7667, "light": "ffffff00", "dark": "000000" }
+				],
+				"attachment": [
+					{ "name": "game/whip" }
+				]
+			}
+		},
+		"bones": {
+			"game/dq-body3": {
+				"rotate": [
+					{},
+					{ "time": 0.1333, "value": 117.12 },
+					{ "time": 0.3333, "value": -20.9 }
+				]
+			},
+			"game/dq-forearm-front2": {
+				"rotate": [
+					{},
+					{ "time": 0.1333, "value": 6.44 },
+					{ "time": 0.3333, "value": -84.56 }
+				]
+			},
+			"game/whip3": {
+				"rotate": [
+					{ "value": 47.82 },
+					{ "time": 0.1333, "value": 53.06 },
+					{ "time": 0.2, "value": 2.51 },
+					{ "time": 0.2333, "value": 12.16 },
+					{ "time": 0.3333, "value": 1.74 }
+				]
+			},
+			"weapon": {
+				"rotate": [
+					{ "value": 93.99, "curve": "stepped" },
+					{ "time": 0.1333, "value": 93.99 },
+					{ "time": 0.3333, "value": 14.87 }
+				],
+				"translate": [
+					{ "x": 13.98, "y": -37.29, "curve": "stepped" },
+					{ "time": 0.1333, "x": 13.98, "y": -37.29 },
+					{ "time": 0.3333, "x": -2.52, "y": -10.44 }
+				]
+			},
+			"game/whip3b": {
+				"rotate": [
+					{ "value": 44.77 },
+					{ "time": 0.1333, "value": 25.37 },
+					{ "time": 0.2333, "value": 25.64 },
+					{ "time": 0.3333, "value": -0.43 }
+				]
+			},
+			"game/whip3c": {
+				"rotate": [
+					{ "value": 39.99 },
+					{ "time": 0.1333, "value": -4.81 },
+					{ "time": 0.2333, "value": 12.25 },
+					{ "time": 0.3333, "value": -0.18 }
+				]
+			},
+			"game/whip3d": {
+				"rotate": [
+					{ "value": 39.16 },
+					{ "time": 0.1333, "value": -22.79 },
+					{ "time": 0.1667, "value": 11.22 },
+					{ "time": 0.2333, "value": 0.79 },
+					{ "time": 0.3333, "value": 0.34 }
+				]
+			},
+			"game/whip3e": {
+				"rotate": [
+					{ "value": 39.98 },
+					{ "time": 0.1333, "value": -16.54 },
+					{ "time": 0.1667, "value": 34.56 },
+					{ "time": 0.2333, "value": 19.01 },
+					{ "time": 0.3333, "value": 0.5 }
+				]
+			},
+			"game/whip3f": {
+				"rotate": [
+					{ "value": 37.2 },
+					{ "time": 0.1333, "value": -1.56 },
+					{ "time": 0.3333, "value": 0.38 }
+				]
+			},
+			"game/whip3g": {
+				"rotate": [
+					{ "value": -25.23 },
+					{ "time": 0.1333, "value": -56.29 },
+					{ "time": 0.1667, "value": -41.71 },
+					{ "time": 0.2, "value": 17.17 },
+					{ "time": 0.2333, "value": 36.91 },
+					{ "time": 0.3333, "value": -0.78 }
+				]
+			},
+			"game/whip3h": {
+				"rotate": [
+					{ "value": -60.47 },
+					{ "time": 0.1333, "value": -31.6 },
+					{ "time": 0.2, "value": 15.94 },
+					{ "time": 0.2333, "value": 7.37 },
+					{ "time": 0.3333, "value": -0.29 }
+				]
+			},
+			"game/whip3i": {
+				"rotate": [
+					{ "value": -38.19 },
+					{ "time": 0.0333, "value": -60.56 },
+					{ "time": 0.0667, "value": -41.96 },
+					{ "time": 0.1, "value": -14.5, "curve": "stepped" },
+					{ "time": 0.1667, "value": -14.5 },
+					{ "time": 0.2333, "value": 26.53 },
+					{ "time": 0.3333, "value": 3.22 }
+				]
+			},
+			"game/whip3j": {
+				"rotate": [
+					{ "value": 18.43 },
+					{ "time": 0.1333, "value": -3.34 },
+					{ "time": 0.1667, "value": -16.53 },
+					{ "time": 0.2333, "value": 31.48 },
+					{ "time": 0.2667, "value": 16.44 },
+					{ "time": 0.3333, "value": 0.15 }
+				]
+			}
+		}
+	},
+	"whip-up": {
+		"slots": {
+			"game/whip": {
+				"rgba2": [
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.7667, "light": "ffffff00", "dark": "000000" }
+				],
+				"attachment": [
+					{ "name": "game/whip" }
+				]
+			}
+		},
+		"bones": {
+			"game/dq-body3": {
+				"rotate": [
+					{},
+					{ "time": 0.1333, "value": 179.82 },
+					{ "time": 0.3333, "value": 161.41 }
+				]
+			},
+			"game/dq-forearm-front2": {
+				"rotate": [
+					{},
+					{ "time": 0.1333, "value": 9.11 },
+					{ "time": 0.3333, "value": -85.02 }
+				]
+			},
+			"game/whip3": {
+				"rotate": [
+					{ "value": 47.82 },
+					{ "time": 0.1333, "value": 1.8 },
+					{ "time": 0.2, "value": 2.51 },
+					{ "time": 0.2333, "value": 12.16 },
+					{ "time": 0.3333, "value": 1.74 }
+				]
+			},
+			"weapon": {
+				"rotate": [
+					{ "value": 93.99, "curve": "stepped" },
+					{ "time": 0.1333, "value": 93.99 },
+					{ "time": 0.3333, "value": 16 }
+				],
+				"translate": [
+					{ "x": 13.98, "y": -37.29, "curve": "stepped" },
+					{ "time": 0.1333, "x": 13.98, "y": -37.29 },
+					{ "time": 0.3333, "x": 1.33, "y": -6.68 }
+				]
+			},
+			"game/whip3b": {
+				"rotate": [
+					{ "value": 44.77 },
+					{ "time": 0.1333, "value": 5.34 },
+					{ "time": 0.2333, "value": 25.64 },
+					{ "time": 0.3333, "value": -0.43 }
+				]
+			},
+			"game/whip3c": {
+				"rotate": [
+					{ "value": 39.99 },
+					{ "time": 0.1333, "value": -4.81 },
+					{ "time": 0.2333, "value": 12.25 },
+					{ "time": 0.3333, "value": -0.18 }
+				]
+			},
+			"game/whip3d": {
+				"rotate": [
+					{ "value": 39.16 },
+					{ "time": 0.1333, "value": -22.79 },
+					{ "time": 0.1667, "value": 11.22 },
+					{ "time": 0.2333, "value": 0.79 },
+					{ "time": 0.3333, "value": 0.34 }
+				]
+			},
+			"game/whip3e": {
+				"rotate": [
+					{ "value": 39.98 },
+					{ "time": 0.1333, "value": -16.54 },
+					{ "time": 0.1667, "value": 1.74 },
+					{ "time": 0.2333, "value": 19.01 },
+					{ "time": 0.3333, "value": 0.5 }
+				]
+			},
+			"game/whip3f": {
+				"rotate": [
+					{ "value": 37.2 },
+					{ "time": 0.1333, "value": -1.56 },
+					{ "time": 0.3333, "value": 0.38 }
+				]
+			},
+			"game/whip3g": {
+				"rotate": [
+					{ "value": -25.23 },
+					{ "time": 0.1333, "value": -38.91 },
+					{ "time": 0.1667, "value": -3.77 },
+					{ "time": 0.2, "value": 17.17 },
+					{ "time": 0.2333, "value": 36.91 },
+					{ "time": 0.3333, "value": -0.78 }
+				]
+			},
+			"game/whip3h": {
+				"rotate": [
+					{ "value": -60.47 },
+					{ "time": 0.1333, "value": -18.86 },
+					{ "time": 0.1667, "value": 0.26 },
+					{ "time": 0.2, "value": 15.94 },
+					{ "time": 0.2333, "value": 7.37 },
+					{ "time": 0.3333, "value": -0.29 }
+				]
+			},
+			"game/whip3i": {
+				"rotate": [
+					{ "value": -38.19 },
+					{ "time": 0.0333, "value": -60.56 },
+					{ "time": 0.0667, "value": -41.96 },
+					{ "time": 0.1, "value": -14.5 },
+					{ "time": 0.1333, "value": -2.68 },
+					{ "time": 0.1667, "value": 0.65 },
+					{ "time": 0.2333, "value": 26.53 },
+					{ "time": 0.3333, "value": 3.22 }
+				]
+			},
+			"game/whip3j": {
+				"rotate": [
+					{ "value": 18.43 },
+					{ "time": 0.1333, "value": -3.34 },
+					{ "time": 0.1667, "value": 2.68 },
+					{ "time": 0.2333, "value": 31.48 },
+					{ "time": 0.2667, "value": 16.44 },
+					{ "time": 0.3333, "value": 0.15 }
+				]
+			}
+		}
+	}
+}
+}

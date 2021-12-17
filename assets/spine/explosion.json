@@ -1,0 +1,58 @@
+{
+"skeleton": {
+	"hash": "vCKCOR1nvUU",
+	"spine": "4.0.55",
+	"x": -117.69,
+	"y": -149.91,
+	"width": 244,
+	"height": 277,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/explosion-Layer-2", "bone": "root", "attachment": "game/explosion-Layer-10" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"game/explosion-Layer-2": {
+				"game/explosion-Layer-2": { "y": 0.5, "width": 244, "height": 277 },
+				"game/explosion-Layer-3": { "y": 0.5, "width": 244, "height": 277 },
+				"game/explosion-Layer-4": { "y": 0.5, "width": 244, "height": 277 },
+				"game/explosion-Layer-5": { "y": 0.5, "width": 244, "height": 277 },
+				"game/explosion-Layer-6": { "y": 0.5, "width": 244, "height": 277 },
+				"game/explosion-Layer-7": { "y": 0.5, "width": 244, "height": 277 },
+				"game/explosion-Layer-8": { "y": 0.5, "width": 244, "height": 277 },
+				"game/explosion-Layer-9": { "y": 0.5, "width": 244, "height": 277 },
+				"game/explosion-Layer-10": { "x": 4.31, "y": -11.41, "width": 244, "height": 277 },
+				"game/explosion-Layer-11": { "path": "game/explosion-Layer-10", "y": 0.5, "width": 244, "height": 277 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"game/explosion-Layer-2": {
+				"attachment": [
+					{ "name": "game/explosion-Layer-2" },
+					{ "time": 0.0333, "name": "game/explosion-Layer-3" },
+					{ "time": 0.0667, "name": "game/explosion-Layer-4" },
+					{ "time": 0.1, "name": "game/explosion-Layer-5" },
+					{ "time": 0.1333, "name": "game/explosion-Layer-6" },
+					{ "time": 0.1667, "name": "game/explosion-Layer-7" },
+					{ "time": 0.2, "name": "game/explosion-Layer-8" },
+					{ "time": 0.2333, "name": "game/explosion-Layer-9" },
+					{ "time": 0.2667, "name": "game/explosion-Layer-10" },
+					{ "time": 0.3, "name": "game/explosion-Layer-11" },
+					{ "time": 0.3333, "name": null }
+				]
+			}
+		}
+	}
+}
+}

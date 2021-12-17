@@ -1,0 +1,59 @@
+{
+"skeleton": {
+	"hash": "TNxXcxXXGwQ",
+	"spine": "4.0.55",
+	"x": -65.72,
+	"y": -31.21,
+	"width": 132,
+	"height": 106,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/shooter-head", "bone": "root", "dark": "000000", "attachment": "game/shooter-head" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -49.89, -27.21, -49.89, 72.2, 70.04, 70.62, 70.04, -30.37 ]
+				}
+			},
+			"game/shooter-head": {
+				"game/shooter-head": { "x": 0.28, "y": 21.79, "width": 132, "height": 106 }
+			}
+		}
+	}
+],
+"animations": {
+	"die": {
+		"slots": {
+			"game/shooter-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"game/shooter-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	}
+}
+}

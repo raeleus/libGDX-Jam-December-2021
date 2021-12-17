@@ -1,0 +1,56 @@
+{
+"skeleton": {
+	"hash": "AKcDPlBz/jE",
+	"spine": "4.0.55",
+	"x": -112.39,
+	"y": -62.07,
+	"width": 194,
+	"height": 157,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/pod", "parent": "root", "length": 99.96, "rotation": 0.58, "x": -0.24, "y": 22.49 }
+],
+"slots": [
+	{ "name": "game/pod", "bone": "game/pod", "attachment": "game/pod" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -72.98, -62.07, -68.75, 95.64, 83.67, 93.52, 82.62, -63.13 ]
+				}
+			},
+			"game/pod": {
+				"game/pod": { "x": -15.2, "y": -5.9, "rotation": -0.58, "width": 194, "height": 157 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"game/pod": {
+				"translate": [
+					{
+						"curve": [ 0.389, 0, 0.778, 0, 0.389, 17.5, 0.778, 52.5 ]
+					},
+					{
+						"time": 1.1667,
+						"y": 52.5,
+						"curve": [ 1.556, 0, 1.944, 0, 1.556, 52.5, 1.944, 17.5 ]
+					},
+					{ "time": 2.3333 }
+				]
+			}
+		}
+	}
+}
+}

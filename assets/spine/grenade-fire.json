@@ -1,0 +1,84 @@
+{
+"skeleton": {
+	"hash": "OW+wATRhc/s",
+	"spine": "4.0.55",
+	"x": -64.61,
+	"y": -3.44,
+	"width": 135,
+	"height": 83,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/grenade-fire-Layer-2", "parent": "root", "length": 72.28, "rotation": 0.54, "x": 0.72, "y": 2.14 }
+],
+"slots": [
+	{ "name": "game/grenade-fire-Layer-2", "bone": "game/grenade-fire-Layer-2", "attachment": "game/grenade-fire-Layer-3" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -48.59, -1.33, -43.72, 67.72, 57.02, 66.91, 53.77, 0.3 ]
+				}
+			},
+			"game/grenade-fire-Layer-2": {
+				"game/grenade-fire-Layer-2": { "x": 2.51, "y": 35.9, "rotation": -0.54, "width": 135, "height": 83 },
+				"game/grenade-fire-Layer-3": { "x": 2.51, "y": 35.9, "rotation": -0.54, "width": 135, "height": 83 },
+				"game/grenade-fire-Layer-4": { "x": 2.51, "y": 35.9, "rotation": -0.54, "width": 135, "height": 83 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"game/grenade-fire-Layer-2": {
+				"rgba": [
+					{ "time": 1, "color": "ffffffff" },
+					{ "time": 1.2, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "game/grenade-fire-Layer-2" },
+					{ "time": 0.0667, "name": "game/grenade-fire-Layer-3" },
+					{ "time": 0.1333, "name": "game/grenade-fire-Layer-4" },
+					{ "time": 0.2, "name": "game/grenade-fire-Layer-2" },
+					{ "time": 0.2667, "name": "game/grenade-fire-Layer-3" },
+					{ "time": 0.3333, "name": "game/grenade-fire-Layer-4" },
+					{ "time": 0.4, "name": "game/grenade-fire-Layer-2" },
+					{ "time": 0.4667, "name": "game/grenade-fire-Layer-3" },
+					{ "time": 0.5333, "name": "game/grenade-fire-Layer-4" },
+					{ "time": 0.6, "name": "game/grenade-fire-Layer-2" },
+					{ "time": 0.6667, "name": "game/grenade-fire-Layer-3" },
+					{ "time": 0.7333, "name": "game/grenade-fire-Layer-4" },
+					{ "time": 0.8, "name": "game/grenade-fire-Layer-2" },
+					{ "time": 0.8667, "name": "game/grenade-fire-Layer-3" },
+					{ "time": 0.9333, "name": "game/grenade-fire-Layer-4" },
+					{ "time": 1, "name": "game/grenade-fire-Layer-2" },
+					{ "time": 1.0667, "name": "game/grenade-fire-Layer-3" },
+					{ "time": 1.1333, "name": "game/grenade-fire-Layer-4" },
+					{ "time": 1.2, "name": "game/grenade-fire-Layer-2" }
+				]
+			}
+		},
+		"bones": {
+			"game/grenade-fire-Layer-2": {
+				"scale": [
+					{
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.056, 0, 0.211, 1, 0, 0.507, 0.211, 1 ]
+					},
+					{ "time": 0.2667 }
+				]
+			}
+		}
+	}
+}
+}

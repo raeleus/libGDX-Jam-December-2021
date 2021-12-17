@@ -1,0 +1,268 @@
+{
+"skeleton": {
+	"hash": "siuufEyR2Zc",
+	"spine": "4.0.55",
+	"x": -143.2,
+	"y": -3.83,
+	"width": 289.88,
+	"height": 223.62,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/wolf-body", "parent": "root", "length": 181, "rotation": 3.2, "x": -51.73, "y": 88.12 },
+	{ "name": "game/wolf-head", "parent": "game/wolf-body", "length": 62.6, "rotation": -2.27, "x": 147.86, "y": 40.28 },
+	{ "name": "game/wolf-leg2", "parent": "game/wolf-body", "length": 49.51, "rotation": -95.53, "x": 114.35, "y": -34.7 },
+	{ "name": "game/wolf-body2", "parent": "game/wolf-body", "x": 109.57, "y": -83.98 },
+	{ "name": "game/wolf-leg", "parent": "game/wolf-body", "length": 52.54, "rotation": -95.4, "x": 134.06, "y": -25.69 },
+	{ "name": "game/wolf-body3", "parent": "game/wolf-body", "length": 71.51, "rotation": -106.25, "x": -2.97, "y": -17.02 },
+	{ "name": "game/wolf-rear-leg", "parent": "game/wolf-body", "length": 74.86, "rotation": -103.3, "x": 39.76, "y": -12.33 },
+	{ "name": "game/wolf-tail", "parent": "game/wolf-body", "length": 99.81, "rotation": -175.64, "x": -11.31, "y": 14.79 }
+],
+"slots": [
+	{ "name": "game/wolf-tail", "bone": "game/wolf-tail", "dark": "000000", "attachment": "game/wolf-tail" },
+	{ "name": "game/wolf-leg", "bone": "game/wolf-leg", "dark": "000000", "attachment": "game/wolf-leg" },
+	{ "name": "game/wolf-rear-leg", "bone": "game/wolf-rear-leg", "dark": "000000", "attachment": "game/wolf-rear-leg" },
+	{ "name": "game/wolf-body", "bone": "game/wolf-body", "dark": "000000", "attachment": "game/wolf-body" },
+	{ "name": "game/wolf-rear-leg2", "bone": "game/wolf-body3", "dark": "000000", "attachment": "game/wolf-rear-leg" },
+	{ "name": "game/wolf-leg2", "bone": "game/wolf-leg2", "dark": "000000", "attachment": "game/wolf-leg" },
+	{ "name": "game/wolf-head", "bone": "game/wolf-head", "dark": "000000", "attachment": "game/wolf-head" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -87.8, -1.74, -85.68, 179.26, 146.12, 179.26, 142.95, 1.44 ]
+				}
+			},
+			"game/wolf-body": {
+				"game/wolf-body": { "x": 72.53, "y": 13.14, "rotation": -3.2, "width": 188, "height": 124 }
+			},
+			"game/wolf-head": {
+				"game/wolf-head": { "x": 3.39, "y": 22.16, "rotation": -0.92, "width": 100, "height": 122 }
+			},
+			"game/wolf-leg": {
+				"game/wolf-leg": { "x": 23.83, "y": -1.65, "rotation": 92.2, "width": 29, "height": 66 }
+			},
+			"game/wolf-leg2": {
+				"game/wolf-leg": { "x": 24.06, "y": 2.06, "rotation": 92.34, "width": 29, "height": 66 }
+			},
+			"game/wolf-rear-leg": {
+				"game/wolf-rear-leg": { "x": 30.88, "y": -0.65, "rotation": 100.1, "width": 84, "height": 91 }
+			},
+			"game/wolf-rear-leg2": {
+				"game/wolf-rear-leg": { "x": 29.66, "y": 1.7, "rotation": 103.06, "width": 84, "height": 91 }
+			},
+			"game/wolf-tail": {
+				"game/wolf-tail": { "x": 40.28, "y": 27.25, "rotation": 172.44, "width": 86, "height": 97 }
+			}
+		}
+	}
+],
+"animations": {
+	"die": {
+		"slots": {
+			"game/wolf-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/wolf-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/wolf-leg": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/wolf-leg2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/wolf-rear-leg": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/wolf-rear-leg2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/wolf-tail": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"game/wolf-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/wolf-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/wolf-leg": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/wolf-leg2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/wolf-rear-leg": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/wolf-rear-leg2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/wolf-tail": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"run": {
+		"bones": {
+			"game/wolf-leg2": {
+				"rotate": [
+					{ "value": 10.74 },
+					{ "time": 0.0333, "value": 3 },
+					{ "time": 0.0667, "value": -39.97 },
+					{ "time": 0.1, "value": -18.09 },
+					{ "time": 0.1333, "value": -20.63 },
+					{ "time": 0.1667, "value": -2.16 },
+					{ "time": 0.2, "value": 32.49 },
+					{ "time": 0.2333, "value": 54.89 },
+					{ "time": 0.2667, "value": 70.08 },
+					{ "time": 0.3, "value": 65.06 },
+					{ "time": 0.3333, "value": 77.63 },
+					{ "time": 0.3667, "value": 68.25 },
+					{ "time": 0.4, "value": 10.74 }
+				]
+			},
+			"game/wolf-leg": {
+				"rotate": [
+					{ "value": -39.24 },
+					{ "time": 0.0333, "value": -47.17 },
+					{ "time": 0.0667, "value": -15.07 },
+					{ "time": 0.1, "value": 6.39 },
+					{ "time": 0.1333, "value": 9.09 },
+					{ "time": 0.1667, "value": 28.31 },
+					{ "time": 0.2, "value": 50.37 },
+					{ "time": 0.2333, "value": 68.71 },
+					{ "time": 0.2667, "value": 84.25 },
+					{ "time": 0.3, "value": 58.94 },
+					{ "time": 0.3333, "value": 24.57 },
+					{ "time": 0.3667, "value": -7.76 },
+					{ "time": 0.4, "value": -39.24 }
+				]
+			},
+			"game/wolf-body3": {
+				"rotate": [
+					{ "value": 39.7 },
+					{ "time": 0.0333, "value": 63.08 },
+					{ "time": 0.0667, "value": 76.33 },
+					{ "time": 0.1, "value": 78.22 },
+					{ "time": 0.1333, "value": 96.34 },
+					{ "time": 0.1667, "value": 79.85 },
+					{ "time": 0.2, "value": -4.89 },
+					{ "time": 0.2333, "value": -37.64 },
+					{ "time": 0.2667, "value": -61.74 },
+					{ "time": 0.3, "value": -37.63 },
+					{ "time": 0.3333, "value": -12.28 },
+					{ "time": 0.3667, "value": 32.35 },
+					{ "time": 0.4, "value": 39.7 }
+				]
+			},
+			"game/wolf-rear-leg": {
+				"rotate": [
+					{ "value": 33.99 },
+					{ "time": 0.0333, "value": 44.56 },
+					{ "time": 0.0667, "value": 25.5 },
+					{ "time": 0.1, "value": 15.91 },
+					{ "time": 0.1333, "value": -14.4 },
+					{ "time": 0.1667, "value": -38.22 },
+					{ "time": 0.2, "value": -31.36 },
+					{ "time": 0.2333, "value": -37.98 },
+					{ "time": 0.2667, "value": -46.68 },
+					{ "time": 0.3, "value": 5.25 },
+					{ "time": 0.3333, "value": 26.08 },
+					{ "time": 0.3667, "value": 19.65 },
+					{ "time": 0.4, "value": 33.99 }
+				]
+			},
+			"game/wolf-body": {
+				"rotate": [
+					{ "value": -4.19 },
+					{ "time": 0.2333, "value": 4.76 },
+					{ "time": 0.4, "value": -4.19 }
+				]
+			},
+			"game/wolf-tail": {
+				"rotate": [
+					{ "value": -33.81 },
+					{ "time": 0.1, "value": -23.6 },
+					{ "time": 0.2, "value": -21.07 },
+					{ "time": 0.3, "value": -29.15 },
+					{ "time": 0.4, "value": -33.81 }
+				]
+			},
+			"game/wolf-head": {
+				"rotate": [
+					{ "value": 4.79 },
+					{ "time": 0.0667, "value": 0.03 },
+					{ "time": 0.1333, "value": -2.5 },
+					{ "time": 0.2, "value": -4.24 },
+					{ "time": 0.2667, "value": -2.34 },
+					{ "time": 0.3333, "value": -0.96 },
+					{ "time": 0.4, "value": 4.79 }
+				]
+			}
+		}
+	}
+}
+}

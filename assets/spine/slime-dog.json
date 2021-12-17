@@ -1,0 +1,396 @@
+{
+"skeleton": {
+	"hash": "Ef/wr6f7YCA",
+	"spine": "4.0.55",
+	"x": -239.66,
+	"y": -42.06,
+	"width": 607.8,
+	"height": 440.89,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/slimedog-body", "parent": "root", "length": 181.47, "x": 3.45, "y": 232.1 },
+	{ "name": "game/slimedog-tail", "parent": "game/slimedog-body", "length": 83.38, "rotation": -9.64, "x": 145.02, "y": -86.86 },
+	{ "name": "game/slimedog-tail3", "parent": "game/slimedog-tail", "length": 87.97, "rotation": 0.51, "x": 71.91, "y": -1.95 },
+	{ "name": "game/slimedog-tail5", "parent": "game/slimedog-tail3", "length": 83.8, "rotation": -2.08, "x": 66.68, "y": 0.51 },
+	{ "name": "game/slimedog-leg4", "parent": "game/slimedog-body", "length": 96.43, "rotation": -101.13, "x": -80.65, "y": -106.25 },
+	{ "name": "game/slimedog-foot4", "parent": "game/slimedog-leg4", "length": 57.42, "rotation": -5.35, "x": 97.8, "y": 1.06 },
+	{ "name": "game/slimedog-leg2", "parent": "game/slimedog-body", "length": 92.46, "rotation": -98.2, "x": -51.18, "y": -110.12 },
+	{ "name": "game/slimedog-foot2", "parent": "game/slimedog-leg2", "length": 58.21, "rotation": 5.91, "x": 91.03, "y": -0.99 },
+	{ "name": "game/slimedog-leg3", "parent": "game/slimedog-body", "length": 91.78, "rotation": -94.36, "x": 75.23, "y": -108.57 },
+	{ "name": "game/slimedog-foot3", "parent": "game/slimedog-leg3", "length": 60.79, "rotation": -18.93, "x": 90.29, "y": -0.89 },
+	{ "name": "game/slimedog-leg", "parent": "game/slimedog-body", "length": 96.96, "rotation": -97.35, "x": 116.33, "y": -110.12 },
+	{ "name": "game/slimedog-foot", "parent": "game/slimedog-leg", "length": 56.12, "rotation": -3.8, "x": 92.74, "y": -3.67 },
+	{ "name": "game/slimedog-tail4", "parent": "game/slimedog-body", "length": 80.3, "rotation": 176.48, "x": -76.34, "y": 42.01 },
+	{
+		"name": "game/slimedog-jaw",
+		"parent": "game/slimedog-tail4",
+		"length": 91.04,
+		"rotation": -336.04,
+		"x": 50.36,
+		"y": 9.45,
+		"transform": "noScaleOrReflection"
+	},
+	{
+		"name": "game/slimedog-head",
+		"parent": "game/slimedog-tail4",
+		"length": 100.9,
+		"rotation": -41.48,
+		"x": 45.99,
+		"y": -7.92,
+		"transform": "noScaleOrReflection"
+	}
+],
+"slots": [
+	{ "name": "game/slimedog-foot", "bone": "game/slimedog-foot", "dark": "000000", "attachment": "game/slimedog-foot" },
+	{ "name": "game/slimedog-foot2", "bone": "game/slimedog-foot2", "dark": "000000", "attachment": "game/slimedog-foot" },
+	{ "name": "game/slimedog-leg", "bone": "game/slimedog-leg", "dark": "000000", "attachment": "game/slimedog-leg" },
+	{ "name": "game/slimedog-leg2", "bone": "game/slimedog-leg2", "dark": "000000", "attachment": "game/slimedog-leg" },
+	{ "name": "game/slimedog-tail4", "bone": "game/slimedog-tail4", "dark": "000000", "attachment": "game/slimedog-tail" },
+	{ "name": "game/slimedog-body", "bone": "game/slimedog-body", "dark": "000000", "attachment": "game/slimedog-body" },
+	{ "name": "game/slimedog-foot3", "bone": "game/slimedog-foot3", "dark": "000000", "attachment": "game/slimedog-foot" },
+	{ "name": "game/slimedog-foot4", "bone": "game/slimedog-foot4", "dark": "000000", "attachment": "game/slimedog-foot" },
+	{ "name": "game/slimedog-head", "bone": "game/slimedog-head", "dark": "000000", "attachment": "game/slimedog-head" },
+	{ "name": "game/slimedog-jaw", "bone": "game/slimedog-jaw", "dark": "000000", "attachment": "game/slimedog-jaw" },
+	{ "name": "game/slimedog-leg3", "bone": "game/slimedog-leg3", "dark": "000000", "attachment": "game/slimedog-leg" },
+	{ "name": "game/slimedog-leg4", "bone": "game/slimedog-leg4", "dark": "000000", "attachment": "game/slimedog-leg" },
+	{ "name": "game/slimedog-tail", "bone": "game/slimedog-tail", "dark": "000000", "attachment": "game/slimedog-tail" },
+	{ "name": "game/slimedog-tail2", "bone": "game/slimedog-tail3", "dark": "000000", "attachment": "game/slimedog-tail" },
+	{ "name": "game/slimedog-tail3", "bone": "game/slimedog-tail5", "dark": "000000", "attachment": "game/slimedog-tail" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -131.95, 338.89, -135.1, 114.81, 153.67, 114.81, 153.67, 337.31 ]
+				}
+			},
+			"game/slimedog-body": {
+				"game/slimedog-body": { "x": 15.51, "y": 14.73, "width": 353, "height": 304 }
+			},
+			"game/slimedog-foot": {
+				"game/slimedog-foot": { "x": 34.04, "y": -12.26, "rotation": 101.15, "width": 117, "height": 83 }
+			},
+			"game/slimedog-foot2": {
+				"game/slimedog-foot": { "x": 33.26, "y": -16.52, "rotation": 92.29, "width": 117, "height": 83 }
+			},
+			"game/slimedog-foot3": {
+				"game/slimedog-foot": { "x": 39.31, "y": -5.03, "rotation": 113.29, "width": 117, "height": 83 }
+			},
+			"game/slimedog-foot4": {
+				"game/slimedog-foot": { "x": 34.5, "y": -10.01, "rotation": 106.48, "width": 117, "height": 83 }
+			},
+			"game/slimedog-head": {
+				"game/slimedog-head": { "x": 64.16, "y": 4.94, "rotation": -135, "width": 145, "height": 113 }
+			},
+			"game/slimedog-jaw": {
+				"game/slimedog-jaw": { "x": 50.37, "y": 1.92, "rotation": 159.56, "width": 131, "height": 72 }
+			},
+			"game/slimedog-leg": {
+				"game/slimedog-leg": { "x": 39.62, "y": 1.98, "rotation": 97.35, "width": 76, "height": 117 }
+			},
+			"game/slimedog-leg2": {
+				"game/slimedog-leg": { "x": 39.26, "y": 4.87, "rotation": 98.2, "width": 76, "height": 117 }
+			},
+			"game/slimedog-leg3": {
+				"game/slimedog-leg": { "x": 40.75, "y": 6.22, "rotation": 94.36, "width": 76, "height": 117 }
+			},
+			"game/slimedog-leg4": {
+				"game/slimedog-leg": { "x": 43.81, "y": 2.3, "rotation": 101.13, "width": 76, "height": 117 }
+			},
+			"game/slimedog-tail": {
+				"game/slimedog-tail": { "x": 35.44, "y": -0.27, "rotation": 9.64, "width": 95, "height": 65 }
+			},
+			"game/slimedog-tail2": {
+				"game/slimedog-tail": { "x": 38.5, "y": -0.1, "rotation": 9.13, "width": 95, "height": 65 }
+			},
+			"game/slimedog-tail3": {
+				"game/slimedog-tail": { "x": 36.2, "y": 0.85, "rotation": 11.21, "width": 95, "height": 65 }
+			},
+			"game/slimedog-tail4": {
+				"game/slimedog-tail": { "x": 35.92, "y": -1.5, "rotation": -176.48, "width": 95, "height": 65 }
+			}
+		}
+	}
+],
+"animations": {
+	"attack": {
+		"bones": {
+			"game/slimedog-tail4": {
+				"scale": [
+					{},
+					{ "time": 0.2, "x": 8.278 },
+					{ "time": 0.4 }
+				]
+			},
+			"game/slimedog-jaw": {
+				"rotate": [
+					{},
+					{ "time": 0.1, "value": 57.3 },
+					{ "time": 0.2, "value": 58.1 },
+					{ "time": 0.3, "value": 57.3 },
+					{ "time": 0.4 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1, "x": 29.48, "y": 2.09 },
+					{ "time": 0.2, "x": 29.37, "y": -2.25 },
+					{ "time": 0.3, "x": 29.48, "y": 2.09 },
+					{ "time": 0.4 }
+				]
+			},
+			"game/slimedog-head": {
+				"rotate": [
+					{},
+					{ "time": 0.1, "value": -42.09 },
+					{ "time": 0.2, "value": -43.83 },
+					{ "time": 0.3, "value": -42.09 },
+					{ "time": 0.4 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1, "x": 31.73, "y": 3.74 },
+					{ "time": 0.2, "x": 33.87, "y": 1.05 },
+					{ "time": 0.3, "x": 31.73, "y": 3.74 },
+					{ "time": 0.4 }
+				]
+			}
+		}
+	},
+	"die": {
+		"slots": {
+			"game/slimedog-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/slimedog-foot": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/slimedog-foot2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/slimedog-foot3": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/slimedog-foot4": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/slimedog-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/slimedog-jaw": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/slimedog-leg": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/slimedog-leg2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/slimedog-leg3": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/slimedog-leg4": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/slimedog-tail": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/slimedog-tail2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/slimedog-tail3": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/slimedog-tail4": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"game/slimedog-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/slimedog-foot": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/slimedog-foot2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/slimedog-foot3": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/slimedog-foot4": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/slimedog-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/slimedog-jaw": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/slimedog-leg": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/slimedog-leg2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/slimedog-leg3": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/slimedog-leg4": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/slimedog-tail": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/slimedog-tail2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/slimedog-tail3": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/slimedog-tail4": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"stand": {
+		"bones": {
+			"game/slimedog-tail": {
+				"rotate": [
+					{ "value": -5.93 },
+					{ "time": 0.3667, "value": 20.3 },
+					{ "time": 0.7333, "value": -5.93 }
+				]
+			},
+			"game/slimedog-tail3": {
+				"rotate": [
+					{ "value": -21.68 },
+					{ "time": 0.3667, "value": 18.3 },
+					{ "time": 0.7333, "value": -21.68 }
+				]
+			},
+			"game/slimedog-tail5": {
+				"rotate": [
+					{ "value": -83.14 },
+					{ "time": 0.3667, "value": 47.02 },
+					{ "time": 0.7333, "value": -83.14 }
+				]
+			}
+		}
+	}
+}
+}

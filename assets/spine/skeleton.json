@@ -1,0 +1,505 @@
+{
+"skeleton": {
+	"hash": "9VZ6ycRFVrs",
+	"spine": "4.0.55",
+	"x": -209.89,
+	"y": -8.17,
+	"width": 338.88,
+	"height": 441.53,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/skeleton-hip", "parent": "root", "length": 73.95, "x": 10.44, "y": 187.38 },
+	{ "name": "game/skeleton-body", "parent": "game/skeleton-hip", "length": 126.05, "rotation": 115.89, "x": -2.52, "y": 24.37 },
+	{ "name": "game/skeleton-head", "parent": "game/skeleton-body", "length": 91.23, "rotation": 5.82, "x": 117.65 },
+	{ "name": "game/skeleton-jaw", "parent": "game/skeleton-head", "length": 45.97, "rotation": 102.29, "x": 5.75, "y": -9.88 },
+	{ "name": "game/skeleton-arm2", "parent": "game/skeleton-body", "length": 96.85, "rotation": 129.3, "x": 93.28, "y": 18.49 },
+	{ "name": "game/skeleton-forearm2", "parent": "game/skeleton-arm2", "length": 79.2, "rotation": -55.71, "x": 98.92, "y": 1.17 },
+	{ "name": "game/skeleton-sword", "parent": "game/skeleton-forearm2", "length": 250.53, "rotation": -102.62, "x": 82.41, "y": 1.55 },
+	{ "name": "game/skeleton-arm", "parent": "game/skeleton-body", "length": 98.05, "rotation": -135.35, "x": 66.39, "y": -47.9 },
+	{ "name": "game/skeleton-forearm", "parent": "game/skeleton-arm", "length": 94.63, "rotation": -86.38, "x": 98.64, "y": -0.59 },
+	{ "name": "game/skeleton-leg2", "parent": "game/skeleton-hip", "length": 99.76, "rotation": -112.41, "x": -29.41, "y": -16.81 },
+	{ "name": "game/skeleton-foreleg2", "parent": "game/skeleton-leg2", "length": 56.4, "rotation": 27.33, "x": 97.16, "y": 0.56 },
+	{ "name": "game/skeleton-foot2", "parent": "game/skeleton-foreleg2", "length": 28.53, "rotation": -25.46, "x": 53, "y": 0.64 },
+	{ "name": "game/skeleton-leg", "parent": "game/skeleton-hip", "length": 98.85, "rotation": -99.46, "x": 28.57, "y": -12.6 },
+	{ "name": "game/skeleton-foreleg", "parent": "game/skeleton-leg", "length": 60.5, "rotation": 44.61, "x": 96.97, "y": -0.03 },
+	{ "name": "game/skeleton-foot", "parent": "game/skeleton-foreleg", "length": 32.33, "rotation": -68.58, "x": 64.71, "y": 3.36 }
+],
+"slots": [
+	{ "name": "game/skeleton-sword", "bone": "game/skeleton-sword", "dark": "000000", "attachment": "game/skeleton-sword" },
+	{ "name": "game/skeleton-forearm2", "bone": "game/skeleton-forearm2", "dark": "000000", "attachment": "game/skeleton-forearm" },
+	{ "name": "game/skeleton-arm2", "bone": "game/skeleton-arm2", "dark": "000000", "attachment": "game/skeleton-arm" },
+	{ "name": "game/skeleton-hand2", "bone": "game/skeleton-forearm2", "dark": "000000", "attachment": "game/skeleton-hand" },
+	{ "name": "game/skeleton-foot2", "bone": "game/skeleton-foot2", "dark": "000000", "attachment": "game/skeleton-foot" },
+	{ "name": "game/skeleton-foreleg2", "bone": "game/skeleton-foreleg2", "dark": "000000", "attachment": "game/skeleton-foreleg" },
+	{ "name": "game/skeleton-leg2", "bone": "game/skeleton-leg2", "dark": "000000", "attachment": "game/skeleton-leg" },
+	{ "name": "game/skeleton-foot", "bone": "game/skeleton-foot", "dark": "000000", "attachment": "game/skeleton-foot" },
+	{ "name": "game/skeleton-foreleg", "bone": "game/skeleton-foreleg", "dark": "000000", "attachment": "game/skeleton-foreleg" },
+	{ "name": "game/skeleton-hip", "bone": "game/skeleton-hip", "dark": "000000", "attachment": "game/skeleton-hip" },
+	{ "name": "game/skeleton-leg", "bone": "game/skeleton-leg", "dark": "000000", "attachment": "game/skeleton-leg" },
+	{ "name": "game/skeleton-body", "bone": "game/skeleton-body", "dark": "000000", "attachment": "game/skeleton-body" },
+	{ "name": "game/skeleton-forearm", "bone": "game/skeleton-forearm", "dark": "000000", "attachment": "game/skeleton-forearm" },
+	{ "name": "game/skeleton-arm", "bone": "game/skeleton-arm", "dark": "000000", "attachment": "game/skeleton-arm" },
+	{ "name": "game/skeleton-hand", "bone": "game/skeleton-forearm", "dark": "000000", "attachment": "game/skeleton-hand" },
+	{ "name": "game/skeleton-jaw", "bone": "game/skeleton-jaw", "dark": "000000", "attachment": "game/skeleton-jaw" },
+	{ "name": "game/skeleton-head", "bone": "game/skeleton-head", "dark": "000000", "attachment": "game/skeleton-head" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -67.69, -0.68, -52.87, 366.61, 75.21, 366.61, 72.03, -2.8 ]
+				}
+			},
+			"game/skeleton-arm": {
+				"game/skeleton-arm": { "x": 46.42, "y": -2.22, "rotation": 88.39, "width": 39, "height": 122 }
+			},
+			"game/skeleton-arm2": {
+				"game/skeleton-arm": { "x": 45.69, "y": -2.15, "rotation": 88.87, "width": 39, "height": 122 }
+			},
+			"game/skeleton-body": {
+				"game/skeleton-body": { "x": 57.89, "y": -15.74, "rotation": -90, "width": 109, "height": 149 }
+			},
+			"game/skeleton-foot": {
+				"game/skeleton-foot": { "x": 14.72, "y": -5.06, "rotation": 117.9, "width": 51, "height": 41 }
+			},
+			"game/skeleton-foot2": {
+				"game/skeleton-foot": { "x": 16.29, "y": -7.74, "rotation": 103.63, "width": 51, "height": 41 }
+			},
+			"game/skeleton-forearm": {
+				"game/skeleton-forearm": { "x": 43.96, "y": -1.77, "rotation": 89.43, "width": 23, "height": 98 }
+			},
+			"game/skeleton-forearm2": {
+				"game/skeleton-forearm": { "x": 39.22, "y": 0.33, "rotation": 88.56, "width": 23, "height": 98 }
+			},
+			"game/skeleton-foreleg": {
+				"game/skeleton-foreleg": { "x": 30.79, "y": 2.22, "rotation": 90, "width": 29, "height": 71 }
+			},
+			"game/skeleton-foreleg2": {
+				"game/skeleton-foreleg": { "x": 28.19, "y": 2.22, "rotation": 93.42, "width": 29, "height": 71 }
+			},
+			"game/skeleton-hand": {
+				"game/skeleton-hand": { "x": 94.67, "y": -2.72, "rotation": 37.79, "width": 37, "height": 32 }
+			},
+			"game/skeleton-hand2": {
+				"game/skeleton-hand": { "x": 80.22, "y": 0.04, "rotation": 160.8, "width": 37, "height": 32 }
+			},
+			"game/skeleton-head": {
+				"game/skeleton-head": { "x": 47.52, "y": -1.93, "rotation": -95.82, "width": 95, "height": 97 }
+			},
+			"game/skeleton-hip": {
+				"game/skeleton-hip": { "x": -3.36, "y": 3.36, "width": 97, "height": 72 }
+			},
+			"game/skeleton-jaw": {
+				"game/skeleton-jaw": { "x": 20.98, "y": -0.79, "rotation": 161.9, "width": 56, "height": 33 }
+			},
+			"game/skeleton-leg": {
+				"game/skeleton-leg": { "x": 45.91, "y": -0.04, "rotation": 96.63, "width": 57, "height": 122 }
+			},
+			"game/skeleton-leg2": {
+				"game/skeleton-leg": { "x": 47.47, "y": 0.7, "rotation": 96.29, "width": 57, "height": 122 }
+			},
+			"game/skeleton-sword": {
+				"game/skeleton-sword": { "x": 103.87, "y": -6.03, "rotation": -91.73, "width": 77, "height": 290 }
+			}
+		}
+	}
+],
+"animations": {
+	"attack": {
+		"bones": {
+			"game/skeleton-arm2": {
+				"rotate": [
+					{},
+					{ "time": 0.3333, "value": -103.73 },
+					{ "time": 0.4333, "value": -118.86 },
+					{ "time": 0.5333, "value": -26.09, "curve": "stepped" },
+					{ "time": 0.6333, "value": -26.09 },
+					{ "time": 0.8333 }
+				]
+			},
+			"game/skeleton-forearm2": {
+				"rotate": [
+					{},
+					{ "time": 0.3333, "value": -2.9 },
+					{ "time": 0.5333, "value": 50.92, "curve": "stepped" },
+					{ "time": 0.6333, "value": 50.92 },
+					{ "time": 0.8333 }
+				]
+			},
+			"game/skeleton-sword": {
+				"rotate": [
+					{},
+					{ "time": 0.3333, "value": 12.41 },
+					{ "time": 0.4333, "value": 3.7 },
+					{ "time": 0.5333, "value": 99.2, "curve": "stepped" },
+					{ "time": 0.6333, "value": 99.2 },
+					{ "time": 0.8333 }
+				]
+			},
+			"game/skeleton-body": {
+				"rotate": [
+					{},
+					{ "time": 0.4333, "value": -19.53 },
+					{ "time": 0.5333, "value": 12.51, "curve": "stepped" },
+					{ "time": 0.6333, "value": 12.51 },
+					{ "time": 0.8333 }
+				]
+			}
+		}
+	},
+	"die": {
+		"slots": {
+			"game/skeleton-arm": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/skeleton-arm2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/skeleton-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/skeleton-foot": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/skeleton-foot2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/skeleton-forearm": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/skeleton-forearm2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/skeleton-foreleg": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/skeleton-foreleg2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/skeleton-hand": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/skeleton-hand2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/skeleton-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/skeleton-hip": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/skeleton-jaw": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/skeleton-leg": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/skeleton-leg2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/skeleton-sword": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"game/skeleton-arm": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/skeleton-arm2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/skeleton-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/skeleton-foot": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/skeleton-foot2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/skeleton-forearm": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/skeleton-forearm2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/skeleton-foreleg": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/skeleton-foreleg2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/skeleton-hand": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/skeleton-hand2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/skeleton-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/skeleton-hip": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/skeleton-jaw": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/skeleton-leg": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/skeleton-leg2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/skeleton-sword": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"walk": {
+		"bones": {
+			"game/skeleton-leg2": {
+				"rotate": [
+					{ "value": -20.6 },
+					{ "time": 0.2, "value": -26.13 },
+					{ "time": 0.4333, "value": 18.95 },
+					{ "time": 0.6333, "value": 48.23 },
+					{ "time": 0.8667, "value": 66.29 },
+					{ "time": 1.0667, "value": 23.41 },
+					{ "time": 1.3, "value": -6.79 },
+					{ "time": 1.5, "value": -20.6 }
+				]
+			},
+			"game/skeleton-foreleg2": {
+				"rotate": [
+					{ "value": 37.87 },
+					{ "time": 0.2, "value": -28.46 },
+					{ "time": 0.4333, "value": -20.49 },
+					{ "time": 0.6333, "value": -27.45 },
+					{ "time": 0.8667, "value": 50.95 },
+					{ "time": 1.0667, "value": 76.82 },
+					{ "time": 1.3, "value": 97.9 },
+					{ "time": 1.5, "value": 37.87 }
+				]
+			},
+			"game/skeleton-leg": {
+				"rotate": [
+					{ "value": 25.84 },
+					{ "time": 0.2, "value": 41.96 },
+					{ "time": 0.4333, "value": 8.39 },
+					{ "time": 0.6333, "value": -46.73 },
+					{ "time": 0.8667, "value": -23.77 },
+					{ "time": 1.0667, "value": 9.44 },
+					{ "time": 1.3, "value": 13.84 },
+					{ "time": 1.5, "value": 25.84 }
+				]
+			},
+			"game/skeleton-foreleg": {
+				"rotate": [
+					{ "value": -33.51 },
+					{ "time": 0.2, "value": -40.32 },
+					{ "time": 0.4333, "value": 56.97 },
+					{ "time": 0.6333, "value": 79.47 },
+					{ "time": 0.8667, "value": -42.1 },
+					{ "time": 1.0667, "value": -44.06 },
+					{ "time": 1.3, "value": -27.87 },
+					{ "time": 1.5, "value": -33.51 }
+				]
+			},
+			"game/skeleton-hip": {
+				"translate": [
+					{ "y": -3.36 },
+					{ "time": 0.2, "y": -19.33 },
+					{ "time": 0.4333, "y": 7.56 },
+					{ "time": 0.6333, "y": -6.72 },
+					{ "time": 0.8667, "y": -15.13 },
+					{ "time": 1.0667, "y": 10.92 },
+					{ "time": 1.3, "y": -1.68 },
+					{ "time": 1.5, "y": -3.36 }
+				]
+			},
+			"game/skeleton-arm": {
+				"rotate": [
+					{ "value": -53.39 },
+					{ "time": 0.8667, "value": -8.71 },
+					{ "time": 1.5, "value": -53.39 }
+				]
+			},
+			"game/skeleton-forearm": {
+				"rotate": [
+					{ "value": -25.22 },
+					{ "time": 0.8667, "value": 89.57 },
+					{ "time": 1.5, "value": -25.22 }
+				]
+			},
+			"game/skeleton-arm2": {
+				"rotate": [
+					{ "value": 5.08 },
+					{ "time": 0.2, "value": 18.87 },
+					{ "time": 0.6333, "value": 5.63 },
+					{ "time": 0.8667, "value": 1.69 },
+					{ "time": 1.5, "value": 5.08 }
+				]
+			},
+			"game/skeleton-forearm2": {
+				"rotate": [
+					{ "value": -12.08 },
+					{ "time": 0.2, "value": -25.62 },
+					{ "time": 0.6333, "value": -12.56 },
+					{ "time": 0.8667, "value": -14.39 },
+					{ "time": 1.5, "value": -12.08 }
+				]
+			},
+			"game/skeleton-foot": {
+				"rotate": [
+					{ "value": 9.65 },
+					{ "time": 0.2, "value": 0.7 },
+					{ "time": 0.4333, "value": 21.16 },
+					{ "time": 0.6333, "value": 33.48 },
+					{ "time": 0.8667, "value": 64.39 },
+					{ "time": 1.0667, "value": 36.97 },
+					{ "time": 1.3, "value": 15.94 },
+					{ "time": 1.5, "value": 9.65 }
+				]
+			},
+			"game/skeleton-foot2": {
+				"rotate": [
+					{ "value": 10.42 },
+					{ "time": 0.4333, "value": 3.82 },
+					{ "time": 0.6333, "value": -15.84 },
+					{ "time": 0.8667, "value": 16.48 },
+					{ "time": 1.5, "value": 10.42 }
+				]
+			}
+		}
+	}
+}
+}

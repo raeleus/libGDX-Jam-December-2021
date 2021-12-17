@@ -1,0 +1,463 @@
+{
+"skeleton": {
+	"hash": "QW9s3SM4BX4",
+	"spine": "4.0.55",
+	"x": -66.95,
+	"y": -11.61,
+	"width": 176.58,
+	"height": 280.77,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 68.92, "rotation": -178.15, "x": 24.14, "y": 118.05 },
+	{ "name": "game/frozen-body", "parent": "bone", "length": 95.2, "rotation": -96.98, "x": 26.14, "y": -5.29 },
+	{ "name": "game/frozen-leg-front", "parent": "bone", "length": 63.27, "rotation": 75.99, "x": 26.1, "y": 5.09 },
+	{ "name": "game/frozen-foreleg-front", "parent": "game/frozen-leg-front", "length": 36.9, "rotation": 1.76, "x": 62.19, "y": -0.23 },
+	{ "name": "game/frozen-foot-front", "parent": "game/frozen-foreleg-front", "length": 31.78, "rotation": -58.41, "x": 40.77, "y": 5.61 },
+	{ "name": "game/frozen-leg-front2", "parent": "bone", "length": 63.27, "rotation": 107.49, "x": 20.85, "y": 3.03 },
+	{ "name": "game/frozen-foreleg-front2", "parent": "game/frozen-leg-front2", "length": 36.9, "rotation": 1.76, "x": 62.19, "y": -0.23 },
+	{ "name": "game/frozen-foot-front2", "parent": "game/frozen-foreleg-front2", "length": 31.78, "rotation": -58.41, "x": 40.77, "y": 5.61 },
+	{ "name": "game/frozen-arm2", "parent": "game/frozen-body", "length": 63.54, "rotation": 120.74, "x": 56.39, "y": -4.91 },
+	{ "name": "game/frozen-arm", "parent": "game/frozen-body", "length": 60.07, "rotation": 122.97, "x": 62.95, "y": 8.86 }
+],
+"slots": [
+	{ "name": "game/frozen-arm", "bone": "game/frozen-arm", "dark": "000000", "attachment": "game/frozen-arm" },
+	{ "name": "game/frozen-foot", "bone": "game/frozen-foot-front", "dark": "000000", "attachment": "game/frozen-foot" },
+	{ "name": "game/frozen-foreleg", "bone": "game/frozen-foreleg-front", "dark": "000000", "attachment": "game/frozen-foreleg" },
+	{ "name": "game/frozen-hand", "bone": "game/frozen-arm", "dark": "000000", "attachment": "game/frozen-hand" },
+	{ "name": "game/frozen-leg", "bone": "game/frozen-leg-front", "dark": "000000", "attachment": "game/frozen-leg" },
+	{ "name": "game/frozen-foot-front", "bone": "game/frozen-foot-front", "dark": "000000", "attachment": "game/frozen-foot-front" },
+	{ "name": "game/frozen-foreleg-front", "bone": "game/frozen-foreleg-front", "dark": "000000", "attachment": "game/frozen-foreleg-front" },
+	{ "name": "game/frozen-leg-front", "bone": "game/frozen-leg-front", "dark": "000000", "attachment": "game/frozen-leg-front" },
+	{ "name": "game/frozen-body", "bone": "game/frozen-body", "dark": "000000", "attachment": "game/frozen-body" },
+	{ "name": "game/frozen-foot2", "bone": "game/frozen-foot-front2", "dark": "000000", "attachment": "game/frozen-foot" },
+	{ "name": "game/frozen-foreleg2", "bone": "game/frozen-foreleg-front2", "dark": "000000", "attachment": "game/frozen-foreleg" },
+	{ "name": "game/frozen-leg2", "bone": "game/frozen-leg-front2", "dark": "000000", "attachment": "game/frozen-leg" },
+	{ "name": "game/frozen-body-front", "bone": "game/frozen-body", "dark": "000000", "attachment": "game/frozen-body-front" },
+	{ "name": "game/frozen-foot-front2", "bone": "game/frozen-foot-front2", "dark": "000000", "attachment": "game/frozen-foot-front" },
+	{ "name": "game/frozen-foreleg-front2", "bone": "game/frozen-foreleg-front2", "dark": "000000", "attachment": "game/frozen-foreleg-front" },
+	{ "name": "game/frozen-leg-front2", "bone": "game/frozen-leg-front2", "dark": "000000", "attachment": "game/frozen-leg-front" },
+	{ "name": "game/frozen-arm2", "bone": "game/frozen-arm2", "dark": "000000", "attachment": "game/frozen-arm" },
+	{ "name": "game/frozen-hand2", "bone": "game/frozen-arm2", "dark": "000000", "attachment": "game/frozen-hand" },
+	{ "name": "game/frozen-head", "bone": "game/frozen-body", "dark": "000000", "attachment": "game/frozen-head" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -38.85, -0.39, -45.16, 263.14, 55.84, 264.72, 57.41, 2.77 ]
+				}
+			},
+			"game/frozen-arm": {
+				"game/frozen-arm": { "x": 18.07, "y": 2.14, "rotation": 152.16, "width": 58, "height": 39 }
+			},
+			"game/frozen-arm2": {
+				"game/frozen-arm": { "x": 22, "y": -0.29, "rotation": 154.4, "width": 58, "height": 39 }
+			},
+			"game/frozen-body": {
+				"game/frozen-body": { "x": 38.55, "y": 3.45, "rotation": -84.87, "width": 68, "height": 111 }
+			},
+			"game/frozen-body-front": {
+				"game/frozen-body-front": { "x": 38.55, "y": 3.45, "rotation": -84.87, "width": 68, "height": 111 }
+			},
+			"game/frozen-foot": {
+				"game/frozen-foot": { "x": 10.49, "y": -0.08, "rotation": 158.82, "width": 37, "height": 31 }
+			},
+			"game/frozen-foot-front": {
+				"game/frozen-foot-front": { "x": 10.49, "y": -0.08, "rotation": 158.82, "width": 37, "height": 31 }
+			},
+			"game/frozen-foot-front2": {
+				"game/frozen-foot-front": { "x": 10.49, "y": -0.08, "rotation": 158.82, "width": 37, "height": 31 }
+			},
+			"game/frozen-foot2": {
+				"game/frozen-foot": { "x": 10.49, "y": -0.08, "rotation": 158.82, "width": 37, "height": 31 }
+			},
+			"game/frozen-foreleg": {
+				"game/frozen-foreleg": { "x": 14.01, "y": 0.26, "rotation": 100.41, "width": 29, "height": 50 }
+			},
+			"game/frozen-foreleg-front": {
+				"game/frozen-foreleg-front": { "x": 14.01, "y": 0.26, "rotation": 100.41, "width": 29, "height": 50 }
+			},
+			"game/frozen-foreleg-front2": {
+				"game/frozen-foreleg-front": { "x": 14.01, "y": 0.26, "rotation": 100.41, "width": 29, "height": 50 }
+			},
+			"game/frozen-foreleg2": {
+				"game/frozen-foreleg": { "x": 14.01, "y": 0.26, "rotation": 100.41, "width": 29, "height": 50 }
+			},
+			"game/frozen-hand": {
+				"game/frozen-hand": { "x": 54.64, "y": 0.46, "rotation": 152.16, "width": 27, "height": 20 }
+			},
+			"game/frozen-hand2": {
+				"game/frozen-hand": { "x": 58.6, "y": -0.55, "rotation": 154.4, "width": 27, "height": 20 }
+			},
+			"game/frozen-head": {
+				"game/frozen-head": { "x": 104.46, "y": -32.06, "rotation": -84.87, "width": 141, "height": 91 }
+			},
+			"game/frozen-leg": {
+				"game/frozen-leg": { "x": 26.28, "y": 0.83, "rotation": 102.17, "width": 48, "height": 75 }
+			},
+			"game/frozen-leg-front": {
+				"game/frozen-leg-front": { "x": 26.28, "y": 0.83, "rotation": 102.17, "width": 48, "height": 75 }
+			},
+			"game/frozen-leg-front2": {
+				"game/frozen-leg-front": { "x": 26.28, "y": 0.83, "rotation": 102.17, "width": 48, "height": 75 }
+			},
+			"game/frozen-leg2": {
+				"game/frozen-leg": { "x": 26.28, "y": 0.83, "rotation": 102.17, "width": 48, "height": 75 }
+			}
+		}
+	}
+],
+"animations": {
+	"die": {
+		"slots": {
+			"game/frozen-arm": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/frozen-arm2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/frozen-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/frozen-body-front": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/frozen-foot": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/frozen-foot-front": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/frozen-foot-front2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/frozen-foot2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/frozen-foreleg": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/frozen-foreleg-front": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/frozen-foreleg-front2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/frozen-foreleg2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/frozen-hand": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/frozen-hand2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/frozen-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/frozen-leg": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/frozen-leg-front": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/frozen-leg-front2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/frozen-leg2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"game/frozen-arm": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/frozen-arm2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/frozen-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/frozen-body-front": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/frozen-foot": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/frozen-foot-front": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/frozen-foot-front2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/frozen-foot2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/frozen-foreleg": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/frozen-foreleg-front": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/frozen-foreleg-front2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/frozen-foreleg2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/frozen-hand": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/frozen-hand2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/frozen-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/frozen-leg": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/frozen-leg-front": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/frozen-leg-front2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/frozen-leg2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"stand": {
+		"bones": {
+			"game/frozen-leg-front2": {
+				"rotate": [
+					{
+						"value": -13.88,
+						"curve": [ 0.278, -13.88, 0.556, -4.61 ]
+					},
+					{
+						"time": 0.8333,
+						"value": -4.61,
+						"curve": [ 1.111, -4.61, 1.389, -13.88 ]
+					},
+					{ "time": 1.6667, "value": -13.88 }
+				]
+			},
+			"game/frozen-foreleg-front2": {
+				"rotate": [
+					{
+						"value": 43.81,
+						"curve": [ 0.278, 43.81, 0.556, 32.36 ]
+					},
+					{
+						"time": 0.8333,
+						"value": 32.36,
+						"curve": [ 1.111, 32.36, 1.389, 43.81 ]
+					},
+					{ "time": 1.6667, "value": 43.81 }
+				]
+			},
+			"game/frozen-leg-front": {
+				"rotate": [
+					{
+						"value": 10.15,
+						"curve": [ 0.278, 10.15, 0.556, 0.53 ]
+					},
+					{
+						"time": 0.8333,
+						"value": 0.53,
+						"curve": [ 1.111, 0.53, 1.389, 10.15 ]
+					},
+					{ "time": 1.6667, "value": 10.15 }
+				]
+			},
+			"game/frozen-foreleg-front": {
+				"rotate": [
+					{
+						"value": 17.9,
+						"curve": [ 0.278, 17.9, 0.556, 33.82 ]
+					},
+					{
+						"time": 0.8333,
+						"value": 33.82,
+						"curve": [ 1.111, 33.82, 1.389, 17.9 ]
+					},
+					{ "time": 1.6667, "value": 17.9 }
+				]
+			},
+			"game/frozen-arm": {
+				"rotate": [
+					{
+						"value": 4.79,
+						"curve": [ 0.278, 4.79, 0.556, -6.9 ]
+					},
+					{
+						"time": 0.8333,
+						"value": -6.9,
+						"curve": [ 1.111, -6.9, 1.389, 4.79 ]
+					},
+					{ "time": 1.6667, "value": 4.79 }
+				]
+			},
+			"game/frozen-arm2": {
+				"rotate": [
+					{
+						"value": -0.05,
+						"curve": [ 0.278, -0.05, 0.556, 8.85 ]
+					},
+					{
+						"time": 0.8333,
+						"value": 8.85,
+						"curve": [ 1.111, 8.85, 1.389, -0.05 ]
+					},
+					{ "time": 1.6667, "value": -0.05 }
+				]
+			}
+		}
+	}
+}
+}

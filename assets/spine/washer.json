@@ -1,0 +1,87 @@
+{
+"skeleton": {
+	"hash": "9FxtED0cH+U",
+	"spine": "4.0.55",
+	"x": -164.65,
+	"y": -28.56,
+	"width": 354,
+	"height": 341,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/washer-water", "parent": "root", "length": 141.76, "rotation": 1.02, "x": -15.49, "y": 96.38 }
+],
+"slots": [
+	{ "name": "game/washer-water", "bone": "game/washer-water", "dark": "000000", "attachment": "game/washer-water" },
+	{ "name": "game/washer", "bone": "root", "dark": "000000", "attachment": "game/washer" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -124.99, -5.07, -128, 299.17, 167.22, 299.17, 165.72, -1.32 ]
+				}
+			},
+			"game/washer": {
+				"game/washer": { "x": 12.35, "y": 141.94, "width": 354, "height": 341 }
+			},
+			"game/washer-water": {
+				"game/washer-water": { "x": 2.67, "y": 7.55, "rotation": -1.02, "width": 206, "height": 225 }
+			}
+		}
+	}
+],
+"animations": {
+	"die": {
+		"slots": {
+			"game/washer": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/washer-water": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"game/washer": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/washer-water": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"stand": {
+		"bones": {
+			"game/washer-water": {
+				"rotate": [
+					{ "value": -1.02 },
+					{ "time": 1.3333, "value": -721.03 }
+				]
+			}
+		}
+	}
+}
+}

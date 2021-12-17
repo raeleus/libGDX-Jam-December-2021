@@ -1,0 +1,182 @@
+{
+"skeleton": {
+	"hash": "ZmtbTBr3haU",
+	"spine": "4.0.55",
+	"x": -83.1,
+	"y": -29.42,
+	"width": 186,
+	"height": 351,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/john-goo", "parent": "root", "length": 132.08, "rotation": -1.11, "x": -40.79, "y": 121.37 },
+	{ "name": "game/john-goo2", "parent": "root", "length": 132.08, "rotation": -1.11, "x": -238.46, "y": 121.37 }
+],
+"slots": [
+	{ "name": "clip", "bone": "root", "dark": "000000", "attachment": "clip" },
+	{ "name": "game/john-goo", "bone": "game/john-goo", "dark": "000000", "attachment": "game/john-goo" },
+	{ "name": "game/john-goo2", "bone": "game/john-goo2", "dark": "000000", "attachment": "game/john-goo" },
+	{ "name": "game/john", "bone": "root", "dark": "000000", "attachment": "game/john" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -58.69, 1.87, -47.58, 315.53, 74.68, 314.29, 68.5, -3.07 ]
+				}
+			},
+			"clip": {
+				"clip": {
+					"type": "clipping",
+					"end": "game/john-goo2",
+					"vertexCount": 10,
+					"vertices": [ -42.14, 206.72, -28.66, 222.23, 56.47, 223.34, 65.7, 208.38, 66.62, 107.75, 62.56, 55.13, 52.22, 42.57, -36.04, 40.91, -47.49, 53.47, -44.72, 146.85 ],
+					"color": "ce3a3aff"
+				}
+			},
+			"game/john": {
+				"game/john": { "x": 9.9, "y": 146.08, "width": 186, "height": 351 }
+			},
+			"game/john-goo": {
+				"game/john-goo": { "x": 14.37, "y": 6.24, "rotation": 1.11, "width": 198, "height": 191 }
+			},
+			"game/john-goo2": {
+				"game/john-goo": { "x": 14.37, "y": 6.24, "rotation": 1.11, "width": 198, "height": 191 }
+			}
+		}
+	}
+],
+"animations": {
+	"die": {
+		"slots": {
+			"clip": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.4, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.6667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.9667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 2.2333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 2.5, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 2.8, "light": "ffffffff", "dark": "000000" },
+					{ "time": 3.0667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 3.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 4.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 5.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/john": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.4, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.6667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.9667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 2.2333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 2.5, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 2.8, "light": "ffffffff", "dark": "000000" },
+					{ "time": 3.0667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 3.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 4.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 5.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/john-goo": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.4, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.6667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.9667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 2.2333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 2.5, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 2.8, "light": "ffffffff", "dark": "000000" },
+					{ "time": 3.0667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 3.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 4.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 5.6667, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/john-goo2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.5667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.8333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.1, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.4, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.6667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.9667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 2.2333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 2.5, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 2.8, "light": "ffffffff", "dark": "000000" },
+					{ "time": 3.0667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 3.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 4.3333, "light": "000000ff", "dark": "000000" },
+					{ "time": 5.6667, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"clip": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/john": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/john-goo": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/john-goo2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"stand": {
+		"bones": {
+			"game/john-goo2": {
+				"translate": [
+					{},
+					{ "time": 3, "x": 197.66 }
+				]
+			},
+			"game/john-goo": {
+				"translate": [
+					{},
+					{ "time": 3, "x": 197.73 }
+				]
+			}
+		}
+	}
+}
+}

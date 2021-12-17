@@ -1,0 +1,39 @@
+{
+"skeleton": {
+	"hash": "/D1mqDltY7w",
+	"spine": "4.0.55",
+	"x": -102.96,
+	"y": -113.99,
+	"width": 234,
+	"height": 244,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/cross-Layer-2", "bone": "root", "attachment": "game/cross-Layer-2" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -70, -73.75, -70.55, 76.39, 83.46, 76.39, 80.7, -75.4 ]
+				}
+			},
+			"game/cross-Layer-2": {
+				"game/cross-Layer-2": { "x": 14.04, "y": 8.01, "width": 234, "height": 244 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

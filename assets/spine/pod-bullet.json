@@ -1,0 +1,39 @@
+{
+"skeleton": {
+	"hash": "vJcxk1XloHw",
+	"spine": "4.0.55",
+	"x": -18.22,
+	"y": -18.19,
+	"width": 42,
+	"height": 43,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/pod-bullet", "bone": "root", "attachment": "game/pod-bullet" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -19.31, -17.72, -17.87, 23.02, 26.22, 23.5, 25.26, -17.24 ]
+				}
+			},
+			"game/pod-bullet": {
+				"game/pod-bullet": { "x": 2.78, "y": 3.31, "width": 42, "height": 43 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

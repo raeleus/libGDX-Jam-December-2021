@@ -1,0 +1,59 @@
+{
+"skeleton": {
+	"hash": "f3IEhEj0rO8",
+	"spine": "4.0.55",
+	"x": -115.34,
+	"y": -29.48,
+	"width": 344,
+	"height": 377,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/vacuum", "bone": "root", "dark": "000000", "attachment": "game/vacuum" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -40.17, -9.25, -32.76, 305.65, 146.3, 308.12, 140.13, -4.31 ]
+				}
+			},
+			"game/vacuum": {
+				"game/vacuum": { "x": 56.66, "y": 159.02, "width": 344, "height": 377 }
+			}
+		}
+	}
+],
+"animations": {
+	"die": {
+		"slots": {
+			"game/vacuum": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"game/vacuum": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	}
+}
+}

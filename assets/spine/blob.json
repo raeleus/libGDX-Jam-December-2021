@@ -1,0 +1,70 @@
+{
+"skeleton": {
+	"hash": "c6ehLqAC2pU",
+	"spine": "4.0.55",
+	"x": -109.68,
+	"y": -32.13,
+	"width": 290,
+	"height": 256,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/blob-Layer-2", "bone": "root", "attachment": "game/blob-Layer-13" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -98.81, -14.59, -97.23, 179.51, 126.85, 179.51, 130, -14.59 ]
+				}
+			},
+			"game/blob-Layer-2": {
+				"game/blob-Layer-2": { "x": 35.32, "y": 95.87, "width": 290, "height": 256 },
+				"game/blob-Layer-3": { "x": 35.32, "y": 95.87, "width": 290, "height": 256 },
+				"game/blob-Layer-4": { "x": 35.32, "y": 95.87, "width": 290, "height": 256 },
+				"game/blob-Layer-5": { "x": 35.32, "y": 95.87, "width": 290, "height": 256 },
+				"game/blob-Layer-6": { "x": 35.32, "y": 95.87, "width": 290, "height": 256 },
+				"game/blob-Layer-7": { "x": 35.32, "y": 95.87, "width": 290, "height": 256 },
+				"game/blob-Layer-8": { "x": 35.32, "y": 95.87, "width": 290, "height": 256 },
+				"game/blob-Layer-9": { "x": 35.32, "y": 95.87, "width": 290, "height": 256 },
+				"game/blob-Layer-10": { "x": 35.32, "y": 95.87, "width": 290, "height": 256 },
+				"game/blob-Layer-11": { "x": 35.32, "y": 95.87, "width": 290, "height": 256 },
+				"game/blob-Layer-12": { "x": 35.32, "y": 95.87, "width": 290, "height": 256 },
+				"game/blob-Layer-13": { "x": 35.32, "y": 95.87, "width": 290, "height": 256 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"game/blob-Layer-2": {
+				"attachment": [
+					{ "name": "game/blob-Layer-2" },
+					{ "time": 0.0333, "name": "game/blob-Layer-3" },
+					{ "time": 0.0667, "name": "game/blob-Layer-4" },
+					{ "time": 0.1, "name": "game/blob-Layer-5" },
+					{ "time": 0.1333, "name": "game/blob-Layer-6" },
+					{ "time": 0.1667, "name": "game/blob-Layer-7" },
+					{ "time": 0.2, "name": "game/blob-Layer-8" },
+					{ "time": 0.2333, "name": "game/blob-Layer-9" },
+					{ "time": 0.2667, "name": "game/blob-Layer-10" },
+					{ "time": 0.3, "name": "game/blob-Layer-11" },
+					{ "time": 0.3333, "name": "game/blob-Layer-12" },
+					{ "time": 0.3667, "name": "game/blob-Layer-13" },
+					{ "time": 0.4, "name": "game/blob-Layer-2" }
+				]
+			}
+		}
+	}
+}
+}

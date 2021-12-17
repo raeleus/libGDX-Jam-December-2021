@@ -1,0 +1,60 @@
+{
+"skeleton": {
+	"hash": "FqX3AOfNKlo",
+	"spine": "4.0.55",
+	"x": -117.52,
+	"y": -1.47,
+	"width": 230.9,
+	"height": 256,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/stahlfelge", "parent": "root", "length": 50.26, "rotation": 1.46, "x": 0.31, "y": 136.92 },
+	{ "name": "game/stahlfelge-arm2", "parent": "game/stahlfelge", "length": 87.3, "rotation": -1.18, "x": 22.81, "y": 9.22 },
+	{ "name": "game/stahlfelge-arm", "parent": "game/stahlfelge", "length": 62.65, "rotation": -179.12, "x": -30, "y": 9.71 }
+],
+"slots": [
+	{ "name": "game/stahlfelge-arm", "bone": "game/stahlfelge-arm", "attachment": "game/stahlfelge-arm" },
+	{ "name": "game/stahlfelge-arm2", "bone": "game/stahlfelge-arm2", "attachment": "game/stahlfelge-arm" },
+	{ "name": "game/stahlfelge", "bone": "game/stahlfelge", "attachment": "game/stahlfelge" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"game/stahlfelge": {
+				"game/stahlfelge": { "x": 1.53, "y": -10.43, "rotation": -1.46, "width": 109, "height": 256 }
+			},
+			"game/stahlfelge-arm": {
+				"game/stahlfelge-arm": { "x": 36.36, "y": 17.86, "scaleX": -1, "rotation": 177.66, "width": 104, "height": 76 }
+			},
+			"game/stahlfelge-arm2": {
+				"game/stahlfelge-arm": { "x": 38.4, "y": -20.37, "rotation": -0.28, "width": 104, "height": 76 }
+			}
+		}
+	}
+],
+"animations": {
+	"stand": {
+		"bones": {
+			"game/stahlfelge-arm": {
+				"rotate": [
+					{ "value": 27.12 },
+					{ "time": 1.3333, "value": -14.36 },
+					{ "time": 2.6667, "value": 27.12 }
+				]
+			},
+			"game/stahlfelge-arm2": {
+				"rotate": [
+					{ "value": 7.78 },
+					{ "time": 0.6333, "value": 36.03 },
+					{ "time": 1.9667, "value": -23.45 },
+					{ "time": 2.6667, "value": 7.78 }
+				]
+			}
+		}
+	}
+}
+}

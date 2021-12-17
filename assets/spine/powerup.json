@@ -1,0 +1,79 @@
+{
+"skeleton": {
+	"hash": "65beyNMKDTc",
+	"spine": "4.0.55",
+	"x": -70,
+	"y": -73,
+	"width": 141,
+	"height": 146,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/powerup-cross", "bone": "root", "attachment": "game/powerup-wings" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -68.97, -69.52, -65.96, 71.49, 79.27, 72.69, 77.46, -68.32 ]
+				}
+			},
+			"game/powerup-cross": {
+				"game/powerup-cross": { "width": 141, "height": 146 },
+				"game/powerup-grenade": { "width": 140, "height": 146 },
+				"game/powerup-shotgun": { "width": 140, "height": 146 },
+				"game/powerup-whip": { "width": 140, "height": 146 },
+				"game/powerup-wings": { "x": 0.5, "width": 141, "height": 146 }
+			}
+		}
+	}
+],
+"animations": {
+	"cross": {
+		"slots": {
+			"game/powerup-cross": {
+				"attachment": [
+					{ "name": "game/powerup-cross" }
+				]
+			}
+		}
+	},
+	"grenade": {
+		"slots": {
+			"game/powerup-cross": {
+				"attachment": [
+					{ "name": "game/powerup-grenade" }
+				]
+			}
+		}
+	},
+	"shotgun": {
+		"slots": {
+			"game/powerup-cross": {
+				"attachment": [
+					{ "name": "game/powerup-shotgun" }
+				]
+			}
+		}
+	},
+	"whip": {
+		"slots": {
+			"game/powerup-cross": {
+				"attachment": [
+					{ "name": "game/powerup-whip" }
+				]
+			}
+		}
+	},
+	"wings": {}
+}
+}

@@ -1,0 +1,39 @@
+{
+"skeleton": {
+	"hash": "iZp8PeG0apQ",
+	"spine": "4.0.55",
+	"x": -42.32,
+	"y": -35.57,
+	"width": 93.35,
+	"height": 75.44,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/toaster-toast", "bone": "root", "attachment": "game/toaster-toast" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -37.7, -32.71, -36.46, 41.38, 51.22, 42.62, 51.22, -30.24 ]
+				}
+			},
+			"game/toaster-toast": {
+				"game/toaster-toast": { "x": 4.36, "y": 2.15, "rotation": -89.73, "width": 75, "height": 93 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

@@ -1,0 +1,361 @@
+{
+"skeleton": {
+	"hash": "dX9iOjhkpu8",
+	"spine": "4.0.55",
+	"x": -77.05,
+	"y": -11.83,
+	"width": 170,
+	"height": 256.35,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/groxar-statue-piece-1", "parent": "root", "length": 38.89, "x": -40.65, "y": 122.34 },
+	{ "name": "game/groxar-piece-2", "parent": "root", "length": 54.56, "x": 22.04, "y": 118.28 },
+	{ "name": "game/groxar-piece-3", "parent": "root", "length": 84.74, "rotation": -0.39, "x": -26.72, "y": 42.24 },
+	{ "name": "game/groxar-body", "parent": "root", "length": 93.99, "rotation": 0.35, "x": -3.56, "y": 49.21 },
+	{ "name": "game/groxar-leg", "parent": "game/groxar-body", "length": 39.96, "rotation": -102.97, "x": -15.55, "y": -19.98 },
+	{ "name": "game/groxar-leg2", "parent": "game/groxar-body", "length": 40.34, "rotation": -101.58, "x": 9.77, "y": -20.14 },
+	{ "name": "game/groxar-head", "parent": "game/groxar-body", "length": 90.79, "rotation": -0.91, "x": -11.94, "y": 45.47 }
+],
+"slots": [
+	{ "name": "game/groxar-body", "bone": "game/groxar-body", "dark": "000000", "attachment": "game/groxar-body" },
+	{ "name": "game/groxar-head", "bone": "game/groxar-head", "dark": "000000", "attachment": "game/groxar-head" },
+	{ "name": "game/groxar-leg", "bone": "game/groxar-leg", "dark": "000000", "attachment": "game/groxar-leg" },
+	{ "name": "game/groxar-leg2", "bone": "game/groxar-leg2", "dark": "000000", "attachment": "game/groxar-leg" },
+	{ "name": "game/groxar-piece-3", "bone": "game/groxar-piece-3", "dark": "000000" },
+	{ "name": "game/groxar-piece-2", "bone": "game/groxar-piece-2", "dark": "000000" },
+	{ "name": "game/groxar-statue-piece-1", "bone": "game/groxar-statue-piece-1", "dark": "000000" },
+	{ "name": "game/groxar-statue", "bone": "root", "dark": "000000" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -63.63, -3.07, -58.69, 171.05, 78.38, 169.81, 75.91, 0.63 ]
+				}
+			},
+			"game/groxar-body": {
+				"game/groxar-body": { "x": 11.44, "y": -9.59, "rotation": -0.35, "width": 170, "height": 95 }
+			},
+			"game/groxar-head": {
+				"game/groxar-head": { "x": 27.7, "y": 61.69, "rotation": 0.55, "width": 159, "height": 177 }
+			},
+			"game/groxar-leg": {
+				"game/groxar-leg": { "x": 16.62, "y": 1.15, "rotation": 102.62, "width": 31, "height": 49 }
+			},
+			"game/groxar-leg2": {
+				"game/groxar-leg": { "x": 16.15, "y": 1.1, "rotation": 101.23, "width": 31, "height": 49 }
+			},
+			"game/groxar-piece-2": {
+				"game/groxar-piece-2": { "x": -18.75, "y": -2.79, "width": 181, "height": 258 }
+			},
+			"game/groxar-piece-3": {
+				"game/groxar-piece-3": { "x": 29.24, "y": 74.02, "rotation": 0.39, "width": 181, "height": 258 }
+			},
+			"game/groxar-statue": {
+				"game/groxar-statue": { "x": 7.5, "y": 116.64, "width": 170, "height": 258 }
+			},
+			"game/groxar-statue-piece-1": {
+				"game/groxar-statue-piece-1": { "x": 44.15, "y": -6.31, "width": 180, "height": 258 }
+			}
+		}
+	}
+],
+"animations": {
+	"attack": {
+		"bones": {
+			"game/groxar-leg": {
+				"rotate": [
+					{ "value": -93.81 }
+				]
+			},
+			"game/groxar-leg2": {
+				"rotate": [
+					{ "value": 126.14 }
+				]
+			}
+		}
+	},
+	"die": {
+		"slots": {
+			"game/groxar-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/groxar-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/groxar-leg": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/groxar-leg2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/groxar-piece-2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/groxar-piece-3": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/groxar-statue": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/groxar-statue-piece-1": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.2333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.4333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.6667, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 0.9, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1333, "light": "ff0000ff", "dark": "ff0000" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"game/groxar-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/groxar-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/groxar-leg": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/groxar-leg2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/groxar-piece-2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/groxar-piece-3": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/groxar-statue": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/groxar-statue-piece-1": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"stand": {
+		"bones": {
+			"game/groxar-head": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 0.1667, "value": -12.68, "curve": "stepped" },
+					{ "time": 0.3, "value": 22.36, "curve": "stepped" },
+					{ "time": 0.4667, "value": -12.68, "curve": "stepped" },
+					{ "time": 0.6, "curve": "stepped" },
+					{ "time": 0.7333, "value": 22.36, "curve": "stepped" },
+					{ "time": 0.8667, "value": -12.68, "curve": "stepped" },
+					{ "time": 1.0333 }
+				],
+				"translate": [
+					{ "time": 0.1667, "curve": "stepped" },
+					{ "time": 0.3, "x": -4.93, "y": -7.77, "curve": "stepped" },
+					{ "time": 0.4667, "curve": "stepped" },
+					{ "time": 0.6, "curve": "stepped" },
+					{ "time": 0.7333, "x": -4.93, "y": -7.77, "curve": "stepped" },
+					{ "time": 0.8667 }
+				]
+			}
+		}
+	},
+	"statue": {
+		"slots": {
+			"game/groxar-piece-2": {
+				"attachment": [
+					{ "name": "game/groxar-piece-2" }
+				]
+			},
+			"game/groxar-piece-3": {
+				"attachment": [
+					{ "name": "game/groxar-piece-3" }
+				]
+			},
+			"game/groxar-statue": {
+				"attachment": [
+					{ "name": "game/groxar-statue" }
+				]
+			},
+			"game/groxar-statue-piece-1": {
+				"attachment": [
+					{ "name": "game/groxar-statue-piece-1" }
+				]
+			}
+		}
+	},
+	"statue-break": {
+		"slots": {
+			"game/groxar-piece-2": {
+				"rgba2": [
+					{ "time": 1.1667, "light": "ffffffff", "dark": "000000", "curve": "stepped" },
+					{ "time": 1.3333, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.6667, "light": "ffffff00", "dark": "000000" }
+				],
+				"attachment": [
+					{ "name": "game/groxar-piece-2" }
+				]
+			},
+			"game/groxar-piece-3": {
+				"rgba2": [
+					{ "time": 0.5, "light": "ffffffff", "dark": "000000", "curve": "stepped" },
+					{ "time": 0.6667, "light": "ffffffff", "dark": "000000" },
+					{ "time": 1.1667, "light": "ffffff00", "dark": "000000" }
+				],
+				"attachment": [
+					{ "name": "game/groxar-piece-3" }
+				]
+			},
+			"game/groxar-statue-piece-1": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.5, "light": "ffffff00", "dark": "000000" }
+				],
+				"attachment": [
+					{ "name": "game/groxar-statue-piece-1" }
+				]
+			}
+		},
+		"bones": {
+			"game/groxar-statue-piece-1": {
+				"rotate": [
+					{},
+					{ "time": 0.5, "value": 34.27 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.5, "y": -253.64 }
+				]
+			},
+			"game/groxar-piece-2": {
+				"rotate": [
+					{ "time": 1.3333 },
+					{ "time": 1.6667, "value": 57.2 }
+				],
+				"translate": [
+					{ "time": 1.3333 },
+					{ "time": 1.6667, "y": -223.58 },
+					{ "time": 1.8333, "y": -223.58 }
+				]
+			},
+			"game/groxar-piece-3": {
+				"rotate": [
+					{ "time": 0.6667 },
+					{ "time": 1.1667, "value": -14.98 }
+				],
+				"translate": [
+					{ "time": 0.6667 },
+					{ "time": 1.1667, "y": -161.93 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,276 @@
+{
+"skeleton": {
+	"hash": "yfQntS0nM+4",
+	"spine": "4.0.55",
+	"x": -75.77,
+	"y": -17.52,
+	"width": 369.05,
+	"height": 474.69,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 121.61, "rotation": -179.46, "x": 101.74, "y": 102.39 },
+	{ "name": "game/glutton-body", "parent": "root", "length": 300.12, "rotation": 70.11, "x": 12.25, "y": 103.53 },
+	{ "name": "game/glutton-head", "parent": "game/glutton-body", "length": 96.48, "rotation": 112.62, "x": 328.51, "y": -17.79 },
+	{ "name": "game/glutton-foot", "parent": "bone", "length": 60.29, "rotation": 110.65, "x": 76.12, "y": 42.88 },
+	{ "name": "game/glutton-tail", "parent": "bone", "length": 135.37, "rotation": 160.69, "x": 32.39, "y": 28.38 },
+	{ "name": "game/glutton-tail-1", "parent": "game/glutton-tail", "length": 52.78, "rotation": 8.69, "x": 123.9, "y": -1.15 },
+	{ "name": "game/glutton-tail-3", "parent": "game/glutton-tail-1", "length": 43.61, "rotation": -0.26, "x": 48.3, "y": -4.69 },
+	{ "name": "game/glutton-tail-5", "parent": "game/glutton-tail-3", "length": 37.88, "rotation": -0.23, "x": 45.9, "y": 0.06 },
+	{ "name": "game/glutton-arm", "parent": "game/glutton-body", "length": 68.87, "rotation": -158.2, "x": 170.53, "y": -70.06 },
+	{ "name": "game/glutton-forearm", "parent": "game/glutton-arm", "length": 61.96, "rotation": -92.97, "x": 74.22, "y": -11.66 },
+	{ "name": "game/glutton-forearm2", "parent": "game/glutton-forearm", "length": 64.25, "rotation": 2.08, "x": 69.88, "y": 5.88 }
+],
+"slots": [
+	{ "name": "game/glutton-body", "bone": "game/glutton-body", "dark": "000000", "attachment": "game/glutton-body" },
+	{ "name": "game/glutton-arm", "bone": "game/glutton-arm", "dark": "000000", "attachment": "game/glutton-arm" },
+	{ "name": "game/glutton-forearm", "bone": "game/glutton-forearm", "dark": "000000", "attachment": "game/glutton-forearm" },
+	{ "name": "game/glutton-hand", "bone": "game/glutton-forearm2", "dark": "000000", "attachment": "game/glutton-hand" },
+	{ "name": "game/glutton-head", "bone": "game/glutton-head", "dark": "000000", "attachment": "game/glutton-head" },
+	{ "name": "game/glutton-tail", "bone": "game/glutton-tail", "dark": "000000", "attachment": "game/glutton-tail" },
+	{ "name": "game/glutton-tail-1", "bone": "game/glutton-tail-1", "dark": "000000", "attachment": "game/glutton-tail-1" },
+	{ "name": "game/glutton-tail-2", "bone": "game/glutton-tail-3", "dark": "000000", "attachment": "game/glutton-tail-2" },
+	{ "name": "game/glutton-tail-3", "bone": "game/glutton-tail-5", "dark": "000000", "attachment": "game/glutton-tail-3" },
+	{ "name": "game/glutton-foot", "bone": "game/glutton-foot", "dark": "000000", "attachment": "game/glutton-foot" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -35.93, -4.91, -34.87, 450.23, 157.77, 453.4, 150.36, -3.86 ]
+				}
+			},
+			"game/glutton-arm": {
+				"game/glutton-arm": { "x": 27.81, "y": -2.72, "rotation": 88.09, "width": 78, "height": 109 }
+			},
+			"game/glutton-body": {
+				"game/glutton-body": { "x": 118.42, "y": 9.9, "rotation": -70.11, "width": 238, "height": 350 }
+			},
+			"game/glutton-foot": {
+				"game/glutton-foot": { "x": 14.52, "y": -22.85, "rotation": 68.81, "width": 133, "height": 86 }
+			},
+			"game/glutton-forearm": {
+				"game/glutton-forearm": { "x": 24.07, "y": 1.59, "rotation": -178.94, "width": 83, "height": 42 }
+			},
+			"game/glutton-hand": {
+				"game/glutton-hand": { "x": 13.66, "y": -5.98, "rotation": 178.98, "width": 72, "height": 69 }
+			},
+			"game/glutton-head": {
+				"game/glutton-head": { "x": 43.82, "y": 3.66, "rotation": 177.27, "width": 174, "height": 113 }
+			},
+			"game/glutton-tail": {
+				"game/glutton-tail": { "x": 59.66, "y": -2.29, "rotation": -5.2, "width": 164, "height": 80 }
+			},
+			"game/glutton-tail-1": {
+				"game/glutton-tail-1": { "x": 22.91, "y": -2.99, "rotation": 1.25, "width": 65, "height": 47 }
+			},
+			"game/glutton-tail-2": {
+				"game/glutton-tail-2": { "x": 19.5, "y": 0.46, "rotation": 1.51, "width": 56, "height": 32 }
+			},
+			"game/glutton-tail-3": {
+				"game/glutton-tail-3": { "x": 3.44, "y": 0.1, "rotation": 1.74, "width": 20, "height": 20 }
+			}
+		}
+	}
+],
+"animations": {
+	"die": {
+		"slots": {
+			"game/glutton-arm": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/glutton-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/glutton-foot": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/glutton-forearm": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/glutton-hand": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/glutton-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/glutton-tail": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/glutton-tail-1": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/glutton-tail-2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/glutton-tail-3": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"game/glutton-arm": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/glutton-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/glutton-foot": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/glutton-forearm": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/glutton-hand": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/glutton-head": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/glutton-tail": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/glutton-tail-1": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/glutton-tail-2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/glutton-tail-3": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"walk": {
+		"bones": {
+			"game/glutton-foot": {
+				"rotate": [
+					{ "value": -23.7 },
+					{ "time": 0.0333, "value": 27.95 },
+					{ "time": 0.0667, "value": -23.7 }
+				]
+			},
+			"game/glutton-body": {
+				"rotate": [
+					{ "value": -1 },
+					{ "time": 0.0333, "value": 2.16 },
+					{ "time": 0.0667, "value": -1 }
+				]
+			},
+			"game/glutton-tail-5": {
+				"rotate": [
+					{ "value": 42.73 },
+					{ "time": 0.0333, "value": 30.29 },
+					{ "time": 0.0667, "value": 42.73 }
+				]
+			},
+			"game/glutton-tail": {
+				"rotate": [
+					{ "value": 0.75 },
+					{ "time": 0.0333, "value": 5.25 },
+					{ "time": 0.0667, "value": 0.75 }
+				]
+			},
+			"game/glutton-tail-1": {
+				"rotate": [
+					{ "value": -1.34 },
+					{ "time": 0.0333, "value": 7.66 },
+					{ "time": 0.0667, "value": -1.34 }
+				]
+			},
+			"game/glutton-tail-3": {
+				"rotate": [
+					{ "value": 12.65 },
+					{ "time": 0.0333, "value": 30.42 },
+					{ "time": 0.0667, "value": 12.65 }
+				]
+			},
+			"game/glutton-head": {
+				"rotate": [
+					{},
+					{ "time": 0.0333, "value": -3.44 },
+					{ "time": 0.0667 }
+				]
+			}
+		}
+	}
+}
+}

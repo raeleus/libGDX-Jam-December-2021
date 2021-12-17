@@ -1,0 +1,60 @@
+{
+"skeleton": {
+	"hash": "Yw6b+4L+TkY",
+	"spine": "4.0.55",
+	"x": -30.96,
+	"y": -27.04,
+	"width": 54,
+	"height": 79,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/spark-Layer-2", "bone": "root", "attachment": "game/spark-Layer-12" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"game/spark-Layer-2": {
+				"game/spark-Layer-2": { "x": -3.96, "y": 12.46, "width": 54, "height": 79 },
+				"game/spark-Layer-3": { "x": -3.96, "y": 12.46, "width": 54, "height": 79 },
+				"game/spark-Layer-4": { "x": -3.96, "y": 12.46, "width": 54, "height": 79 },
+				"game/spark-Layer-5": { "x": -3.96, "y": 12.46, "width": 54, "height": 79 },
+				"game/spark-Layer-6": { "x": -3.96, "y": 12.46, "width": 54, "height": 79 },
+				"game/spark-Layer-7": { "x": -3.96, "y": 12.46, "width": 54, "height": 79 },
+				"game/spark-Layer-8": { "x": -3.96, "y": 12.46, "width": 54, "height": 79 },
+				"game/spark-Layer-9": { "x": -3.96, "y": 12.46, "width": 54, "height": 79 },
+				"game/spark-Layer-10": { "x": -3.96, "y": 12.46, "width": 54, "height": 79 },
+				"game/spark-Layer-11": { "x": -3.96, "y": 12.46, "width": 54, "height": 79 },
+				"game/spark-Layer-12": { "x": -3.96, "y": 12.46, "width": 54, "height": 79 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"game/spark-Layer-2": {
+				"attachment": [
+					{ "name": "game/spark-Layer-2" },
+					{ "time": 0.0333, "name": "game/spark-Layer-3" },
+					{ "time": 0.0667, "name": "game/spark-Layer-4" },
+					{ "time": 0.1, "name": "game/spark-Layer-5" },
+					{ "time": 0.1333, "name": "game/spark-Layer-6" },
+					{ "time": 0.1667, "name": "game/spark-Layer-7" },
+					{ "time": 0.2, "name": "game/spark-Layer-8" },
+					{ "time": 0.2333, "name": "game/spark-Layer-9" },
+					{ "time": 0.2667, "name": "game/spark-Layer-10" },
+					{ "time": 0.3, "name": "game/spark-Layer-11" },
+					{ "time": 0.3333, "name": "game/spark-Layer-12" },
+					{ "time": 0.3667, "name": null }
+				]
+			}
+		}
+	}
+}
+}

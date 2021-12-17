@@ -1,0 +1,209 @@
+{
+"skeleton": {
+	"hash": "kcSgQc4KthU",
+	"spine": "4.0.55",
+	"x": -240.02,
+	"y": -36.84,
+	"width": 481.75,
+	"height": 349.13,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "game/jumper-body", "parent": "root", "length": 206.77, "rotation": 1.63, "x": 5.85, "y": 210.71 },
+	{ "name": "game/jumper-leg-left", "parent": "game/jumper-body", "length": 74.78, "rotation": -90.99, "x": 164.16, "y": -50.06 },
+	{ "name": "game/jumper-foreleg-left", "parent": "game/jumper-leg-left", "length": 60.55, "rotation": -3.03, "x": 78.95, "y": -2.57 },
+	{ "name": "game/jumper-foot-right", "parent": "game/jumper-foreleg-left", "length": 90.8, "rotation": 90.26, "x": 72.02, "y": -12.98 },
+	{ "name": "game/jumper-leg-left2", "parent": "game/jumper-body", "length": 77.32, "rotation": -92.88, "x": -173.37, "y": -37.09 },
+	{ "name": "game/jumper-foreleg-left2", "parent": "game/jumper-leg-left2", "length": 69.15, "rotation": -3.63, "x": 78.98, "y": 0.88 },
+	{ "name": "game/jumper-foot-left", "parent": "game/jumper-foreleg-left2", "length": 67.24, "rotation": -83.69, "x": 78.53, "y": 18.51 },
+	{ "name": "right-leg", "parent": "root", "x": 170.21, "y": 29.5, "color": "ff3f00ff" },
+	{ "name": "left-leg", "parent": "root", "x": -174.22, "y": 23.06, "color": "ff3f00ff" }
+],
+"slots": [
+	{ "name": "game/jumper-body", "bone": "game/jumper-body", "dark": "000000", "attachment": "game/jumper-body" },
+	{ "name": "game/jumper-foot-left", "bone": "game/jumper-foot-left", "dark": "000000", "attachment": "game/jumper-foot-left" },
+	{ "name": "game/jumper-foot-right", "bone": "game/jumper-foot-right", "dark": "000000", "attachment": "game/jumper-foot-right" },
+	{ "name": "game/jumper-foreleg-left", "bone": "game/jumper-foreleg-left", "dark": "000000", "attachment": "game/jumper-foreleg-left" },
+	{ "name": "game/jumper-foreleg-left2", "bone": "game/jumper-foreleg-left2", "dark": "000000", "attachment": "game/jumper-foreleg-left" },
+	{ "name": "game/jumper-leg-left", "bone": "game/jumper-leg-left", "dark": "000000", "attachment": "game/jumper-leg-left" },
+	{ "name": "game/jumper-leg-left2", "bone": "game/jumper-leg-left2", "dark": "000000", "attachment": "game/jumper-leg-left" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"ik": [
+	{
+		"name": "left-leg",
+		"order": 1,
+		"bones": [ "game/jumper-leg-left2", "game/jumper-foreleg-left2" ],
+		"target": "left-leg"
+	},
+	{
+		"name": "right-leg",
+		"bones": [ "game/jumper-leg-left", "game/jumper-foreleg-left" ],
+		"target": "right-leg",
+		"bendPositive": false
+	}
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -185.6, 291.55, 185.23, 291.55, 186.81, -3.54, -188.76, -1.96 ]
+				}
+			},
+			"game/jumper-body": {
+				"game/jumper-body": { "x": -8.51, "y": -6.18, "rotation": -1.63, "width": 399, "height": 216 }
+			},
+			"game/jumper-foot-left": {
+				"game/jumper-foot-left": { "x": 29.62, "y": 3.97, "rotation": 178.57, "width": 104, "height": 63 }
+			},
+			"game/jumper-foot-right": {
+				"game/jumper-foot-right": { "x": 34.64, "y": -2.04, "rotation": 2.12, "width": 99, "height": 53 }
+			},
+			"game/jumper-foreleg-left": {
+				"game/jumper-foreleg-left": { "x": 25.9, "y": -0.33, "rotation": 92.39, "width": 62, "height": 81 }
+			},
+			"game/jumper-foreleg-left2": {
+				"game/jumper-foreleg-left": { "x": 29.45, "y": -1.43, "rotation": 94.88, "width": 62, "height": 81 }
+			},
+			"game/jumper-leg-left": {
+				"game/jumper-leg-left": { "x": 32.94, "y": -0.69, "rotation": 89.36, "width": 60, "height": 102 }
+			},
+			"game/jumper-leg-left2": {
+				"game/jumper-leg-left": { "x": 36.34, "y": -1.21, "rotation": 91.25, "width": 60, "height": 102 }
+			}
+		}
+	}
+],
+"animations": {
+	"die": {
+		"slots": {
+			"game/jumper-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/jumper-foot-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/jumper-foot-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/jumper-foreleg-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/jumper-foreleg-left2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/jumper-leg-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/jumper-leg-left2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"game/jumper-body": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/jumper-foot-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/jumper-foot-right": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/jumper-foreleg-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/jumper-foreleg-left2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/jumper-leg-left": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			},
+			"game/jumper-leg-left2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"jump": {
+		"bones": {
+			"game/jumper-body": {
+				"translate": [
+					{},
+					{ "time": 0.4667, "y": -95.88 },
+					{ "time": 0.6667, "y": 4.28 }
+				]
+			},
+			"game/jumper-foot-left": {
+				"rotate": [
+					{},
+					{ "time": 0.4667, "value": -66.33 },
+					{ "time": 0.6667 }
+				]
+			},
+			"game/jumper-foot-right": {
+				"rotate": [
+					{},
+					{ "time": 0.4667, "value": 78.15 },
+					{ "time": 0.6667 }
+				]
+			}
+		}
+	}
+}
+}

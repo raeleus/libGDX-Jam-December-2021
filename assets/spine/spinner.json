@@ -1,0 +1,80 @@
+{
+"skeleton": {
+	"hash": "Nn8gNQ257L8",
+	"spine": "4.0.55",
+	"x": -100.97,
+	"y": -81.9,
+	"width": 202,
+	"height": 189,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/spinner-Layer-1", "bone": "root", "dark": "000000", "attachment": "game/spinner-Layer-12" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -73.56, 87.98, 70.04, 89.56, 71.62, -72.98, -71.98, -74.55 ]
+				}
+			},
+			"game/spinner-Layer-1": {
+				"game/spinner-Layer-1": { "x": 0.03, "y": 12.6, "width": 202, "height": 189 },
+				"game/spinner-Layer-2": { "x": 0.03, "y": 12.6, "width": 202, "height": 189 },
+				"game/spinner-Layer-3": { "x": 0.03, "y": 12.6, "width": 202, "height": 189 },
+				"game/spinner-Layer-4": { "x": 0.03, "y": 12.6, "width": 202, "height": 189 },
+				"game/spinner-Layer-5": { "x": 0.03, "y": 12.6, "width": 202, "height": 189 },
+				"game/spinner-Layer-6": { "x": 0.03, "y": 12.6, "width": 202, "height": 189 },
+				"game/spinner-Layer-7": { "x": 0.03, "y": 12.6, "width": 202, "height": 189 },
+				"game/spinner-Layer-8": { "x": 0.03, "y": 12.6, "width": 202, "height": 189 },
+				"game/spinner-Layer-9": { "x": 0.03, "y": 12.6, "width": 202, "height": 189 },
+				"game/spinner-Layer-10": { "x": 0.03, "y": 12.6, "width": 202, "height": 189 },
+				"game/spinner-Layer-11": { "x": 0.03, "y": 12.6, "width": 202, "height": 189 },
+				"game/spinner-Layer-12": { "x": 0.03, "y": 12.6, "width": 202, "height": 189 }
+			}
+		}
+	}
+],
+"animations": {
+	"fall": {
+		"slots": {
+			"game/spinner-Layer-1": {
+				"attachment": [
+					{ "name": "game/spinner-Layer-1" },
+					{ "time": 0.0333, "name": "game/spinner-Layer-2" },
+					{ "time": 0.0667, "name": "game/spinner-Layer-3" },
+					{ "time": 0.1, "name": "game/spinner-Layer-4" },
+					{ "time": 0.1333, "name": "game/spinner-Layer-5" },
+					{ "time": 0.1667, "name": "game/spinner-Layer-6" },
+					{ "time": 0.2, "name": "game/spinner-Layer-7" },
+					{ "time": 0.2333, "name": "game/spinner-Layer-8" },
+					{ "time": 0.2667, "name": "game/spinner-Layer-9" },
+					{ "time": 0.3, "name": "game/spinner-Layer-10" },
+					{ "time": 0.3333, "name": "game/spinner-Layer-11" },
+					{ "time": 0.3667, "name": "game/spinner-Layer-12" },
+					{ "time": 0.4, "name": "game/spinner-Layer-1" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"game/spinner-Layer-1": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
+				]
+			}
+		}
+	}
+}
+}
