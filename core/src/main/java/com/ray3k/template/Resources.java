@@ -64,6 +64,7 @@ public class Resources {
         SkinSkinStyles.lScript = skin_skin.get("script", Label.LabelStyle.class);
         SkinSkinStyles.spDefault = skin_skin.get("default", ScrollPane.ScrollPaneStyle.class);
         SkinSkinStyles.sDefaultHorizontal = skin_skin.get("default-horizontal", Slider.SliderStyle.class);
+        SkinSkinStyles.tbToggle = skin_skin.get("toggle", TextButton.TextButtonStyle.class);
         SkinSkinStyles.tbDefault = skin_skin.get("default", TextButton.TextButtonStyle.class);
         SkinSkinStyles.tfDefault = skin_skin.get("default", TextField.TextFieldStyle.class);
         SkinSkinStyles.ttDefault = skin_skin.get("default", TextTooltip.TextTooltipStyle.class);
@@ -117,6 +118,8 @@ public class Resources {
         public static ScrollPane.ScrollPaneStyle spDefault;
 
         public static Slider.SliderStyle sDefaultHorizontal;
+
+        public static TextButton.TextButtonStyle tbToggle;
 
         public static TextButton.TextButtonStyle tbDefault;
 

@@ -17,6 +17,12 @@
 		"b": 0,
 		"a": 1
 	},
+	"dark-gray": {
+		"r": 0.24,
+		"g": 0.24,
+		"b": 0.24,
+		"a": 1
+	},
 	"gray": {
 		"r": 0.82333344,
 		"g": 0.82333344,
@@ -180,6 +186,27 @@
 		"regions": [],
 		"playMode": 2,
 		"crushMode": 0
+	},
+	"button-checked-10": {
+		"region": "button",
+		"color": "dark-gray",
+		"horizontalStretchAreas": [ 46, 226 ],
+		"verticalStretchAreas": [ 0, 72 ],
+		"tiling": false,
+		"minWidth": 272,
+		"minHeight": 73,
+		"rightWidth": 19,
+		"leftWidth": 14,
+		"bottomHeight": 11,
+		"topHeight": 6,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.CheckBox$CheckBoxStyle": {
@@ -219,6 +246,13 @@
 		"fontColor": "black",
 		"up": "button-10",
 		"down": "button-pressed-10"
+	},
+	"toggle": {
+		"font": "font-button",
+		"fontColor": "black",
+		"up": "button-10",
+		"down": "button-pressed-10",
+		"checked": "button-checked-10"
 	}
 },
 "com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle": {
