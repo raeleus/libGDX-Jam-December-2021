@@ -2,10 +2,12 @@ package com.ray3k.template.entities;
 
 import com.dongbat.jbump.Collisions;
 import com.dongbat.jbump.Response.Result;
+import com.ray3k.template.*;
 
-import static com.ray3k.template.Core.*;
 import static com.ray3k.template.Core.Binding.*;
+import static com.ray3k.template.Core.*;
 import static com.ray3k.template.Resources.SpineDragonQueen.*;
+import static com.ray3k.template.Resources.Values.*;
 
 public class PlayerEntity extends Entity {
     @Override
@@ -23,11 +25,22 @@ public class PlayerEntity extends Entity {
     @Override
     public void act(float delta) {
         if (isBindingPressed(LEFT)) {
-            setMotion(200, 180);
+            if (deltaX > -playerMaxSpeed) {
+                deltaX -= playerAcceleration * delta;
+                if (deltaX < -playerMaxSpeed) deltaX = -playerMaxSpeed;
+                if (animationState.getCurrent(0).getAnimation() != animationRun) animationState.setAnimation(0, animationRun, true);
+                skeleton.setScale(-1, 1);
+            }
         } else if (isBindingPressed(RIGHT)) {
-            setMotion(200, 0);
+            if (deltaX < playerMaxSpeed) {
+                deltaX += playerAcceleration * delta;
+                if (deltaX > playerMaxSpeed) deltaX = playerMaxSpeed;
+                if (animationState.getCurrent(0).getAnimation() != animationRun) animationState.setAnimation(0, animationRun, true);
+                skeleton.setScale(1, 1);
+            }
         } else {
-            setSpeed(0);
+            deltaX = Utils.approach(deltaX, 0, playerDeceleration * delta);
+            if (animationState.getCurrent(0).getAnimation() != animationStand) animationState.setAnimation(0, animationStand, true);
         }
     }
     

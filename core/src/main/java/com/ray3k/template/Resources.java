@@ -16,7 +16,6 @@ import com.badlogic.gdx.scenes.scene2d.ui.Window;
 import com.esotericsoftware.spine.Animation;
 import com.esotericsoftware.spine.AnimationStateData;
 import com.esotericsoftware.spine.SkeletonData;
-import java.lang.String;
 
 public class Resources {
     public static TextureAtlas textures_textures;
@@ -982,17 +981,11 @@ public class Resources {
     }
 
     public static class Values {
-        public static float jumpVelocity = 10.0f;
+        public static float playerMaxSpeed = 700.0f;
 
-        public static String name = "Raeleus";
+        public static float playerAcceleration = 1000.0f;
 
-        public static boolean godMode = true;
-
-        public static int id = 10;
-
-        public static Range speedLimitRange = new Range(0.0f, 10.0f);
-
-        public static float speedLimit = 5.0f;
+        public static float playerDeceleration = 800.0f;
     }
 
     public static class Range {

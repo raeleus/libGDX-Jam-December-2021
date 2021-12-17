@@ -1,7 +1,5 @@
 {
-  "jump velocity" : 10.0,
-  "name" : "Raeleus",
-  "god mode" : true,
-  "id" : 10,
-  "speed limit" : [0.0, 10.0, 5.0]
+  "player max speed" : 700.0,
+  "player acceleration" : 1000.0,
+  "player deceleration" : 800.0
 }
