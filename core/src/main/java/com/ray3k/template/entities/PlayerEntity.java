@@ -13,6 +13,7 @@ import static com.ray3k.template.Resources.Values.*;
 
 public class PlayerEntity extends Entity {
     private float jumpTime;
+    private int jumps;
     
     @Override
     public void create() {
@@ -51,18 +52,23 @@ public class PlayerEntity extends Entity {
             if (!inAir && animationState.getCurrent(0).getAnimation() != animationStand) animationState.setAnimation(0, animationStand, true);
         }
 
-        if (!inAir && isBindingJustPressed(UP)) {
+        if ((!inAir || jumps < playerMaxJumps) && isBindingJustPressed(UP)) {
             jumpTime = 0;
-            inAir = true;
-            deltaY = playerJumpSpeed;
+            deltaY += playerJumpSpeed;
             animationState.setAnimation(0, animationJump, false);
+            if (inAir) animationState.setAnimation(1, animationFlap, false);
+            
+            if (!inAir) jumps = 1;
+            else jumps++;
+            inAir = true;
         }
         
         if (inAir) {
             if (isBindingPressed(UP)) {
                 if (jumpTime < playerJumpHoldTime) {
-                    deltaY += playerJumpSpeed;
-                    if (deltaY > playerJumpSpeed) deltaY = playerJumpSpeed;
+                    if (deltaY < playerJumpSpeed) {
+                        deltaY = playerJumpSpeed;
+                    }
                 }
             }
             jumpTime += delta;

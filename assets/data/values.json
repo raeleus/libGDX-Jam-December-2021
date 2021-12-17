@@ -7,5 +7,6 @@
   "player gravity" : -3000,
   "player jump speed" : 700,
   "player jump hold time" : 0.4,
+  "player max jumps" : 3,
   "debugging" : true
 }

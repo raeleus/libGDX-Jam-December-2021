@@ -997,6 +997,8 @@ public class Resources {
 
         public static float playerJumpHoldTime = 0.4f;
 
+        public static int playerMaxJumps = 3;
+
         public static boolean debugging = true;
     }
 
