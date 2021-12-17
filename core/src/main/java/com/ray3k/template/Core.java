@@ -70,6 +70,9 @@ public class Core extends JamGame {
     public static float mouseY;
     public static ExtendViewport viewport;
     public static OrthographicCamera camera;
+    public static final float DEPTH_PLAYER = 100;
+    public static final float DEPTH_BACKGROUND = 2000;
+    public static final float DEPTH_FOREGROUND = 50;
     
     public static boolean isKeyJustPressed(int key) {
         return key == Keys.ANY_KEY ? keysJustPressed.size > 0 : keysJustPressed.contains(key);

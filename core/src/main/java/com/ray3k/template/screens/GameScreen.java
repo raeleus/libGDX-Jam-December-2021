@@ -116,6 +116,7 @@ public class GameScreen extends JamScreen {
                     case "player":
                         var player = new PlayerEntity();
                         player.teleport(x, y);
+                        player.depth = DEPTH_PLAYER;
                         entityController.add(player);
                         
                         var cam = new CameraEntity(player, levelWidth, levelHeight);
@@ -129,6 +130,14 @@ public class GameScreen extends JamScreen {
             public void decal(int x, int y, float originX, float originY, float scaleX, float scaleY, int rotation,
                               String texture, String folder, ObjectMap<String, OgmoValue> valuesMap) {
                 var decal = new DecalEntity(Resources.textures_textures.createSprite(folder + "/" + Utils.filePathNoExtension(texture)), x, y);
+                switch (layerName) {
+                    case "background":
+                        decal.depth = DEPTH_BACKGROUND;
+                        break;
+                    case "foreground":
+                        decal.depth = DEPTH_FOREGROUND;
+                        break;
+                }
                 entityController.add(decal);
             }
         });

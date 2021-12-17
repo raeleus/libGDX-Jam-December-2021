@@ -1,10 +1,91 @@
 {
   "ogmoVersion": "3.4.0",
   "width": 1968,
-  "height": 576,
+  "height": 848,
   "offsetX": 0,
   "offsetY": 0,
   "layers": [
+    {
+      "name": "entities",
+      "_eid": "75147812",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 246,
+      "gridCellsY": 106,
+      "entities": [
+        {"name": "player", "id": 2, "_eid": "75139371", "x": 117, "y": 759, "originX": 35, "originY": 100}
+      ]
+    },
+    {
+      "name": "bounds",
+      "_eid": "75096055",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 246,
+      "gridCellsY": 106,
+      "entities": [
+        {
+          "name": "bounds",
+          "id": 0,
+          "_eid": "75099729",
+          "x": 0,
+          "y": 784,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 0, "y": 272},
+            {"x": -56, "y": 272},
+            {"x": -56, "y": 784}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 1,
+          "_eid": "75099729",
+          "x": 0,
+          "y": 784,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 2048, "y": 784},
+            {"x": 2048, "y": 832},
+            {"x": 0, "y": 824}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 2,
+          "_eid": "75099729",
+          "x": 0,
+          "y": 272,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 1976, "y": 272},
+            {"x": 1976, "y": 240},
+            {"x": 0, "y": 240}
+          ]
+        },
+        {
+          "name": "exit",
+          "id": 3,
+          "_eid": "75119428",
+          "x": 1968,
+          "y": 784,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 1968, "y": 272},
+            {"x": 2008, "y": 272},
+            {"x": 2008, "y": 784}
+          ]
+        }
+      ]
+    },
     {
       "name": "foreground",
       "_eid": "75016182",
@@ -13,10 +94,9 @@
       "gridCellWidth": 8,
       "gridCellHeight": 8,
       "gridCellsX": 246,
-      "gridCellsY": 72,
+      "gridCellsY": 106,
       "decals": [
-        {"x": 1195.5668743630897, "y": 371.5319113520678, "rotation": 0, "texture": "arch.png", "originX": 0.5, "originY": 0.5},
-        {"x": 1616, "y": 440, "rotation": 0, "texture": "grave-4.png", "originX": 0.5, "originY": 0.5}
+        {"x": 1159.5668743630897, "y": 535.5319113520678, "rotation": 0, "texture": "arch.png", "originX": 0.5, "originY": 0.5}
       ],
       "folder": "game"
     },
@@ -28,99 +108,19 @@
       "gridCellWidth": 8,
       "gridCellHeight": 8,
       "gridCellsX": 246,
-      "gridCellsY": 72,
+      "gridCellsY": 106,
       "decals": [
-        {"x": 520, "y": 544, "rotation": 0, "texture": "ground.png", "originX": 0.5, "originY": 0.5},
-        {"x": 1387, "y": 371, "rotation": 0, "texture": "arch-back.png", "originX": 0.5, "originY": 0.5},
-        {"x": 617, "y": 435, "rotation": 0, "texture": "grave-3.png", "originX": 0.5, "originY": 0.5},
-        {"x": 1502.699056901972, "y": 544.2269975859078, "rotation": 0, "texture": "ground.png", "originX": 0.5, "originY": 0.5},
-        {"x": 885, "y": 419, "rotation": 0, "texture": "grave-5.png", "originX": 0.5, "originY": 0.5},
-        {"x": 407, "y": 450, "rotation": 0, "texture": "grave-1.png", "originX": 0.5, "originY": 0.5},
-        {"x": 119, "y": 440, "rotation": 0, "texture": "grave-2.png", "originX": 0.5, "originY": 0.5},
-        {"x": 1984, "y": 104, "rotation": 0, "texture": "castle.png", "originX": 0.5, "originY": 0.5}
+        {"x": 1992, "y": 80, "rotation": 0, "texture": "castle.png", "originX": 0.5, "originY": 0.5},
+        {"x": 520, "y": 816, "rotation": 0, "texture": "ground.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1495, "y": 533, "rotation": 0, "texture": "arch-back.png", "originX": 0.5, "originY": 0.5},
+        {"x": 617, "y": 707, "rotation": 0, "texture": "grave-3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1502.699056901972, "y": 816.2269975859078, "rotation": 0, "texture": "ground.png", "originX": 0.5, "originY": 0.5},
+        {"x": 885, "y": 691, "rotation": 0, "texture": "grave-5.png", "originX": 0.5, "originY": 0.5},
+        {"x": 407, "y": 722, "rotation": 0, "texture": "grave-1.png", "originX": 0.5, "originY": 0.5},
+        {"x": 119, "y": 712, "rotation": 0, "texture": "grave-2.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1296, "y": 704, "rotation": 0, "texture": "grave-4.png", "originX": 0.5, "originY": 0.5}
       ],
       "folder": "game"
-    },
-    {
-      "name": "bounds",
-      "_eid": "75096055",
-      "offsetX": 0,
-      "offsetY": 0,
-      "gridCellWidth": 8,
-      "gridCellHeight": 8,
-      "gridCellsX": 246,
-      "gridCellsY": 72,
-      "entities": [
-        {
-          "name": "bounds",
-          "id": 0,
-          "_eid": "75099729",
-          "x": 0,
-          "y": 512,
-          "originX": 3,
-          "originY": 3,
-          "nodes": [
-            {"x": 0, "y": 0},
-            {"x": -56, "y": 0},
-            {"x": -56, "y": 512}
-          ]
-        },
-        {
-          "name": "bounds",
-          "id": 1,
-          "_eid": "75099729",
-          "x": 0,
-          "y": 512,
-          "originX": 3,
-          "originY": 3,
-          "nodes": [
-            {"x": 2048, "y": 512},
-            {"x": 2048, "y": 560},
-            {"x": 0, "y": 552}
-          ]
-        },
-        {
-          "name": "bounds",
-          "id": 2,
-          "_eid": "75099729",
-          "x": 0,
-          "y": 0,
-          "originX": 3,
-          "originY": 3,
-          "nodes": [
-            {"x": 1976, "y": 0},
-            {"x": 1976, "y": -32},
-            {"x": 0, "y": -32}
-          ]
-        },
-        {
-          "name": "exit",
-          "id": 3,
-          "_eid": "75119428",
-          "x": 1968,
-          "y": 512,
-          "originX": 3,
-          "originY": 3,
-          "nodes": [
-            {"x": 1968, "y": 0},
-            {"x": 2008, "y": 0},
-            {"x": 2008, "y": 512}
-          ]
-        }
-      ]
-    },
-    {
-      "name": "entities",
-      "_eid": "75147812",
-      "offsetX": 0,
-      "offsetY": 0,
-      "gridCellWidth": 8,
-      "gridCellHeight": 8,
-      "gridCellsX": 246,
-      "gridCellsY": 72,
-      "entities": [
-        {"name": "player", "id": 2, "_eid": "75139371", "x": 117, "y": 487, "originX": 35, "originY": 100}
-      ]
     }
   ]
 }
