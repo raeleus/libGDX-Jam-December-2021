@@ -14,6 +14,7 @@ import com.esotericsoftware.spine.Bone;
 import com.esotericsoftware.spine.Event;
 import com.ray3k.template.*;
 import com.ray3k.template.Resources.*;
+import com.ray3k.template.entities.PowerupEntity.*;
 import com.ray3k.template.screens.*;
 
 import java.util.ArrayList;
@@ -31,6 +32,7 @@ public class PlayerEntity extends Entity {
     private int jumps;
     public Weapon weapon;
     public static Array<Weapon> enabledWeapons = new Array<>();
+    public static Array<PowerupType> enabledWings = new Array<>();
     private boolean shotgunCharge;
     private float damageTimer;
     public float health;
@@ -293,6 +295,25 @@ public class PlayerEntity extends Entity {
                     health += heartHeal;
                     if (health > playerMaxHealth) health = playerMaxHealth;
                 }
+            } else if (collision.other.userData instanceof PowerupEntity) {
+                var powerup = (PowerupEntity) collision.other.userData;
+                powerup.destroy = true;
+                if (powerup.powerupType == PowerupType.SHOTGUN) {
+                    enabledWeapons.add(SHOTGUN);
+                } else if (powerup.powerupType == PowerupType.CROSS) {
+                    enabledWeapons.add(CROSS);
+                } else if (powerup.powerupType == PowerupType.GRENADE) {
+                    enabledWeapons.add(GRENADE);
+                } else if (powerup.powerupType == PowerupType.WINGS1) {
+                    playerMaxJumps++;
+                    enabledWings.add(PowerupType.WINGS1);
+                } else if (powerup.powerupType == PowerupType.WINGS2) {
+                    playerMaxJumps++;
+                    enabledWings.add(PowerupType.WINGS2);
+                } else if (powerup.powerupType == PowerupType.WINGS3) {
+                    playerMaxJumps++;
+                    enabledWings.add(PowerupType.WINGS3);
+                }
             }
         }
     }
@@ -304,6 +325,7 @@ public class PlayerEntity extends Entity {
         public Response filter(Item item, Item other) {
             if (other.userData instanceof BoundsEntity) return Response.slide;
             if (other.userData instanceof HeartEntity) return Response.cross;
+            if (other.userData instanceof PowerupEntity) return Response.cross;
             return null;
         }
     }

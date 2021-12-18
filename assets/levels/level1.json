@@ -24,7 +24,13 @@
         {"name": "jellyfish", "id": 9, "_eid": "85260004", "x": 415.62097063845385, "y": 511.88407148351894, "originX": 84, "originY": 106, "rotation": 22},
         {"name": "heart", "id": 10, "_eid": "85587456", "x": 1680, "y": 480, "originX": 39, "originY": 155},
         {"name": "heart", "id": 11, "_eid": "85587456", "x": 944, "y": 520, "originX": 39, "originY": 155},
-        {"name": "heart", "id": 12, "_eid": "85587456", "x": 648, "y": 472, "originX": 39, "originY": 155}
+        {"name": "heart", "id": 12, "_eid": "85587456", "x": 648, "y": 472, "originX": 39, "originY": 155},
+        {"name": "powerup_shotgun", "id": 14, "_eid": "85627733", "x": 160, "y": 208, "originX": 70, "originY": 73},
+        {"name": "powerup_grenade", "id": 15, "_eid": "85620061", "x": 416, "y": 208, "originX": 70, "originY": 73},
+        {"name": "powerup_cross", "id": 16, "_eid": "85625956", "x": 648, "y": 208, "originX": 70, "originY": 73},
+        {"name": "powerup_wings1", "id": 17, "_eid": "85617174", "x": 144, "y": 432, "originX": 70, "originY": 73},
+        {"name": "powerup_wings2", "id": 18, "_eid": "85645337", "x": 376, "y": 440, "originX": 70, "originY": 73},
+        {"name": "powerup_wings3", "id": 19, "_eid": "85655756", "x": 648, "y": 440, "originX": 70, "originY": 73}
       ]
     },
     {

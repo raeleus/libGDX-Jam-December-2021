@@ -47,6 +47,7 @@ public class MenuScreen extends JamScreen {
                 PlayerEntity.enabledWeapons.add(Weapon.SHOTGUN);
                 PlayerEntity.enabledWeapons.add(Weapon.CROSS);
                 PlayerEntity.enabledWeapons.add(Weapon.GRENADE);
+                PlayerEntity.enabledWings.clear();
                 bgm.stop();
                 core.transition(new GameScreen());
             }

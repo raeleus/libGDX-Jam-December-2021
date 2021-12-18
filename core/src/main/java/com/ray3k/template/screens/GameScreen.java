@@ -25,6 +25,7 @@ import com.ray3k.template.*;
 import com.ray3k.template.OgmoReader.*;
 import com.ray3k.template.entities.*;
 import com.ray3k.template.entities.PlayerEntity.*;
+import com.ray3k.template.entities.PowerupEntity.*;
 import com.ray3k.template.screens.DialogDebug.*;
 import com.ray3k.template.screens.DialogPause.*;
 import space.earlygrey.shapedrawer.ShapeDrawer;
@@ -154,6 +155,54 @@ public class GameScreen extends JamScreen {
                         var heart = new HeartEntity();
                         entityController.add(heart);
                         heart.teleport(x, y);
+                        break;
+                    case "powerup_shotgun":
+                        if (!PlayerEntity.enabledWeapons.contains(Weapon.SHOTGUN, false)) {
+                            var powerup = new PowerupEntity();
+                            entityController.add(powerup);
+                            powerup.teleport(x, y);
+                            powerup.setPowerupType(PowerupType.SHOTGUN);
+                        }
+                        break;
+                    case "powerup_cross":
+                        if (!PlayerEntity.enabledWeapons.contains(Weapon.CROSS, false)) {
+                            var powerup = new PowerupEntity();
+                            entityController.add(powerup);
+                            powerup.teleport(x, y);
+                            powerup.setPowerupType(PowerupType.CROSS);
+                        }
+                        break;
+                    case "powerup_grenade":
+                        if (!PlayerEntity.enabledWeapons.contains(Weapon.GRENADE, false)) {
+                            var powerup = new PowerupEntity();
+                            entityController.add(powerup);
+                            powerup.teleport(x, y);
+                            powerup.setPowerupType(PowerupType.GRENADE);
+                        }
+                        break;
+                    case "powerup_wings1":
+                        if (!PlayerEntity.enabledWings.contains(PowerupType.WINGS1, false)) {
+                            var powerup = new PowerupEntity();
+                            entityController.add(powerup);
+                            powerup.teleport(x, y);
+                            powerup.setPowerupType(PowerupType.WINGS1);
+                        }
+                        break;
+                    case "powerup_wings2":
+                        if (!PlayerEntity.enabledWings.contains(PowerupType.WINGS2, false)) {
+                            var powerup = new PowerupEntity();
+                            entityController.add(powerup);
+                            powerup.teleport(x, y);
+                            powerup.setPowerupType(PowerupType.WINGS2);
+                        }
+                        break;
+                    case "powerup_wings3":
+                        if (!PlayerEntity.enabledWings.contains(PowerupType.WINGS3, false)) {
+                            var powerup = new PowerupEntity();
+                            entityController.add(powerup);
+                            powerup.teleport(x, y);
+                            powerup.setPowerupType(PowerupType.WINGS3);
+                        }
                         break;
                     case "blob":
                         var blob = new BlobEntity();
