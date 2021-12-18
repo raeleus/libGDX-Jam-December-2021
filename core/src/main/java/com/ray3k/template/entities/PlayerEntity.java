@@ -65,12 +65,21 @@ public class PlayerEntity extends Entity {
                         }
                         break;
                     case "throw":
-                        var goRight = skeleton.getScaleX() > 0;
-                        var cross = new CrossEntity(goRight);
-                        temp.set(0, 0);
-                        weaponBone.localToWorld(temp);
-                        cross.teleport(temp.x, temp.y);
-                        entityController.add(cross);
+                        if (weapon == CROSS) {
+                            var goRight = skeleton.getScaleX() > 0;
+                            var cross = new CrossEntity(goRight);
+                            temp.set(0, 0);
+                            weaponBone.localToWorld(temp);
+                            cross.teleport(temp.x, temp.y);
+                            entityController.add(cross);
+                        } else if (weapon == GRENADE) {
+                            var goRight = skeleton.getScaleX() > 0;
+                            var grenade = new GrenadeEntity(goRight);
+                            temp.set(0, 0);
+                            weaponBone.localToWorld(temp);
+                            grenade.teleport(temp.x, temp.y);
+                            entityController.add(grenade);
+                        }
                         break;
                 }
             }
@@ -146,6 +155,9 @@ public class PlayerEntity extends Entity {
                     else targetAnimation = animationWhip;
                     break;
                 case CROSS:
+                    targetAnimation = animationThrow;
+                    break;
+                case GRENADE:
                     targetAnimation = animationThrow;
                     break;
             }

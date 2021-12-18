@@ -11,5 +11,8 @@
   "cross launch speed" : 1500,
   "cross acceleration" : 2000,
   "cross rotation multiplier" : 0.5,
+  "grenade throw angle" : 70.0,
+  "grenade throw speed" : 1200.0,
+  "grenade gravity" : -4000.0,
   "debugging" : false
 }

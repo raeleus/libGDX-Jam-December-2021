@@ -7,9 +7,9 @@ import com.esotericsoftware.spine.AnimationState.AnimationStateAdapter;
 import com.esotericsoftware.spine.AnimationState.TrackEntry;
 
 import static com.ray3k.template.Core.*;
-import static com.ray3k.template.Resources.SpineSpark.*;
+import static com.ray3k.template.Resources.SpineGrenadeFire.*;
 
-public class SparkEntity extends Entity {
+public class GrenadeFireEntity extends Entity {
     
     @Override
     public void create() {
@@ -23,7 +23,7 @@ public class SparkEntity extends Entity {
                 destroy = true;
             }
         });
-        skeleton.getRootBone().setRotation(MathUtils.random(360f));
+        setCollisionBox(skeleton.findSlot("bbox"), skeletonBounds, nullCollisionFilter);
     }
     
     @Override

@@ -1,11 +1,11 @@
 {
 "skeleton": {
-	"hash": "OW+wATRhc/s",
+	"hash": "UhOeTvJJTaU",
 	"spine": "4.0.55",
-	"x": -64.61,
-	"y": -3.44,
-	"width": 135,
-	"height": 83,
+	"x": -133.56,
+	"y": -7.09,
+	"width": 270,
+	"height": 166,
 	"images": "",
 	"audio": ""
 },
@@ -25,13 +25,37 @@
 				"bbox": {
 					"type": "boundingbox",
 					"vertexCount": 4,
-					"vertices": [ -48.59, -1.33, -43.72, 67.72, 57.02, 66.91, 53.77, 0.3 ]
+					"vertices": [ -117.75, -2.78, -115.06, 127.42, 137.82, 123.7, 136.76, -2.62 ]
 				}
 			},
 			"game/grenade-fire-Layer-2": {
-				"game/grenade-fire-Layer-2": { "x": 2.51, "y": 35.9, "rotation": -0.54, "width": 135, "height": 83 },
-				"game/grenade-fire-Layer-3": { "x": 2.51, "y": 35.9, "rotation": -0.54, "width": 135, "height": 83 },
-				"game/grenade-fire-Layer-4": { "x": 2.51, "y": 35.9, "rotation": -0.54, "width": 135, "height": 83 }
+				"game/grenade-fire-Layer-2": {
+					"x": 1.41,
+					"y": 73.76,
+					"scaleX": 2,
+					"scaleY": 2,
+					"rotation": -0.54,
+					"width": 135,
+					"height": 83
+				},
+				"game/grenade-fire-Layer-3": {
+					"x": 1.41,
+					"y": 73.76,
+					"scaleX": 2,
+					"scaleY": 2,
+					"rotation": -0.54,
+					"width": 135,
+					"height": 83
+				},
+				"game/grenade-fire-Layer-4": {
+					"x": 1.41,
+					"y": 73.76,
+					"scaleX": 2,
+					"scaleY": 2,
+					"rotation": -0.54,
+					"width": 135,
+					"height": 83
+				}
 			}
 		}
 	}

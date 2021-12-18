@@ -1011,6 +1011,12 @@ public class Resources {
 
         public static float crossRotationMultiplier = 0.5f;
 
+        public static float grenadeThrowAngle = 70.0f;
+
+        public static float grenadeThrowSpeed = 1200.0f;
+
+        public static float grenadeGravity = -4000.0f;
+
         public static boolean debugging = false;
     }
 
