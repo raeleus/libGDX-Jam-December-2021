@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "rGfWdPtj/Yc",
+	"hash": "OhM4cVfiHEY",
 	"spine": "4.0.55",
 	"x": -58.5,
 	"y": -61,
@@ -44,6 +44,18 @@
 					{ "time": 0.1333, "name": "game/cross-Layer-4" },
 					{ "time": 0.2, "name": "game/cross-Layer-2" }
 				]
+			}
+		},
+		"deform": {
+			"default": {
+				"bbox": {
+					"bbox": [
+						{
+							"time": 10,
+							"vertices": [ -13.48901, -11.4657, -13.48901, -8.76787, 0, -8.76787, 0, -11.4657 ]
+						}
+					]
+				}
 			}
 		}
 	}

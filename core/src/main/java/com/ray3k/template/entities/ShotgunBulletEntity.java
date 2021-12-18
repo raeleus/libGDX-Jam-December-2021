@@ -61,15 +61,20 @@ public class ShotgunBulletEntity extends Entity {
                 spark.setPosition(MathUtils.random(getBboxLeft(),  getBboxRight()), MathUtils.random(getBboxBottom(), getBboxTop()));
                 entityController.add(spark);
             }
+            if (collision.other.userData instanceof Enemy) {
+                var enemy = (Enemy) collision.other.userData;
+                enemy.hurt(shotgunDamage, shotgunForce, x < enemy.getX() ? shotgunForceDirection : 180 - shotgunForceDirection);
+            }
         }
     }
     
-    private static final GrenadeCollisionFilter collisionFilter = new GrenadeCollisionFilter();
+    private static final ShotgunCollisionFilter collisionFilter = new ShotgunCollisionFilter();
     
-    private static class GrenadeCollisionFilter implements CollisionFilter {
+    private static class ShotgunCollisionFilter implements CollisionFilter {
         @Override
         public Response filter(Item item, Item other) {
             if (other.userData instanceof BoundsEntity) return Response.cross;
+            if (other.userData instanceof Enemy) return Response.cross;
             return null;
         }
     }

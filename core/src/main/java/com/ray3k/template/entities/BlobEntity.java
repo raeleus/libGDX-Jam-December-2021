@@ -34,6 +34,16 @@ public class BlobEntity extends Entity implements Enemy {
     }
     
     @Override
+    public float getX() {
+        return x;
+    }
+    
+    @Override
+    public float getY() {
+        return y;
+    }
+    
+    @Override
     public void create() {
         setSkeletonData(skeletonData, animationData);
         animationState.setAnimation(0, animationAnimation, true);

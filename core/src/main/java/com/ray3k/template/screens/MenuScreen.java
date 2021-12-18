@@ -44,6 +44,9 @@ public class MenuScreen extends JamScreen {
                 Values.playerMaxJumps = 1;
                 PlayerEntity.enabledWeapons.clear();
                 PlayerEntity.enabledWeapons.add(Weapon.WHIP);
+                PlayerEntity.enabledWeapons.add(Weapon.SHOTGUN);
+                PlayerEntity.enabledWeapons.add(Weapon.CROSS);
+                PlayerEntity.enabledWeapons.add(Weapon.GRENADE);
                 bgm.stop();
                 core.transition(new GameScreen());
             }

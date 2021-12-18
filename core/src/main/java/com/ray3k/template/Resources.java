@@ -1033,6 +1033,8 @@ public class Resources {
 
         public static int crossForceDirection = 20;
 
+        public static float crossHitDelay = 1.0f;
+
         public static float grenadeThrowAngle = 70.0f;
 
         public static float grenadeThrowSpeed = 1200.0f;
@@ -1049,9 +1051,9 @@ public class Resources {
 
         public static int shotgunDamage = 10;
 
-        public static int shotgunForce = 2000;
+        public static int shotgunForce = 1000;
 
-        public static int shotgunForceDirection = 20;
+        public static int shotgunForceDirection = 85;
 
         public static float explosionDelay = 0.1f;
 
