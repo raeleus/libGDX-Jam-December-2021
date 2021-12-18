@@ -1,6 +1,7 @@
 package com.ray3k.template.entities;
 
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.math.Vector2;
 import com.dongbat.jbump.CollisionFilter;
 import com.dongbat.jbump.Collisions;
 import com.dongbat.jbump.Item;
@@ -18,10 +19,17 @@ import static com.ray3k.template.Resources.Values.*;
 
 public class JellyfishEntity extends Entity implements Enemy {
     public float health;
+    private final static Vector2 temp = new Vector2();
     
     @Override
     public void hurt(float damage, float force, float forceDirection) {
-        addMotion(force, forceDirection);
+        temp.x = force;
+        temp.rotateDeg(forceDirection);
+        temp.x *= jellyfishHurtForceDampenerX;
+        temp.y *= jellyfishHurtForceDampenerY;
+        deltaX += temp.x;
+        deltaY += temp.y;
+        
         health -= damage;
         if (health <= 0) {
             destroy = true;
@@ -66,6 +74,7 @@ public class JellyfishEntity extends Entity implements Enemy {
     @Override
     public void act(float delta) {
         setSpeed(Utils.approach(getSpeed(), 0, jellyfishDeceleration * delta));
+        if (isOutside(0, 0, Core.levelWidth, Core.levelHeight, jellyfishDestroyBorder)) destroy = true;
     }
     
     @Override
@@ -78,7 +87,7 @@ public class JellyfishEntity extends Entity implements Enemy {
     
     @Override
     public void destroy() {
-    
+        System.out.println("destroy");
     }
     
     @Override

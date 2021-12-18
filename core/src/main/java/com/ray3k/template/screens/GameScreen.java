@@ -102,8 +102,6 @@ public class GameScreen extends JamScreen {
         var ogmoReader = new OgmoReader();
         ogmoReader.addListener(new OgmoAdapter() {
             String layerName;
-            float levelWidth;
-            float levelHeight;
             float levelZoom;
     
             @Override
