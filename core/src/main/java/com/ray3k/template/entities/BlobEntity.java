@@ -63,7 +63,9 @@ public class BlobEntity extends Entity implements Enemy {
     
     @Override
     public void act(float delta) {
+        boolean inAir = world.check(item, x, y - 1, collisionFilter).projectedCollisions.size() == 0;
         deltaX = Utils.approach(deltaX, goRight ? blobMoveSpeed : -blobMoveSpeed, blobAcceleration * delta);
+        if (inAir) gravityY = blobGravity;
     }
     
     @Override

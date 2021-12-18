@@ -51,6 +51,7 @@ public class PlayerEntity extends Entity {
             health -= damage;
             addMotion(force, forceDirection);
             animationState.setAnimation(3, animationHurt, false);
+            animationState.addEmptyAnimation(3, 0, 0);
             if (health <= 0) {
                 var die = new DieAnimEntity(skeletonData, animationData, animationState.getCurrent(0).getAnimation(), animationState.getCurrent(0).getTrackTime(), animationDie, x, y, skeleton.getRootBone().getRotation(), false);
                 entityController.add(die);
@@ -323,7 +324,7 @@ public class PlayerEntity extends Entity {
     private static class PlayerCollisionFilter implements CollisionFilter {
         @Override
         public Response filter(Item item, Item other) {
-            if (other.userData instanceof BoundsEntity) return Response.slide;
+            if (other.userData instanceof BoundsEntity) return Response.bounce;
             if (other.userData instanceof HeartEntity) return Response.cross;
             if (other.userData instanceof PowerupEntity) return Response.cross;
             return null;
