@@ -83,10 +83,12 @@ public class Resources {
         SpineDragonQueen.animationShoot = SpineDragonQueen.skeletonData.findAnimation("shoot");
         SpineDragonQueen.animationShootDown = SpineDragonQueen.skeletonData.findAnimation("shoot-down");
         SpineDragonQueen.animationShootUp = SpineDragonQueen.skeletonData.findAnimation("shoot-up");
+        SpineDragonQueen.animationShootJump = SpineDragonQueen.skeletonData.findAnimation("shootJump");
         SpineDragonQueen.animationStand = SpineDragonQueen.skeletonData.findAnimation("stand");
         SpineDragonQueen.animationThrow = SpineDragonQueen.skeletonData.findAnimation("throw");
         SpineDragonQueen.animationWhip = SpineDragonQueen.skeletonData.findAnimation("whip");
         SpineDragonQueen.animationWhipDown = SpineDragonQueen.skeletonData.findAnimation("whip-down");
+        SpineDragonQueen.animationWhipJump = SpineDragonQueen.skeletonData.findAnimation("whip-jump");
         SpineDragonQueen.animationWhipUp = SpineDragonQueen.skeletonData.findAnimation("whip-up");
         SpineDragonQueen.skinDefault = SpineDragonQueen.skeletonData.findSkin("default");
         SpineExplosion.skeletonData = assetManager.get("spine/explosion.json");
@@ -421,6 +423,8 @@ public class Resources {
 
         public static Animation animationShootUp;
 
+        public static Animation animationShootJump;
+
         public static Animation animationStand;
 
         public static Animation animationThrow;
@@ -428,6 +432,8 @@ public class Resources {
         public static Animation animationWhip;
 
         public static Animation animationWhipDown;
+
+        public static Animation animationWhipJump;
 
         public static Animation animationWhipUp;
 
@@ -999,7 +1005,7 @@ public class Resources {
 
         public static int playerMaxJumps = 3;
 
-        public static boolean debugging = true;
+        public static boolean debugging = false;
     }
 
     public static class Range {

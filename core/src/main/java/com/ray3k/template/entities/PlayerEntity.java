@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.utils.Array;
 import com.dongbat.jbump.*;
 import com.dongbat.jbump.Response.Result;
+import com.esotericsoftware.spine.Animation;
 import com.ray3k.template.*;
 import com.ray3k.template.Resources.*;
 import com.ray3k.template.screens.*;
@@ -65,6 +66,7 @@ public class PlayerEntity extends Entity {
         }
         
         if ((!inAir || jumps < playerMaxJumps) && !selectingWeapon && isBindingJustPressed(JUMP)) {
+            if (animationState.getCurrent(2) != null) animationState.setEmptyAnimation(2, .2f);
             jumpTime = 0;
             deltaY += playerJumpSpeed;
             animationState.setAnimation(0, animationJump, false);
@@ -89,6 +91,22 @@ public class PlayerEntity extends Entity {
         if (!selectingWeapon && isBindingJustPressed(INVENTORY)) {
             GameScreen.gameScreen.showInventory();
             selectingWeapon = true;
+        }
+        
+        if (isBindingJustPressed(ATTACK)) {
+            var anim = animationState.getCurrent(2);
+            Animation targetAnimation = null;
+            
+            if (weapon == WHIP) {
+                if (inAir) targetAnimation = animationWhipJump;
+                else targetAnimation = animationWhip;
+            }
+            
+            if (anim == null || targetAnimation != null && anim.getAnimation() != targetAnimation) {
+                System.out.println("targetAnimation = " + targetAnimation);
+                animationState.setAnimation(2, targetAnimation, false);
+                animationState.addEmptyAnimation(2, .2f, 0);
+            }
         }
     }
     

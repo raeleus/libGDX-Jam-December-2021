@@ -9,6 +9,8 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.ray3k.template.*;
+import com.ray3k.template.entities.*;
+import com.ray3k.template.entities.PlayerEntity.*;
 
 import static com.ray3k.template.Core.*;
 
@@ -36,6 +38,11 @@ public class SplashScreen extends JamScreen {
         stage.addListener(new ClickListener(Input.Buttons.RIGHT) {
             @Override
             public void clicked(InputEvent event, float x, float y) {
+                PlayerEntity.enabledWeapons.clear();
+                PlayerEntity.enabledWeapons.add(Weapon.WHIP);
+                PlayerEntity.enabledWeapons.add(Weapon.SHOTGUN);
+                PlayerEntity.enabledWeapons.add(Weapon.CROSS);
+                PlayerEntity.enabledWeapons.add(Weapon.GRENADE);
                 Gdx.input.setInputProcessor(null);
                 core.transition(new GameScreen());
             }
