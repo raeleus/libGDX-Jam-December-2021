@@ -122,6 +122,20 @@
         {"x": 1296, "y": 704, "rotation": 0, "texture": "grave-4.png", "originX": 0.5, "originY": 0.5}
       ],
       "folder": "game"
+    },
+    {
+      "name": "stationary",
+      "_eid": "79085479",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 246,
+      "gridCellsY": 106,
+      "decals": [
+        {"x": 512, "y": 560, "rotation": 0, "texture": "outside.png", "originX": 0.5, "originY": 0.5}
+      ],
+      "folder": "game"
     }
   ]
 }

@@ -165,6 +165,10 @@ public class GameScreen extends JamScreen {
                     case "foreground":
                         decal.depth = DEPTH_FOREGROUND;
                         break;
+                    case "stationary":
+                        decal.depth = DEPTH_STATIONARY;
+                        decal.panning = false;
+                        break;
                 }
                 entityController.add(decal);
             }

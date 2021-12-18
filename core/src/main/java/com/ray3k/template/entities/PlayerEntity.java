@@ -102,7 +102,7 @@ public class PlayerEntity extends Entity {
                 else targetAnimation = animationWhip;
             }
             
-            if (anim == null || targetAnimation != null && anim.getAnimation() != targetAnimation) {
+            if (targetAnimation != null && (anim == null || anim.getAnimation() != targetAnimation)) {
                 System.out.println("targetAnimation = " + targetAnimation);
                 animationState.setAnimation(2, targetAnimation, false);
                 animationState.addEmptyAnimation(2, .2f, 0);
