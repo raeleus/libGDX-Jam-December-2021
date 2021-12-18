@@ -17,7 +17,11 @@
       "gridCellsY": 106,
       "entities": [
         {"name": "player", "id": 2, "_eid": "75139371", "x": 117, "y": 759, "originX": 35, "originY": 100},
-        {"name": "blob", "id": 3, "_eid": "83377466", "x": 1520, "y": 768, "originX": 145, "originY": 256}
+        {"name": "blob", "id": 3, "_eid": "83377466", "x": 1520, "y": 768, "originX": 145, "originY": 256},
+        {"name": "jellyfish", "id": 4, "_eid": "85260004", "x": 215.62097063845385, "y": 991.8840714835189, "originX": 84, "originY": 106, "rotation": 22},
+        {"name": "jellyfish", "id": 7, "_eid": "85260004", "x": 440, "y": 1104, "originX": 84, "originY": 106, "rotation": 22},
+        {"name": "jellyfish", "id": 8, "_eid": "85260004", "x": 664, "y": 1224, "originX": 84, "originY": 106, "rotation": 22},
+        {"name": "jellyfish", "id": 9, "_eid": "85260004", "x": 415.62097063845385, "y": 511.88407148351894, "originX": 84, "originY": 106, "rotation": 22}
       ]
     },
     {

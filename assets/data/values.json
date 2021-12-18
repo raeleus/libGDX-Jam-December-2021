@@ -14,7 +14,7 @@
   "whip force" : 1000,
   "whip force direction" : 60,
   "whip detect width" : 300,
-  "whip detect height" :40,
+  "whip detect height" :60,
   "cross launch speed" : 1500,
   "cross acceleration" : 2000,
   "cross rotation multiplier" : 0.5,
@@ -47,5 +47,10 @@
   "blob damage" : 10,
   "blob force" : 1000,
   "blob force direction" : 60,
+  "jellyfish move speed" : 400,
+  "jellyfish health" : 10,
+  "jellyfish damage" : 10,
+  "jellyfish force" : 1000,
+  "jellyfish deceleration" : 300,
   "debugging" : false
 }

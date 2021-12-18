@@ -12,6 +12,7 @@ spine/glutton.json
 spine/grenade-fire.json
 spine/grenade.json
 spine/groxar.json
+spine/heart.json
 spine/hit.json
 spine/jellyfish.json
 spine/john.json

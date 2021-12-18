@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "yrMaraZ5bTM",
+	"hash": "ZD7WOwR9kCI",
 	"spine": "4.0.55",
 	"x": -85.83,
 	"y": -207.4,
@@ -98,7 +98,7 @@
 				"bbox": {
 					"type": "boundingbox",
 					"vertexCount": 4,
-					"vertices": [ -62.52, -44.57, -62.52, 54.84, 90.55, 58, 90.55, -46.15 ]
+					"vertices": [ -68.59, -74.92, -68.59, 79.12, 82.46, 82.28, 82.46, -76.5 ]
 				}
 			},
 			"game/jellyfish-head": {
@@ -187,6 +187,9 @@
 		}
 	}
 ],
+"events": {
+	"push": {}
+},
 "animations": {
 	"die": {
 		"slots": {
@@ -419,7 +422,10 @@
 					]
 				}
 			}
-		}
+		},
+		"events": [
+			{ "time": 0.5667, "name": "push" }
+		]
 	}
 }
 }

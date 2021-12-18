@@ -86,8 +86,8 @@ public class PlayerEntity extends Entity {
                         weaponBone.localToWorld(temp);
                         itemsTemp.clear();
                         boolean aimRight = skeleton.getScaleX() > 0;
-                        if (aimRight) world.queryRect(temp.x + 100, temp.y - whipDetectHeight, whipDetectWidth, whipDetectHeight, enemyCollisionFilter, itemsTemp);
-                        else world.queryRect(temp.x - 100 - whipDetectWidth, temp.y - whipDetectHeight, whipDetectWidth, whipDetectHeight, enemyCollisionFilter, itemsTemp);
+                        if (aimRight) world.queryRect(temp.x + 100, temp.y - whipDetectHeight / 2, whipDetectWidth, whipDetectHeight, enemyCollisionFilter, itemsTemp);
+                        else world.queryRect(temp.x - 100 - whipDetectWidth, temp.y - whipDetectHeight / 2, whipDetectWidth, whipDetectHeight, enemyCollisionFilter, itemsTemp);
                         
                         for (var item : itemsTemp) {
                             var enemy = (Enemy) item.userData;

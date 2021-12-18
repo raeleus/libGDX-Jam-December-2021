@@ -1,0 +1,44 @@
+{
+"skeleton": {
+	"hash": "vSZkDKkJqLY",
+	"spine": "4.0.55",
+	"x": -34.81,
+	"y": -1.81,
+	"width": 78,
+	"height": 155,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "game/heart-Layer-2", "bone": "root", "attachment": "game/heart-Layer-7" },
+	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -28.86, -2.55, -29.53, 79.06, 38.59, 80.41, 34.54, -1.87 ]
+				}
+			},
+			"game/heart-Layer-2": {
+				"game/heart-Layer-2": { "x": 4.19, "y": 75.69, "width": 78, "height": 155 },
+				"game/heart-Layer-3": { "x": 4.19, "y": 75.69, "width": 78, "height": 155 },
+				"game/heart-Layer-4": { "x": 4.19, "y": 75.69, "width": 78, "height": 155 },
+				"game/heart-Layer-5": { "x": 4.19, "y": 75.69, "width": 78, "height": 155 },
+				"game/heart-Layer-6": { "x": 4.19, "y": 75.69, "width": 78, "height": 155 },
+				"game/heart-Layer-7": { "x": 4.19, "y": 75.69, "width": 78, "height": 155 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

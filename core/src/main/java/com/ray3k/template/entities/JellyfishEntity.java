@@ -1,21 +1,22 @@
 package com.ray3k.template.entities;
 
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.math.MathUtils;
 import com.dongbat.jbump.CollisionFilter;
 import com.dongbat.jbump.Collisions;
 import com.dongbat.jbump.Item;
 import com.dongbat.jbump.Response;
 import com.dongbat.jbump.Response.Result;
-import com.ray3k.template.*;
+import com.esotericsoftware.spine.AnimationState.AnimationStateAdapter;
+import com.esotericsoftware.spine.AnimationState.TrackEntry;
+import com.esotericsoftware.spine.Event;
 import com.ray3k.template.Resources.*;
+import com.ray3k.template.*;
 
 import static com.ray3k.template.Core.*;
-import static com.ray3k.template.Resources.SpineBlob.*;
+import static com.ray3k.template.Resources.SpineJellyfish.*;
 import static com.ray3k.template.Resources.Values.*;
 
-public class BlobEntity extends Entity implements Enemy {
-    private boolean goRight;
+public class JellyfishEntity extends Entity implements Enemy {
     public float health;
     
     @Override
@@ -27,9 +28,6 @@ public class BlobEntity extends Entity implements Enemy {
             var die = new DieAnimEntity(skeletonData, animationData, animationState.getCurrent(0).getAnimation(), animationState.getCurrent(0).getTrackTime(), animationDie, x, y, skeleton.getRootBone().getRotation(), true);
             entityController.add(die);
         }
-        float playerDirection = Utils.pointDirection(x, y, PlayerEntity.player.x, PlayerEntity.player.y);
-        goRight = playerDirection < 90 || playerDirection > 270;
-        gravityY = blobGravity;
         animationState.setAnimation(1, animationHurt, false);
     }
     
@@ -46,14 +44,18 @@ public class BlobEntity extends Entity implements Enemy {
     @Override
     public void create() {
         setSkeletonData(skeletonData, animationData);
-        animationState.setAnimation(0, animationAnimation, true);
+        animationState.setAnimation(0, animationMove, true);
         setCollisionBox(skeleton.findSlot("bbox"), skeletonBounds, collisionFilter);
         depth = DEPTH_ENEMY;
-        
-        gravityY = blobGravity;
-        goRight = MathUtils.randomBoolean();
-        deltaX = goRight ? blobMoveSpeed : -blobMoveSpeed;
-        health = blobHealth;
+        health = jellyfishHealth;
+        animationState.addListener(new AnimationStateAdapter() {
+            @Override
+            public void event(TrackEntry entry, Event event) {
+                if (event.getData().getName().equals("push")) {
+                    addMotion(jellyfishMoveSpeed, skeleton.getRootBone().getRotation() + 90);
+                }
+            }
+        });
     }
     
     @Override
@@ -63,7 +65,7 @@ public class BlobEntity extends Entity implements Enemy {
     
     @Override
     public void act(float delta) {
-        deltaX = Utils.approach(deltaX, goRight ? blobMoveSpeed : -blobMoveSpeed, blobAcceleration * delta);
+        setSpeed(Utils.approach(getSpeed(), 0, jellyfishDeceleration * delta));
     }
     
     @Override
@@ -88,32 +90,19 @@ public class BlobEntity extends Entity implements Enemy {
     public void collision(Collisions collisions) {
         for (int i = 0; i < collisions.size(); i++) {
             var collision = collisions.get(i);
-            if (collision.other.userData instanceof BoundsEntity) {
-                if (collision.normal.x != 0) {
-                    deltaX *= -1;
-                    goRight = !goRight;
-                }
-                
-                if (collision.normal.y != 0) {
-                    deltaY = 0;
-                }
-                
-                if (collision.normal.y == 1) {
-                    gravityY = 0;
-                }
-            } else if (collision.other.userData instanceof PlayerEntity) {
+            if (collision.other.userData instanceof PlayerEntity) {
                 var player = (PlayerEntity) collision.other.userData;
-                player.hurt(blobDamage, blobForce, player.x < x ? 180 - blobForceDirection : blobForceDirection);
+                float playerDirection = Utils.pointDirection(getBboxCenterX(),getBboxCenterY(), player.getBboxCenterX(),player.getBboxCenterY());
+                player.hurt(jellyfishDamage, jellyfishForce, playerDirection);
             }
         }
     }
     
-    private static final BlobCollisionFilter collisionFilter = new BlobCollisionFilter();
+    private static final JellyfishCollisionFilter collisionFilter = new JellyfishCollisionFilter();
     
-    private static class BlobCollisionFilter implements CollisionFilter {
+    private static class JellyfishCollisionFilter implements CollisionFilter {
         @Override
         public Response filter(Item item, Item other) {
-            if (other.userData instanceof BoundsEntity) return Response.bounce;
             if (other.userData instanceof  PlayerEntity) return Response.cross;
             return null;
         }

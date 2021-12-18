@@ -135,6 +135,10 @@ public class Resources {
         SpineGroxar.animationStatue = SpineGroxar.skeletonData.findAnimation("statue");
         SpineGroxar.animationStatueBreak = SpineGroxar.skeletonData.findAnimation("statue-break");
         SpineGroxar.skinDefault = SpineGroxar.skeletonData.findSkin("default");
+        SpineHeart.skeletonData = assetManager.get("spine/heart.json");
+        SpineHeart.animationData = assetManager.get("spine/heart.json-animation");
+        SpineHeart.animationAnimation = SpineHeart.skeletonData.findAnimation("animation");
+        SpineHeart.skinDefault = SpineHeart.skeletonData.findSkin("default");
         SpineHit.skeletonData = assetManager.get("spine/hit.json");
         SpineHit.animationData = assetManager.get("spine/hit.json-animation");
         SpineHit.animationAnimation = SpineHit.skeletonData.findAnimation("animation");
@@ -542,6 +546,16 @@ public class Resources {
         public static Animation animationStatue;
 
         public static Animation animationStatueBreak;
+
+        public static com.esotericsoftware.spine.Skin skinDefault;
+    }
+
+    public static class SpineHeart {
+        public static SkeletonData skeletonData;
+
+        public static AnimationStateData animationData;
+
+        public static Animation animationAnimation;
 
         public static com.esotericsoftware.spine.Skin skinDefault;
     }
@@ -1023,7 +1037,7 @@ public class Resources {
 
         public static int whipDetectWidth = 300;
 
-        public static int whipDetectHeight = 40;
+        public static int whipDetectHeight = 60;
 
         public static int crossLaunchSpeed = 1500;
 
@@ -1088,6 +1102,16 @@ public class Resources {
         public static int blobForce = 1000;
 
         public static int blobForceDirection = 60;
+
+        public static int jellyfishMoveSpeed = 400;
+
+        public static int jellyfishHealth = 10;
+
+        public static int jellyfishDamage = 10;
+
+        public static int jellyfishForce = 1000;
+
+        public static int jellyfishDeceleration = 300;
 
         public static boolean debugging = false;
     }
