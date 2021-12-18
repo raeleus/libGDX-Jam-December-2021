@@ -1,7 +1,6 @@
 package com.ray3k.template.entities;
 
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.utils.ArrayMap;
 import com.badlogic.gdx.utils.ObjectMap;
 import com.dongbat.jbump.CollisionFilter;
 import com.dongbat.jbump.Collisions;
@@ -9,8 +8,6 @@ import com.dongbat.jbump.Item;
 import com.dongbat.jbump.Response;
 import com.dongbat.jbump.Response.Result;
 import com.ray3k.template.Resources.*;
-
-import java.util.Map;
 
 import static com.ray3k.template.Core.*;
 import static com.ray3k.template.Resources.SpineCross.*;
@@ -56,7 +53,6 @@ public class CrossEntity extends Entity {
             hitMap.put(entry.key, entry.value);
             if (entry.value <= 0) {
                 iter.remove();
-                System.out.println("remove");
             }
         }
     }
@@ -87,7 +83,6 @@ public class CrossEntity extends Entity {
             if (collision.other.userData instanceof Enemy) {
                 var enemy = (Enemy) collision.other.userData;
                 if (!hitMap.containsKey(enemy)) {
-                    System.out.println("hit");
                     enemy.hurt(crossDamage, crossForce,
                             x < enemy.getX() ? crossForceDirection : 180 - crossForceDirection);
                     hitMap.put(enemy, crossHitDelay);

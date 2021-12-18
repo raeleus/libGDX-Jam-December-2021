@@ -1015,11 +1015,15 @@ public class Resources {
 
         public static int playerMaxJumps = 3;
 
-        public static int whipDamage = 10;
+        public static int whipDamage = 15;
 
         public static int whipForce = 1000;
 
         public static int whipForceDirection = 60;
+
+        public static int whipDetectWidth = 300;
+
+        public static int whipDetectHeight = 40;
 
         public static int crossLaunchSpeed = 1500;
 
@@ -1027,13 +1031,13 @@ public class Resources {
 
         public static float crossRotationMultiplier = 0.5f;
 
-        public static int crossDamage = 10;
+        public static int crossDamage = 8;
 
-        public static int crossForce = 2000;
+        public static int crossForce = 500;
 
         public static int crossForceDirection = 20;
 
-        public static float crossHitDelay = 1.0f;
+        public static float crossHitDelay = 0.2f;
 
         public static float grenadeThrowAngle = 70.0f;
 
@@ -1043,13 +1047,19 @@ public class Resources {
 
         public static int grenadeDamagePerSecond = 10;
 
+        public static int grenadeForce = 500;
+
+        public static int grenadeForceDirection = 20;
+
+        public static float grenadeHitDelay = 0.1f;
+
         public static float shotgunProjectileSpeed = 3000.0f;
 
         public static float shotgunChargeAngle = 25.0f;
 
         public static float shotgunChargeTimescale = 0.5f;
 
-        public static int shotgunDamage = 10;
+        public static int shotgunDamage = 15;
 
         public static int shotgunForce = 1000;
 

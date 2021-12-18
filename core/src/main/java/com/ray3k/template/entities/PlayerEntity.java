@@ -86,8 +86,8 @@ public class PlayerEntity extends Entity {
                         weaponBone.localToWorld(temp);
                         itemsTemp.clear();
                         boolean aimRight = skeleton.getScaleX() > 0;
-                        if (aimRight) world.querySegment(temp.x + 100, temp.y, temp.x + 400, temp.y, enemyCollisionFilter, itemsTemp);
-                        else world.querySegment(temp.x - 100, temp.y, temp.x - 400, temp.y, enemyCollisionFilter, itemsTemp);
+                        if (aimRight) world.queryRect(temp.x + 100, temp.y - whipDetectHeight, whipDetectWidth, whipDetectHeight, enemyCollisionFilter, itemsTemp);
+                        else world.queryRect(temp.x - 100 - whipDetectWidth, temp.y - whipDetectHeight, whipDetectWidth, whipDetectHeight, enemyCollisionFilter, itemsTemp);
                         
                         for (var item : itemsTemp) {
                             var enemy = (Enemy) item.userData;
@@ -117,6 +117,7 @@ public class PlayerEntity extends Entity {
                             weaponBone.localToWorld(temp);
                             grenade.teleport(temp.x, temp.y);
                             entityController.add(grenade);
+                            grenade.addMotion(getSpeed(), getDirection());
                         }
                         break;
                     case "shoot":

@@ -62,11 +62,14 @@ public class GrenadeEntity extends Entity {
     public void collision(Collisions collisions) {
         for (int i = 0; i < collisions.size(); i++) {
             var collision = collisions.get(i);
-            if (collision.normal.y == 1) {
-                destroy = true;
-                var fire = new GrenadeFireEntity();
-                fire.setPosition(x, getBboxBottom());
-                entityController.add(fire);
+            if (collision.other.userData instanceof Enemy) deltaX /= 5f;
+            else if (collision.other.userData instanceof BoundsEntity) {
+                if (collision.normal.y == 1) {
+                    destroy = true;
+                    var fire = new GrenadeFireEntity();
+                    fire.setPosition(x, getBboxBottom());
+                    entityController.add(fire);
+                }
             }
         }
     }
@@ -77,6 +80,7 @@ public class GrenadeEntity extends Entity {
         @Override
         public Response filter(Item item, Item other) {
             if (other.userData instanceof BoundsEntity) return Response.slide;
+            if (other.userData instanceof Enemy) return Response.cross;
             return null;
         }
     }

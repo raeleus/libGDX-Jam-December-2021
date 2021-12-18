@@ -20,6 +20,7 @@ public class BlobEntity extends Entity implements Enemy {
     
     @Override
     public void hurt(float damage, float force, float forceDirection) {
+        System.out.println("damage = " + damage);
         addMotion(force, forceDirection);
         health -= damage;
         if (health <= 0) {
