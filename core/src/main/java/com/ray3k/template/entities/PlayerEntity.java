@@ -81,6 +81,14 @@ public class PlayerEntity extends Entity {
                             entityController.add(grenade);
                         }
                         break;
+                    case "shoot":
+                        var goRight = skeleton.getScaleX() > 0;
+                        var cross = new ShotgunBulletEntity(goRight);
+                        temp.set(0, 0);
+                        weaponBone.localToWorld(temp);
+                        cross.teleport(temp.x, temp.y);
+                        entityController.add(cross);
+                        break;
                 }
             }
         });
@@ -118,7 +126,6 @@ public class PlayerEntity extends Entity {
         }
         
         if ((!inAir || jumps < playerMaxJumps) && !selectingWeapon && isBindingJustPressed(JUMP)) {
-            if (animationState.getCurrent(2) != null) animationState.setEmptyAnimation(2, .2f);
             jumpTime = 0;
             deltaY += playerJumpSpeed;
             animationState.setAnimation(0, animationJump, false);
@@ -159,6 +166,10 @@ public class PlayerEntity extends Entity {
                     break;
                 case GRENADE:
                     targetAnimation = animationThrow;
+                    break;
+                case SHOTGUN:
+                    if (inAir) targetAnimation = animationShootJump;
+                    else targetAnimation = animationShoot;
                     break;
             }
             

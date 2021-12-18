@@ -1017,6 +1017,8 @@ public class Resources {
 
         public static float grenadeGravity = -4000.0f;
 
+        public static float shotgunProjectileSpeed = 3000.0f;
+
         public static boolean debugging = false;
     }
 

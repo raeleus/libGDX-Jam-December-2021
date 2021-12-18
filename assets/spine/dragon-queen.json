@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "WW2g+gORN4A",
+	"hash": "LbQqho4sawE",
 	"spine": "4.0.55",
 	"x": -42.44,
 	"y": -3.27,
@@ -143,6 +143,7 @@
 	}
 ],
 "events": {
+	"shoot": {},
 	"spark": {},
 	"throw": {}
 },
@@ -839,12 +840,12 @@
 		"slots": {
 			"game/shotgun": {
 				"rgba2": [
-					{ "time": 0.2333, "light": "ffffffff", "dark": "000000" },
-					{ "time": 0.4, "light": "ffffff00", "dark": "000000" }
+					{ "time": 0.6, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.9333, "light": "ffffff00", "dark": "000000" }
 				],
 				"attachment": [
-					{ "name": "game/shotgun" },
-					{ "time": 0.4, "name": null }
+					{ "time": 0.1, "name": "game/shotgun" },
+					{ "time": 0.9333, "name": null }
 				]
 			}
 		},
@@ -856,19 +857,34 @@
 			},
 			"game/dq-body3": {
 				"rotate": [
-					{ "value": 69.51 },
-					{ "time": 0.1, "value": 81.38 },
-					{ "time": 0.2333, "value": 69.51 }
+					{ "value": -51.49 },
+					{ "time": 0.1, "value": -101.07 },
+					{ "time": 0.2667, "value": 69.51, "curve": "stepped" },
+					{ "time": 0.3667, "value": 69.51 },
+					{ "time": 0.4667, "value": 81.38 },
+					{ "time": 0.6, "value": 69.51, "curve": "stepped" },
+					{ "time": 0.7333, "value": 69.51 },
+					{ "time": 0.8667, "value": -101.07 },
+					{ "time": 0.9333, "value": -51.49 }
 				]
 			},
 			"game/dq-forearm-front2": {
 				"rotate": [
-					{ "value": -79.27 },
-					{ "time": 0.1, "value": -26.64 },
-					{ "time": 0.2333, "value": -79.27 }
+					{ "value": -24.29 },
+					{ "time": 0.1, "value": 29.73 },
+					{ "time": 0.2667, "value": -79.27, "curve": "stepped" },
+					{ "time": 0.3667, "value": -79.27 },
+					{ "time": 0.4667, "value": -26.64 },
+					{ "time": 0.6, "value": -79.27, "curve": "stepped" },
+					{ "time": 0.7333, "value": -79.27 },
+					{ "time": 0.8667, "value": 29.73 },
+					{ "time": 0.9333, "value": -24.29 }
 				]
 			}
-		}
+		},
+		"events": [
+			{ "time": 0.3667, "name": "shoot" }
+		]
 	},
 	"shoot-down": {
 		"slots": {
@@ -944,12 +960,12 @@
 		"slots": {
 			"game/shotgun": {
 				"rgba2": [
-					{ "time": 0.2333, "light": "ffffffff", "dark": "000000" },
-					{ "time": 0.4, "light": "ffffff00", "dark": "000000" }
+					{ "time": 0.6, "light": "ffffffff", "dark": "000000" },
+					{ "time": 0.9333, "light": "ffffff00", "dark": "000000" }
 				],
 				"attachment": [
-					{ "name": "game/shotgun" },
-					{ "time": 0.4, "name": null }
+					{ "time": 0.1, "name": "game/shotgun" },
+					{ "time": 0.9333, "name": null }
 				]
 			}
 		},
@@ -961,19 +977,34 @@
 			},
 			"game/dq-body3": {
 				"rotate": [
-					{ "value": 90.31 },
-					{ "time": 0.1, "value": 102.19 },
-					{ "time": 0.2333, "value": 90.31 }
+					{ "value": -39.82 },
+					{ "time": 0.1, "value": -89.4 },
+					{ "time": 0.2667, "value": 81.18, "curve": "stepped" },
+					{ "time": 0.3667, "value": 81.18 },
+					{ "time": 0.4667, "value": 93.06 },
+					{ "time": 0.6, "value": 81.18, "curve": "stepped" },
+					{ "time": 0.7333, "value": 81.18 },
+					{ "time": 0.8667, "value": -89.4 },
+					{ "time": 0.9333, "value": -39.82 }
 				]
 			},
 			"game/dq-forearm-front2": {
 				"rotate": [
-					{ "value": -79.27 },
-					{ "time": 0.1, "value": -26.64 },
-					{ "time": 0.2333, "value": -79.27 }
+					{ "value": -12.62 },
+					{ "time": 0.1, "value": 41.4 },
+					{ "time": 0.2667, "value": -67.6 },
+					{ "time": 0.3667, "value": -67.6 },
+					{ "time": 0.4667, "value": -14.96 },
+					{ "time": 0.6, "value": -67.6, "curve": "stepped" },
+					{ "time": 0.7333, "value": -67.6 },
+					{ "time": 0.8667, "value": 41.4 },
+					{ "time": 0.9333, "value": -12.62 }
 				]
 			}
-		}
+		},
+		"events": [
+			{ "time": 0.3667, "name": "shoot" }
+		]
 	},
 	"stand": {
 		"bones": {

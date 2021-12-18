@@ -14,5 +14,6 @@
   "grenade throw angle" : 70.0,
   "grenade throw speed" : 1200.0,
   "grenade gravity" : -4000.0,
+  "shotgun projectile speed" : 3000.0,
   "debugging" : false
 }

@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "lj543FIul7I",
+	"hash": "X//0yZwE8BE",
 	"spine": "4.0.55",
 	"x": -128,
 	"y": -50.91,
@@ -24,13 +24,13 @@
 				"bbox": {
 					"type": "boundingbox",
 					"vertexCount": 4,
-					"vertices": [ -70.53, -71.19, -72.15, 79.91, 74.08, 78.29, 70.83, -69.57 ]
+					"vertices": [ -27.53, -20.19, -28.15, 32.91, 34.08, 33.29, 29.83, -18.57 ]
 				}
 			},
 			"game/shotgun-bullet-Layer-2": {
-				"game/shotgun-bullet-Layer-2": { "y": 11.59, "width": 256, "height": 125 },
-				"game/shotgun-bullet-Layer-3": { "y": 11.59, "width": 256, "height": 125 },
-				"game/shotgun-bullet-Layer-4": { "y": 11.59, "width": 256, "height": 125 }
+				"game/shotgun-bullet-Layer-2": { "y": 11.59, "scaleX": 0.5, "scaleY": 0.5, "width": 256, "height": 125 },
+				"game/shotgun-bullet-Layer-3": { "y": 11.59, "scaleX": 0.5, "scaleY": 0.5, "width": 256, "height": 125 },
+				"game/shotgun-bullet-Layer-4": { "y": 11.59, "scaleX": 0.5, "scaleY": 0.5, "width": 256, "height": 125 }
 			}
 		}
 	}
