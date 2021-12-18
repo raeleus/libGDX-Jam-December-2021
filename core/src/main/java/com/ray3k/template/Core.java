@@ -78,11 +78,12 @@ public class Core extends JamGame {
     public static float mouseY;
     public static FitViewport viewport;
     public static OrthographicCamera camera;
-    public static final float DEPTH_PLAYER = 100;
-    public static final float DEPTH_STATIONARY = 2020;
-    public static final float DEPTH_BACKGROUND = 2000;
-    public static final float DEPTH_FOREGROUND = 50;
     public static final float DEPTH_DEBUG = -1000;
+    public static final float DEPTH_FOREGROUND = 50;
+    public static final float DEPTH_PARTICLES = 60;
+    public static final float DEPTH_PLAYER = 100;
+    public static final float DEPTH_BACKGROUND = 2000;
+    public static final float DEPTH_STATIONARY = 2020;
     public static AssetManager assetManager;
     public static TransitionEngine transitionEngine;
     public static TwoColorPolygonBatch batch;

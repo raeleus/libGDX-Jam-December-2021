@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "pcZktfj/b3s",
+	"hash": "5RnyBS8alsQ",
 	"spine": "4.0.55",
 	"x": -42.44,
 	"y": -3.27,
@@ -142,6 +142,9 @@
 		}
 	}
 ],
+"events": {
+	"spark": {}
+},
 "animations": {
 	"die": {
 		"slots": {
@@ -1190,7 +1193,10 @@
 					{ "time": 0.3333, "value": 0.15 }
 				]
 			}
-		}
+		},
+		"events": [
+			{ "time": 0.3333, "name": "spark" }
+		]
 	},
 	"whip-down": {
 		"slots": {
@@ -1460,7 +1466,10 @@
 					{ "time": 0.3333, "value": 0.15 }
 				]
 			}
-		}
+		},
+		"events": [
+			{ "time": 0.3333, "name": "spark" }
+		]
 	},
 	"whip-up": {
 		"slots": {

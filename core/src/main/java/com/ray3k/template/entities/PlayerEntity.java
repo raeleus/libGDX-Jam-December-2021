@@ -1,10 +1,17 @@
 package com.ray3k.template.entities;
 
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.math.MathUtils;
+import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
 import com.dongbat.jbump.*;
 import com.dongbat.jbump.Response.Result;
 import com.esotericsoftware.spine.Animation;
+import com.esotericsoftware.spine.AnimationState;
+import com.esotericsoftware.spine.AnimationState.AnimationStateAdapter;
+import com.esotericsoftware.spine.AnimationState.TrackEntry;
+import com.esotericsoftware.spine.Bone;
+import com.esotericsoftware.spine.Event;
 import com.ray3k.template.*;
 import com.ray3k.template.Resources.*;
 import com.ray3k.template.screens.*;
@@ -25,6 +32,8 @@ public class PlayerEntity extends Entity {
     public enum Weapon {
         WHIP, GRENADE, SHOTGUN, CROSS
     }
+    private Bone weaponBone;
+    private static final Vector2 temp = new Vector2();
     
     @Override
     public void create() {
@@ -35,6 +44,23 @@ public class PlayerEntity extends Entity {
         setCollisionBox(skeleton.findSlot("bbox"), skeletonBounds, collisionFilter);
         gravityY = playerGravity;
         weapon = WHIP;
+        weaponBone = skeleton.findBone("weapon");
+        animationState.addListener(new AnimationStateAdapter() {
+            @Override
+            public void event(TrackEntry entry, Event event) {
+                event.getData().getName().equals("spark");
+                
+                for (int i = 0; i < 20; i++) {
+                    float offset = 100 + MathUtils.random(300f);
+                    if (skeleton.getScaleX() < 0) offset *= -1;
+                    var spark = new SparkEntity();
+                    temp.set(0, 0);
+                    weaponBone.localToWorld(temp);
+                    spark.teleport(temp.x + offset, temp.y);
+                    entityController.add(spark);
+                }
+            }
+        });
     }
     
     @Override
@@ -103,7 +129,6 @@ public class PlayerEntity extends Entity {
             }
             
             if (targetAnimation != null && (anim == null || anim.getAnimation() != targetAnimation)) {
-                System.out.println("targetAnimation = " + targetAnimation);
                 animationState.setAnimation(2, targetAnimation, false);
                 animationState.addEmptyAnimation(2, .2f, 0);
             }
