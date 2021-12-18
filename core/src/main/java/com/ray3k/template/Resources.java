@@ -1115,6 +1115,20 @@ public class Resources {
 
         public static int jellyfishDeceleration = 300;
 
+        public static int danglerMoveSpeed = 200;
+
+        public static int danglerAcceleration = 300;
+
+        public static int danglerHealth = 80;
+
+        public static int danglerDamage = 15;
+
+        public static int danglerForce = 2000;
+
+        public static float danglerHurtForceDampenerX = 0.5f;
+
+        public static float danglerHurtForceDampenerY = 0.0f;
+
         public static boolean debugging = false;
     }
 

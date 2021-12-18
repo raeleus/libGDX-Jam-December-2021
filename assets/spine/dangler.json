@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "okT3zFRJQjA",
+	"hash": "ZVqfhDv1cXk",
 	"spine": "4.0.55",
 	"x": -136.45,
 	"y": -85.48,
@@ -81,85 +81,85 @@
 			"bone": {
 				"rotate": [
 					{ "value": 13.07 },
-					{ "time": 0.0333, "value": -6.03 },
-					{ "time": 0.0667, "value": 13.07 }
+					{ "time": 1, "value": -6.03 },
+					{ "time": 2, "value": 13.07 }
 				]
 			},
 			"bone4": {
 				"rotate": [
 					{ "value": 13.07 },
-					{ "time": 0.0333, "value": -6.03 },
-					{ "time": 0.0667, "value": 13.07 }
+					{ "time": 1, "value": -6.03 },
+					{ "time": 2, "value": 13.07 }
 				]
 			},
 			"bone5": {
 				"rotate": [
 					{ "value": 13.07 },
-					{ "time": 0.0333, "value": -6.03 },
-					{ "time": 0.0667, "value": 13.07 }
+					{ "time": 1, "value": -6.03 },
+					{ "time": 2, "value": 13.07 }
 				]
 			},
 			"bone6": {
 				"rotate": [
 					{ "value": 13.07 },
-					{ "time": 0.0333, "value": -6.03 },
-					{ "time": 0.0667, "value": 13.07 }
+					{ "time": 1, "value": -6.03 },
+					{ "time": 2, "value": 13.07 }
 				]
 			},
 			"bone3": {
 				"rotate": [
 					{ "value": -11.36 },
-					{ "time": 0.0333, "value": 14.96 },
-					{ "time": 0.0667, "value": -11.36 }
+					{ "time": 1, "value": 14.96 },
+					{ "time": 2, "value": -11.36 }
 				]
 			},
 			"bone3b": {
 				"rotate": [
 					{ "value": -11.36 },
-					{ "time": 0.0333, "value": 14.96 },
-					{ "time": 0.0667, "value": -11.36 }
+					{ "time": 1, "value": 14.96 },
+					{ "time": 2, "value": -11.36 }
 				]
 			},
 			"bone3c": {
 				"rotate": [
 					{ "value": -11.36 },
-					{ "time": 0.0333, "value": 14.96 },
-					{ "time": 0.0667, "value": -11.36 }
+					{ "time": 1, "value": 14.96 },
+					{ "time": 2, "value": -11.36 }
 				]
 			},
 			"bone3d": {
 				"rotate": [
 					{ "value": -11.36 },
-					{ "time": 0.0333, "value": 14.96 },
-					{ "time": 0.0667, "value": -11.36 }
+					{ "time": 1, "value": 14.96 },
+					{ "time": 2, "value": -11.36 }
 				]
 			},
 			"bone2": {
 				"rotate": [
 					{ "value": 0.77 },
-					{ "time": 0.0333, "value": 4.12 },
-					{ "time": 0.0667, "value": 0.77 }
+					{ "time": 1, "value": 4.12 },
+					{ "time": 2, "value": 0.77 }
 				]
 			},
 			"bone2b": {
 				"rotate": [
 					{ "value": 0.77 },
-					{ "time": 0.0333, "value": 4.12 },
-					{ "time": 0.0667, "value": 0.77 }
+					{ "time": 1, "value": 4.12 },
+					{ "time": 2, "value": 0.77 }
 				]
 			},
 			"bone2c": {
 				"rotate": [
 					{ "value": 0.77 },
-					{ "time": 0.0333, "value": 4.12 },
-					{ "time": 0.0667, "value": 0.77 }
+					{ "time": 1, "value": 4.12 },
+					{ "time": 2, "value": 0.77 }
 				]
 			},
 			"bone2d": {
 				"rotate": [
 					{ "value": 0.77 },
-					{ "time": 0.0333, "value": 4.12 },
-					{ "time": 0.0667, "value": 0.77 }
+					{ "time": 1, "value": 4.12 },
+					{ "time": 2, "value": 0.77 }
 				]
 			}
 		}

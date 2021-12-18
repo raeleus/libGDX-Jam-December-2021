@@ -53,5 +53,12 @@
   "jellyfish damage" : 10,
   "jellyfish force" : 1000,
   "jellyfish deceleration" : 300,
+  "dangler move speed" : 200,
+  "dangler acceleration" : 300,
+  "dangler health" : 80,
+  "dangler damage" : 15,
+  "dangler force" : 2000,
+  "dangler hurt force dampener x" : 0.5,
+  "dangler hurt force dampener y" : 0.0,
   "debugging" : false
 }

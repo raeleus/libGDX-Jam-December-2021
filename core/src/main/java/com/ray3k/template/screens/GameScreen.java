@@ -215,6 +215,11 @@ public class GameScreen extends JamScreen {
                         jellyfish.teleport(x, y);
                         jellyfish.skeleton.getRootBone().setRotation(rotation);
                         break;
+                    case "dangler":
+                        var dangler = new DanglerEntity();
+                        entityController.add(dangler);
+                        dangler.teleport(x, y);
+                        break;
                 }
             }
     
