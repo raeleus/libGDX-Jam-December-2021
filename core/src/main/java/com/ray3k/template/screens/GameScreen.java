@@ -234,6 +234,11 @@ public class GameScreen extends JamScreen {
                         entityController.add(pirate);
                         pirate.teleport(x, y);
                         break;
+                    case "slime-dog":
+                        var slimeDog = new SlimeDogEntity();
+                        entityController.add(slimeDog);
+                        slimeDog.teleport(x, y);
+                        break;
                 }
             }
     

@@ -92,5 +92,16 @@
   "pirate damage" : 10,
   "pirate force" : 1000,
   "pirate force direction" : 60,
+  "slime dog gravity" : -3000,
+  "slime dog move speed" : 0.0,
+  "slime dog jump speed" : 800.0,
+  "slime dog jump delay" : 0.2,
+  "slime dog y agro" : 100,
+  "slime dog attack distance" : 300,
+  "slime dog acceleration" : 1200,
+  "slime dog health" : 100,
+  "slime dog damage" : 50,
+  "slime dog force" : 3000,
+  "slime dog force direction" : 60,
   "debugging" : false
 }

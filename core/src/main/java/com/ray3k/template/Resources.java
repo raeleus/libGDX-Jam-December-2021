@@ -1199,6 +1199,28 @@ public class Resources {
 
         public static int pirateForceDirection = 60;
 
+        public static int slimeDogGravity = -3000;
+
+        public static float slimeDogMoveSpeed = 0.0f;
+
+        public static float slimeDogJumpSpeed = 800.0f;
+
+        public static float slimeDogJumpDelay = 0.2f;
+
+        public static int slimeDogYAgro = 100;
+
+        public static int slimeDogAttackDistance = 300;
+
+        public static int slimeDogAcceleration = 1200;
+
+        public static int slimeDogHealth = 100;
+
+        public static int slimeDogDamage = 50;
+
+        public static int slimeDogForce = 3000;
+
+        public static int slimeDogForceDirection = 60;
+
         public static boolean debugging = false;
     }
 

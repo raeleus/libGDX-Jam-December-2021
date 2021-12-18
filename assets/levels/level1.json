@@ -17,11 +17,6 @@
       "gridCellsY": 161,
       "entities": [
         {"name": "player", "id": 2, "_eid": "75139371", "x": 117, "y": 1199, "originX": 35, "originY": 100},
-        {"name": "blob", "id": 3, "_eid": "83377466", "x": 1530.2279943619733, "y": 577.0467483170783, "originX": 145, "originY": 256},
-        {"name": "jellyfish", "id": 4, "_eid": "85260004", "x": 215.62097063845385, "y": 1431.884071483519, "originX": 84, "originY": 106, "rotation": 22},
-        {"name": "jellyfish", "id": 7, "_eid": "85260004", "x": 440, "y": 1544, "originX": 84, "originY": 106, "rotation": 22},
-        {"name": "jellyfish", "id": 8, "_eid": "85260004", "x": 664, "y": 1664, "originX": 84, "originY": 106, "rotation": 22},
-        {"name": "jellyfish", "id": 9, "_eid": "85260004", "x": 415.62097063845385, "y": 951.8840714835189, "originX": 84, "originY": 106, "rotation": 22},
         {"name": "heart", "id": 10, "_eid": "85587456", "x": 1680, "y": 920, "originX": 39, "originY": 155},
         {"name": "heart", "id": 11, "_eid": "85587456", "x": 944, "y": 960, "originX": 39, "originY": 155},
         {"name": "heart", "id": 12, "_eid": "85587456", "x": 648, "y": 912, "originX": 39, "originY": 155},
@@ -31,11 +26,7 @@
         {"name": "powerup_wings1", "id": 17, "_eid": "85617174", "x": 144, "y": 872, "originX": 70, "originY": 73},
         {"name": "powerup_wings2", "id": 18, "_eid": "85645337", "x": 376, "y": 880, "originX": 70, "originY": 73},
         {"name": "powerup_wings3", "id": 19, "_eid": "85655756", "x": 648, "y": 880, "originX": 70, "originY": 73},
-        {"name": "dangler", "id": 20, "_eid": "85982148", "x": 1152, "y": 464, "originX": 131, "originY": 102},
-        {"name": "spinner", "id": 21, "_eid": "86192047", "x": 832, "y": 440, "originX": 101, "originY": 95, "rotation": 0},
-        {"name": "spinner", "id": 22, "_eid": "86192047", "x": 1592, "y": 528, "originX": 101, "originY": 95, "rotation": 179},
-        {"name": "bat", "id": 23, "_eid": "86498549", "x": 256, "y": 184, "originX": 66, "originY": 87},
-        {"name": "pirate", "id": 24, "_eid": "86635497", "x": 1832, "y": 1168, "originX": 45, "originY": 86}
+        {"name": "slime-dog", "id": 25, "_eid": "86837811", "x": 1840, "y": 1184, "originX": 72, "originY": 113}
       ]
     },
     {
