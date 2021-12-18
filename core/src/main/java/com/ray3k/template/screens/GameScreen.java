@@ -224,6 +224,11 @@ public class GameScreen extends JamScreen {
                         spinner.teleport(x, y);
                         spinner.skeleton.getRootBone().setRotation(rotation);
                         break;
+                    case "bat":
+                        var bat = new BatEntity();
+                        entityController.add(bat);
+                        bat.teleport(x, y);
+                        break;
                 }
             }
     

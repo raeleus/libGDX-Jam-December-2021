@@ -1161,6 +1161,22 @@ public class Resources {
 
         public static int spinnerDetectRays = 4;
 
+        public static int batMoveSpeed = 600;
+
+        public static int batHealth = 80;
+
+        public static int batDamage = 10;
+
+        public static int batForce = 1000;
+
+        public static int batAcceleration = 2000;
+
+        public static int batDeceleration = 3000;
+
+        public static float batHurtForceDampenerX = 1.0f;
+
+        public static float batHurtForceDampenerY = 1.0f;
+
         public static boolean debugging = false;
     }
 

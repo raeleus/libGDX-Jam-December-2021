@@ -73,5 +73,13 @@
   "spinner destroy border" : 300,
   "spinner detect angle" : 30.0,
   "spinner detect rays" : 4,
+  "bat move speed" : 600,
+  "bat health" : 80,
+  "bat damage" : 10,
+  "bat force" : 1000,
+  "bat acceleration" : 2000,
+  "bat deceleration" : 3000,
+  "bat hurt force dampener x" : 1.0,
+  "bat hurt force dampener y" : 1.0,
   "debugging" : false
 }

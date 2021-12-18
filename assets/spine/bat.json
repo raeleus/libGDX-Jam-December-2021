@@ -1,23 +1,24 @@
 {
 "skeleton": {
-	"hash": "fttAEThpxo8",
+	"hash": "jvxzj0AvsAg",
 	"spine": "4.0.55",
-	"x": -95.13,
-	"y": -152.09,
-	"width": 282.89,
-	"height": 396.24,
+	"x": -32.07,
+	"y": -51.27,
+	"width": 95.36,
+	"height": 133.57,
 	"images": "",
 	"audio": ""
 },
 "bones": [
 	{ "name": "root" },
-	{ "name": "game/bat-wing", "parent": "root", "length": 142.7, "rotation": 0.7, "x": -1.21, "y": 61.26 },
-	{ "name": "game/bat-wing2", "parent": "root", "length": 142.7, "rotation": 0.7, "x": 10.92, "y": 61.26 }
+	{ "name": "bone", "parent": "root", "scaleX": 0.3371, "scaleY": 0.3371 },
+	{ "name": "game/bat-wing", "parent": "bone", "length": 142.7, "rotation": 0.7, "x": -1.21, "y": 61.26 },
+	{ "name": "game/bat-wing2", "parent": "bone", "length": 142.7, "rotation": 0.7, "x": 10.92, "y": 61.26 }
 ],
 "slots": [
 	{ "name": "game/bat-wing2", "bone": "game/bat-wing2", "dark": "000000", "attachment": "game/bat-wing" },
-	{ "name": "game/bat-body", "bone": "root", "dark": "000000", "attachment": "game/bat-body" },
-	{ "name": "game/bat-head", "bone": "root", "dark": "000000", "attachment": "game/bat-head" },
+	{ "name": "game/bat-body", "bone": "bone", "dark": "000000", "attachment": "game/bat-body" },
+	{ "name": "game/bat-head", "bone": "bone", "dark": "000000", "attachment": "game/bat-head" },
 	{ "name": "game/bat-wing", "bone": "game/bat-wing", "dark": "000000", "attachment": "game/bat-wing" },
 	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
 ],
@@ -29,7 +30,7 @@
 				"bbox": {
 					"type": "boundingbox",
 					"vertexCount": 4,
-					"vertices": [ -59.36, -106.11, -57.78, 234.74, 66.88, 234.74, 66.88, -106.11 ]
+					"vertices": [ -36.36, -53.11, -35.78, 85.74, 49.88, 86.74, 45.88, -53.11 ]
 				}
 			},
 			"game/bat-body": {
