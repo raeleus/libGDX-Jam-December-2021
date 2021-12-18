@@ -21,7 +21,10 @@
         {"name": "jellyfish", "id": 4, "_eid": "85260004", "x": 215.62097063845385, "y": 991.8840714835189, "originX": 84, "originY": 106, "rotation": 22},
         {"name": "jellyfish", "id": 7, "_eid": "85260004", "x": 440, "y": 1104, "originX": 84, "originY": 106, "rotation": 22},
         {"name": "jellyfish", "id": 8, "_eid": "85260004", "x": 664, "y": 1224, "originX": 84, "originY": 106, "rotation": 22},
-        {"name": "jellyfish", "id": 9, "_eid": "85260004", "x": 415.62097063845385, "y": 511.88407148351894, "originX": 84, "originY": 106, "rotation": 22}
+        {"name": "jellyfish", "id": 9, "_eid": "85260004", "x": 415.62097063845385, "y": 511.88407148351894, "originX": 84, "originY": 106, "rotation": 22},
+        {"name": "heart", "id": 10, "_eid": "85587456", "x": 1680, "y": 480, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 11, "_eid": "85587456", "x": 944, "y": 520, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 12, "_eid": "85587456", "x": 648, "y": 472, "originX": 39, "originY": 155}
       ]
     },
     {

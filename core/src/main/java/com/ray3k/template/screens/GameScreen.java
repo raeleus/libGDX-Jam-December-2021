@@ -150,6 +150,11 @@ public class GameScreen extends JamScreen {
                         bounds.teleport(minX, minY);
                         bounds.depth = DEPTH_DEBUG;
                         break;
+                    case "heart":
+                        var heart = new HeartEntity();
+                        entityController.add(heart);
+                        heart.teleport(x, y);
+                        break;
                     case "blob":
                         var blob = new BlobEntity();
                         entityController.add(blob);

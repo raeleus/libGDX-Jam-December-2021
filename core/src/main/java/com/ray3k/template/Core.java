@@ -83,6 +83,7 @@ public class Core extends JamGame {
     public static final float DEPTH_FOREGROUND = 50;
     public static final float DEPTH_PROJECTILES = 60;
     public static final float DEPTH_PARTICLES = 60;
+    public static final float DEPTH_POWERUPS = 70;
     public static final float DEPTH_PLAYER = 100;
     public static final float DEPTH_ENEMY = 200;
     public static final float DEPTH_BACKGROUND = 2000;

@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "vSZkDKkJqLY",
+	"hash": "TExXU2N1pws",
 	"spine": "4.0.55",
 	"x": -34.81,
 	"y": -1.81,
@@ -39,6 +39,20 @@
 	}
 ],
 "animations": {
-	"animation": {}
+	"animation": {
+		"slots": {
+			"game/heart-Layer-2": {
+				"attachment": [
+					{ "name": "game/heart-Layer-2" },
+					{ "time": 0.0667, "name": "game/heart-Layer-3" },
+					{ "time": 0.1333, "name": "game/heart-Layer-4" },
+					{ "time": 0.2, "name": "game/heart-Layer-5" },
+					{ "time": 0.2667, "name": "game/heart-Layer-6" },
+					{ "time": 0.3333, "name": "game/heart-Layer-7" },
+					{ "time": 0.4, "name": "game/heart-Layer-2" }
+				]
+			}
+		}
+	}
 }
 }

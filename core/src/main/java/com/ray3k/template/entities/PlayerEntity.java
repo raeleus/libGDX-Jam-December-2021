@@ -286,6 +286,13 @@ public class PlayerEntity extends Entity {
                 if (collision.normal.x < 0 && deltaX > 0) deltaX = 0;
                 if (collision.normal.y > 0 && deltaY < 0) deltaY = 0;
                 if (collision.normal.y < 0 && deltaY > 0) deltaY = 0;
+            } else if (collision.other.userData instanceof HeartEntity) {
+                if (health < playerMaxHealth) {
+                    var heart = (HeartEntity) collision.other.userData;
+                    heart.destroy = true;
+                    health += heartHeal;
+                    if (health > playerMaxHealth) health = playerMaxHealth;
+                }
             }
         }
     }
@@ -296,6 +303,7 @@ public class PlayerEntity extends Entity {
         @Override
         public Response filter(Item item, Item other) {
             if (other.userData instanceof BoundsEntity) return Response.slide;
+            if (other.userData instanceof HeartEntity) return Response.cross;
             return null;
         }
     }

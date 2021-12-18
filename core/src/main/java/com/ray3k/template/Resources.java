@@ -1029,6 +1029,8 @@ public class Resources {
 
         public static int playerMaxJumps = 3;
 
+        public static float heartHeal = 10.0f;
+
         public static int whipDamage = 15;
 
         public static int whipForce = 1000;
