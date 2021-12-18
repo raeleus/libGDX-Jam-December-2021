@@ -63,5 +63,15 @@
   "dangler force" : 2000,
   "dangler hurt force dampener x" : 0.5,
   "dangler hurt force dampener y" : 0.0,
+  "spinner move speed" : 2000,
+  "spinner health" : 10,
+  "spinner damage" : 10,
+  "spinner force" : 3000,
+  "spinner deceleration" : 300,
+  "spinner hurt force dampener x" : 0.0,
+  "spinner hurt force dampener y" : 0.0,
+  "spinner destroy border" : 300,
+  "spinner detect angle" : 30.0,
+  "spinner detect rays" : 4,
   "debugging" : false
 }

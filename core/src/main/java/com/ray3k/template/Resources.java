@@ -265,6 +265,8 @@ public class Resources {
         SpineSpark.skinDefault = SpineSpark.skeletonData.findSkin("default");
         SpineSpinner.skeletonData = assetManager.get("spine/spinner.json");
         SpineSpinner.animationData = assetManager.get("spine/spinner.json-animation");
+        SpineSpinner.animationAnimation = SpineSpinner.skeletonData.findAnimation("animation");
+        SpineSpinner.animationDie = SpineSpinner.skeletonData.findAnimation("die");
         SpineSpinner.animationFall = SpineSpinner.skeletonData.findAnimation("fall");
         SpineSpinner.animationHurt = SpineSpinner.skeletonData.findAnimation("hurt");
         SpineSpinner.skinDefault = SpineSpinner.skeletonData.findSkin("default");
@@ -855,6 +857,10 @@ public class Resources {
 
         public static AnimationStateData animationData;
 
+        public static Animation animationAnimation;
+
+        public static Animation animationDie;
+
         public static Animation animationFall;
 
         public static Animation animationHurt;
@@ -1134,6 +1140,26 @@ public class Resources {
         public static float danglerHurtForceDampenerX = 0.5f;
 
         public static float danglerHurtForceDampenerY = 0.0f;
+
+        public static int spinnerMoveSpeed = 2000;
+
+        public static int spinnerHealth = 10;
+
+        public static int spinnerDamage = 10;
+
+        public static int spinnerForce = 3000;
+
+        public static int spinnerDeceleration = 300;
+
+        public static float spinnerHurtForceDampenerX = 0.0f;
+
+        public static float spinnerHurtForceDampenerY = 0.0f;
+
+        public static int spinnerDestroyBorder = 300;
+
+        public static float spinnerDetectAngle = 30.0f;
+
+        public static int spinnerDetectRays = 4;
 
         public static boolean debugging = false;
     }

@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "Nn8gNQ257L8",
+	"hash": "WkJddLUVSL4",
 	"spine": "4.0.55",
 	"x": -100.97,
 	"y": -81.9,
@@ -45,6 +45,26 @@
 	}
 ],
 "animations": {
+	"animation": {
+		"slots": {
+			"game/spinner-Layer-1": {
+				"attachment": [
+					{ "name": "game/spinner-Layer-1" }
+				]
+			}
+		}
+	},
+	"die": {
+		"slots": {
+			"game/spinner-Layer-1": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
 	"fall": {
 		"slots": {
 			"game/spinner-Layer-1": {

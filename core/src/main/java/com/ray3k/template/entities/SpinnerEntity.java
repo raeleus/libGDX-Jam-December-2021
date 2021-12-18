@@ -10,23 +10,27 @@ import com.dongbat.jbump.Response.Result;
 import com.esotericsoftware.spine.AnimationState.AnimationStateAdapter;
 import com.esotericsoftware.spine.AnimationState.TrackEntry;
 import com.esotericsoftware.spine.Event;
-import com.ray3k.template.Resources.*;
 import com.ray3k.template.*;
+import com.ray3k.template.Resources.*;
+
+import java.util.ArrayList;
 
 import static com.ray3k.template.Core.*;
-import static com.ray3k.template.Resources.SpineJellyfish.*;
+import static com.ray3k.template.Resources.SpineSpinner.*;
 import static com.ray3k.template.Resources.Values.*;
 
-public class JellyfishEntity extends Entity implements Enemy {
+public class SpinnerEntity extends Entity implements Enemy {
     public float health;
     private final static Vector2 temp = new Vector2();
+    private static final ArrayList<Item> itemsTemp = new ArrayList<>();
+    private boolean inAttack;
     
     @Override
     public void hurt(float damage, float force, float forceDirection) {
         temp.x = force;
         temp.rotateDeg(forceDirection);
-        temp.x *= jellyfishHurtForceDampenerX;
-        temp.y *= jellyfishHurtForceDampenerY;
+        temp.x *= spinnerHurtForceDampenerX;
+        temp.y *= spinnerHurtForceDampenerY;
         deltaX += temp.x;
         deltaY += temp.y;
         
@@ -52,18 +56,10 @@ public class JellyfishEntity extends Entity implements Enemy {
     @Override
     public void create() {
         setSkeletonData(skeletonData, animationData);
-        animationState.setAnimation(0, animationMove, true);
         setCollisionBox(skeleton.findSlot("bbox"), skeletonBounds, collisionFilter);
         depth = DEPTH_ENEMY;
-        health = jellyfishHealth;
-        animationState.addListener(new AnimationStateAdapter() {
-            @Override
-            public void event(TrackEntry entry, Event event) {
-                if (event.getData().getName().equals("push")) {
-                    addMotion(jellyfishMoveSpeed, skeleton.getRootBone().getRotation() + 90);
-                }
-            }
-        });
+        health = spinnerHealth;
+        animationState.setAnimation(0, animationAnimation, false);
     }
     
     @Override
@@ -73,8 +69,24 @@ public class JellyfishEntity extends Entity implements Enemy {
     
     @Override
     public void act(float delta) {
-        setSpeed(Utils.approach(getSpeed(), 0, jellyfishDeceleration * delta));
-        if (isOutside(0, 0, Core.levelWidth, Core.levelHeight, jellyfishDestroyBorder)) destroy = true;
+        if (isOutside(0, 0, Core.levelWidth, Core.levelHeight, spinnerDestroyBorder)) destroy = true;
+        if (!inAttack) {
+            setSpeed(Utils.approach(getSpeed(), 0, spinnerDeceleration * delta));
+    
+            for (int i = 0; i < spinnerDetectRays; i++) {
+                temp.set(1, 0);
+                float angle = skeleton.getRootBone().getRotation() + 270 - spinnerDetectAngle / 2 + i * spinnerDetectAngle / (spinnerDetectRays - 1);
+                angle %= 360;
+                temp.rotateDeg(angle);
+                world.queryRay(getBboxCenterX(), getBboxCenterY(), temp.x, temp.y, playerDetectFilter, itemsTemp);
+                if (itemsTemp.size() > 0) {
+                    setMotion(spinnerMoveSpeed, angle);
+                    inAttack = true;
+                    animationState.setAnimation(0, animationFall, true);
+                    break;
+                }
+            }
+        }
     }
     
     @Override
@@ -102,17 +114,27 @@ public class JellyfishEntity extends Entity implements Enemy {
             if (collision.other.userData instanceof PlayerEntity) {
                 var player = (PlayerEntity) collision.other.userData;
                 float playerDirection = Utils.pointDirection(getBboxCenterX(),getBboxCenterY(), player.getBboxCenterX(),player.getBboxCenterY());
-                player.hurt(jellyfishDamage, jellyfishForce, playerDirection);
+                player.hurt(spinnerDamage, spinnerForce, playerDirection);
             }
         }
     }
     
-    private static final JellyfishCollisionFilter collisionFilter = new JellyfishCollisionFilter();
+    private static final SpinnerCollisionFilter collisionFilter = new SpinnerCollisionFilter();
     
-    private static class JellyfishCollisionFilter implements CollisionFilter {
+    private static class SpinnerCollisionFilter implements CollisionFilter {
         @Override
         public Response filter(Item item, Item other) {
             if (other.userData instanceof  PlayerEntity) return Response.cross;
+            return null;
+        }
+    }
+    
+    private static final PlayerDetectFilter playerDetectFilter = new PlayerDetectFilter();
+    
+    private static class PlayerDetectFilter implements CollisionFilter {
+        @Override
+        public Response filter(Item item, Item other) {
+            if (item.userData instanceof  PlayerEntity) return Response.cross;
             return null;
         }
     }

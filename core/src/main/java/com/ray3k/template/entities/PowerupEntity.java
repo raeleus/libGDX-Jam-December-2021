@@ -23,7 +23,6 @@ public class PowerupEntity extends Entity {
         this.powerupType = powerupType;
         switch (powerupType) {
             case SHOTGUN:
-                System.out.println("shotgun");
                 animationState.setAnimation(0, animationShotgun, false);
                 break;
             case CROSS:

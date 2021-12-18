@@ -218,6 +218,12 @@ public class GameScreen extends JamScreen {
                         entityController.add(dangler);
                         dangler.teleport(x, y);
                         break;
+                    case "spinner":
+                        var spinner = new SpinnerEntity();
+                        entityController.add(spinner);
+                        spinner.teleport(x, y);
+                        spinner.skeleton.getRootBone().setRotation(rotation);
+                        break;
                 }
             }
     
