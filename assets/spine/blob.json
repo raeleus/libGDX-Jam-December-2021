@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "c6ehLqAC2pU",
+	"hash": "dyI0V38H/cI",
 	"spine": "4.0.55",
 	"x": -109.68,
 	"y": -32.13,
@@ -13,7 +13,7 @@
 	{ "name": "root" }
 ],
 "slots": [
-	{ "name": "game/blob-Layer-2", "bone": "root", "attachment": "game/blob-Layer-13" },
+	{ "name": "game/blob-Layer-2", "bone": "root", "dark": "000000", "attachment": "game/blob-Layer-5" },
 	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
 ],
 "skins": [
@@ -24,7 +24,7 @@
 				"bbox": {
 					"type": "boundingbox",
 					"vertexCount": 4,
-					"vertices": [ -98.81, -14.59, -97.23, 179.51, 126.85, 179.51, 130, -14.59 ]
+					"vertices": [ -54.81, -16.59, -48.23, 156.51, 70.85, 159.51, 69, -13.59 ]
 				}
 			},
 			"game/blob-Layer-2": {
@@ -62,6 +62,27 @@
 					{ "time": 0.3333, "name": "game/blob-Layer-12" },
 					{ "time": 0.3667, "name": "game/blob-Layer-13" },
 					{ "time": 0.4, "name": "game/blob-Layer-2" }
+				]
+			}
+		}
+	},
+	"die": {
+		"slots": {
+			"game/blob-Layer-2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"game/blob-Layer-2": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
 				]
 			}
 		}

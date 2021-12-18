@@ -127,7 +127,6 @@ public class GameScreen extends JamScreen {
                         var player = new PlayerEntity();
                         entityController.add(player);
                         player.teleport(x, y);
-                        player.depth = DEPTH_PLAYER;
                         
                         var cam = new CameraEntity(player, levelWidth, levelHeight);
                         
@@ -150,6 +149,11 @@ public class GameScreen extends JamScreen {
                         entityController.add(bounds);
                         bounds.teleport(minX, minY);
                         bounds.depth = DEPTH_DEBUG;
+                        break;
+                    case "blob":
+                        var blob = new BlobEntity();
+                        entityController.add(blob);
+                        blob.teleport(x, y);
                         break;
                 }
             }

@@ -14,18 +14,11 @@ import static com.ray3k.template.Resources.SpineShotgunBullet.*;
 import static com.ray3k.template.Resources.Values.*;
 
 public class ShotgunBulletEntity extends Entity {
-    boolean goRight;
-    
-    public ShotgunBulletEntity(boolean goRight) {
-        this.goRight = goRight;
-    }
-    
     @Override
     public void create() {
         setSkeletonData(skeletonData, animationData);
         animationState.setAnimation(0, animationAnimation, false);
         animationState.addAnimation(0, animationAnimation,true, 0);
-        setMotion(shotgunProjectileSpeed, goRight ? 0 : 180);
         setCollisionBox(skeleton.findSlot("bbox"), skeletonBounds, collisionFilter);
         depth = DEPTH_PROJECTILES;
     }

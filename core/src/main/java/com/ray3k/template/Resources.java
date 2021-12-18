@@ -55,6 +55,8 @@ public class Resources {
         SpineBlob.skeletonData = assetManager.get("spine/blob.json");
         SpineBlob.animationData = assetManager.get("spine/blob.json-animation");
         SpineBlob.animationAnimation = SpineBlob.skeletonData.findAnimation("animation");
+        SpineBlob.animationDie = SpineBlob.skeletonData.findAnimation("die");
+        SpineBlob.animationHurt = SpineBlob.skeletonData.findAnimation("hurt");
         SpineBlob.skinDefault = SpineBlob.skeletonData.findSkin("default");
         SpineClock.skeletonData = assetManager.get("spine/clock.json");
         SpineClock.animationData = assetManager.get("spine/clock.json-animation");
@@ -358,6 +360,10 @@ public class Resources {
         public static AnimationStateData animationData;
 
         public static Animation animationAnimation;
+
+        public static Animation animationDie;
+
+        public static Animation animationHurt;
 
         public static com.esotericsoftware.spine.Skin skinDefault;
     }
@@ -987,7 +993,11 @@ public class Resources {
     }
 
     public static class Values {
+        public static int playerMaxHealth = 100;
+
         public static float playerMaxSpeed = 700.0f;
+
+        public static float playerDamageTimer = 1.0f;
 
         public static int playerAcceleration = 2600;
 
@@ -1005,11 +1015,23 @@ public class Resources {
 
         public static int playerMaxJumps = 3;
 
+        public static int whipDamage = 10;
+
+        public static int whipForce = 1000;
+
+        public static int whipForceDirection = 60;
+
         public static int crossLaunchSpeed = 1500;
 
         public static int crossAcceleration = 2000;
 
         public static float crossRotationMultiplier = 0.5f;
+
+        public static int crossDamage = 10;
+
+        public static int crossForce = 2000;
+
+        public static int crossForceDirection = 20;
 
         public static float grenadeThrowAngle = 70.0f;
 
@@ -1017,7 +1039,43 @@ public class Resources {
 
         public static float grenadeGravity = -4000.0f;
 
+        public static int grenadeDamagePerSecond = 10;
+
         public static float shotgunProjectileSpeed = 3000.0f;
+
+        public static float shotgunChargeAngle = 25.0f;
+
+        public static float shotgunChargeTimescale = 0.5f;
+
+        public static int shotgunDamage = 10;
+
+        public static int shotgunForce = 2000;
+
+        public static int shotgunForceDirection = 20;
+
+        public static float explosionDelay = 0.1f;
+
+        public static int explosionCount = 2;
+
+        public static float explosionScaleMin = 0.2f;
+
+        public static float explosionScaleMax = 0.7f;
+
+        public static float whiteBackgroundFade = 0.6f;
+
+        public static int blobGravity = -3000;
+
+        public static int blobMoveSpeed = 400;
+
+        public static int blobAcceleration = 500;
+
+        public static int blobHealth = 40;
+
+        public static int blobDamage = 10;
+
+        public static int blobForce = 1000;
+
+        public static int blobForceDirection = 60;
 
         public static boolean debugging = false;
     }

@@ -16,6 +16,8 @@ import com.ray3k.template.*;
 import com.ray3k.template.Resources.*;
 import com.ray3k.template.screens.*;
 
+import java.util.ArrayList;
+
 import static com.ray3k.template.Core.Binding.*;
 import static com.ray3k.template.Core.*;
 import static com.ray3k.template.Resources.SpineDragonQueen.*;
@@ -29,6 +31,9 @@ public class PlayerEntity extends Entity {
     private int jumps;
     public Weapon weapon;
     public static Array<Weapon> enabledWeapons = new Array<>();
+    private boolean shotgunCharge;
+    private float damageTimer;
+    public float health;
     
     public enum Weapon {
         WHIP, GRENADE, SHOTGUN, CROSS
@@ -36,10 +41,33 @@ public class PlayerEntity extends Entity {
     
     private Bone weaponBone;
     private static final Vector2 temp = new Vector2();
+    private static final ArrayList<Item> itemsTemp = new ArrayList<>();
+    
+    public void hurt(float damage, float force, float forceDirection) {
+        if (damageTimer <= 0) {
+            damageTimer = playerDamageTimer;
+            health -= damage;
+            addMotion(force, forceDirection);
+            animationState.setAnimation(3, animationHurt, false);
+            if (health <= 0) {
+                var die = new DieAnimEntity(skeletonData, animationData, animationState.getCurrent(0).getAnimation(), animationState.getCurrent(0).getTrackTime(), animationDie, x, y, skeleton.getRootBone().getRotation(), false);
+                entityController.add(die);
+                die.depth = DEPTH_DEATH_ANIMATION;
+                die.reloadOnDeath = true;
+                var bone = die.skeleton.findBone("white");
+                bone.setScale(camera.viewportWidth * camera.zoom, camera.viewportHeight * camera.zoom);
+                bone.setPosition(camera.position.x - x, camera.position.y - y);
+                
+                destroy = true;
+            }
+        }
+    }
     
     @Override
     public void create() {
         player = this;
+        depth = DEPTH_PLAYER;
+        health = playerMaxHealth;
         setSkeletonData(skeletonData, animationData);
         animationState.setAnimation(0, animationStand, true);
         animationData.setDefaultMix(.2f);
@@ -54,12 +82,22 @@ public class PlayerEntity extends Entity {
                 
                 switch (name) {
                     case "spark":
+                        temp.set(0, 0);
+                        weaponBone.localToWorld(temp);
+                        itemsTemp.clear();
+                        boolean aimRight = skeleton.getScaleX() > 0;
+                        if (aimRight) world.querySegment(temp.x + 100, temp.y, temp.x + 400, temp.y, enemyCollisionFilter, itemsTemp);
+                        else world.querySegment(temp.x - 100, temp.y, temp.x - 400, temp.y, enemyCollisionFilter, itemsTemp);
+                        
+                        for (var item : itemsTemp) {
+                            var enemy = (Enemy) item.userData;
+                            enemy.hurt(whipDamage, whipForce, aimRight ? whipForceDirection : 180 - whipForceDirection);
+                        }
+                        
                         for (int i = 0; i < 20; i++) {
                             float offset = 100 + MathUtils.random(300f);
-                            if (skeleton.getScaleX() < 0) offset *= -1;
+                            if (!aimRight) offset *= -1;
                             var spark = new SparkEntity();
-                            temp.set(0, 0);
-                            weaponBone.localToWorld(temp);
                             spark.teleport(temp.x + offset, temp.y);
                             entityController.add(spark);
                         }
@@ -83,11 +121,41 @@ public class PlayerEntity extends Entity {
                         break;
                     case "shoot":
                         var goRight = skeleton.getScaleX() > 0;
-                        var cross = new ShotgunBulletEntity(goRight);
-                        temp.set(0, 0);
-                        weaponBone.localToWorld(temp);
-                        cross.teleport(temp.x, temp.y);
-                        entityController.add(cross);
+                        if (shotgunCharge) {
+                            float angle = goRight ? shotgunChargeAngle : 180 - shotgunChargeAngle;
+                            var bullet = new ShotgunBulletEntity();
+                            temp.set(0, 0);
+                            weaponBone.localToWorld(temp);
+                            bullet.teleport(temp.x, temp.y);
+                            entityController.add(bullet);
+                            bullet.setMotion(shotgunProjectileSpeed, angle);
+                            bullet.skeleton.getRootBone().setRotation(angle);
+    
+                            angle = goRight ? 0 : 180;
+                            bullet = new ShotgunBulletEntity();
+                            temp.set(0, 0);
+                            weaponBone.localToWorld(temp);
+                            bullet.teleport(temp.x, temp.y);
+                            entityController.add(bullet);
+                            bullet.setMotion(shotgunProjectileSpeed, angle);
+                            bullet.skeleton.getRootBone().setRotation(angle);
+    
+                            angle = goRight ? 360 - shotgunChargeAngle : 180 + shotgunChargeAngle;
+                            bullet = new ShotgunBulletEntity();
+                            temp.set(0, 0);
+                            weaponBone.localToWorld(temp);
+                            bullet.teleport(temp.x, temp.y);
+                            entityController.add(bullet);
+                            bullet.setMotion(shotgunProjectileSpeed, angle);
+                            bullet.skeleton.getRootBone().setRotation(angle);
+                        } else {
+                            var bullet = new ShotgunBulletEntity();
+                            temp.set(0, 0);
+                            weaponBone.localToWorld(temp);
+                            bullet.teleport(temp.x, temp.y);
+                            entityController.add(bullet);
+                            bullet.setMotion(shotgunProjectileSpeed, goRight ? 0 : 180);
+                        }
                         break;
                 }
             }
@@ -101,6 +169,11 @@ public class PlayerEntity extends Entity {
     
     @Override
     public void act(float delta) {
+        damageTimer -= delta;
+        if (!isBindingPressed(ATTACK) || weapon != SHOTGUN) {
+            shotgunCharge = false;
+            if (animationState.getCurrent(2) != null) animationState.getCurrent(2).setTimeScale(1);
+        }
         boolean inAir = world.check(item, x, y - 1, collisionFilter).projectedCollisions.size() == 0;
         
         if (!selectingWeapon && isBindingPressed(LEFT)) {
@@ -177,6 +250,10 @@ public class PlayerEntity extends Entity {
                 animationState.setAnimation(2, targetAnimation, false);
                 animationState.getCurrent(2).setAlpha(1);
                 animationState.addEmptyAnimation(2, .2f, 0);
+                if (weapon == SHOTGUN) {
+                    shotgunCharge = true;
+                    animationState.getCurrent(2).setTimeScale(shotgunChargeTimescale);
+                }
             }
         }
     }
@@ -218,6 +295,16 @@ public class PlayerEntity extends Entity {
         @Override
         public Response filter(Item item, Item other) {
             if (other.userData instanceof BoundsEntity) return Response.slide;
+            return null;
+        }
+    }
+    
+    private final static EnemyCollisionFilter enemyCollisionFilter = new EnemyCollisionFilter();
+    
+    private static class EnemyCollisionFilter implements CollisionFilter {
+        @Override
+        public Response filter(Item item, Item other) {
+            if (item.userData instanceof Enemy) return Response.cross;
             return null;
         }
     }
