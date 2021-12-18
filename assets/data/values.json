@@ -81,5 +81,6 @@
   "bat deceleration" : 3000,
   "bat hurt force dampener x" : 1.0,
   "bat hurt force dampener y" : 1.0,
+  "bat chase distance" : 800,
   "debugging" : false
 }

@@ -65,10 +65,17 @@ public class BatEntity extends Entity implements Enemy {
     
     @Override
     public void act(float delta) {
-        float playerDirection = Utils.pointDirection(getBboxCenterX(),getBboxCenterY(), PlayerEntity.player.getBboxCenterX(), PlayerEntity.player.getBboxCenterY());
-        addMotion(batAcceleration * delta, playerDirection);
-        if (getSpeed() > batMoveSpeed) setSpeed(Utils.approach(getSpeed(), batMoveSpeed, batDeceleration * delta));
-        skeleton.setScaleX(deltaX > 0 ? 1 : -1);
+        float playerDistance = Utils.pointDistance(getBboxCenterX(),getBboxCenterY(), PlayerEntity.player.getBboxCenterX(), PlayerEntity.player.getBboxCenterY());
+        System.out.println("playerDistance = " + playerDistance);
+        if (playerDistance < batChaseDistance) {
+            float playerDirection = Utils.pointDirection(getBboxCenterX(), getBboxCenterY(),
+                    PlayerEntity.player.getBboxCenterX(), PlayerEntity.player.getBboxCenterY());
+            addMotion(batAcceleration * delta, playerDirection);
+            if (getSpeed() > batMoveSpeed) setSpeed(Utils.approach(getSpeed(), batMoveSpeed, batDeceleration * delta));
+            skeleton.setScaleX(deltaX > 0 ? 1 : -1);
+        } else {
+            setSpeed(Utils.approach(getSpeed(), 0, batDeceleration * delta));
+        }
     }
     
     @Override

@@ -1177,6 +1177,8 @@ public class Resources {
 
         public static float batHurtForceDampenerY = 1.0f;
 
+        public static int batChaseDistance = 800;
+
         public static boolean debugging = false;
     }
 
