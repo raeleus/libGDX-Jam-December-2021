@@ -1005,6 +1005,12 @@ public class Resources {
 
         public static int playerMaxJumps = 3;
 
+        public static int crossLaunchSpeed = 1500;
+
+        public static int crossAcceleration = 2000;
+
+        public static float crossRotationMultiplier = 0.5f;
+
         public static boolean debugging = false;
     }
 

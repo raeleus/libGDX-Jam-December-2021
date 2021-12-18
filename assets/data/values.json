@@ -8,5 +8,8 @@
   "player jump speed" : 700,
   "player jump hold time" : 0.4,
   "player max jumps" : 3,
+  "cross launch speed" : 1500,
+  "cross acceleration" : 2000,
+  "cross rotation multiplier" : 0.5,
   "debugging" : false
 }

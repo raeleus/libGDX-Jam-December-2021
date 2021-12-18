@@ -80,6 +80,7 @@ public class Core extends JamGame {
     public static OrthographicCamera camera;
     public static final float DEPTH_DEBUG = -1000;
     public static final float DEPTH_FOREGROUND = 50;
+    public static final float DEPTH_PROJECTILES = 60;
     public static final float DEPTH_PARTICLES = 60;
     public static final float DEPTH_PLAYER = 100;
     public static final float DEPTH_BACKGROUND = 2000;

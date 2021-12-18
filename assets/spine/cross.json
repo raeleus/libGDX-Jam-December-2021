@@ -1,11 +1,11 @@
 {
 "skeleton": {
-	"hash": "/D1mqDltY7w",
+	"hash": "rGfWdPtj/Yc",
 	"spine": "4.0.55",
-	"x": -102.96,
-	"y": -113.99,
-	"width": 234,
-	"height": 244,
+	"x": -58.5,
+	"y": -61,
+	"width": 117,
+	"height": 122,
 	"images": "",
 	"audio": ""
 },
@@ -24,16 +24,28 @@
 				"bbox": {
 					"type": "boundingbox",
 					"vertexCount": 4,
-					"vertices": [ -70, -73.75, -70.55, 76.39, 83.46, 76.39, 80.7, -75.4 ]
+					"vertices": [ -35.78, -39.53, -35.61, 59.65, 52.15, 61.11, 50.85, -38.28 ]
 				}
 			},
 			"game/cross-Layer-2": {
-				"game/cross-Layer-2": { "x": 14.04, "y": 8.01, "width": 234, "height": 244 }
+				"game/cross-Layer-2": { "scaleX": 0.5, "scaleY": 0.5, "width": 234, "height": 244 },
+				"game/cross-Layer-3": { "scaleX": 0.5, "scaleY": 0.5, "width": 234, "height": 244 },
+				"game/cross-Layer-4": { "scaleX": 0.5, "scaleY": 0.5, "width": 234, "height": 244 }
 			}
 		}
 	}
 ],
 "animations": {
-	"animation": {}
+	"animation": {
+		"slots": {
+			"game/cross-Layer-2": {
+				"attachment": [
+					{ "time": 0.0667, "name": "game/cross-Layer-3" },
+					{ "time": 0.1333, "name": "game/cross-Layer-4" },
+					{ "time": 0.2, "name": "game/cross-Layer-2" }
+				]
+			}
+		}
+	}
 }
 }

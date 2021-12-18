@@ -29,9 +29,11 @@ public class PlayerEntity extends Entity {
     private int jumps;
     public Weapon weapon;
     public static Array<Weapon> enabledWeapons = new Array<>();
+    
     public enum Weapon {
         WHIP, GRENADE, SHOTGUN, CROSS
     }
+    
     private Bone weaponBone;
     private static final Vector2 temp = new Vector2();
     
@@ -48,16 +50,28 @@ public class PlayerEntity extends Entity {
         animationState.addListener(new AnimationStateAdapter() {
             @Override
             public void event(TrackEntry entry, Event event) {
-                event.getData().getName().equals("spark");
+                var name = event.getData().getName();
                 
-                for (int i = 0; i < 20; i++) {
-                    float offset = 100 + MathUtils.random(300f);
-                    if (skeleton.getScaleX() < 0) offset *= -1;
-                    var spark = new SparkEntity();
-                    temp.set(0, 0);
-                    weaponBone.localToWorld(temp);
-                    spark.teleport(temp.x + offset, temp.y);
-                    entityController.add(spark);
+                switch (name) {
+                    case "spark":
+                        for (int i = 0; i < 20; i++) {
+                            float offset = 100 + MathUtils.random(300f);
+                            if (skeleton.getScaleX() < 0) offset *= -1;
+                            var spark = new SparkEntity();
+                            temp.set(0, 0);
+                            weaponBone.localToWorld(temp);
+                            spark.teleport(temp.x + offset, temp.y);
+                            entityController.add(spark);
+                        }
+                        break;
+                    case "throw":
+                        var goRight = skeleton.getScaleX() > 0;
+                        var cross = new CrossEntity(goRight);
+                        temp.set(0, 0);
+                        weaponBone.localToWorld(temp);
+                        cross.teleport(temp.x, temp.y);
+                        entityController.add(cross);
+                        break;
                 }
             }
         });
@@ -77,18 +91,21 @@ public class PlayerEntity extends Entity {
                 deltaX -= (inAir ? playerAccelerationWhileJumping : playerAcceleration) * delta;
                 if (deltaX < -playerMaxSpeed) deltaX = -playerMaxSpeed;
             }
-            if (!inAir && animationState.getCurrent(0).getAnimation() != animationRun) animationState.setAnimation(0, animationRun, true);
+            if (!inAir && animationState.getCurrent(0).getAnimation() != animationRun)
+                animationState.setAnimation(0, animationRun, true);
             skeleton.setScale(-1, 1);
         } else if (!selectingWeapon && isBindingPressed(RIGHT)) {
             if (deltaX < playerMaxSpeed) {
                 deltaX += (inAir ? playerAccelerationWhileJumping : playerAcceleration) * delta;
                 if (deltaX > playerMaxSpeed) deltaX = playerMaxSpeed;
             }
-            if (!inAir && animationState.getCurrent(0).getAnimation() != animationRun) animationState.setAnimation(0, animationRun, true);
+            if (!inAir && animationState.getCurrent(0).getAnimation() != animationRun)
+                animationState.setAnimation(0, animationRun, true);
             skeleton.setScale(1, 1);
         } else {
             deltaX = Utils.approach(deltaX, 0, (inAir ? playerDecelerationWhileJumping : playerDeceleration) * delta);
-            if (!inAir && animationState.getCurrent(0).getAnimation() != animationStand) animationState.setAnimation(0, animationStand, true);
+            if (!inAir && animationState.getCurrent(0).getAnimation() != animationStand)
+                animationState.setAnimation(0, animationStand, true);
         }
         
         if ((!inAir || jumps < playerMaxJumps) && !selectingWeapon && isBindingJustPressed(JUMP)) {
@@ -123,13 +140,19 @@ public class PlayerEntity extends Entity {
             var anim = animationState.getCurrent(2);
             Animation targetAnimation = null;
             
-            if (weapon == WHIP) {
-                if (inAir) targetAnimation = animationWhipJump;
-                else targetAnimation = animationWhip;
+            switch (weapon) {
+                case WHIP:
+                    if (inAir) targetAnimation = animationWhipJump;
+                    else targetAnimation = animationWhip;
+                    break;
+                case CROSS:
+                    targetAnimation = animationThrow;
+                    break;
             }
             
             if (targetAnimation != null && (anim == null || anim.getAnimation() != targetAnimation)) {
                 animationState.setAnimation(2, targetAnimation, false);
+                animationState.getCurrent(2).setAlpha(1);
                 animationState.addEmptyAnimation(2, .2f, 0);
             }
         }
@@ -165,13 +188,13 @@ public class PlayerEntity extends Entity {
             }
         }
     }
-
+    
     private final static PlayerCollisionFilter collisionFilter = new PlayerCollisionFilter();
     
     private static class PlayerCollisionFilter implements CollisionFilter {
         @Override
         public Response filter(Item item, Item other) {
-            if (other.userData instanceof  BoundsEntity) return Response.slide;
+            if (other.userData instanceof BoundsEntity) return Response.slide;
             return null;
         }
     }
