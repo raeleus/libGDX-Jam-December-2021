@@ -229,6 +229,11 @@ public class GameScreen extends JamScreen {
                         entityController.add(bat);
                         bat.teleport(x, y);
                         break;
+                    case "pirate":
+                        var pirate = new PirateEntity();
+                        entityController.add(pirate);
+                        pirate.teleport(x, y);
+                        break;
                 }
             }
     

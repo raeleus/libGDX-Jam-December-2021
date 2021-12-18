@@ -1179,6 +1179,26 @@ public class Resources {
 
         public static int batChaseDistance = 800;
 
+        public static int pirateGravity = -3000;
+
+        public static float pirateMoveSpeed = 400.0f;
+
+        public static float pirateAttackSpeed = 1500.0f;
+
+        public static float pirateAttackAngle = 45.0f;
+
+        public static int pirateAttackDistance = 400;
+
+        public static int pirateAcceleration = 800;
+
+        public static int pirateHealth = 100;
+
+        public static int pirateDamage = 10;
+
+        public static int pirateForce = 1000;
+
+        public static int pirateForceDirection = 60;
+
         public static boolean debugging = false;
     }
 

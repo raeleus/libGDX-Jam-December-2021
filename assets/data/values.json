@@ -82,5 +82,15 @@
   "bat hurt force dampener x" : 1.0,
   "bat hurt force dampener y" : 1.0,
   "bat chase distance" : 800,
+  "pirate gravity" : -3000,
+  "pirate move speed" : 400.0,
+  "pirate attack speed" : 1500.0,
+  "pirate attack angle" : 45.0,
+  "pirate attack distance" : 400,
+  "pirate acceleration" : 800,
+  "pirate health" : 100,
+  "pirate damage" : 10,
+  "pirate force" : 1000,
+  "pirate force direction" : 60,
   "debugging" : false
 }

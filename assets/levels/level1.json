@@ -34,7 +34,8 @@
         {"name": "dangler", "id": 20, "_eid": "85982148", "x": 1152, "y": 464, "originX": 131, "originY": 102},
         {"name": "spinner", "id": 21, "_eid": "86192047", "x": 832, "y": 440, "originX": 101, "originY": 95, "rotation": 0},
         {"name": "spinner", "id": 22, "_eid": "86192047", "x": 1592, "y": 528, "originX": 101, "originY": 95, "rotation": 179},
-        {"name": "bat", "id": 23, "_eid": "86498549", "x": 256, "y": 184, "originX": 66, "originY": 87}
+        {"name": "bat", "id": 23, "_eid": "86498549", "x": 256, "y": 184, "originX": 66, "originY": 87},
+        {"name": "pirate", "id": 24, "_eid": "86635497", "x": 1832, "y": 1168, "originX": 45, "originY": 86}
       ]
     },
     {
