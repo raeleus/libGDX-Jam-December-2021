@@ -1,6 +1,7 @@
 package com.ray3k.template.entities;
 
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
@@ -18,6 +19,7 @@ import com.ray3k.template.Resources.*;
 import com.ray3k.template.*;
 import com.ray3k.template.entities.PowerupEntity.*;
 import com.ray3k.template.screens.*;
+import com.ray3k.template.transitions.*;
 
 import java.util.ArrayList;
 
@@ -301,6 +303,10 @@ public class PlayerEntity extends Entity {
                 if (collision.normal.x < 0 && deltaX > 0) deltaX = 0;
                 if (collision.normal.y > 0 && deltaY < 0) deltaY = 0;
                 if (collision.normal.y < 0 && deltaY > 0) deltaY = 0;
+            } else if (collision.other.userData instanceof ExitEntity) {
+                var exit = (ExitEntity) collision.other.userData;
+                roomToLoad = exit.nextRoom;
+                Core.core.transition(new GameScreen(), new  TransitionPush(exit.transitionDirection, Color.BLACK, Interpolation.smoother), 2f);
             } else if (collision.other.userData instanceof HeartEntity) {
                 if (health < playerMaxHealth) {
                     var heart = (HeartEntity) collision.other.userData;
@@ -339,6 +345,7 @@ public class PlayerEntity extends Entity {
             if (other.userData instanceof BoundsEntity) return Response.bounce;
             if (other.userData instanceof HeartEntity) return Response.cross;
             if (other.userData instanceof PowerupEntity) return Response.cross;
+            if (other.userData instanceof  ExitEntity) return Response.cross;
             return null;
         }
     }

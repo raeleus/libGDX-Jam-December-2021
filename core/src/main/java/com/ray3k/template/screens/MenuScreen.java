@@ -49,6 +49,7 @@ public class MenuScreen extends JamScreen {
                 PlayerEntity.enabledWeapons.add(Weapon.GRENADE);
                 PlayerEntity.enabledWings.clear();
                 bgm.stop();
+                roomToLoad = "level1";
                 core.transition(new GameScreen());
             }
         });

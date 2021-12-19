@@ -98,6 +98,7 @@ public class Core extends JamGame {
     public static float deltaMultiplier = 1f;
     public static float levelWidth;
     public static float levelHeight;
+    public static String roomToLoad;
     
     public static boolean isKeyJustPressed(int key) {
         return key == Keys.ANY_KEY ? keysJustPressed.size > 0 : keysJustPressed.contains(key);
