@@ -1087,6 +1087,8 @@ public class Resources {
 
         public static float grenadeThrowAngle = 70.0f;
 
+        public static float grenadeThrowAngleMoving = 45.0f;
+
         public static float grenadeThrowSpeed = 1200.0f;
 
         public static float grenadeGravity = -4000.0f;
@@ -1554,6 +1556,18 @@ public class Resources {
         public static int pandaForce = 1000;
 
         public static int pandaForceDirection = 60;
+
+        public static float lyzeHealth = 300.0f;
+
+        public static float lyzeAnimDelay = 5.0f;
+
+        public static float lyzeBulletDelay = 3.0f;
+
+        public static int lyzeDamage = 10;
+
+        public static int lyzeForce = 1000;
+
+        public static int lyzeForceDirection = 60;
 
         public static boolean debugging = false;
 

@@ -361,6 +361,16 @@ public class GameScreen extends JamScreen {
                         entityController.add(panda);
                         panda.teleport(x, y);
                         break;
+                    case "lyze":
+                        var lyze = new LyzeEntity();
+                        lyze.teleport(x, y);
+                        for (var node : nodes) {
+                            var point = new Vector2();
+                            point.set(node.x, node.y);
+                            lyze.points.add(point);
+                        }
+                        entityController.add(lyze);
+                        break;
                 }
             }
     

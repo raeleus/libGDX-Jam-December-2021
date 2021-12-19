@@ -1,17 +1,26 @@
 {
 "skeleton": {
-	"hash": "7OuWbsMw3Vw",
+	"hash": "lFRrJOHSB0E",
 	"spine": "4.0.55",
-	"x": -100.68,
-	"y": -11.89,
-	"width": 566.29,
-	"height": 439.3,
+	"x": -69.48,
+	"y": -11.42,
+	"width": 375.37,
+	"height": 290.15,
 	"images": "",
 	"audio": ""
 },
 "bones": [
 	{ "name": "root" },
-	{ "name": "game/lyze-hip", "parent": "root", "length": 74.07, "rotation": 0.54, "x": -24.29, "y": 198.95 },
+	{
+		"name": "game/lyze-hip",
+		"parent": "root",
+		"length": 74.07,
+		"rotation": 0.54,
+		"x": -19.05,
+		"y": 130.89,
+		"scaleX": 0.6601,
+		"scaleY": 0.6601
+	},
 	{ "name": "game/lyze-body", "parent": "game/lyze-hip", "length": 103.45, "rotation": 91.01, "x": 35.16, "y": 24.12 },
 	{ "name": "game/lyze-head", "parent": "game/lyze-body", "length": 96.43, "rotation": -1.96, "x": 98.78, "y": 8.51 },
 	{ "name": "game/lyze-arm-left", "parent": "game/lyze-body", "length": 169.16, "rotation": -89.89, "x": 66.98, "y": 47.12 },
@@ -22,7 +31,8 @@
 	{ "name": "game/lyze-leg-right", "parent": "game/lyze-hip", "length": 99.32, "rotation": -83.27, "x": 49.52, "y": -9.55 },
 	{ "name": "game/lyze-foreleg-right", "parent": "game/lyze-leg-right", "length": 58.03, "rotation": -9.35, "x": 98.27, "y": -2.68 },
 	{ "name": "game/lyze-foot-right", "parent": "game/lyze-foreleg-right", "length": 57.59, "rotation": 56.45, "x": 60.23, "y": -2.72 },
-	{ "name": "game/lyze-key", "parent": "game/lyze-arm-left", "length": 287.17, "rotation": -1.52, "x": 242.59, "y": 49.6 }
+	{ "name": "game/lyze-key", "parent": "game/lyze-arm-left", "length": 287.17, "rotation": -1.52, "x": 242.59, "y": 49.6 },
+	{ "name": "weapon", "parent": "game/lyze-key", "length": 189.36, "rotation": -0.4, "x": 135.57, "y": -22.59 }
 ],
 "slots": [
 	{ "name": "game/lyze-tail", "bone": "game/lyze-hip", "dark": "000000", "attachment": "game/lyze-tail" },
@@ -52,7 +62,7 @@
 				"bbox": {
 					"type": "boundingbox",
 					"vertexCount": 4,
-					"vertices": [ -45.11, 0.63, -48.81, 390.86, 64.8, 394.56, 74.68, -1.84 ]
+					"vertices": [ -45.11, 0.63, -48.81, 270.44, 64.8, 274.14, 74.68, -1.84 ]
 				}
 			},
 			"game/lyze-arm-left": {
@@ -125,6 +135,9 @@
 		}
 	}
 ],
+"events": {
+	"hittable": {}
+},
 "animations": {
 	"die": {
 		"slots": {
@@ -640,7 +653,10 @@
 					{ "time": 0.5667, "value": 42.69 }
 				]
 			}
-		}
+		},
+		"events": [
+			{ "time": 0.2333, "name": "hittable", "string": "false" }
+		]
 	},
 	"land": {
 		"slots": {
@@ -827,7 +843,8 @@
 					{ "value": 130.2 },
 					{ "time": 0.5667, "value": -35.8, "curve": "stepped" },
 					{ "time": 1.6667, "value": -35.8 },
-					{ "time": 2.1667, "value": -2.94 }
+					{ "time": 2.1667, "value": -2.94, "curve": "stepped" },
+					{ "time": 3, "value": -2.94 }
 				]
 			},
 			"game/lyze-arm-right": {
@@ -848,7 +865,10 @@
 					{ "time": 1.1667, "x": -5.58, "y": 8.22 }
 				]
 			}
-		}
+		},
+		"events": [
+			{ "time": 0.5667, "name": "hittable", "string": "true" }
+		]
 	},
 	"shoot": {
 		"bones": {
@@ -889,11 +909,13 @@
 			},
 			"game/lyze-arm-left": {
 				"rotate": [
-					{ "value": -2.94 }
+					{ "value": -2.94 },
+					{ "time": 0.1, "value": 28.88 },
+					{ "time": 0.2, "value": -2.94 }
 				],
 				"scale": [
 					{},
-					{ "time": 0.1, "x": 0.737 },
+					{ "time": 0.1, "x": 0.617 },
 					{ "time": 0.2 }
 				]
 			},

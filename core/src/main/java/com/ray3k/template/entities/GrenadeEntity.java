@@ -24,7 +24,8 @@ public class GrenadeEntity extends Entity {
         setSkeletonData(skeletonData, animationData);
         animationState.setAnimation(0, animationLaunch, false);
         animationState.addAnimation(0, animationAnimation,true, 0);
-        setMotion(grenadeThrowSpeed, goRight ? grenadeThrowAngle : 180 - grenadeThrowAngle);
+        var angle = isAnyBindingPressed(Binding.RIGHT, Binding.LEFT) ? grenadeThrowAngleMoving : grenadeThrowAngle;
+        setMotion(grenadeThrowSpeed, goRight ? angle : 180 - angle);
         setCollisionBox(skeleton.findSlot("bbox"), skeletonBounds, collisionFilter);
         depth = DEPTH_PROJECTILES;
         gravityY = grenadeGravity;

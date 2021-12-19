@@ -24,6 +24,7 @@
   "cross force direction" : 20,
   "cross hit delay" : 0.2,
   "grenade throw angle" : 70.0,
+  "grenade throw angle moving" : 45.0,
   "grenade throw speed" : 1200.0,
   "grenade gravity" : -4000.0,
   "grenade damage per second" : 10,
@@ -258,6 +259,12 @@
   "panda damage" : 10,
   "panda force" : 1000,
   "panda force direction" : 60,
+  "lyze health" : 300.0,
+  "lyze anim delay" : 5.0,
+  "lyze bullet delay" : 3.0,
+  "lyze damage" : 10,
+  "lyze force" : 1000,
+  "lyze force direction" : 60,
   "debugging" : false,
   "god mode" : true
 }
