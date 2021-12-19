@@ -244,6 +244,12 @@ public class GameScreen extends JamScreen {
                         entityController.add(jumper);
                         jumper.teleport(x, y);
                         break;
+                    case "shooter":
+                        var shooter = new ShooterEntity();
+                        entityController.add(shooter);
+                        if (flippedX) shooter.skeleton.setScaleX(-1);
+                        shooter.teleport(x, y);
+                        break;
                 }
             }
     

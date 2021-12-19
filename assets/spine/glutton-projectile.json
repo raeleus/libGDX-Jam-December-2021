@@ -1,11 +1,11 @@
 {
 "skeleton": {
-	"hash": "GJGWHuVP29g",
+	"hash": "ejIkR0AikcA",
 	"spine": "4.0.55",
-	"x": -57.64,
-	"y": -33.4,
-	"width": 112.25,
-	"height": 66.42,
+	"x": -31.12,
+	"y": -17.7,
+	"width": 59.21,
+	"height": 35.04,
 	"images": "",
 	"audio": ""
 },
@@ -13,7 +13,7 @@
 	{ "name": "root" }
 ],
 "slots": [
-	{ "name": "game/glutton-projectile", "bone": "root", "attachment": "game/glutton-projectile" },
+	{ "name": "game/glutton-projectile", "bone": "root", "dark": "000000", "attachment": "game/glutton-projectile" },
 	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
 ],
 "skins": [
@@ -24,16 +24,33 @@
 				"bbox": {
 					"type": "boundingbox",
 					"vertexCount": 4,
-					"vertices": [ -58.74, -31.86, -59.48, 31.87, 61.29, 31.87, 59.07, -32.6 ]
+					"vertices": [ -24.85, -22.41, -24.48, 20.2, 24.06, 21.86, 24.06, -23.71 ]
 				}
 			},
 			"game/glutton-projectile": {
-				"game/glutton-projectile": { "x": -1.51, "y": -0.18, "rotation": -179.78, "width": 112, "height": 66 }
+				"game/glutton-projectile": {
+					"x": -1.51,
+					"y": -0.18,
+					"scaleX": 0.5275,
+					"scaleY": 0.5275,
+					"rotation": -179.78,
+					"width": 112,
+					"height": 66
+				}
 			}
 		}
 	}
 ],
 "animations": {
-	"animation": {}
+	"animation": {},
+	"shooter": {
+		"slots": {
+			"game/glutton-projectile": {
+				"rgba2": [
+					{ "light": "6b4210ff", "dark": "5b3406" }
+				]
+			}
+		}
+	}
 }
 }

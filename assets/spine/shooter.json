@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "TNxXcxXXGwQ",
+	"hash": "5U+zYmlszfo",
 	"spine": "4.0.55",
 	"x": -65.72,
 	"y": -31.21,
@@ -10,7 +10,8 @@
 	"audio": ""
 },
 "bones": [
-	{ "name": "root" }
+	{ "name": "root" },
+	{ "name": "weapon", "parent": "root", "length": 74.33, "rotation": -179.12, "x": -23.34, "y": 34.62 }
 ],
 "slots": [
 	{ "name": "game/shooter-head", "bone": "root", "dark": "000000", "attachment": "game/shooter-head" },
@@ -54,6 +55,7 @@
 				]
 			}
 		}
-	}
+	},
+	"stand": {}
 }
 }

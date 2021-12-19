@@ -116,5 +116,11 @@
   "jumper force direction" : 60,
   "jumper hurt force dampener x" : 1.0,
   "jumper hurt force dampener y" : 0.0,
+  "shooter health" : 100,
+  "shooter damage" : 10,
+  "shooter force" : 800.0,
+  "shooter attack distance" : 900,
+  "shooter attack speed" : 600,
+  "shooter shot delay" : 2.0,
   "debugging" : false
 }

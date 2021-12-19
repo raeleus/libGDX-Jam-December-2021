@@ -110,6 +110,7 @@ public class Resources {
         SpineGluttonProjectile.skeletonData = assetManager.get("spine/glutton-projectile.json");
         SpineGluttonProjectile.animationData = assetManager.get("spine/glutton-projectile.json-animation");
         SpineGluttonProjectile.animationAnimation = SpineGluttonProjectile.skeletonData.findAnimation("animation");
+        SpineGluttonProjectile.animationShooter = SpineGluttonProjectile.skeletonData.findAnimation("shooter");
         SpineGluttonProjectile.skinDefault = SpineGluttonProjectile.skeletonData.findSkin("default");
         SpineGlutton.skeletonData = assetManager.get("spine/glutton.json");
         SpineGlutton.animationData = assetManager.get("spine/glutton.json-animation");
@@ -241,6 +242,7 @@ public class Resources {
         SpineShooter.animationData = assetManager.get("spine/shooter.json-animation");
         SpineShooter.animationDie = SpineShooter.skeletonData.findAnimation("die");
         SpineShooter.animationHurt = SpineShooter.skeletonData.findAnimation("hurt");
+        SpineShooter.animationStand = SpineShooter.skeletonData.findAnimation("stand");
         SpineShooter.skinDefault = SpineShooter.skeletonData.findSkin("default");
         SpineShotgunBullet.skeletonData = assetManager.get("spine/shotgun-bullet.json");
         SpineShotgunBullet.animationData = assetManager.get("spine/shotgun-bullet.json-animation");
@@ -493,6 +495,8 @@ public class Resources {
         public static AnimationStateData animationData;
 
         public static Animation animationAnimation;
+
+        public static Animation animationShooter;
 
         public static com.esotericsoftware.spine.Skin skinDefault;
     }
@@ -799,6 +803,8 @@ public class Resources {
         public static Animation animationDie;
 
         public static Animation animationHurt;
+
+        public static Animation animationStand;
 
         public static com.esotericsoftware.spine.Skin skinDefault;
     }
@@ -1249,6 +1255,18 @@ public class Resources {
         public static float jumperHurtForceDampenerX = 1.0f;
 
         public static float jumperHurtForceDampenerY = 0.0f;
+
+        public static int shooterHealth = 100;
+
+        public static int shooterDamage = 10;
+
+        public static float shooterForce = 800.0f;
+
+        public static int shooterAttackDistance = 900;
+
+        public static int shooterAttackSpeed = 600;
+
+        public static float shooterShotDelay = 2.0f;
 
         public static boolean debugging = false;
     }
