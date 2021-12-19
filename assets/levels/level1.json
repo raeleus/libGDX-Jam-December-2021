@@ -4,7 +4,7 @@
   "height": 1288,
   "offsetX": 0,
   "offsetY": 0,
-  "values": {"zoom": 2},
+  "values": {"zoom": 1},
   "layers": [
     {
       "name": "entities",
@@ -16,17 +16,16 @@
       "gridCellsX": 246,
       "gridCellsY": 161,
       "entities": [
-        {"name": "player", "id": 2, "_eid": "75139371", "x": 117, "y": 1199, "originX": 35, "originY": 100},
-        {"name": "heart", "id": 10, "_eid": "85587456", "x": 1680, "y": 920, "originX": 39, "originY": 155},
-        {"name": "heart", "id": 11, "_eid": "85587456", "x": 944, "y": 960, "originX": 39, "originY": 155},
-        {"name": "heart", "id": 12, "_eid": "85587456", "x": 648, "y": 912, "originX": 39, "originY": 155},
-        {"name": "powerup_shotgun", "id": 14, "_eid": "85627733", "x": 160, "y": 648, "originX": 70, "originY": 73},
-        {"name": "powerup_grenade", "id": 15, "_eid": "85620061", "x": 416, "y": 648, "originX": 70, "originY": 73},
-        {"name": "powerup_cross", "id": 16, "_eid": "85625956", "x": 648, "y": 648, "originX": 70, "originY": 73},
-        {"name": "powerup_wings1", "id": 17, "_eid": "85617174", "x": 144, "y": 872, "originX": 70, "originY": 73},
-        {"name": "powerup_wings2", "id": 18, "_eid": "85645337", "x": 376, "y": 880, "originX": 70, "originY": 73},
-        {"name": "powerup_wings3", "id": 19, "_eid": "85655756", "x": 648, "y": 880, "originX": 70, "originY": 73},
-        {"name": "tank", "id": 21, "_eid": "88283237", "x": 1744, "y": 1208, "originX": 102, "originY": 105}
+        {
+          "name": "player",
+          "id": 2,
+          "_eid": "75139371",
+          "x": 117,
+          "y": 1199,
+          "originX": 35,
+          "originY": 100,
+          "values": {"spawn": 0}
+        }
       ]
     },
     {
@@ -94,7 +93,7 @@
             {"x": 2007.8068669194183, "y": 711.5348919836586},
             {"x": 2007.8068669194183, "y": 1223.5348919836586}
           ],
-          "values": {"nextroom": "level1", "transitiondirection": 180}
+          "values": {"nextroom": "testBoss", "transitiondirection": 180, "spawn": 0}
         },
         {
           "name": "bounds",
@@ -108,20 +107,6 @@
             {"x": 2008, "y": 0},
             {"x": 2040, "y": 0},
             {"x": 2056, "y": 1224}
-          ]
-        },
-        {
-          "name": "bounds",
-          "id": 5,
-          "_eid": "75099729",
-          "x": 960.9950313254845,
-          "y": 741.7987580751527,
-          "originX": 3,
-          "originY": 3,
-          "nodes": [
-            {"x": 1672, "y": 744},
-            {"x": 1672, "y": 664},
-            {"x": 960, "y": 664}
           ]
         }
       ]
@@ -158,11 +143,7 @@
         {"x": 885, "y": 1131, "rotation": 0, "texture": "grave-5.png", "originX": 0.5, "originY": 0.5},
         {"x": 407, "y": 1162, "rotation": 0, "texture": "grave-1.png", "originX": 0.5, "originY": 0.5},
         {"x": 119, "y": 1152, "rotation": 0, "texture": "grave-2.png", "originX": 0.5, "originY": 0.5},
-        {"x": 1296, "y": 1144, "rotation": 0, "texture": "grave-4.png", "originX": 0.5, "originY": 0.5},
-        {"x": 1056, "y": 704, "rotation": 0, "texture": "platform5.png", "originX": 0.5, "originY": 0.5},
-        {"x": 1248, "y": 704, "rotation": 0, "texture": "platform5.png", "originX": 0.5, "originY": 0.5},
-        {"x": 1440, "y": 704, "rotation": 0, "texture": "platform5.png", "originX": 0.5, "originY": 0.5},
-        {"x": 1568, "y": 704, "rotation": 0, "texture": "platform5.png", "originX": 0.5, "originY": 0.5}
+        {"x": 1296, "y": 1144, "rotation": 0, "texture": "grave-4.png", "originX": 0.5, "originY": 0.5}
       ],
       "folder": "game"
     },

@@ -98,6 +98,8 @@ public class Core extends JamGame {
     public static float deltaMultiplier = 1f;
     public static float levelWidth;
     public static float levelHeight;
+    public static float levelZoom;
+    public static int spawnIndex;
     public static String roomToLoad;
     
     public static boolean isKeyJustPressed(int key) {

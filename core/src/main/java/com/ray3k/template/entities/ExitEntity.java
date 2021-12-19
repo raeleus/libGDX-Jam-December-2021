@@ -6,6 +6,7 @@ import com.dongbat.jbump.Response.Result;
 public class ExitEntity extends Entity {
     public String nextRoom;
     public float transitionDirection;
+    public int spawnIndex;
     
     @Override
     public void create() {

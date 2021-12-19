@@ -45,6 +45,7 @@ public class SplashScreen extends JamScreen {
                 PlayerEntity.enabledWeapons.add(Weapon.GRENADE);
                 Gdx.input.setInputProcessor(null);
                 roomToLoad = "level1";
+                spawnIndex = 0;
                 core.transition(new GameScreen());
             }
         });

@@ -306,6 +306,7 @@ public class PlayerEntity extends Entity {
             } else if (collision.other.userData instanceof ExitEntity) {
                 var exit = (ExitEntity) collision.other.userData;
                 roomToLoad = exit.nextRoom;
+                spawnIndex = exit.spawnIndex;
                 Core.core.transition(new GameScreen(), new  TransitionPush(exit.transitionDirection, Color.BLACK, Interpolation.smoother), 2f);
             } else if (collision.other.userData instanceof HeartEntity) {
                 if (health < playerMaxHealth) {

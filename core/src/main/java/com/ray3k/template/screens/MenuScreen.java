@@ -50,6 +50,7 @@ public class MenuScreen extends JamScreen {
                 PlayerEntity.enabledWings.clear();
                 bgm.stop();
                 roomToLoad = "level1";
+                spawnIndex = 0;
                 core.transition(new GameScreen());
             }
         });

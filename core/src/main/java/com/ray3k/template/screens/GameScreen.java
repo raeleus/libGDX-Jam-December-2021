@@ -46,7 +46,7 @@ public class GameScreen extends JamScreen {
         super.show();
     
         gameScreen = this;
-        BG_COLOR.set(Color.BLACK);
+        BG_COLOR.set(108 / 255f, 109 / 255f, 122 / 255f, 1f);
     
         paused = false;
     
@@ -102,7 +102,6 @@ public class GameScreen extends JamScreen {
         var ogmoReader = new OgmoReader();
         ogmoReader.addListener(new OgmoAdapter() {
             String layerName;
-            float levelZoom;
     
             @Override
             public void level(String ogmoVersion, int width, int height, int offsetX, int offsetY,
@@ -123,13 +122,16 @@ public class GameScreen extends JamScreen {
                                ObjectMap<String, OgmoValue> valuesMap) {
                 switch (name) {
                     case "player":
-                        var player = new PlayerEntity();
-                        entityController.add(player);
-                        player.teleport(x, y);
-                        
-                        var cam = new CameraEntity(player, levelWidth, levelHeight);
-                        
-                        entityController.add(cam);
+                        if (valuesMap.get("spawn").asInt() == spawnIndex) {
+                            var player = new PlayerEntity();
+                            entityController.add(player);
+                            player.teleport(x, y);
+    
+                            var cam = new CameraEntity(player, levelWidth, levelHeight);
+                            cam.zoom = levelZoom;
+    
+                            entityController.add(cam);
+                        }
                         break;
                     case "bounds":
                         var bounds = new BoundsEntity();
@@ -168,6 +170,7 @@ public class GameScreen extends JamScreen {
                         exit.depth = DEPTH_DEBUG;
                         exit.nextRoom = valuesMap.get("nextroom").asString();
                         exit.transitionDirection = valuesMap.get("transitiondirection").asFloat();
+                        exit.spawnIndex = valuesMap.get("spawn").asInt();
                         break;
                     case "heart":
                         var heart = new HeartEntity();
