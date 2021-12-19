@@ -269,6 +269,8 @@
   "john damage" : 10,
   "john force" : 1000,
   "john force direction" : 60,
+  "door distance open" : 800,
+  "door distance close" : 1000,
   "debugging" : false,
   "god mode" : true
 }

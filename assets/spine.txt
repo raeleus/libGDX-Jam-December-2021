@@ -3,6 +3,7 @@ spine/blob.json
 spine/clock.json
 spine/cross.json
 spine/dangler.json
+spine/door.json
 spine/dragon-queen.json
 spine/explosion.json
 spine/flame.json

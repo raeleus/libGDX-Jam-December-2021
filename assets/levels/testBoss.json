@@ -36,7 +36,8 @@
           "originY": 100,
           "values": {"spawn": 1}
         },
-        {"name": "john", "id": 5, "_eid": "93604210", "x": 1576, "y": 1936, "originX": 93, "originY": 351}
+        {"name": "door", "id": 5, "_eid": "93731365", "x": 1600, "y": 1920, "originX": 18, "originY": 170},
+        {"name": "panda", "id": 6, "_eid": "92661912", "x": 1368, "y": 1912, "originX": 82, "originY": 161}
       ]
     },
     {

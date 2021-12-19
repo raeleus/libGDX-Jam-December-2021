@@ -376,6 +376,11 @@ public class GameScreen extends JamScreen {
                         entityController.add(john);
                         john.teleport(x, y);
                         break;
+                    case "door":
+                        var door = new DoorEntity();
+                        entityController.add(door);
+                        door.teleport(x, y);
+                        break;
                 }
             }
     

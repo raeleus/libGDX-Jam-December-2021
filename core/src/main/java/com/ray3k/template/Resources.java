@@ -75,6 +75,12 @@ public class Resources {
         SpineDangler.animationHurt = SpineDangler.skeletonData.findAnimation("hurt");
         SpineDangler.animationStand = SpineDangler.skeletonData.findAnimation("stand");
         SpineDangler.skinDefault = SpineDangler.skeletonData.findSkin("default");
+        SpineDoor.skeletonData = assetManager.get("spine/door.json");
+        SpineDoor.animationData = assetManager.get("spine/door.json-animation");
+        SpineDoor.animationAnimation = SpineDoor.skeletonData.findAnimation("animation");
+        SpineDoor.animationClose = SpineDoor.skeletonData.findAnimation("close");
+        SpineDoor.animationOpen = SpineDoor.skeletonData.findAnimation("open");
+        SpineDoor.skinDefault = SpineDoor.skeletonData.findSkin("default");
         SpineDragonQueen.skeletonData = assetManager.get("spine/dragon-queen.json");
         SpineDragonQueen.animationData = assetManager.get("spine/dragon-queen.json-animation");
         SpineDragonQueen.animationDie = SpineDragonQueen.skeletonData.findAnimation("die");
@@ -418,6 +424,20 @@ public class Resources {
         public static Animation animationHurt;
 
         public static Animation animationStand;
+
+        public static com.esotericsoftware.spine.Skin skinDefault;
+    }
+
+    public static class SpineDoor {
+        public static SkeletonData skeletonData;
+
+        public static AnimationStateData animationData;
+
+        public static Animation animationAnimation;
+
+        public static Animation animationClose;
+
+        public static Animation animationOpen;
 
         public static com.esotericsoftware.spine.Skin skinDefault;
     }
@@ -1576,6 +1596,10 @@ public class Resources {
         public static int johnForce = 1000;
 
         public static int johnForceDirection = 60;
+
+        public static int doorDistanceOpen = 800;
+
+        public static int doorDistanceClose = 1000;
 
         public static boolean debugging = false;
 

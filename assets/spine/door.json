@@ -1,0 +1,117 @@
+{
+"skeleton": {
+	"hash": "2dqIE4gZ1Mg",
+	"spine": "4.0.55",
+	"x": -27.21,
+	"y": -0.67,
+	"width": 55.28,
+	"height": 336.21,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "door bottom", "parent": "root", "length": 42.5, "rotation": 0.48, "x": -0.59, "y": 169.07 },
+	{ "name": "door top", "parent": "root", "length": 45.34, "x": -2.01, "y": 165.89 },
+	{ "name": "door knob left", "parent": "door top", "length": 63.42, "rotation": 1.28, "x": 1.77, "y": 3.9 },
+	{ "name": "door knob right", "parent": "door bottom", "length": 63.42, "rotation": 0.8, "x": 0.36, "y": 0.71 }
+],
+"slots": [
+	{ "name": "door bottom", "bone": "door bottom", "attachment": "game/door" },
+	{ "name": "door top", "bone": "door top", "attachment": "game/door" },
+	{ "name": "door knob left", "bone": "door knob left", "attachment": "game/door-knob-left" },
+	{ "name": "door knob right", "bone": "door knob right", "attachment": "game/door-knob-right" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"door bottom": {
+				"game/door": { "x": 0.6, "y": -84.76, "rotation": -0.48, "width": 36, "height": 170 }
+			},
+			"door knob left": {
+				"game/door-knob-left": { "x": -9.48, "y": 0.27, "rotation": -1.28, "width": 35, "height": 55 }
+			},
+			"door knob right": {
+				"game/door-knob-right": { "x": 12.31, "y": 0.27, "rotation": -1.28, "width": 32, "height": 55 }
+			},
+			"door top": {
+				"game/door": { "x": 2.73, "y": 84.65, "width": 36, "height": 170 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {},
+	"close": {
+		"bones": {
+			"door bottom": {
+				"translate": [
+					{
+						"y": -166.81,
+						"curve": [ 0.211, 0, 0.422, 0, 0.002, -87.26, 0.422, 0 ]
+					},
+					{ "time": 0.6333 }
+				]
+			},
+			"door knob right": {
+				"rotate": [
+					{ "value": -451.63, "curve": "stepped" },
+					{ "time": 0.8, "value": -451.63 },
+					{ "time": 1.4333 }
+				]
+			},
+			"door top": {
+				"translate": [
+					{
+						"y": 167.98,
+						"curve": [ 0.211, 0, 0.422, 0, 0.002, 99.98, 0.422, 0 ]
+					},
+					{ "time": 0.6333 }
+				]
+			},
+			"door knob left": {
+				"rotate": [
+					{ "value": -451.17, "curve": "stepped" },
+					{ "time": 0.8, "value": -451.17 },
+					{ "time": 1.4333 }
+				]
+			}
+		}
+	},
+	"open": {
+		"bones": {
+			"door bottom": {
+				"translate": [
+					{
+						"time": 0.8667,
+						"curve": [ 1.056, 0, 1.244, 0, 0.867, -67.98, 1.039, -165.96 ]
+					},
+					{ "time": 1.4333, "y": -166.81 }
+				]
+			},
+			"door knob right": {
+				"rotate": [
+					{},
+					{ "time": 0.6, "value": -451.63 }
+				]
+			},
+			"door top": {
+				"translate": [
+					{
+						"time": 0.8667,
+						"curve": [ 1.056, 0, 1.244, 0, 0.867, 123.93, 1.196, 166.23 ]
+					},
+					{ "time": 1.4333, "y": 167.98 }
+				]
+			},
+			"door knob left": {
+				"rotate": [
+					{},
+					{ "time": 0.6, "value": -451.17 }
+				]
+			}
+		}
+	}
+}
+}
