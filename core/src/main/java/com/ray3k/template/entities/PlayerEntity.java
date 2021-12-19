@@ -304,10 +304,13 @@ public class PlayerEntity extends Entity {
                 if (collision.normal.y > 0 && deltaY < 0) deltaY = 0;
                 if (collision.normal.y < 0 && deltaY > 0) deltaY = 0;
             } else if (collision.other.userData instanceof ExitEntity) {
-                var exit = (ExitEntity) collision.other.userData;
-                roomToLoad = exit.nextRoom;
-                spawnIndex = exit.spawnIndex;
-                Core.core.transition(new GameScreen(), new  TransitionPush(exit.transitionDirection, Color.BLACK, Interpolation.smoother), 2f);
+                if (!bossAlive) {
+                    var exit = (ExitEntity) collision.other.userData;
+                    roomToLoad = exit.nextRoom;
+                    spawnIndex = exit.spawnIndex;
+                    Core.core.transition(new GameScreen(),
+                            new TransitionPush(exit.transitionDirection, Color.BLACK, Interpolation.smoother), 2f);
+                }
             } else if (collision.other.userData instanceof HeartEntity) {
                 if (health < playerMaxHealth) {
                     var heart = (HeartEntity) collision.other.userData;

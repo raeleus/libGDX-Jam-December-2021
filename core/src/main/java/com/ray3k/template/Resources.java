@@ -1471,7 +1471,7 @@ public class Resources {
 
         public static float tankJumpDelay = 0.2f;
 
-        public static int tankYAgro = 100;
+        public static int tankYAgro = 50;
 
         public static int tankAttackDistance = 300;
 
@@ -1484,6 +1484,34 @@ public class Resources {
         public static int tankForce = 3000;
 
         public static int tankForceDirection = 60;
+
+        public static float groxarHealth = 300.0f;
+
+        public static int groxarGravity = -3000;
+
+        public static float groxarDashDelay = 2.5f;
+
+        public static int groxarDashSpeed = 2500;
+
+        public static float groxarLeapDelay = 1.0f;
+
+        public static int groxarLeapAngle = 60;
+
+        public static int groxarLeapSpeed = 2000;
+
+        public static float groxarHoppingDelay = 5.0f;
+
+        public static float groxarHoppingAngle = 80.0f;
+
+        public static int groxarHoppingSpeed = 1500;
+
+        public static int groxarGroundFriction = 2000;
+
+        public static int groxarDamage = 10;
+
+        public static int groxarForce = 1000;
+
+        public static int groxarForceDirection = 60;
 
         public static boolean debugging = false;
     }

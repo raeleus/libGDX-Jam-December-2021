@@ -328,6 +328,11 @@ public class GameScreen extends JamScreen {
                         entityController.add(tank);
                         tank.teleport(x, y);
                         break;
+                    case "groxar":
+                        var groxar = new GroxarEntity();
+                        entityController.add(groxar);
+                        groxar.teleport(x, y);
+                        break;
                 }
             }
     

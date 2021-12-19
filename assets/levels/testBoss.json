@@ -35,7 +35,8 @@
           "originX": 35,
           "originY": 100,
           "values": {"spawn": 1}
-        }
+        },
+        {"name": "groxar", "id": 5, "_eid": "89098251", "x": 2456, "y": 1872, "originX": 135, "originY": 258}
       ]
     },
     {
@@ -103,6 +104,21 @@
             {"x": 2960, "y": 1976},
             {"x": 2888, "y": 1976}
           ]
+        },
+        {
+          "name": "exit",
+          "id": 4,
+          "_eid": "75119428",
+          "x": 2824,
+          "y": 1912,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 2824, "y": 1592},
+            {"x": 2888, "y": 1592},
+            {"x": 2888, "y": 1912}
+          ],
+          "values": {"nextroom": "level1", "transitiondirection": 0, "spawn": 0}
         }
       ]
     },
