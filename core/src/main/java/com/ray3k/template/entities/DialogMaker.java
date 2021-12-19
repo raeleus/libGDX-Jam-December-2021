@@ -1,5 +1,6 @@
 package com.ray3k.template.entities;
 
+import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.scenes.scene2d.Event;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
@@ -15,11 +16,10 @@ import static com.ray3k.template.screens.GameScreen.*;
 
 public class DialogMaker {
     public static void show(int dialog) {
-        deltaMultiplier = 0;
-        
         switch (dialog) {
             case 0:
                 if (!defeatedZebra) {
+                    deltaMultiplier = 0;
                     var pop = createTable(() -> showMessage2());
     
                     var image = new Image(skin.getDrawable("icon-zebra"));
@@ -72,8 +72,8 @@ public class DialogMaker {
             @Override
             public void act(float delta) {
                 super.act(delta);
-                if (Core.isAnyKeyPressed()) {
-//                    hide();
+                if (Core.isAnyKeyJustPressed()) {
+                    hide();
                 }
             }
         };
