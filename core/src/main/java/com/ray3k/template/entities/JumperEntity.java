@@ -73,7 +73,25 @@ public class JumperEntity extends Entity implements Enemy {
     @Override
     public void act(float delta) {
         boolean inAir = world.check(item, x, y - 10, boundsFilter).projectedCollisions.size() == 0;
-        if (inAir) gravityY = jumperGravity;
+        var moveX = x + (deltaX + gravityX * delta) * delta;
+        var moveY = y + (deltaY + gravityY * delta) * delta;
+        var result = world.check(item, moveX + bboxX, moveY + bboxY - 1, PlayerEntity.platformFilter);
+        for (int i = 0; i < result.projectedCollisions.size(); i++) {
+            var collision = result.projectedCollisions.get(i);
+            if (collision.normal.y == 1 && !collision.overlaps) {
+                world.update(item, result.goalX, result.goalY);
+                deltaY = 0;
+                inAir = false;
+                break;
+            }
+        }
+    
+        if (inAir) {
+            gravityY = jumperGravity;
+        } else {
+            gravityY = 0;
+        }
+        
         if (!inAir) deltaX = Utils.approach(deltaX, goRight ? jumperMoveSpeed : -jumperMoveSpeed, jumperAcceleration * delta);
         else deltaX = Utils.approach(deltaX, 0, jumperDeceleration * delta);
     

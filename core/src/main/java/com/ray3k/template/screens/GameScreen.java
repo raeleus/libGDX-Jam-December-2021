@@ -139,7 +139,7 @@ public class GameScreen extends JamScreen {
                         float minY = y;
                         float maxX = x;
                         float maxY = y;
-                        
+        
                         for (var node : nodes) {
                             if (node.x < minX) minX = node.x;
                             if (node.x > maxX) maxX = node.x;
@@ -150,6 +150,24 @@ public class GameScreen extends JamScreen {
                         entityController.add(bounds);
                         bounds.teleport(minX, minY);
                         bounds.depth = DEPTH_DEBUG;
+                        break;
+                    case "platform":
+                        var platform = new PlatformEntity();
+                        minX = x;
+                        minY = y;
+                        maxX = x;
+                        maxY = y;
+        
+                        for (var node : nodes) {
+                            if (node.x < minX) minX = node.x;
+                            if (node.x > maxX) maxX = node.x;
+                            if (node.y < minY) minY = node.y;
+                            if (node.y > maxY) maxY = node.y;
+                        }
+                        platform.setCollisionBox(0, 0, maxX - minX, maxY - minY, nullCollisionFilter);
+                        entityController.add(platform);
+                        platform.teleport(minX, minY);
+                        platform.depth = DEPTH_DEBUG;
                         break;
                     case "exit":
                         var exit = new ExitEntity();

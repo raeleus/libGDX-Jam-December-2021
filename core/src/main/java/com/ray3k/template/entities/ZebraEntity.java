@@ -189,7 +189,7 @@ public class ZebraEntity extends Entity implements Enemy {
     
     @Override
     public void destroy() {
-        
+    
     }
     
     @Override

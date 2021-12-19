@@ -65,7 +65,25 @@ public class PirateEntity extends Entity implements Enemy {
     @Override
     public void act(float delta) {
         boolean inAir = world.check(item, x, y - 1, collisionFilter).projectedCollisions.size() == 0;
-        if (inAir) gravityY = pirateGravity;
+        var moveX = x + (deltaX + gravityX * delta) * delta;
+        var moveY = y + (deltaY + gravityY * delta) * delta;
+        var result = world.check(item, moveX + bboxX, moveY + bboxY - 1, PlayerEntity.platformFilter);
+        for (int i = 0; i < result.projectedCollisions.size(); i++) {
+            var collision = result.projectedCollisions.get(i);
+            if (collision.normal.y == 1 && !collision.overlaps) {
+                world.update(item, result.goalX, result.goalY);
+                deltaY = 0;
+                inAir = false;
+                break;
+            }
+        }
+    
+        if (inAir) {
+            gravityY = pirateGravity;
+        } else {
+            gravityY = 0;
+        }
+
         deltaX = Utils.approach(deltaX, goRight ? pirateMoveSpeed : -pirateMoveSpeed, pirateAcceleration * delta);
         
         if (animationState.getCurrent(0).getAnimation() == animationRun) {

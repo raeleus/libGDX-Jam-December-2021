@@ -193,6 +193,27 @@ public class PlayerEntity extends Entity {
             if (animationState.getCurrent(2) != null) animationState.getCurrent(2).setTimeScale(1);
         }
         boolean inAir = world.check(item, x, y - 1, collisionFilter).projectedCollisions.size() == 0;
+        if (selectingWeapon || !isBindingPressed(DOWN)) {
+            var moveX = x + (deltaX + gravityX * delta) * delta;
+            var moveY = y + (deltaY + gravityY * delta) * delta;
+            var result = world.check(item, moveX + bboxX, moveY + bboxY - 1, platformFilter);
+            for (int i = 0; i < result.projectedCollisions.size(); i++) {
+                var collision = result.projectedCollisions.get(i);
+                if (collision.normal.y == 1 && !collision.overlaps) {
+                    world.update(item, result.goalX, result.goalY);
+                    deltaY = 0;
+                    inAir = false;
+                    break;
+                }
+            }
+        }
+        
+        if (inAir) {
+            gravityY = zebraGravity;
+        } else {
+            gravityY = 0;
+            jumps = 1;
+        }
         
         if (!selectingWeapon && isBindingPressed(LEFT)) {
             if (deltaX > -playerMaxSpeed) {
@@ -361,6 +382,16 @@ public class PlayerEntity extends Entity {
         public Response filter(Item item, Item other) {
             if (item.userData instanceof Enemy) return Response.cross;
             if (item.userData instanceof EnemyProjectileEntity) return Response.cross;
+            return null;
+        }
+    }
+    
+    public final static PlatformCollisionFilter platformFilter = new PlatformCollisionFilter();
+    
+    public static class PlatformCollisionFilter implements CollisionFilter {
+        @Override
+        public Response filter(Item item, Item other) {
+            if (other.userData instanceof PlatformEntity) return Response.bounce;
             return null;
         }
     }
