@@ -1513,7 +1513,37 @@ public class Resources {
 
         public static int groxarForceDirection = 60;
 
+        public static float zebraHealth = 1000.0f;
+
+        public static int zebraGravity = -3000;
+
+        public static int zebraMoveSpeed = 500;
+
+        public static int zebraDamage = 5;
+
+        public static int zebraForce = 3000;
+
+        public static int zebraForceDirection = 45;
+
+        public static int zebraBulletSpeed = 1400;
+
+        public static int zebraBulletForce = 1000;
+
+        public static int zebraBulletForceDirection = 60;
+
+        public static float zebraBulletDelayMin = 1.0f;
+
+        public static float zebraBulletDelayMax = 2.0f;
+
+        public static float zebraFlyDelay = 8.0f;
+
+        public static int zebraFlyShootHeight = 200;
+
+        public static int zebraFlyTailHeight = 500;
+
         public static boolean debugging = false;
+
+        public static boolean godMode = true;
     }
 
     public static class Range {

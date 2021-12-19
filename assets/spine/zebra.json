@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "iqwFlMemZ/Q",
+	"hash": "DatD/UMyUuw",
 	"spine": "4.0.55",
 	"x": -498.18,
 	"y": -27.08,
@@ -46,7 +46,8 @@
 	{ "name": "game/zebra-tail18", "parent": "game/zebra-tail17", "length": 36.75, "x": 36.75 },
 	{ "name": "game/zebra-tail19", "parent": "game/zebra-tail18", "length": 36.75, "x": 36.75 },
 	{ "name": "game/zebra-tail20", "parent": "game/zebra-tail19", "length": 36.75, "x": 36.75 },
-	{ "name": "game/zebra-thruster", "parent": "game/zebra-body", "length": 688.88, "rotation": 176.76, "x": 128.05, "y": -93.67 }
+	{ "name": "game/zebra-thruster", "parent": "game/zebra-body", "length": 688.88, "rotation": 176.76, "x": 128.05, "y": -93.67 },
+	{ "name": "weapon", "parent": "root", "length": 165.69, "rotation": -156.21, "x": -80.84, "y": 1001.01 }
 ],
 "slots": [
 	{ "name": "game/zebra-thruster", "bone": "game/zebra-thruster", "dark": "000000" },
@@ -191,6 +192,10 @@
 		}
 	}
 ],
+"events": {
+	"shoot": {},
+	"strike": {}
+},
 "animations": {
 	"die": {
 		"slots": {
@@ -933,8 +938,17 @@
 					{ "time": 0.8333, "value": 61.22 },
 					{ "time": 0.9667 }
 				]
+			},
+			"weapon": {
+				"translate": [
+					{ "x": -229.41, "y": -94.76 }
+				]
 			}
-		}
+		},
+		"events": [
+			{ "time": 0.1667, "name": "shoot" },
+			{ "time": 0.6, "name": "shoot" }
+		]
 	},
 	"stand": {
 		"bones": {
@@ -1072,7 +1086,10 @@
 					]
 				}
 			}
-		}
+		},
+		"events": [
+			{ "time": 0.6, "name": "strike" }
+		]
 	}
 }
 }

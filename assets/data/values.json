@@ -237,5 +237,20 @@
   "groxar damage" : 10,
   "groxar force" : 1000,
   "groxar force direction" : 60,
-  "debugging" : false
+  "zebra health" : 1000.0,
+  "zebra gravity" : -3000,
+  "zebra move speed" : 500,
+  "zebra damage" : 5,
+  "zebra force" : 3000,
+  "zebra force direction" : 45,
+  "zebra bullet speed" : 1400,
+  "zebra bullet force" : 1000,
+  "zebra bullet force direction" : 60,
+  "zebra bullet delay min" : 1.0,
+  "zebra bullet delay max" : 2.0,
+  "zebra fly delay" : 8.0,
+  "zebra fly shoot height" : 300,
+  "zebra fly tail height" : 500,
+  "debugging" : false,
+  "god mode" : true
 }

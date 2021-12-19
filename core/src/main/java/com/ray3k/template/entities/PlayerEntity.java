@@ -56,7 +56,7 @@ public class PlayerEntity extends Entity {
             addMotion(force, forceDirection);
             animationState.setAnimation(3, animationHurt, false);
             animationState.addEmptyAnimation(3, 0, 0);
-            if (health <= 0) {
+            if (health <= 0 && !godMode) {
                 var die = new DieAnimEntity(skeletonData, animationData, animationState.getCurrent(0).getAnimation(), animationState.getCurrent(0).getTrackTime(), animationDie, x, y, skeleton.getRootBone().getRotation(), false);
                 entityController.add(die);
                 die.depth = DEPTH_DEATH_ANIMATION;

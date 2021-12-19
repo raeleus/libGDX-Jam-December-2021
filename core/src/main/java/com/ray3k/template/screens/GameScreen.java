@@ -333,6 +333,11 @@ public class GameScreen extends JamScreen {
                         entityController.add(groxar);
                         groxar.teleport(x, y);
                         break;
+                    case "zebra":
+                        var zebra = new ZebraEntity();
+                        entityController.add(zebra);
+                        zebra.teleport(x, y);
+                        break;
                 }
             }
     
