@@ -199,5 +199,12 @@
   "robot damage" : 10,
   "robot force" : 1000,
   "robot force direction" : 60,
+  "vacuum gravity" : -3000,
+  "vacuum move speed" : 400,
+  "vacuum acceleration" : 500,
+  "vacuum health" : 40,
+  "vacuum damage" : 10,
+  "vacuum force" : 1000,
+  "vacuum force direction" : 60,
   "debugging" : false
 }

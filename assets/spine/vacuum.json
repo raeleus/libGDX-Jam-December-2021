@@ -1,11 +1,11 @@
 {
 "skeleton": {
-	"hash": "f3IEhEj0rO8",
+	"hash": "gphrJRU/6zM",
 	"spine": "4.0.55",
-	"x": -115.34,
-	"y": -29.48,
-	"width": 344,
-	"height": 377,
+	"x": -74.47,
+	"y": -16.55,
+	"width": 176.25,
+	"height": 193.16,
 	"images": "",
 	"audio": ""
 },
@@ -24,16 +24,17 @@
 				"bbox": {
 					"type": "boundingbox",
 					"vertexCount": 4,
-					"vertices": [ -40.17, -9.25, -32.76, 305.65, 146.3, 308.12, 140.13, -4.31 ]
+					"vertices": [ -40.17, -9.25, -32.76, 160.65, 61.3, 159.12, 55.13, -8.31 ]
 				}
 			},
 			"game/vacuum": {
-				"game/vacuum": { "x": 56.66, "y": 159.02, "width": 344, "height": 377 }
+				"game/vacuum": { "x": 13.66, "y": 80.02, "scaleX": 0.5124, "scaleY": 0.5124, "width": 344, "height": 377 }
 			}
 		}
 	}
 ],
 "animations": {
+	"animation": {},
 	"die": {
 		"slots": {
 			"game/vacuum": {

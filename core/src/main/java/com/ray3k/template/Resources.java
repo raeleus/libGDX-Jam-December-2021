@@ -299,6 +299,7 @@ public class Resources {
         SpineToaster.skinDefault = SpineToaster.skeletonData.findSkin("default");
         SpineVacuum.skeletonData = assetManager.get("spine/vacuum.json");
         SpineVacuum.animationData = assetManager.get("spine/vacuum.json-animation");
+        SpineVacuum.animationAnimation = SpineVacuum.skeletonData.findAnimation("animation");
         SpineVacuum.animationDie = SpineVacuum.skeletonData.findAnimation("die");
         SpineVacuum.animationHurt = SpineVacuum.skeletonData.findAnimation("hurt");
         SpineVacuum.skinDefault = SpineVacuum.skeletonData.findSkin("default");
@@ -941,6 +942,8 @@ public class Resources {
 
         public static AnimationStateData animationData;
 
+        public static Animation animationAnimation;
+
         public static Animation animationDie;
 
         public static Animation animationHurt;
@@ -1430,6 +1433,20 @@ public class Resources {
         public static int robotForce = 1000;
 
         public static int robotForceDirection = 60;
+
+        public static int vacuumGravity = -3000;
+
+        public static int vacuumMoveSpeed = 400;
+
+        public static int vacuumAcceleration = 500;
+
+        public static int vacuumHealth = 40;
+
+        public static int vacuumDamage = 10;
+
+        public static int vacuumForce = 1000;
+
+        public static int vacuumForceDirection = 60;
 
         public static boolean debugging = false;
     }
