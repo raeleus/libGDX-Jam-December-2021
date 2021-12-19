@@ -7,11 +7,8 @@ import com.dongbat.jbump.Collisions;
 import com.dongbat.jbump.Item;
 import com.dongbat.jbump.Response;
 import com.dongbat.jbump.Response.Result;
-import com.esotericsoftware.spine.AnimationState.AnimationStateAdapter;
-import com.esotericsoftware.spine.AnimationState.TrackEntry;
-import com.esotericsoftware.spine.Event;
-import com.ray3k.template.*;
 import com.ray3k.template.Resources.*;
+import com.ray3k.template.*;
 
 import static com.ray3k.template.Core.*;
 import static com.ray3k.template.Resources.SpineBat.*;

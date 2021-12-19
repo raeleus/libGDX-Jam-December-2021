@@ -160,6 +160,7 @@ public class Resources {
         SpineJumper.animationDie = SpineJumper.skeletonData.findAnimation("die");
         SpineJumper.animationHurt = SpineJumper.skeletonData.findAnimation("hurt");
         SpineJumper.animationJump = SpineJumper.skeletonData.findAnimation("jump");
+        SpineJumper.animationStand = SpineJumper.skeletonData.findAnimation("stand");
         SpineJumper.skinDefault = SpineJumper.skeletonData.findSkin("default");
         SpineLibgdx.skeletonData = assetManager.get("spine/libgdx.json");
         SpineLibgdx.animationData = assetManager.get("spine/libgdx.json-animation");
@@ -610,6 +611,8 @@ public class Resources {
         public static Animation animationHurt;
 
         public static Animation animationJump;
+
+        public static Animation animationStand;
 
         public static com.esotericsoftware.spine.Skin skinDefault;
     }
@@ -1220,6 +1223,32 @@ public class Resources {
         public static int slimeDogForce = 3000;
 
         public static int slimeDogForceDirection = 60;
+
+        public static int jumperGravity = -3000;
+
+        public static int jumperMoveSpeed = 800;
+
+        public static float jumperJumpSpeed = 1800.0f;
+
+        public static int jumperAttackAngle = 45;
+
+        public static float jumperJumpDelay = 1.0f;
+
+        public static int jumperAcceleration = 1200;
+
+        public static int jumperDeceleration = 3000;
+
+        public static int jumperHealth = 50;
+
+        public static int jumperDamage = 10;
+
+        public static int jumperForce = 1000;
+
+        public static int jumperForceDirection = 60;
+
+        public static float jumperHurtForceDampenerX = 1.0f;
+
+        public static float jumperHurtForceDampenerY = 0.0f;
 
         public static boolean debugging = false;
     }

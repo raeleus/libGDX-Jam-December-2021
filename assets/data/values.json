@@ -103,5 +103,18 @@
   "slime dog damage" : 50,
   "slime dog force" : 3000,
   "slime dog force direction" : 60,
+  "jumper gravity" : -3000,
+  "jumper move speed" : 800,
+  "jumper jump speed" : 1800.0,
+  "jumper attack angle" : 45,
+  "jumper jump delay" : 1.0,
+  "jumper acceleration" : 1200,
+  "jumper deceleration" : 3000,
+  "jumper health" : 50,
+  "jumper damage" : 10,
+  "jumper force" : 1000,
+  "jumper force direction" : 60,
+  "jumper hurt force dampener x" : 1.0,
+  "jumper hurt force dampener y" : 0.0,
   "debugging" : false
 }
