@@ -192,7 +192,15 @@ public class PlayerEntity extends Entity {
             shotgunCharge = false;
             if (animationState.getCurrent(2) != null) animationState.getCurrent(2).setTimeScale(1);
         }
-        boolean inAir = world.check(item, x, y - 1, collisionFilter).projectedCollisions.size() == 0;
+        boolean inAir = true;
+        var response = world.check(item, x, y - 1, collisionFilter);
+        for (int i = 0; i < response.projectedCollisions.size(); i++) {
+            var collision = response.projectedCollisions.get(i);
+            if (collision.normal.y == 1) {
+                inAir = false;
+                break;
+            }
+        }
         if (selectingWeapon || !isBindingPressed(DOWN)) {
             var moveX = x + (deltaX + gravityX * delta) * delta;
             var moveY = y + (deltaY + gravityY * delta) * delta;

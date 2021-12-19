@@ -151,7 +151,6 @@ public class ZebraEntity extends Entity implements Enemy {
             }
             if (player.health < 10) mode = Mode.HIDE;
         } else if (mode == Mode.HIDE) {
-            System.out.println("hide");
             animationState.setEmptyAnimation(2, 0);
             animationState.setEmptyAnimation(4, 0);
             moveTowards(zebraMoveSpeed, x, 100000, delta);

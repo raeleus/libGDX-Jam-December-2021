@@ -136,7 +136,9 @@
       "gridCellHeight": 8,
       "gridCellsX": 128,
       "gridCellsY": 72,
-      "decals": [],
+      "decals": [
+        {"x": 496, "y": 296, "rotation": 0, "texture": "tip3.png", "originX": 0.5, "originY": 0.5}
+      ],
       "folder": "game"
     },
     {
