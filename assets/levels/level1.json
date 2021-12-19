@@ -26,7 +26,7 @@
         {"name": "powerup_wings1", "id": 17, "_eid": "85617174", "x": 144, "y": 872, "originX": 70, "originY": 73},
         {"name": "powerup_wings2", "id": 18, "_eid": "85645337", "x": 376, "y": 880, "originX": 70, "originY": 73},
         {"name": "powerup_wings3", "id": 19, "_eid": "85655756", "x": 648, "y": 880, "originX": 70, "originY": 73},
-        {"name": "washer", "id": 22, "_eid": "88088925", "x": 1176, "y": 840, "originX": 177, "originY": 341}
+        {"name": "robot", "id": 20, "_eid": "88131367", "x": 1408, "y": 584, "originX": 156, "originY": 384}
       ]
     },
     {

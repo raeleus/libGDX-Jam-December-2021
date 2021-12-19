@@ -1411,6 +1411,26 @@ public class Resources {
 
         public static int washerDetectRays = 4;
 
+        public static int robotGravity = -3000;
+
+        public static float robotMoveSpeed = 400.0f;
+
+        public static float robotAttackSpeed = 1500.0f;
+
+        public static float robotAttackAngle = 45.0f;
+
+        public static int robotAttackDistance = 400;
+
+        public static int robotAcceleration = 800;
+
+        public static int robotHealth = 100;
+
+        public static int robotDamage = 10;
+
+        public static int robotForce = 1000;
+
+        public static int robotForceDirection = 60;
+
         public static boolean debugging = false;
     }
 

@@ -189,5 +189,15 @@
   "washer destroy border" : 300,
   "washer detect angle" : 30.0,
   "washer detect rays" : 4,
+  "robot gravity" : -3000,
+  "robot move speed" : 400.0,
+  "robot attack speed" : 1500.0,
+  "robot attack angle" : 45.0,
+  "robot attack distance" : 400,
+  "robot acceleration" : 800,
+  "robot health" : 100,
+  "robot damage" : 10,
+  "robot force" : 1000,
+  "robot force direction" : 60,
   "debugging" : false
 }
