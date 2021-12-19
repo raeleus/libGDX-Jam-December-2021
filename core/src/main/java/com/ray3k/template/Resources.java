@@ -1569,6 +1569,14 @@ public class Resources {
 
         public static int lyzeForceDirection = 60;
 
+        public static float johnHealth = 300.0f;
+
+        public static int johnDamage = 10;
+
+        public static int johnForce = 1000;
+
+        public static int johnForceDirection = 60;
+
         public static boolean debugging = false;
 
         public static boolean godMode = true;

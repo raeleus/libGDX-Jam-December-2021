@@ -371,6 +371,11 @@ public class GameScreen extends JamScreen {
                         }
                         entityController.add(lyze);
                         break;
+                    case "john":
+                        var john = new JohnEntity();
+                        entityController.add(john);
+                        john.teleport(x, y);
+                        break;
                 }
             }
     

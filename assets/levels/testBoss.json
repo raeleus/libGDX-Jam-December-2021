@@ -35,7 +35,8 @@
           "originX": 35,
           "originY": 100,
           "values": {"spawn": 1}
-        }
+        },
+        {"name": "john", "id": 5, "_eid": "93604210", "x": 1576, "y": 1936, "originX": 93, "originY": 351}
       ]
     },
     {

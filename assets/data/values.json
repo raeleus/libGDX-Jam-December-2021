@@ -265,6 +265,10 @@
   "lyze damage" : 10,
   "lyze force" : 1000,
   "lyze force direction" : 60,
+  "john health" : 300.0,
+  "john damage" : 10,
+  "john force" : 1000,
+  "john force direction" : 60,
   "debugging" : false,
   "god mode" : true
 }
