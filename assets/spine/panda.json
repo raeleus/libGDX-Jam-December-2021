@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "ssobSuU8GdQ",
+	"hash": "UxBvkQBy9+s",
 	"spine": "4.0.55",
 	"x": -148.7,
 	"y": -24.05,
@@ -20,7 +20,8 @@
 	{ "name": "game/panda-arm", "parent": "game/panda-body", "length": 114.39, "rotation": 119.27, "x": 134.86, "y": 49.68 },
 	{ "name": "game/panda-head", "parent": "game/panda-body", "length": 118.14, "rotation": 1.61, "x": 171.44, "y": -0.18 },
 	{ "name": "game/panda-leg2", "parent": "game/panda-body", "length": 75.4, "rotation": 91.35, "x": 10.4, "y": -28.63 },
-	{ "name": "game/panda-leg", "parent": "game/panda-body", "length": 80.77, "rotation": 90.43, "x": 13.5, "y": 53.77 }
+	{ "name": "game/panda-leg", "parent": "game/panda-body", "length": 80.77, "rotation": 90.43, "x": 13.5, "y": 53.77 },
+	{ "name": "weapon", "parent": "game/panda-arm", "length": 85.14, "rotation": -30.19, "x": 103.29, "y": -5.54 }
 ],
 "slots": [
 	{ "name": "game/panda-rotator2", "bone": "game/panda-rotator2", "dark": "000000", "attachment": "game/panda-rotator" },

@@ -181,7 +181,7 @@ public abstract class Entity {
         if (item == null) {
             item = new Item<>(this);
             world.add(item, x + bboxX, y + bboxY, width, height);
-        } else {
+        } else if ( world.hasItem(item)) {
             world.update(item, x + bboxX, y + bboxY, width, height);
         }
     }

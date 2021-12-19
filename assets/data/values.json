@@ -251,6 +251,13 @@
   "zebra fly delay" : 8.0,
   "zebra fly shoot height" : 300,
   "zebra fly tail height" : 500,
+  "panda health" : 300.0,
+  "panda anim delay" : 5.0,
+  "panda bullet delay" : 0.6,
+  "panda bullet force" : 500,
+  "panda damage" : 10,
+  "panda force" : 1000,
+  "panda force direction" : 60,
   "debugging" : false,
   "god mode" : true
 }

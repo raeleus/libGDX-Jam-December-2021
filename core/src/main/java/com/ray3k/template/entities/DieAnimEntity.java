@@ -8,6 +8,7 @@ import com.esotericsoftware.spine.AnimationState.AnimationStateAdapter;
 import com.esotericsoftware.spine.AnimationState.TrackEntry;
 import com.esotericsoftware.spine.AnimationStateData;
 import com.esotericsoftware.spine.SkeletonData;
+import com.esotericsoftware.spine.Slot;
 import com.ray3k.template.screens.*;
 
 import static com.ray3k.template.Core.*;
@@ -17,12 +18,14 @@ public class DieAnimEntity extends Entity {
     private float explosionTimer;
     private boolean explosions;
     public boolean reloadOnDeath;
+    private Slot bbox;
     
     public DieAnimEntity(SkeletonData skeletonData, AnimationStateData animationStateData, Animation currentAnimation, float time, Animation deathAnimation, float x, float y, float rotation, boolean explosions) {
         this.explosions = explosions;
         depth = DEPTH_ENEMY;
         setSkeletonData(skeletonData, animationStateData);
-        setCollisionBox(skeleton.findSlot("bbox"), skeletonBounds, nullCollisionFilter);
+        bbox = skeleton.findSlot("bbox");
+        setCollisionBox(bbox, skeletonBounds, nullCollisionFilter);
         animationState.setAnimation(0, currentAnimation, false);
         animationState.getCurrent(0).setTrackTime(time);
         animationState.getCurrent(0).setTimeScale(0);
@@ -52,6 +55,7 @@ public class DieAnimEntity extends Entity {
     
     @Override
     public void act(float delta) {
+        setCollisionBox(bbox, skeletonBounds, nullCollisionFilter);
         explosionTimer -= delta;
         if (explosions && explosionTimer < 0) {
             for (int i = 0; i < explosionCount; i++) {

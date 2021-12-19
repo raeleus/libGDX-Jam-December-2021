@@ -63,7 +63,7 @@ public class GrenadeEntity extends Entity {
         for (int i = 0; i < collisions.size(); i++) {
             var collision = collisions.get(i);
             if (collision.other.userData instanceof Enemy) deltaX /= 5f;
-            else if (collision.other.userData instanceof BoundsEntity) {
+            else if (collision.other.userData instanceof BoundsEntity || collision.other.userData instanceof PlatformEntity) {
                 if (collision.normal.y == 1) {
                     destroy = true;
                     var fire = new GrenadeFireEntity();
@@ -80,6 +80,7 @@ public class GrenadeEntity extends Entity {
         @Override
         public Response filter(Item item, Item other) {
             if (other.userData instanceof BoundsEntity) return Response.slide;
+            if (other.userData instanceof PlatformEntity) return Response.slide;
             if (other.userData instanceof Enemy) return Response.cross;
             return null;
         }

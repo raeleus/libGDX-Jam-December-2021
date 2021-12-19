@@ -1537,9 +1537,23 @@ public class Resources {
 
         public static float zebraFlyDelay = 8.0f;
 
-        public static int zebraFlyShootHeight = 200;
+        public static int zebraFlyShootHeight = 300;
 
         public static int zebraFlyTailHeight = 500;
+
+        public static float pandaHealth = 300.0f;
+
+        public static float pandaAnimDelay = 5.0f;
+
+        public static float pandaBulletDelay = 0.6f;
+
+        public static int pandaBulletForce = 500;
+
+        public static int pandaDamage = 10;
+
+        public static int pandaForce = 1000;
+
+        public static int pandaForceDirection = 60;
 
         public static boolean debugging = false;
 

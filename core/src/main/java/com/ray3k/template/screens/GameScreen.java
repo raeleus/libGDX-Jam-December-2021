@@ -356,6 +356,11 @@ public class GameScreen extends JamScreen {
                         entityController.add(zebra);
                         zebra.teleport(x, y);
                         break;
+                    case "panda":
+                        var panda = new PandaEntity();
+                        entityController.add(panda);
+                        panda.teleport(x, y);
+                        break;
                 }
             }
     
