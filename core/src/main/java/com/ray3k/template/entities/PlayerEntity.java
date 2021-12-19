@@ -4,16 +4,18 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
-import com.dongbat.jbump.*;
+import com.dongbat.jbump.CollisionFilter;
+import com.dongbat.jbump.Collisions;
+import com.dongbat.jbump.Item;
+import com.dongbat.jbump.Response;
 import com.dongbat.jbump.Response.Result;
 import com.esotericsoftware.spine.Animation;
-import com.esotericsoftware.spine.AnimationState;
 import com.esotericsoftware.spine.AnimationState.AnimationStateAdapter;
 import com.esotericsoftware.spine.AnimationState.TrackEntry;
 import com.esotericsoftware.spine.Bone;
 import com.esotericsoftware.spine.Event;
-import com.ray3k.template.*;
 import com.ray3k.template.Resources.*;
+import com.ray3k.template.*;
 import com.ray3k.template.entities.PowerupEntity.*;
 import com.ray3k.template.screens.*;
 
@@ -89,12 +91,22 @@ public class PlayerEntity extends Entity {
                         weaponBone.localToWorld(temp);
                         itemsTemp.clear();
                         boolean aimRight = skeleton.getScaleX() > 0;
-                        if (aimRight) world.queryRect(temp.x + 100, temp.y - whipDetectHeight / 2f, whipDetectWidth, whipDetectHeight, enemyCollisionFilter, itemsTemp);
-                        else world.queryRect(temp.x - 100 - whipDetectWidth, temp.y - whipDetectHeight / 2f, whipDetectWidth, whipDetectHeight, enemyCollisionFilter, itemsTemp);
+                        if (aimRight) world.queryRect(temp.x + 100, temp.y - whipDetectHeight / 2f, whipDetectWidth, whipDetectHeight,
+                                whipFilter, itemsTemp);
+                        else world.queryRect(temp.x - 100 - whipDetectWidth, temp.y - whipDetectHeight / 2f, whipDetectWidth, whipDetectHeight,
+                                whipFilter, itemsTemp);
                         
                         for (var item : itemsTemp) {
-                            var enemy = (Enemy) item.userData;
-                            enemy.hurt(whipDamage, whipForce, aimRight ? whipForceDirection : 180 - whipForceDirection);
+                            if (item.userData instanceof Enemy) {
+                                var enemy = (Enemy) item.userData;
+                                enemy.hurt(whipDamage, whipForce, aimRight ? whipForceDirection : 180 - whipForceDirection);
+                            } else if (item.userData instanceof EnemyProjectileEntity) {
+                                var proj = (EnemyProjectileEntity) item.userData;
+                                if (proj.canBeDeactivated) {
+                                    proj.deactivated = true;
+                                    proj.setDirection(MathUtils.random(360f));
+                                }
+                            }
                         }
                         
                         for (int i = 0; i < 20; i++) {
@@ -331,12 +343,13 @@ public class PlayerEntity extends Entity {
         }
     }
     
-    private final static EnemyCollisionFilter enemyCollisionFilter = new EnemyCollisionFilter();
+    private final static WhipFilter whipFilter = new WhipFilter();
     
-    private static class EnemyCollisionFilter implements CollisionFilter {
+    private static class WhipFilter implements CollisionFilter {
         @Override
         public Response filter(Item item, Item other) {
             if (item.userData instanceof Enemy) return Response.cross;
+            if (item.userData instanceof EnemyProjectileEntity) return Response.cross;
             return null;
         }
     }

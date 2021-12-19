@@ -110,6 +110,7 @@ public class Resources {
         SpineGluttonProjectile.skeletonData = assetManager.get("spine/glutton-projectile.json");
         SpineGluttonProjectile.animationData = assetManager.get("spine/glutton-projectile.json-animation");
         SpineGluttonProjectile.animationAnimation = SpineGluttonProjectile.skeletonData.findAnimation("animation");
+        SpineGluttonProjectile.animationFrozen = SpineGluttonProjectile.skeletonData.findAnimation("frozen");
         SpineGluttonProjectile.animationShooter = SpineGluttonProjectile.skeletonData.findAnimation("shooter");
         SpineGluttonProjectile.skinDefault = SpineGluttonProjectile.skeletonData.findSkin("default");
         SpineGlutton.skeletonData = assetManager.get("spine/glutton.json");
@@ -495,6 +496,8 @@ public class Resources {
         public static AnimationStateData animationData;
 
         public static Animation animationAnimation;
+
+        public static Animation animationFrozen;
 
         public static Animation animationShooter;
 
@@ -1267,6 +1270,28 @@ public class Resources {
         public static int shooterAttackSpeed = 600;
 
         public static float shooterShotDelay = 2.0f;
+
+        public static int frozenMoveSpeed = 300;
+
+        public static int frozenHealth = 160;
+
+        public static int frozenDamage = 10;
+
+        public static int frozenForce = 1000;
+
+        public static int frozenAcceleration = 1000;
+
+        public static int frozenDeceleration = 3000;
+
+        public static float frozenHurtForceDampenerX = 0.5f;
+
+        public static float frozenHurtForceDampenerY = 0.5f;
+
+        public static int frozenChaseDistance = 800;
+
+        public static int frozenAttackSpeed = 500;
+
+        public static float frozenShotDelay = 1.5f;
 
         public static boolean debugging = false;
     }

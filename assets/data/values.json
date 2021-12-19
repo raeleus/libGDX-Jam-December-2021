@@ -122,5 +122,16 @@
   "shooter attack distance" : 900,
   "shooter attack speed" : 600,
   "shooter shot delay" : 2.0,
+  "frozen move speed" : 300,
+  "frozen health" : 160,
+  "frozen damage" : 10,
+  "frozen force" : 1000,
+  "frozen acceleration" : 1000,
+  "frozen deceleration" : 3000,
+  "frozen hurt force dampener x" : 0.5,
+  "frozen hurt force dampener y" : 0.5,
+  "frozen chase distance" : 800,
+  "frozen attack speed" : 500,
+  "frozen shot delay" : 1.5,
   "debugging" : false
 }

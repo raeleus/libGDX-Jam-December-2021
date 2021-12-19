@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "ejIkR0AikcA",
+	"hash": "5Xu7Qp26hwc",
 	"spine": "4.0.55",
 	"x": -31.12,
 	"y": -17.7,
@@ -43,6 +43,15 @@
 ],
 "animations": {
 	"animation": {},
+	"frozen": {
+		"slots": {
+			"game/glutton-projectile": {
+				"rgba2": [
+					{ "light": "0e566bff", "dark": "1eabba" }
+				]
+			}
+		}
+	},
 	"shooter": {
 		"slots": {
 			"game/glutton-projectile": {

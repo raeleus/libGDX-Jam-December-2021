@@ -83,6 +83,7 @@ public class SlimeDogEntity extends Entity implements Enemy {
                 var proj = new EnemyProjectileEntity(-300, 100, 275, 50);
                 entityController.add(proj);
                 proj.teleport(x, y);
+                proj.canBeDeactivated = false;
                 proj.life = .2f;
                 proj.damage = slimeDogDamage;
                 proj.force = slimeDogForce;

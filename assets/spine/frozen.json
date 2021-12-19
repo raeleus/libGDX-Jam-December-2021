@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "QW9s3SM4BX4",
+	"hash": "2TflMxCTo7I",
 	"spine": "4.0.55",
 	"x": -66.95,
 	"y": -11.61,
@@ -20,7 +20,8 @@
 	{ "name": "game/frozen-foreleg-front2", "parent": "game/frozen-leg-front2", "length": 36.9, "rotation": 1.76, "x": 62.19, "y": -0.23 },
 	{ "name": "game/frozen-foot-front2", "parent": "game/frozen-foreleg-front2", "length": 31.78, "rotation": -58.41, "x": 40.77, "y": 5.61 },
 	{ "name": "game/frozen-arm2", "parent": "game/frozen-body", "length": 63.54, "rotation": 120.74, "x": 56.39, "y": -4.91 },
-	{ "name": "game/frozen-arm", "parent": "game/frozen-body", "length": 60.07, "rotation": 122.97, "x": 62.95, "y": 8.86 }
+	{ "name": "game/frozen-arm", "parent": "game/frozen-body", "length": 60.07, "rotation": 122.97, "x": 62.95, "y": 8.86 },
+	{ "name": "weapon", "parent": "root", "length": 114.4, "rotation": -178.28, "x": -22.2, "y": 168.41 }
 ],
 "slots": [
 	{ "name": "game/frozen-arm", "bone": "game/frozen-arm", "dark": "000000", "attachment": "game/frozen-arm" },

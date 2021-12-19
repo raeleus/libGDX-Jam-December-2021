@@ -20,7 +20,9 @@ public class EnemyProjectileEntity extends Entity {
     public float force;
     public float forceDirection;
     public boolean useVelocityAsForceDirection = true;
+    public boolean canBeDeactivated = true;
     public boolean deactivated;
+    public boolean rotateWithVelocity = true;
     
     public EnemyProjectileEntity(SkeletonData skeletonData, AnimationStateData animationData, Animation animation) {
         setSkeletonData(skeletonData, animationData);
@@ -51,6 +53,10 @@ public class EnemyProjectileEntity extends Entity {
         
         if (isOutside(0, 0, levelWidth, levelHeight)) {
             destroy = true;
+        }
+        
+        if (rotateWithVelocity && skeleton != null) {
+            skeleton.getRootBone().setRotation(getDirection());
         }
     }
     

@@ -250,6 +250,11 @@ public class GameScreen extends JamScreen {
                         if (flippedX) shooter.skeleton.setScaleX(-1);
                         shooter.teleport(x, y);
                         break;
+                    case "frozen":
+                        var frozen = new FrozenEntity();
+                        entityController.add(frozen);
+                        frozen.teleport(x, y);
+                        break;
                 }
             }
     
