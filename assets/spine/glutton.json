@@ -1,18 +1,27 @@
 {
 "skeleton": {
-	"hash": "yfQntS0nM+4",
+	"hash": "AZt4wgaaTYk",
 	"spine": "4.0.55",
-	"x": -75.77,
-	"y": -17.52,
-	"width": 369.05,
-	"height": 474.69,
+	"x": -58.5,
+	"y": -7.14,
+	"width": 164.74,
+	"height": 211.9,
 	"images": "",
 	"audio": ""
 },
 "bones": [
 	{ "name": "root" },
-	{ "name": "bone", "parent": "root", "length": 121.61, "rotation": -179.46, "x": 101.74, "y": 102.39 },
-	{ "name": "game/glutton-body", "parent": "root", "length": 300.12, "rotation": 70.11, "x": 12.25, "y": 103.53 },
+	{
+		"name": "bone",
+		"parent": "root",
+		"length": 121.61,
+		"rotation": -179.46,
+		"x": 20.74,
+		"y": 46.39,
+		"scaleX": 0.4464,
+		"scaleY": 0.4464
+	},
+	{ "name": "game/glutton-body", "parent": "bone", "length": 300.12, "rotation": -110.43, "x": 89.47, "y": -1.99 },
 	{ "name": "game/glutton-head", "parent": "game/glutton-body", "length": 96.48, "rotation": 112.62, "x": 328.51, "y": -17.79 },
 	{ "name": "game/glutton-foot", "parent": "bone", "length": 60.29, "rotation": 110.65, "x": 76.12, "y": 42.88 },
 	{ "name": "game/glutton-tail", "parent": "bone", "length": 135.37, "rotation": 160.69, "x": 32.39, "y": 28.38 },
@@ -21,7 +30,8 @@
 	{ "name": "game/glutton-tail-5", "parent": "game/glutton-tail-3", "length": 37.88, "rotation": -0.23, "x": 45.9, "y": 0.06 },
 	{ "name": "game/glutton-arm", "parent": "game/glutton-body", "length": 68.87, "rotation": -158.2, "x": 170.53, "y": -70.06 },
 	{ "name": "game/glutton-forearm", "parent": "game/glutton-arm", "length": 61.96, "rotation": -92.97, "x": 74.22, "y": -11.66 },
-	{ "name": "game/glutton-forearm2", "parent": "game/glutton-forearm", "length": 64.25, "rotation": 2.08, "x": 69.88, "y": 5.88 }
+	{ "name": "game/glutton-forearm2", "parent": "game/glutton-forearm", "length": 64.25, "rotation": 2.08, "x": 69.88, "y": 5.88 },
+	{ "name": "weapon", "parent": "root", "length": 71.06, "rotation": -177.58, "x": -45, "y": 60.5 }
 ],
 "slots": [
 	{ "name": "game/glutton-body", "bone": "game/glutton-body", "dark": "000000", "attachment": "game/glutton-body" },
@@ -44,7 +54,7 @@
 				"bbox": {
 					"type": "boundingbox",
 					"vertexCount": 4,
-					"vertices": [ -35.93, -4.91, -34.87, 450.23, 157.77, 453.4, 150.36, -3.86 ]
+					"vertices": [ -44.93, -5.91, -44.87, 197.23, 47.77, 195.4, 44.36, -5.86 ]
 				}
 			},
 			"game/glutton-arm": {
@@ -224,50 +234,50 @@
 			"game/glutton-foot": {
 				"rotate": [
 					{ "value": -23.7 },
-					{ "time": 0.0333, "value": 27.95 },
-					{ "time": 0.0667, "value": -23.7 }
+					{ "time": 0.6, "value": 27.95 },
+					{ "time": 1.1667, "value": -23.7 }
 				]
 			},
 			"game/glutton-body": {
 				"rotate": [
 					{ "value": -1 },
-					{ "time": 0.0333, "value": 2.16 },
-					{ "time": 0.0667, "value": -1 }
+					{ "time": 0.6, "value": 2.16 },
+					{ "time": 1.1667, "value": -1 }
 				]
 			},
 			"game/glutton-tail-5": {
 				"rotate": [
 					{ "value": 42.73 },
-					{ "time": 0.0333, "value": 30.29 },
-					{ "time": 0.0667, "value": 42.73 }
+					{ "time": 0.6, "value": 30.29 },
+					{ "time": 1.1667, "value": 42.73 }
 				]
 			},
 			"game/glutton-tail": {
 				"rotate": [
 					{ "value": 0.75 },
-					{ "time": 0.0333, "value": 5.25 },
-					{ "time": 0.0667, "value": 0.75 }
+					{ "time": 0.6, "value": 5.25 },
+					{ "time": 1.1667, "value": 0.75 }
 				]
 			},
 			"game/glutton-tail-1": {
 				"rotate": [
 					{ "value": -1.34 },
-					{ "time": 0.0333, "value": 7.66 },
-					{ "time": 0.0667, "value": -1.34 }
+					{ "time": 0.6, "value": 7.66 },
+					{ "time": 1.1667, "value": -1.34 }
 				]
 			},
 			"game/glutton-tail-3": {
 				"rotate": [
 					{ "value": 12.65 },
-					{ "time": 0.0333, "value": 30.42 },
-					{ "time": 0.0667, "value": 12.65 }
+					{ "time": 0.6, "value": 30.42 },
+					{ "time": 1.1667, "value": 12.65 }
 				]
 			},
 			"game/glutton-head": {
 				"rotate": [
 					{},
-					{ "time": 0.0333, "value": -3.44 },
-					{ "time": 0.0667 }
+					{ "time": 0.6, "value": -3.44 },
+					{ "time": 1.1667 }
 				]
 			}
 		}

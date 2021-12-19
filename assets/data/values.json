@@ -133,5 +133,14 @@
   "frozen chase distance" : 800,
   "frozen attack speed" : 500,
   "frozen shot delay" : 1.5,
+  "glutton gravity" : -3000,
+  "glutton move speed" : 200,
+  "glutton acceleration" : 500,
+  "glutton health" : 40,
+  "glutton damage" : 10,
+  "glutton force" : 1000,
+  "glutton chase distance" : 800,
+  "glutton attack speed" : 500,
+  "glutton shot delay" : 1.5,
   "debugging" : false
 }

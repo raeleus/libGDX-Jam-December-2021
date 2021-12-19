@@ -1293,6 +1293,24 @@ public class Resources {
 
         public static float frozenShotDelay = 1.5f;
 
+        public static int gluttonGravity = -3000;
+
+        public static int gluttonMoveSpeed = 200;
+
+        public static int gluttonAcceleration = 500;
+
+        public static int gluttonHealth = 40;
+
+        public static int gluttonDamage = 10;
+
+        public static int gluttonForce = 1000;
+
+        public static int gluttonChaseDistance = 800;
+
+        public static int gluttonAttackSpeed = 500;
+
+        public static float gluttonShotDelay = 1.5f;
+
         public static boolean debugging = false;
     }
 
