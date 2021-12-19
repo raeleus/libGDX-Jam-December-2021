@@ -1,20 +1,30 @@
 {
 "skeleton": {
-	"hash": "9nl4W3YF9qQ",
+	"hash": "vS7MeQwCqEk",
 	"spine": "4.0.55",
-	"x": -96.99,
-	"y": -3.49,
-	"width": 245.12,
-	"height": 176,
+	"x": -56.1,
+	"y": 1.38,
+	"width": 125.99,
+	"height": 91.94,
 	"images": "",
 	"audio": ""
 },
 "bones": [
 	{ "name": "root" },
-	{ "name": "game/toaster-lever", "parent": "root", "length": 74.56, "rotation": 2.01, "x": 112.87, "y": 117.19 }
+	{
+		"name": "bone",
+		"parent": "root",
+		"rotation": 0.96,
+		"x": -5,
+		"y": 4,
+		"scaleX": 0.5117,
+		"scaleY": 0.5117
+	},
+	{ "name": "game/toaster-lever", "parent": "bone", "length": 74.56, "rotation": 2.01, "x": 112.87, "y": 117.19 },
+	{ "name": "weapon", "parent": "root", "y": 33 }
 ],
 "slots": [
-	{ "name": "game/toaster", "bone": "root", "dark": "000000", "attachment": "game/toaster" },
+	{ "name": "game/toaster", "bone": "bone", "dark": "000000", "attachment": "game/toaster" },
 	{ "name": "game/toaster-lever", "bone": "game/toaster-lever", "dark": "000000", "attachment": "game/toaster-lever" },
 	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
 ],
@@ -26,7 +36,7 @@
 				"bbox": {
 					"type": "boundingbox",
 					"vertexCount": 4,
-					"vertices": [ -94.5, -0.6, -94.5, 172.28, 127.78, 172.28, 121.6, 1.87 ]
+					"vertices": [ -53.5, -48.6, -48.5, 74.28, 50.78, 72.28, 49.6, -48.13 ]
 				}
 			},
 			"game/toaster": {
@@ -39,6 +49,7 @@
 	}
 ],
 "animations": {
+	"animation": {},
 	"die": {
 		"slots": {
 			"game/toaster": {

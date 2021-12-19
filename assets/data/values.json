@@ -206,5 +206,11 @@
   "vacuum damage" : 10,
   "vacuum force" : 1000,
   "vacuum force direction" : 60,
+  "toaster health" : 100,
+  "toaster damage" : 10,
+  "toaster force" : 800.0,
+  "toaster attack distance" : 900,
+  "toaster attack speed" : 600,
+  "toaster shot delay" : 0.5,
   "debugging" : false
 }

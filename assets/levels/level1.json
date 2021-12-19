@@ -26,7 +26,7 @@
         {"name": "powerup_wings1", "id": 17, "_eid": "85617174", "x": 144, "y": 872, "originX": 70, "originY": 73},
         {"name": "powerup_wings2", "id": 18, "_eid": "85645337", "x": 376, "y": 880, "originX": 70, "originY": 73},
         {"name": "powerup_wings3", "id": 19, "_eid": "85655756", "x": 648, "y": 880, "originX": 70, "originY": 73},
-        {"name": "vacuum", "id": 20, "_eid": "88178084", "x": 1600, "y": 600, "originX": 176, "originY": 377}
+        {"name": "toaster", "id": 20, "_eid": "88239049", "x": 760, "y": 1216, "originX": 110, "originY": 176}
       ]
     },
     {

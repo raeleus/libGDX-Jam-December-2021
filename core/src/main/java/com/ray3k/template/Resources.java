@@ -293,6 +293,7 @@ public class Resources {
         SpineToasterToast.skinDefault = SpineToasterToast.skeletonData.findSkin("default");
         SpineToaster.skeletonData = assetManager.get("spine/toaster.json");
         SpineToaster.animationData = assetManager.get("spine/toaster.json-animation");
+        SpineToaster.animationAnimation = SpineToaster.skeletonData.findAnimation("animation");
         SpineToaster.animationDie = SpineToaster.skeletonData.findAnimation("die");
         SpineToaster.animationHurt = SpineToaster.skeletonData.findAnimation("hurt");
         SpineToaster.animationShoot = SpineToaster.skeletonData.findAnimation("shoot");
@@ -928,6 +929,8 @@ public class Resources {
 
         public static AnimationStateData animationData;
 
+        public static Animation animationAnimation;
+
         public static Animation animationDie;
 
         public static Animation animationHurt;
@@ -1447,6 +1450,18 @@ public class Resources {
         public static int vacuumForce = 1000;
 
         public static int vacuumForceDirection = 60;
+
+        public static int toasterHealth = 100;
+
+        public static int toasterDamage = 10;
+
+        public static float toasterForce = 800.0f;
+
+        public static int toasterAttackDistance = 900;
+
+        public static int toasterAttackSpeed = 600;
+
+        public static float toasterShotDelay = 0.5f;
 
         public static boolean debugging = false;
     }
