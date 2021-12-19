@@ -28,7 +28,17 @@
           "originY": 100,
           "values": {"spawn": 0}
         },
-        {"name": "zebra", "id": 4, "_eid": "89715261", "x": 1488, "y": 1888, "originX": 141, "originY": 319}
+        {"name": "zebra", "id": 4, "_eid": "89715261", "x": 1488, "y": 1888, "originX": 141, "originY": 319},
+        {
+          "name": "dialog",
+          "id": 5,
+          "_eid": "94444421",
+          "x": -328,
+          "y": 2128,
+          "originX": 8,
+          "originY": 8,
+          "values": {"index": 0}
+        }
       ]
     },
     {
@@ -125,7 +135,7 @@
             {"x": 2424, "y": 1636},
             {"x": 2424, "y": 1908}
           ],
-          "values": {"nextroom": "level", "transitiondirection": 0, "spawn": 0}
+          "values": {"nextroom": "corridor2", "transitiondirection": 180, "spawn": 0}
         }
       ]
     },
@@ -163,7 +173,17 @@
         {"x": 1840, "y": 1944, "rotation": 0, "texture": "platform5.png", "originX": 0.5, "originY": 0.5},
         {"x": 2040, "y": 1944, "rotation": 0, "texture": "platform5.png", "originX": 0.5, "originY": 0.5},
         {"x": 2240, "y": 1944, "rotation": 0, "texture": "platform5.png", "originX": 0.5, "originY": 0.5},
-        {"x": 2432, "y": 1944, "rotation": 0, "texture": "platform5.png", "originX": 0.5, "originY": 0.5}
+        {"x": 2432, "y": 1944, "rotation": 0, "texture": "platform5.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2408, "y": 1448, "rotation": 0, "texture": "pillar.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2408, "y": 1072, "rotation": 0, "texture": "pillar.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2408, "y": 688, "rotation": 0, "texture": "pillar.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2408, "y": 304, "rotation": 0, "texture": "pillar.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2408, "y": -88, "rotation": 0, "texture": "pillar.png", "originX": 0.5, "originY": 0.5},
+        {"x": -8, "y": 1440, "rotation": 0, "texture": "pillar.png", "originX": 0.5, "originY": 0.5},
+        {"x": -8, "y": 1056, "rotation": 0, "texture": "pillar.png", "originX": 0.5, "originY": 0.5},
+        {"x": -8, "y": 672, "rotation": 0, "texture": "pillar.png", "originX": 0.5, "originY": 0.5},
+        {"x": -8, "y": 280, "rotation": 0, "texture": "pillar.png", "originX": 0.5, "originY": 0.5},
+        {"x": -8, "y": -104, "rotation": 0, "texture": "pillar.png", "originX": 0.5, "originY": 0.5}
       ],
       "folder": "game"
     },

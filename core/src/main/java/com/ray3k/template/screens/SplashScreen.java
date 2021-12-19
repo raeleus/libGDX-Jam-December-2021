@@ -41,7 +41,7 @@ public class SplashScreen extends JamScreen {
                 PlayerEntity.enabledWeapons.clear();
                 PlayerEntity.enabledWeapons.add(Weapon.WHIP);
                 Gdx.input.setInputProcessor(null);
-                roomToLoad = "level1";
+                roomToLoad = "corridor1";
                 spawnIndex = 0;
                 defeatedGroxar = false;
                 defeatedJohn = false;

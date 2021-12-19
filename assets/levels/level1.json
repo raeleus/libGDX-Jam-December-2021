@@ -146,8 +146,8 @@
       "gridCellsY": 161,
       "decals": [
         {"x": 1159.5668743630897, "y": 975.5319113520678, "rotation": 0, "texture": "arch.png", "originX": 0.5, "originY": 0.5},
-        {"x": 232, "y": 840, "rotation": 0, "texture": "tip1.png", "originX": 0.5, "originY": 0.5},
-        {"x": 928, "y": 848, "rotation": 0, "texture": "tip2.png", "originX": 0.5, "originY": 0.5}
+        {"x": 224, "y": 888, "rotation": 0, "texture": "tip1.png", "originX": 0.5, "originY": 0.5},
+        {"x": 920, "y": 896, "rotation": 0, "texture": "tip2.png", "originX": 0.5, "originY": 0.5}
       ],
       "folder": "game"
     },

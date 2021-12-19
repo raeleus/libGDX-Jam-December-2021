@@ -391,6 +391,9 @@ public class GameScreen extends JamScreen {
                         entityController.add(door);
                         door.teleport(x, y);
                         break;
+                    case "dialog":
+                        DialogMaker.show(valuesMap.get("index").asInt());
+                        break;
                 }
             }
     
