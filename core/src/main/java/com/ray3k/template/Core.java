@@ -102,6 +102,11 @@ public class Core extends JamGame {
     public static int spawnIndex;
     public static String roomToLoad;
     public static boolean bossAlive;
+    public static boolean defeatedZebra;
+    public static boolean defeatedPanda;
+    public static boolean defeatedLyze;
+    public static boolean defeatedGroxar;
+    public static boolean defeatedJohn;
     
     public static boolean isKeyJustPressed(int key) {
         return key == Keys.ANY_KEY ? keysJustPressed.size > 0 : keysJustPressed.contains(key);

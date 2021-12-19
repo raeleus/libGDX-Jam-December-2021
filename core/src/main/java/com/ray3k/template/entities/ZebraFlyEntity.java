@@ -18,6 +18,7 @@ public class ZebraFlyEntity extends Entity {
             @Override
             public void complete(TrackEntry entry) {
                 Core.bossAlive = false;
+                Core.defeatedZebra = true;
             }
         });
     }

@@ -40,12 +40,15 @@ public class SplashScreen extends JamScreen {
             public void clicked(InputEvent event, float x, float y) {
                 PlayerEntity.enabledWeapons.clear();
                 PlayerEntity.enabledWeapons.add(Weapon.WHIP);
-                PlayerEntity.enabledWeapons.add(Weapon.SHOTGUN);
-                PlayerEntity.enabledWeapons.add(Weapon.CROSS);
-                PlayerEntity.enabledWeapons.add(Weapon.GRENADE);
                 Gdx.input.setInputProcessor(null);
-                roomToLoad = "testBoss";
+                roomToLoad = "level1";
                 spawnIndex = 0;
+                defeatedGroxar = false;
+                defeatedJohn = false;
+                defeatedLyze = false;
+                defeatedPanda = false;
+                defeatedZebra = false;
+                bossAlive = false;
                 core.transition(new GameScreen());
             }
         });

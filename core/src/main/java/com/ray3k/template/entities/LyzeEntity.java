@@ -147,6 +147,7 @@ public class LyzeEntity extends Entity implements Enemy {
     @Override
     public void destroy() {
         bossAlive = false;
+        defeatedLyze = true;
     }
     
     @Override

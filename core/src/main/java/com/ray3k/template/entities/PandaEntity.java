@@ -134,6 +134,7 @@ public class PandaEntity extends Entity implements Enemy {
     @Override
     public void destroy() {
         bossAlive = false;
+        defeatedPanda = true;
     }
     
     @Override

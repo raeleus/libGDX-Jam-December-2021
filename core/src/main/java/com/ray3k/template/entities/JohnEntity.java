@@ -72,6 +72,7 @@ public class JohnEntity extends Entity implements Enemy {
     @Override
     public void destroy() {
         bossAlive = false;
+        defeatedJohn = true;
     }
     
     @Override

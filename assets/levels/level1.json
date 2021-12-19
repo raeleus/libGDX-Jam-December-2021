@@ -25,6 +25,16 @@
           "originX": 35,
           "originY": 100,
           "values": {"spawn": 0}
+        },
+        {
+          "name": "player",
+          "id": 3,
+          "_eid": "75139371",
+          "x": 1885,
+          "y": 1199,
+          "originX": 35,
+          "originY": 100,
+          "values": {"spawn": 1}
         }
       ]
     },
@@ -93,7 +103,7 @@
             {"x": 2007.8068669194183, "y": 711.5348919836586},
             {"x": 2007.8068669194183, "y": 1223.5348919836586}
           ],
-          "values": {"nextroom": "testBoss", "transitiondirection": 180, "spawn": 0}
+          "values": {"nextroom": "corridor1", "transitiondirection": 180, "spawn": 0}
         },
         {
           "name": "bounds",

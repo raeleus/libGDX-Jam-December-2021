@@ -160,6 +160,7 @@ public class GroxarEntity extends Entity implements Enemy {
     @Override
     public void destroy() {
         bossAlive = false;
+        defeatedGroxar = true;
     }
     
     @Override

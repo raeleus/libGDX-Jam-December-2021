@@ -347,34 +347,44 @@ public class GameScreen extends JamScreen {
                         tank.teleport(x, y);
                         break;
                     case "groxar":
-                        var groxar = new GroxarEntity();
-                        entityController.add(groxar);
-                        groxar.teleport(x, y);
+                        if (!defeatedGroxar) {
+                            var groxar = new GroxarEntity();
+                            entityController.add(groxar);
+                            groxar.teleport(x, y);
+                        }
                         break;
                     case "zebra":
-                        var zebra = new ZebraEntity();
-                        entityController.add(zebra);
-                        zebra.teleport(x, y);
+                        if (!defeatedZebra) {
+                            var zebra = new ZebraEntity();
+                            entityController.add(zebra);
+                            zebra.teleport(x, y);
+                        }
                         break;
                     case "panda":
-                        var panda = new PandaEntity();
-                        entityController.add(panda);
-                        panda.teleport(x, y);
+                        if (!defeatedPanda) {
+                            var panda = new PandaEntity();
+                            entityController.add(panda);
+                            panda.teleport(x, y);
+                        }
                         break;
                     case "lyze":
-                        var lyze = new LyzeEntity();
-                        lyze.teleport(x, y);
-                        for (var node : nodes) {
-                            var point = new Vector2();
-                            point.set(node.x, node.y);
-                            lyze.points.add(point);
+                        if (!defeatedLyze) {
+                            var lyze = new LyzeEntity();
+                            lyze.teleport(x, y);
+                            for (var node : nodes) {
+                                var point = new Vector2();
+                                point.set(node.x, node.y);
+                                lyze.points.add(point);
+                            }
+                            entityController.add(lyze);
                         }
-                        entityController.add(lyze);
                         break;
                     case "john":
-                        var john = new JohnEntity();
-                        entityController.add(john);
-                        john.teleport(x, y);
+                        if (!defeatedJohn) {
+                            var john = new JohnEntity();
+                            entityController.add(john);
+                            john.teleport(x, y);
+                        }
                         break;
                     case "door":
                         var door = new DoorEntity();

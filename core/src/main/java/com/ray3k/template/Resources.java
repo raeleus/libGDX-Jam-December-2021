@@ -1077,7 +1077,7 @@ public class Resources {
 
         public static float playerJumpHoldTime = 0.4f;
 
-        public static int playerMaxJumps = 3;
+        public static int playerMaxJumps = 1;
 
         public static float heartHeal = 10.0f;
 

@@ -44,13 +44,16 @@ public class MenuScreen extends JamScreen {
                 Values.playerMaxJumps = 1;
                 PlayerEntity.enabledWeapons.clear();
                 PlayerEntity.enabledWeapons.add(Weapon.WHIP);
-                PlayerEntity.enabledWeapons.add(Weapon.SHOTGUN);
-                PlayerEntity.enabledWeapons.add(Weapon.CROSS);
-                PlayerEntity.enabledWeapons.add(Weapon.GRENADE);
                 PlayerEntity.enabledWings.clear();
                 bgm.stop();
                 roomToLoad = "level1";
                 spawnIndex = 0;
+                defeatedGroxar = false;
+                defeatedJohn = false;
+                defeatedLyze = false;
+                defeatedPanda = false;
+                defeatedZebra = false;
+                bossAlive = false;
                 core.transition(new GameScreen());
             }
         });
