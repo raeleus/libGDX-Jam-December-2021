@@ -391,7 +391,7 @@ public class PlayerEntity extends Entity {
     public static class PlatformCollisionFilter implements CollisionFilter {
         @Override
         public Response filter(Item item, Item other) {
-            if (other.userData instanceof PlatformEntity) return Response.bounce;
+            if (other.userData instanceof PlatformEntity) return Response.slide;
             return null;
         }
     }
