@@ -22,8 +22,8 @@ public class MothEntity extends Entity implements Enemy {
     public void hurt(float damage, float force, float forceDirection) {
         temp.x = force;
         temp.rotateDeg(forceDirection);
-        temp.x *= batHurtForceDampenerX;
-        temp.y *= batHurtForceDampenerY;
+        temp.x *= mothHurtForceDampenerX;
+        temp.y *= mothHurtForceDampenerY;
         deltaX += temp.x;
         deltaY += temp.y;
         
@@ -52,7 +52,7 @@ public class MothEntity extends Entity implements Enemy {
         animationState.setAnimation(0, animationAnimation, true);
         setCollisionBox(skeleton.findSlot("bbox"), skeletonBounds, collisionFilter);
         depth = DEPTH_ENEMY;
-        health = batHealth;
+        health = mothHealth;
     }
     
     @Override
@@ -63,14 +63,14 @@ public class MothEntity extends Entity implements Enemy {
     @Override
     public void act(float delta) {
         float playerDistance = Utils.pointDistance(getBboxCenterX(),getBboxCenterY(), PlayerEntity.player.getBboxCenterX(), PlayerEntity.player.getBboxCenterY());
-        if (playerDistance < batChaseDistance) {
+        if (playerDistance < mothChaseDistance) {
             float playerDirection = Utils.pointDirection(getBboxCenterX(), getBboxCenterY(),
                     PlayerEntity.player.getBboxCenterX(), PlayerEntity.player.getBboxCenterY());
-            addMotion(batAcceleration * delta, playerDirection);
-            if (getSpeed() > batMoveSpeed) setSpeed(Utils.approach(getSpeed(), batMoveSpeed, batDeceleration * delta));
-            skeleton.setScaleX(deltaX < 0 ? 1 : -1);
+            addMotion(mothAcceleration * delta, playerDirection);
+            if (getSpeed() > mothMoveSpeed) setSpeed(Utils.approach(getSpeed(), mothMoveSpeed, mothDeceleration * delta));
+            skeleton.setScaleX(deltaX > 0 ? 1 : -1);
         } else {
-            setSpeed(Utils.approach(getSpeed(), 0, batDeceleration * delta));
+            setSpeed(Utils.approach(getSpeed(), 0, mothDeceleration * delta));
         }
     }
     
@@ -99,14 +99,14 @@ public class MothEntity extends Entity implements Enemy {
             if (collision.other.userData instanceof PlayerEntity) {
                 var player = (PlayerEntity) collision.other.userData;
                 float playerDirection = Utils.pointDirection(getBboxCenterX(),getBboxCenterY(), player.getBboxCenterX(),player.getBboxCenterY());
-                player.hurt(batDamage, batForce, playerDirection);
+                player.hurt(mothDamage, mothForce, playerDirection);
             }
         }
     }
     
-    private static final BatCollisionFilter collisionFilter = new BatCollisionFilter();
+    private static final MothCollisionFilter collisionFilter = new MothCollisionFilter();
     
-    private static class BatCollisionFilter implements CollisionFilter {
+    private static class MothCollisionFilter implements CollisionFilter {
         @Override
         public Response filter(Item item, Item other) {
             if (other.userData instanceof  PlayerEntity) return Response.cross;

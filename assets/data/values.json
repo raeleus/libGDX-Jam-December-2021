@@ -142,5 +142,14 @@
   "glutton chase distance" : 800,
   "glutton attack speed" : 500,
   "glutton shot delay" : 1.5,
+  "moth move speed" : 600,
+  "moth health" : 80,
+  "moth damage" : 10,
+  "moth force" : 1000,
+  "moth acceleration" : 2000,
+  "moth deceleration" : 3000,
+  "moth hurt force dampener x" : 1.0,
+  "moth hurt force dampener y" : 1.0,
+  "moth chase distance" : 800,
   "debugging" : false
 }

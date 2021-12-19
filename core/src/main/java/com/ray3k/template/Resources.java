@@ -1311,6 +1311,24 @@ public class Resources {
 
         public static float gluttonShotDelay = 1.5f;
 
+        public static int mothMoveSpeed = 600;
+
+        public static int mothHealth = 80;
+
+        public static int mothDamage = 10;
+
+        public static int mothForce = 1000;
+
+        public static int mothAcceleration = 2000;
+
+        public static int mothDeceleration = 3000;
+
+        public static float mothHurtForceDampenerX = 1.0f;
+
+        public static float mothHurtForceDampenerY = 1.0f;
+
+        public static int mothChaseDistance = 800;
+
         public static boolean debugging = false;
     }
 
