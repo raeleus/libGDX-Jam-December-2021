@@ -151,5 +151,15 @@
   "moth hurt force dampener x" : 1.0,
   "moth hurt force dampener y" : 1.0,
   "moth chase distance" : 800,
+  "skeleton gravity" : -3000,
+  "skeleton move speed" : 400.0,
+  "skeleton attack speed" : 1500.0,
+  "skeleton attack angle" : 45.0,
+  "skeleton attack distance" : 400,
+  "skeleton acceleration" : 800,
+  "skeleton health" : 100,
+  "skeleton damage" : 10,
+  "skeleton force" : 1000,
+  "skeleton force direction" : 60,
   "debugging" : false
 }

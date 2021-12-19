@@ -1329,6 +1329,26 @@ public class Resources {
 
         public static int mothChaseDistance = 800;
 
+        public static int skeletonGravity = -3000;
+
+        public static float skeletonMoveSpeed = 400.0f;
+
+        public static float skeletonAttackSpeed = 1500.0f;
+
+        public static float skeletonAttackAngle = 45.0f;
+
+        public static int skeletonAttackDistance = 400;
+
+        public static int skeletonAcceleration = 800;
+
+        public static int skeletonHealth = 100;
+
+        public static int skeletonDamage = 10;
+
+        public static int skeletonForce = 1000;
+
+        public static int skeletonForceDirection = 60;
+
         public static boolean debugging = false;
     }
 
