@@ -1,21 +1,22 @@
 {
 "skeleton": {
-	"hash": "9FxtED0cH+U",
+	"hash": "b3c57IpzVwU",
 	"spine": "4.0.55",
-	"x": -164.65,
-	"y": -28.56,
-	"width": 354,
-	"height": 341,
+	"x": -75.54,
+	"y": -13.1,
+	"width": 162.41,
+	"height": 156.45,
 	"images": "",
 	"audio": ""
 },
 "bones": [
 	{ "name": "root" },
-	{ "name": "game/washer-water", "parent": "root", "length": 141.76, "rotation": 1.02, "x": -15.49, "y": 96.38 }
+	{ "name": "bone", "parent": "root", "scaleX": 0.4588, "scaleY": 0.4588 },
+	{ "name": "game/washer-water", "parent": "bone", "length": 141.76, "rotation": 1.02, "x": -15.49, "y": 96.38 }
 ],
 "slots": [
 	{ "name": "game/washer-water", "bone": "game/washer-water", "dark": "000000", "attachment": "game/washer-water" },
-	{ "name": "game/washer", "bone": "root", "dark": "000000", "attachment": "game/washer" },
+	{ "name": "game/washer", "bone": "bone", "dark": "000000", "attachment": "game/washer" },
 	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
 ],
 "skins": [
@@ -26,7 +27,7 @@
 				"bbox": {
 					"type": "boundingbox",
 					"vertexCount": 4,
-					"vertices": [ -124.99, -5.07, -128, 299.17, 167.22, 299.17, 165.72, -1.32 ]
+					"vertices": [ -72.99, -10.07, -73, 143.17, 89.22, 146.17, 84.72, -3.32 ]
 				}
 			},
 			"game/washer": {

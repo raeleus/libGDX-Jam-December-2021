@@ -1391,6 +1391,26 @@ public class Resources {
 
         public static float podShotDelay = 1.5f;
 
+        public static int washerMoveSpeed = 2000;
+
+        public static int washerHealth = 10;
+
+        public static int washerDamage = 10;
+
+        public static int washerForce = 3000;
+
+        public static int washerDeceleration = 300;
+
+        public static float washerHurtForceDampenerX = 0.0f;
+
+        public static float washerHurtForceDampenerY = 0.0f;
+
+        public static int washerDestroyBorder = 300;
+
+        public static float washerDetectAngle = 30.0f;
+
+        public static int washerDetectRays = 4;
+
         public static boolean debugging = false;
     }
 

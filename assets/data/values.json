@@ -179,5 +179,15 @@
   "pod chase distance" : 800,
   "pod attack speed" : 500,
   "pod shot delay" : 1.5,
+  "washer move speed" : 2000,
+  "washer health" : 10,
+  "washer damage" : 10,
+  "washer force" : 3000,
+  "washer deceleration" : 300,
+  "washer hurt force dampener x" : 0.0,
+  "washer hurt force dampener y" : 0.0,
+  "washer destroy border" : 300,
+  "washer detect angle" : 30.0,
+  "washer detect rays" : 4,
   "debugging" : false
 }

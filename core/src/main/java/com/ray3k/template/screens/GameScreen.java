@@ -280,6 +280,11 @@ public class GameScreen extends JamScreen {
                         entityController.add(pod);
                         pod.teleport(x, y);
                         break;
+                    case "washer":
+                        var washer = new WasherEntity();
+                        entityController.add(washer);
+                        washer.teleport(x, y);
+                        break;
                 }
             }
     
