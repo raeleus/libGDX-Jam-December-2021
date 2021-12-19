@@ -212,5 +212,16 @@
   "toaster attack distance" : 900,
   "toaster attack speed" : 600,
   "toaster shot delay" : 0.5,
+  "tank gravity" : -3000,
+  "tank move speed" : 0.0,
+  "tank jump speed" : 800.0,
+  "tank jump delay" : 0.2,
+  "tank y agro" : 50,
+  "tank attack distance" : 300,
+  "tank acceleration" : 1200,
+  "tank health" : 100,
+  "tank damage" : 50,
+  "tank force" : 3000,
+  "tank force direction" : 60,
   "debugging" : false
 }

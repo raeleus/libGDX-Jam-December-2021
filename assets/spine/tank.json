@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "R9HQiRiNfLQ",
+	"hash": "g6okXPCY3wc",
 	"spine": "4.0.55",
 	"x": -100.15,
 	"y": -3.29,
@@ -44,6 +44,9 @@
 		}
 	}
 ],
+"events": {
+	"attack": {}
+},
 "animations": {
 	"attack": {
 		"bones": {
@@ -63,6 +66,34 @@
 					{ "time": 0.5, "value": 4.5 },
 					{ "time": 0.6, "value": 11.43 },
 					{ "time": 0.9, "value": 95.14 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.5, "name": "attack" }
+		]
+	},
+	"die": {
+		"slots": {
+			"game/tank": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.0333, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/tank-arm": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.0333, "light": "00000000", "dark": "000000" }
+				]
+			},
+			"game/tank-forearm": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2.0333, "light": "00000000", "dark": "000000" }
 				]
 			}
 		}
@@ -85,31 +116,6 @@
 				"rgba2": [
 					{ "light": "ffffffff", "dark": "ffffff" },
 					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
-				]
-			}
-		}
-	},
-	"kill": {
-		"slots": {
-			"game/tank": {
-				"rgba2": [
-					{ "light": "ffffffff", "dark": "000000" },
-					{ "time": 0.6667, "light": "000000ff", "dark": "000000" },
-					{ "time": 1.3333, "light": "00000000", "dark": "000000" }
-				]
-			},
-			"game/tank-arm": {
-				"rgba2": [
-					{ "light": "ffffffff", "dark": "000000" },
-					{ "time": 0.6667, "light": "000000ff", "dark": "000000" },
-					{ "time": 1.3333, "light": "00000000", "dark": "000000" }
-				]
-			},
-			"game/tank-forearm": {
-				"rgba2": [
-					{ "light": "ffffffff", "dark": "000000" },
-					{ "time": 0.6667, "light": "000000ff", "dark": "000000" },
-					{ "time": 1.3333, "light": "00000000", "dark": "000000" }
 				]
 			}
 		}

@@ -283,8 +283,8 @@ public class Resources {
         SpineTank.skeletonData = assetManager.get("spine/tank.json");
         SpineTank.animationData = assetManager.get("spine/tank.json-animation");
         SpineTank.animationAttack = SpineTank.skeletonData.findAnimation("attack");
+        SpineTank.animationDie = SpineTank.skeletonData.findAnimation("die");
         SpineTank.animationHurt = SpineTank.skeletonData.findAnimation("hurt");
-        SpineTank.animationKill = SpineTank.skeletonData.findAnimation("kill");
         SpineTank.animationStand = SpineTank.skeletonData.findAnimation("stand");
         SpineTank.skinDefault = SpineTank.skeletonData.findSkin("default");
         SpineToasterToast.skeletonData = assetManager.get("spine/toaster-toast.json");
@@ -905,9 +905,9 @@ public class Resources {
 
         public static Animation animationAttack;
 
-        public static Animation animationHurt;
+        public static Animation animationDie;
 
-        public static Animation animationKill;
+        public static Animation animationHurt;
 
         public static Animation animationStand;
 
@@ -1462,6 +1462,28 @@ public class Resources {
         public static int toasterAttackSpeed = 600;
 
         public static float toasterShotDelay = 0.5f;
+
+        public static int tankGravity = -3000;
+
+        public static float tankMoveSpeed = 0.0f;
+
+        public static float tankJumpSpeed = 800.0f;
+
+        public static float tankJumpDelay = 0.2f;
+
+        public static int tankYAgro = 100;
+
+        public static int tankAttackDistance = 300;
+
+        public static int tankAcceleration = 1200;
+
+        public static int tankHealth = 100;
+
+        public static int tankDamage = 50;
+
+        public static int tankForce = 3000;
+
+        public static int tankForceDirection = 60;
 
         public static boolean debugging = false;
     }
