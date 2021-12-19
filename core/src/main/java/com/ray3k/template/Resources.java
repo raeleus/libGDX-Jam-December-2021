@@ -1349,6 +1349,20 @@ public class Resources {
 
         public static int skeletonForceDirection = 60;
 
+        public static int wolfGravity = -3000;
+
+        public static int wolfMoveSpeed = 400;
+
+        public static int wolfAcceleration = 500;
+
+        public static int wolfHealth = 40;
+
+        public static int wolfDamage = 10;
+
+        public static int wolfForce = 1000;
+
+        public static int wolfForceDirection = 60;
+
         public static boolean debugging = false;
     }
 

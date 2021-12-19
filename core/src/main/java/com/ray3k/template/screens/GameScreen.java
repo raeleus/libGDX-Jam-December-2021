@@ -270,6 +270,11 @@ public class GameScreen extends JamScreen {
                         entityController.add(skeleton);
                         skeleton.teleport(x, y);
                         break;
+                    case "wolf":
+                        var wolf = new WolfEntity();
+                        entityController.add(wolf);
+                        wolf.teleport(x, y);
+                        break;
                 }
             }
     

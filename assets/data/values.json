@@ -161,5 +161,12 @@
   "skeleton damage" : 10,
   "skeleton force" : 1000,
   "skeleton force direction" : 60,
+  "wolf gravity" : -3000,
+  "wolf move speed" : 400,
+  "wolf acceleration" : 500,
+  "wolf health" : 40,
+  "wolf damage" : 10,
+  "wolf force" : 1000,
+  "wolf force direction" : 60,
   "debugging" : false
 }
