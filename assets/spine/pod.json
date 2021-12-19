@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "AKcDPlBz/jE",
+	"hash": "AD5LeII8OkU",
 	"spine": "4.0.55",
 	"x": -112.39,
 	"y": -62.07,
@@ -11,10 +11,11 @@
 },
 "bones": [
 	{ "name": "root" },
-	{ "name": "game/pod", "parent": "root", "length": 99.96, "rotation": 0.58, "x": -0.24, "y": 22.49 }
+	{ "name": "game/pod", "parent": "root", "length": 99.96, "rotation": 0.58, "x": -0.24, "y": 22.49 },
+	{ "name": "weapon", "parent": "root", "length": 158, "rotation": 179.64, "x": 9, "y": 3.5 }
 ],
 "slots": [
-	{ "name": "game/pod", "bone": "game/pod", "attachment": "game/pod" },
+	{ "name": "game/pod", "bone": "game/pod", "dark": "000000", "attachment": "game/pod" },
 	{ "name": "bbox", "bone": "root", "attachment": "bbox" }
 ],
 "skins": [
@@ -48,6 +49,27 @@
 						"curve": [ 1.556, 0, 1.944, 0, 1.556, 52.5, 1.944, 17.5 ]
 					},
 					{ "time": 2.3333 }
+				]
+			}
+		}
+	},
+	"die": {
+		"slots": {
+			"game/pod": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "000000" },
+					{ "time": 1, "light": "000000ff", "dark": "000000" },
+					{ "time": 2, "light": "00000000", "dark": "000000" }
+				]
+			}
+		}
+	},
+	"hurt": {
+		"slots": {
+			"game/pod": {
+				"rgba2": [
+					{ "light": "ffffffff", "dark": "ffffff" },
+					{ "time": 0.3333, "light": "ffffffff", "dark": "000000" }
 				]
 			}
 		}

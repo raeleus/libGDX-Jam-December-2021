@@ -275,6 +275,11 @@ public class GameScreen extends JamScreen {
                         entityController.add(wolf);
                         wolf.teleport(x, y);
                         break;
+                    case "pod":
+                        var pod = new PodEntity();
+                        entityController.add(pod);
+                        pod.teleport(x, y);
+                        break;
                 }
             }
     

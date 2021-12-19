@@ -168,5 +168,16 @@
   "wolf damage" : 10,
   "wolf force" : 1000,
   "wolf force direction" : 60,
+  "pod move speed" : 300,
+  "pod health" : 160,
+  "pod damage" : 10,
+  "pod force" : 1000,
+  "pod acceleration" : 1000,
+  "pod deceleration" : 3000,
+  "pod hurt force dampener x" : 0.5,
+  "pod hurt force dampener y" : 0.5,
+  "pod chase distance" : 800,
+  "pod attack speed" : 500,
+  "pod shot delay" : 1.5,
   "debugging" : false
 }

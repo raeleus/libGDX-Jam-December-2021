@@ -219,6 +219,8 @@ public class Resources {
         SpinePod.skeletonData = assetManager.get("spine/pod.json");
         SpinePod.animationData = assetManager.get("spine/pod.json-animation");
         SpinePod.animationAnimation = SpinePod.skeletonData.findAnimation("animation");
+        SpinePod.animationDie = SpinePod.skeletonData.findAnimation("die");
+        SpinePod.animationHurt = SpinePod.skeletonData.findAnimation("hurt");
         SpinePod.skinDefault = SpinePod.skeletonData.findSkin("default");
         SpinePowerup.skeletonData = assetManager.get("spine/powerup.json");
         SpinePowerup.animationData = assetManager.get("spine/powerup.json-animation");
@@ -750,6 +752,10 @@ public class Resources {
         public static AnimationStateData animationData;
 
         public static Animation animationAnimation;
+
+        public static Animation animationDie;
+
+        public static Animation animationHurt;
 
         public static com.esotericsoftware.spine.Skin skinDefault;
     }
@@ -1362,6 +1368,28 @@ public class Resources {
         public static int wolfForce = 1000;
 
         public static int wolfForceDirection = 60;
+
+        public static int podMoveSpeed = 300;
+
+        public static int podHealth = 160;
+
+        public static int podDamage = 10;
+
+        public static int podForce = 1000;
+
+        public static int podAcceleration = 1000;
+
+        public static int podDeceleration = 3000;
+
+        public static float podHurtForceDampenerX = 0.5f;
+
+        public static float podHurtForceDampenerY = 0.5f;
+
+        public static int podChaseDistance = 800;
+
+        public static int podAttackSpeed = 500;
+
+        public static float podShotDelay = 1.5f;
 
         public static boolean debugging = false;
     }

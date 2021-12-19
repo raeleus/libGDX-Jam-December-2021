@@ -26,7 +26,7 @@
         {"name": "powerup_wings1", "id": 17, "_eid": "85617174", "x": 144, "y": 872, "originX": 70, "originY": 73},
         {"name": "powerup_wings2", "id": 18, "_eid": "85645337", "x": 376, "y": 880, "originX": 70, "originY": 73},
         {"name": "powerup_wings3", "id": 19, "_eid": "85655756", "x": 648, "y": 880, "originX": 70, "originY": 73},
-        {"name": "wolf", "id": 20, "_eid": "87998299", "x": 1480, "y": 592, "originX": 50, "originY": 122}
+        {"name": "pod", "id": 21, "_eid": "88042158", "x": 1368, "y": 496, "originX": 97, "originY": 78}
       ]
     },
     {
