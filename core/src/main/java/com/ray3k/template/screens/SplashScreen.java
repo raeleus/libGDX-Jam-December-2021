@@ -9,10 +9,12 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.ray3k.template.*;
+import com.ray3k.template.Resources.*;
 import com.ray3k.template.entities.*;
 import com.ray3k.template.entities.PlayerEntity.*;
 
 import static com.ray3k.template.Core.*;
+import static com.ray3k.template.Resources.Values.*;
 
 public class SplashScreen extends JamScreen {
     private Stage stage;
@@ -41,7 +43,7 @@ public class SplashScreen extends JamScreen {
                 PlayerEntity.enabledWeapons.clear();
                 PlayerEntity.enabledWeapons.add(Weapon.WHIP);
                 Gdx.input.setInputProcessor(null);
-                roomToLoad = "corridor1";
+                roomToLoad = "level4";
                 spawnIndex = 0;
                 defeatedGroxar = false;
                 defeatedJohn = false;
@@ -49,6 +51,7 @@ public class SplashScreen extends JamScreen {
                 defeatedPanda = false;
                 defeatedZebra = false;
                 bossAlive = false;
+                playerHealth = playerMaxHealth;
                 core.transition(new GameScreen());
             }
         });

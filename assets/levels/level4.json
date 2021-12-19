@@ -1,0 +1,403 @@
+{
+  "ogmoVersion": "3.4.0",
+  "width": 2152,
+  "height": 2920,
+  "offsetX": 0,
+  "offsetY": 0,
+  "values": {"zoom": 2},
+  "layers": [
+    {
+      "name": "entities",
+      "_eid": "75147812",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 269,
+      "gridCellsY": 365,
+      "entities": [
+        {"name": "spinner", "id": 15, "_eid": "86192047", "x": 1496, "y": 2376, "originX": 101, "originY": 95, "rotation": 0},
+        {"name": "spinner", "id": 16, "_eid": "86192047", "x": 656, "y": 2384, "originX": 101, "originY": 95, "rotation": 0},
+        {"name": "spinner", "id": 17, "_eid": "86192047", "x": 424, "y": 2384, "originX": 101, "originY": 95, "rotation": 0},
+        {"name": "spinner", "id": 18, "_eid": "86192047", "x": 1296, "y": 2376, "originX": 101, "originY": 95, "rotation": 0},
+        {"name": "powerup_wings1", "id": 19, "_eid": "85617174", "x": 1616.2953579338448, "y": 199.84492006176743, "originX": 70, "originY": 73},
+        {
+          "name": "player",
+          "id": 20,
+          "_eid": "75139371",
+          "x": 1976,
+          "y": 2832,
+          "originX": 35,
+          "originY": 100,
+          "values": {"spawn": 0}
+        },
+        {"name": "door", "id": 21, "_eid": "93731365", "x": 2088, "y": 2848, "originX": 18, "originY": 170},
+        {"name": "bat", "id": 22, "_eid": "86498549", "x": 408, "y": 2000, "originX": 66, "originY": 87},
+        {"name": "bat", "id": 23, "_eid": "86498549", "x": 1432, "y": 1232, "originX": 66, "originY": 87},
+        {"name": "bat", "id": 24, "_eid": "86498549", "x": 360, "y": 288, "originX": 66, "originY": 87},
+        {"name": "heart", "id": 25, "_eid": "85587456", "x": 1528, "y": 1992, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 26, "_eid": "85587456", "x": 1200, "y": 1760, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 27, "_eid": "85587456", "x": 848, "y": 1560, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 28, "_eid": "85587456", "x": 512, "y": 1416, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 29, "_eid": "85587456", "x": 200, "y": 1240, "originX": 39, "originY": 155}
+      ]
+    },
+    {
+      "name": "bounds",
+      "_eid": "75096055",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 269,
+      "gridCellsY": 365,
+      "entities": [
+        {
+          "name": "bounds",
+          "id": 0,
+          "_eid": "75099729",
+          "x": -8,
+          "y": 2848,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 2104, "y": 2848},
+            {"x": 2104, "y": 2888},
+            {"x": -8, "y": 2888}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 1,
+          "_eid": "75099729",
+          "x": 1416,
+          "y": 2072,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 1416, "y": 2008},
+            {"x": 1640, "y": 2008},
+            {"x": 1640, "y": 2072}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 3,
+          "_eid": "75099729",
+          "x": 2104,
+          "y": 2920,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 2104, "y": 96},
+            {"x": 2152, "y": 96},
+            {"x": 2160, "y": 2920}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 7,
+          "_eid": "75099729",
+          "x": 808,
+          "y": 2272,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": -432, "y": 2264},
+            {"x": -432, "y": 2320},
+            {"x": 808, "y": 2328}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 8,
+          "_eid": "75099729",
+          "x": -64,
+          "y": 2848,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": -32, "y": -8},
+            {"x": 8, "y": -8},
+            {"x": -8, "y": 2848}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 10,
+          "_eid": "75099729",
+          "x": -8,
+          "y": -16,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": -8, "y": -56},
+            {"x": 2176, "y": -48},
+            {"x": 2176, "y": -8}
+          ]
+        },
+        {
+          "name": "exit",
+          "id": 11,
+          "_eid": "75119428",
+          "x": 2061,
+          "y": 2854,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 2064, "y": 2496},
+            {"x": 2104, "y": 2496},
+            {"x": 2104, "y": 2848}
+          ],
+          "values": {"nextroom": "level3", "transitiondirection": 180, "spawn": 2}
+        },
+        {
+          "name": "bounds",
+          "id": 14,
+          "_eid": "75099729",
+          "x": 1080,
+          "y": 1840,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 1080, "y": 1776},
+            {"x": 1304, "y": 1776},
+            {"x": 1304, "y": 1840}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 15,
+          "_eid": "75099729",
+          "x": 728,
+          "y": 1648,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 728, "y": 1584},
+            {"x": 952, "y": 1584},
+            {"x": 952, "y": 1648}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 16,
+          "_eid": "75099729",
+          "x": 392,
+          "y": 1496,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 392, "y": 1432},
+            {"x": 616, "y": 1432},
+            {"x": 616, "y": 1496}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 17,
+          "_eid": "75099729",
+          "x": 72,
+          "y": 1320,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 72, "y": 1256},
+            {"x": 296, "y": 1256},
+            {"x": 296, "y": 1320}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 18,
+          "_eid": "75099729",
+          "x": 440,
+          "y": 856,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 440, "y": 792},
+            {"x": 664, "y": 792},
+            {"x": 664, "y": 856}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 19,
+          "_eid": "75099729",
+          "x": 792,
+          "y": 680,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 792, "y": 616},
+            {"x": 1016, "y": 616},
+            {"x": 1016, "y": 680}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 20,
+          "_eid": "75099729",
+          "x": 1128,
+          "y": 528,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 1128, "y": 464},
+            {"x": 1352, "y": 464},
+            {"x": 1352, "y": 528}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 21,
+          "_eid": "75099729",
+          "x": 1480,
+          "y": 344,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 1480, "y": 280},
+            {"x": 1704, "y": 280},
+            {"x": 1704, "y": 344}
+          ]
+        },
+        {
+          "name": "platform",
+          "id": 22,
+          "_eid": "92196262",
+          "x": 864,
+          "y": 2672,
+          "originX": 0,
+          "originY": 0,
+          "nodes": [
+            {"x": 864, "y": 2656},
+            {"x": 1208, "y": 2656},
+            {"x": 1208, "y": 2672}
+          ]
+        },
+        {
+          "name": "platform",
+          "id": 23,
+          "_eid": "92196262",
+          "x": 802.8757099611925,
+          "y": 2369.494510154406,
+          "originX": 0,
+          "originY": 0,
+          "nodes": [
+            {"x": 802.8757099611925, "y": 2353.494510154406},
+            {"x": 1242.8757099611926, "y": 2353.494510154406},
+            {"x": 1242.8757099611926, "y": 2369.494510154406}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 25,
+          "_eid": "75099729",
+          "x": 2176,
+          "y": 2272,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 1264, "y": 2272},
+            {"x": 1264, "y": 2328},
+            {"x": 2176, "y": 2328}
+          ]
+        },
+        {
+          "name": "platform",
+          "id": 26,
+          "_eid": "92196262",
+          "x": 72,
+          "y": 1008,
+          "originX": 0,
+          "originY": 0,
+          "nodes": [
+            {"x": 72, "y": 984},
+            {"x": 312, "y": 984},
+            {"x": 312, "y": 1008}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "foreground",
+      "_eid": "75016182",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 269,
+      "gridCellsY": 365,
+      "decals": [],
+      "folder": "game"
+    },
+    {
+      "name": "background",
+      "_eid": "74947545",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 269,
+      "gridCellsY": 365,
+      "decals": [
+        {"x": 104, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 320, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 528, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 744, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 960, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1168, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1384, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1816, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1600, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2032, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1360, "y": 2304, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1576, "y": 2304, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 704, "y": 2304, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 496, "y": 2304, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 280, "y": 2304, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 56, "y": 2304, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2144, "y": 2104, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2144, "y": 1736, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
+        {"x": -8, "y": 1688, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1792, "y": 2304, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2024, "y": 2304, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2144, "y": 2352, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
+        {"x": -8, "y": 2672, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
+        {"x": -8, "y": 2424, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
+        {"x": -8, "y": 2056, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
+        {"x": 952, "y": 2664, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1128, "y": 2664, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 904, "y": 2360, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1160, "y": 2360, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1040, "y": 2360, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1528, "y": 2040, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1192, "y": 1808, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 840, "y": 1616, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 504, "y": 1464, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 696, "y": 672, "rotation": 0, "texture": "railing.png", "originX": 0.5, "originY": 0.5},
+        {"x": 184, "y": 1288, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 192, "y": 1000, "rotation": 0, "texture": "platform4.png", "originX": 0.5, "originY": 0.5},
+        {"x": 552, "y": 816, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 904, "y": 648, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1240, "y": 488, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1600, "y": 312, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5}
+      ],
+      "folder": "game"
+    },
+    {
+      "name": "stationary",
+      "_eid": "79085479",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 269,
+      "gridCellsY": 365,
+      "decals": [],
+      "folder": "game"
+    }
+  ]
+}

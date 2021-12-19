@@ -39,7 +39,7 @@ public class PlayerEntity extends Entity {
     public static Array<PowerupType> enabledWings = new Array<>();
     private boolean shotgunCharge;
     private float damageTimer;
-    public float health;
+    private int startHealth;
     
     public enum Weapon {
         WHIP, GRENADE, SHOTGUN, CROSS
@@ -52,11 +52,11 @@ public class PlayerEntity extends Entity {
     public void hurt(float damage, float force, float forceDirection) {
         if (damageTimer <= 0) {
             damageTimer = playerDamageTimer;
-            health -= damage;
+            playerHealth -= damage;
             addMotion(force, forceDirection);
             animationState.setAnimation(3, animationHurt, false);
             animationState.addEmptyAnimation(3, 0, 0);
-            if (health <= 0 && !godMode) {
+            if (playerHealth <= 0 && !godMode) {
                 var die = new DieAnimEntity(skeletonData, animationData, animationState.getCurrent(0).getAnimation(), animationState.getCurrent(0).getTrackTime(), animationDie, x, y, skeleton.getRootBone().getRotation(), false);
                 entityController.add(die);
                 die.depth = DEPTH_DEATH_ANIMATION;
@@ -65,6 +65,7 @@ public class PlayerEntity extends Entity {
                 bone.setScale(camera.viewportWidth * camera.zoom, camera.viewportHeight * camera.zoom);
                 bone.setPosition(camera.position.x - x, camera.position.y - y);
                 
+                playerHealth = startHealth;
                 destroy = true;
             }
         }
@@ -72,9 +73,10 @@ public class PlayerEntity extends Entity {
     
     @Override
     public void create() {
+        startHealth = playerHealth;
         player = this;
         depth = DEPTH_PLAYER;
-        health = playerMaxHealth;
+        playerHealth = playerMaxHealth;
         setSkeletonData(skeletonData, animationData);
         animationState.setAnimation(0, animationStand, true);
         animationData.setDefaultMix(.2f);
@@ -341,11 +343,11 @@ public class PlayerEntity extends Entity {
                             new TransitionPush(exit.transitionDirection, Color.BLACK, Interpolation.smoother), 2f);
                 }
             } else if (collision.other.userData instanceof HeartEntity) {
-                if (health < playerMaxHealth) {
+                if (playerHealth < playerMaxHealth) {
                     var heart = (HeartEntity) collision.other.userData;
                     heart.destroy = true;
-                    health += heartHeal;
-                    if (health > playerMaxHealth) health = playerMaxHealth;
+                    playerHealth += heartHeal;
+                    if (playerHealth > playerMaxHealth) playerHealth = playerMaxHealth;
                 }
             } else if (collision.other.userData instanceof PowerupEntity) {
                 var powerup = (PowerupEntity) collision.other.userData;

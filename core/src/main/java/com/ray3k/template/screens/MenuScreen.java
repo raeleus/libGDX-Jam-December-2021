@@ -15,6 +15,7 @@ import com.ray3k.template.entities.PlayerEntity.*;
 
 import static com.ray3k.template.Core.*;
 import static com.ray3k.template.Resources.*;
+import static com.ray3k.template.Resources.Values.*;
 
 public class MenuScreen extends JamScreen {
     private Stage stage;
@@ -54,6 +55,7 @@ public class MenuScreen extends JamScreen {
                 defeatedPanda = false;
                 defeatedZebra = false;
                 bossAlive = false;
+                playerHealth = playerMaxHealth;
                 core.transition(new GameScreen());
             }
         });

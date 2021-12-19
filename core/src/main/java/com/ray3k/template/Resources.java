@@ -1057,6 +1057,8 @@ public class Resources {
     }
 
     public static class Values {
+        public static int playerHealth = 100;
+
         public static int playerMaxHealth = 100;
 
         public static float playerMaxSpeed = 700.0f;
@@ -1089,7 +1091,7 @@ public class Resources {
 
         public static int whipDetectWidth = 300;
 
-        public static int whipDetectHeight = 60;
+        public static int whipDetectHeight = 100;
 
         public static int crossLaunchSpeed = 1500;
 

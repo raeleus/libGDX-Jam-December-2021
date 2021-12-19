@@ -37,7 +37,13 @@
           "originY": 100,
           "values": {"spawn": 1}
         },
-        {"name": "blob", "id": 3, "_eid": "83377466", "x": 1116, "y": 446, "originX": 145, "originY": 256}
+        {"name": "blob", "id": 3, "_eid": "83377466", "x": 1116, "y": 446, "originX": 145, "originY": 256},
+        {"name": "heart", "id": 4, "_eid": "85587456", "x": 657, "y": 426, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 5, "_eid": "85587456", "x": 334, "y": 418.5, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 6, "_eid": "85587456", "x": 499, "y": 421.5, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 7, "_eid": "85587456", "x": 1977, "y": 434.5, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 8, "_eid": "85587456", "x": 1864, "y": 434.5, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 9, "_eid": "85587456", "x": 1743, "y": 434.5, "originX": 39, "originY": 155}
       ]
     },
     {
@@ -120,7 +126,7 @@
             {"x": 2216, "y": 192},
             {"x": 2216, "y": 464}
           ],
-          "values": {"nextroom": "level2", "transitiondirection": 180, "spawn": 0}
+          "values": {"nextroom": "level3", "transitiondirection": 180, "spawn": 0}
         },
         {
           "name": "bounds",

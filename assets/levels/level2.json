@@ -38,6 +38,16 @@
           "originX": 8,
           "originY": 8,
           "values": {"index": 0}
+        },
+        {
+          "name": "player",
+          "id": 6,
+          "_eid": "75139371",
+          "x": 2269.0668222733757,
+          "y": 1868.7465421812997,
+          "originX": 35,
+          "originY": 100,
+          "values": {"spawn": 1}
         }
       ]
     },

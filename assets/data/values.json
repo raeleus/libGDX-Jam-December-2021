@@ -1,4 +1,5 @@
 {
+  "player health" : 100,
   "player max health" : 100,
   "player max speed" : 700.0,
   "player damage timer" : 1.0,
@@ -15,7 +16,7 @@
   "whip force" : 1000,
   "whip force direction" : 60,
   "whip detect width" : 300,
-  "whip detect height" :60,
+  "whip detect height" :100,
   "cross launch speed" : 1500,
   "cross acceleration" : 2000,
   "cross rotation multiplier" : 0.5,

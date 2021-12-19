@@ -6,7 +6,6 @@ import com.dongbat.jbump.Collisions;
 import com.dongbat.jbump.Item;
 import com.dongbat.jbump.Response;
 import com.dongbat.jbump.Response.Result;
-import com.esotericsoftware.spine.AnimationState;
 import com.esotericsoftware.spine.AnimationState.AnimationStateAdapter;
 import com.esotericsoftware.spine.AnimationState.TrackEntry;
 import com.esotericsoftware.spine.Event;
@@ -117,7 +116,7 @@ public class ZebraEntity extends Entity implements Enemy {
                 animationState.setAnimation(2, animationShoot, false);
                 timer = MathUtils.random(zebraBulletDelayMin,  zebraBulletDelayMax);
             }
-            if (player.health <= 50) {
+            if (playerHealth <= 50) {
                 targetX = x;
                 targetY = y;
                 gravityY = 0;
@@ -138,7 +137,7 @@ public class ZebraEntity extends Entity implements Enemy {
             if (timer2 < 0) {
                 randomAttack();
             }
-            if (player.health < 10) mode = Mode.HIDE;
+            if (playerHealth < 10) mode = Mode.HIDE;
         } else if (mode == Mode.FLYING_TAIL) {
             timer2 -= delta;
     
@@ -149,7 +148,7 @@ public class ZebraEntity extends Entity implements Enemy {
                 animationState.setEmptyAnimation(4, 0);
                 randomAttack();
             }
-            if (player.health < 10) mode = Mode.HIDE;
+            if (playerHealth < 10) mode = Mode.HIDE;
         } else if (mode == Mode.HIDE) {
             animationState.setEmptyAnimation(2, 0);
             animationState.setEmptyAnimation(4, 0);
