@@ -7,14 +7,12 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.math.Interpolation;
+import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.*;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 import com.badlogic.gdx.scenes.scene2d.actions.TemporalAction;
-import com.badlogic.gdx.scenes.scene2d.ui.Image;
-import com.badlogic.gdx.scenes.scene2d.ui.Label;
-import com.badlogic.gdx.scenes.scene2d.ui.Stack;
-import com.badlogic.gdx.scenes.scene2d.ui.Table;
+import com.badlogic.gdx.scenes.scene2d.ui.*;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ObjectMap;
@@ -41,6 +39,8 @@ public class GameScreen extends JamScreen {
     public boolean paused;
     public Label healthLabel;
     public Action slowAction;
+
+    public static HealthBar healthBar = new HealthBar();
     
     @Override
     public void show() {
@@ -55,8 +55,9 @@ public class GameScreen extends JamScreen {
         
         var root = new Table();
         root.setFillParent(true);
-        root.align(Align.bottomLeft);
-        root.pad(10);
+        root.align(Align.topLeft);
+        root.padLeft(200 + 32);
+        root.padTop(31);
         stage.addActor(root);
         
         healthLabel = new Label("", skin);
@@ -548,7 +549,7 @@ public class GameScreen extends JamScreen {
         popTable.addActor(selectionImage);
         
     }
-    
+
     @Override
     public void act(float delta) {
         if (!paused) {
@@ -556,9 +557,10 @@ public class GameScreen extends JamScreen {
             vfxManager.update(delta * deltaMultiplier);
         }
         stage.act(delta);
+        healthBar.act(delta);
         GameScreen.gameScreen.healthLabel.setText(Integer.toString(playerHealth));
     }
-    
+
     @Override
     public void draw(float delta) {
         batch.setBlendFunction(GL20.GL_ONE, GL20.GL_ONE_MINUS_SRC_ALPHA);
@@ -578,6 +580,7 @@ public class GameScreen extends JamScreen {
     
         batch.setBlendFunction(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
         stage.draw();
+        healthBar.draw(stage.getViewport(), batch);
     }
     
     @Override
