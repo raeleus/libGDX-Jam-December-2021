@@ -26,7 +26,6 @@
           "originY": 100,
           "values": {"spawn": 0}
         },
-        {"name": "door", "id": 1, "_eid": "93731365", "x": 2096, "y": 920, "originX": 18, "originY": 170},
         {"name": "door", "id": 2, "_eid": "93731365", "x": 16, "y": 528, "originX": 18, "originY": 170},
         {"name": "door", "id": 3, "_eid": "93731365", "x": 16, "y": 1112, "originX": 18, "originY": 170},
         {"name": "jellyfish", "id": 4, "_eid": "85260004", "x": 1192, "y": 1368, "originX": 84, "originY": 106, "rotation": -33},
@@ -38,24 +37,35 @@
         {"name": "jellyfish", "id": 11, "_eid": "85260004", "x": 1320, "y": -288, "originX": 84, "originY": 106, "rotation": -149},
         {
           "name": "player",
-          "id": 13,
-          "_eid": "75139371",
-          "x": 2008,
-          "y": 896,
-          "originX": 35,
-          "originY": 100,
-          "values": {"spawn": 1}
-        },
-        {
-          "name": "player",
           "id": 14,
           "_eid": "75139371",
           "x": 112,
           "y": 512,
           "originX": 35,
           "originY": 100,
-          "values": {"spawn": 2}
-        }
+          "values": {"spawn": 1}
+        },
+        {"name": "blob", "id": 15, "_eid": "83377466", "x": 440, "y": 480, "originX": 145, "originY": 256},
+        {"name": "blob", "id": 16, "_eid": "83377466", "x": 1168, "y": 488, "originX": 145, "originY": 256},
+        {"name": "jellyfish", "id": 17, "_eid": "85260004", "x": 560, "y": 1408, "originX": 84, "originY": 106, "rotation": -33},
+        {"name": "jellyfish", "id": 18, "_eid": "85260004", "x": 808, "y": 1448, "originX": 84, "originY": 106, "rotation": -33},
+        {"name": "jellyfish", "id": 19, "_eid": "85260004", "x": 1064, "y": 1472, "originX": 84, "originY": 106, "rotation": -33},
+        {"name": "jellyfish", "id": 20, "_eid": "85260004", "x": 1600, "y": 1288, "originX": 84, "originY": 106, "rotation": -33},
+        {"name": "jellyfish", "id": 21, "_eid": "85260004", "x": 1848, "y": 1328, "originX": 84, "originY": 106, "rotation": -33},
+        {"name": "jellyfish", "id": 22, "_eid": "85260004", "x": 2104, "y": 1352, "originX": 84, "originY": 106, "rotation": -33},
+        {"name": "jellyfish", "id": 23, "_eid": "85260004", "x": 1016, "y": -224, "originX": 84, "originY": 106, "rotation": -149},
+        {"name": "jellyfish", "id": 24, "_eid": "85260004", "x": 680, "y": -224, "originX": 84, "originY": 106, "rotation": -149},
+        {"name": "jellyfish", "id": 25, "_eid": "85260004", "x": 392, "y": -248, "originX": 84, "originY": 106, "rotation": -149},
+        {"name": "jellyfish", "id": 26, "_eid": "85260004", "x": 1192, "y": -400, "originX": 84, "originY": 106, "rotation": -149},
+        {"name": "jellyfish", "id": 27, "_eid": "85260004", "x": 856, "y": -400, "originX": 84, "originY": 106, "rotation": -149},
+        {"name": "jellyfish", "id": 28, "_eid": "85260004", "x": 568, "y": -424, "originX": 84, "originY": 106, "rotation": -149},
+        {"name": "jellyfish", "id": 29, "_eid": "85260004", "x": 2168, "y": -392, "originX": 84, "originY": 106, "rotation": -149},
+        {"name": "jellyfish", "id": 30, "_eid": "85260004", "x": 1832, "y": -392, "originX": 84, "originY": 106, "rotation": -149},
+        {"name": "jellyfish", "id": 31, "_eid": "85260004", "x": 1544, "y": -416, "originX": 84, "originY": 106, "rotation": -149},
+        {"name": "shooter", "id": 32, "_eid": "87446216", "x": 2016, "y": 456, "originX": 66, "originY": 106, "flippedX": false},
+        {"name": "shooter", "id": 33, "_eid": "87446216", "x": 2016, "y": 248, "originX": 66, "originY": 106, "flippedX": false},
+        {"name": "jumper", "id": 34, "_eid": "87227032", "x": 1896, "y": 880, "originX": 200, "originY": 216},
+        {"name": "jumper", "id": 35, "_eid": "87227032", "x": 1448, "y": 864, "originX": 200, "originY": 216}
       ]
     },
     {
@@ -224,21 +234,6 @@
         },
         {
           "name": "exit",
-          "id": 11,
-          "_eid": "75119428",
-          "x": 2069,
-          "y": 910,
-          "originX": 3,
-          "originY": 3,
-          "nodes": [
-            {"x": 2072, "y": 552},
-            {"x": 2112, "y": 552},
-            {"x": 2112, "y": 904}
-          ],
-          "values": {"nextroom": "level5", "transitiondirection": 180, "spawn": 0}
-        },
-        {
-          "name": "exit",
           "id": 12,
           "_eid": "75119428",
           "x": 0,
@@ -250,7 +245,7 @@
             {"x": 32, "y": 544},
             {"x": -8, "y": 544}
           ],
-          "values": {"nextroom": "level4", "transitiondirection": 0, "spawn": 0}
+          "values": {"nextroom": "level11", "transitiondirection": 0, "spawn": 0}
         },
         {
           "name": "exit",
@@ -265,7 +260,7 @@
             {"x": 48, "y": 784},
             {"x": 40, "y": 1112}
           ],
-          "values": {"nextroom": "level2", "transitiondirection": 0, "spawn": 1}
+          "values": {"nextroom": "corridor5", "transitiondirection": 0, "spawn": 1}
         }
       ]
     },
@@ -317,7 +312,8 @@
         {"x": 8, "y": 16, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
         {"x": 16, "y": 624, "rotation": 0, "texture": "platform2.png", "originX": 0.5, "originY": 0.5},
         {"x": 16.746227801179202, "y": 690.1524018120087, "rotation": 0, "texture": "platform2.png", "originX": 0.5, "originY": 0.5},
-        {"x": 16, "y": 752, "rotation": 0, "texture": "platform2.png", "originX": 0.5, "originY": 0.5}
+        {"x": 16, "y": 752, "rotation": 0, "texture": "platform2.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2144, "y": 736, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5}
       ],
       "folder": "game"
     },

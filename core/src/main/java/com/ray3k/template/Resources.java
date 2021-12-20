@@ -1605,7 +1605,7 @@ public class Resources {
 
         public static boolean debugging = false;
 
-        public static boolean godMode = true;
+        public static boolean godMode = false;
     }
 
     public static class Range {

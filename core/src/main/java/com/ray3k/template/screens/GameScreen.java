@@ -32,13 +32,14 @@ import space.earlygrey.shapedrawer.ShapeDrawer;
 
 import static com.ray3k.template.Core.*;
 import static com.ray3k.template.Resources.*;
+import static com.ray3k.template.Resources.Values.*;
 
 public class GameScreen extends JamScreen {
     public static GameScreen gameScreen;
     public static final Color BG_COLOR = new Color();
     public Stage stage;
     public boolean paused;
-    private Label fpsLabel;
+    public Label healthLabel;
     public Action slowAction;
     
     @Override
@@ -58,8 +59,8 @@ public class GameScreen extends JamScreen {
         root.pad(10);
         stage.addActor(root);
         
-        fpsLabel = new Label("", skin);
-        root.add(fpsLabel);
+        healthLabel = new Label("", skin);
+        root.add(healthLabel);
         
         stage.addListener(new InputListener() {
             @Override
@@ -551,8 +552,7 @@ public class GameScreen extends JamScreen {
             vfxManager.update(delta * deltaMultiplier);
         }
         stage.act(delta);
-        
-        fpsLabel.setText(Gdx.graphics.getFramesPerSecond());
+        GameScreen.gameScreen.healthLabel.setText(Integer.toString(playerHealth));
     }
     
     @Override

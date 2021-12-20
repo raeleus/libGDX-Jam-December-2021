@@ -20,16 +20,33 @@ public class DialogMaker {
                 if (!defeatedZebra) {
                     deltaMultiplier = 0;
                     var pop = createTable(() -> showMessage2());
-    
+            
                     var image = new Image(skin.getDrawable("icon-zebra"));
                     image.setScaling(Scaling.none);
                     pop.add(image);
-    
+            
                     var label = new TypingLabel(
                             "Ahh Dragon Queen, at long last! You will finally meet your doom. HA HA HA HA HA!", skin);
                     label.setWrap(true);
                     pop.add(label).grow();
-    
+            
+                    pop.show(gameScreen.stage);
+                }
+                break;
+            case 1:
+                if (!defeatedGroxar) {
+                    deltaMultiplier = 0;
+                    var pop = createTable(() -> showMessage4());
+            
+                    var image = new Image(skin.getDrawable("icon-groxar"));
+                    image.setScaling(Scaling.none);
+                    pop.add(image);
+            
+                    var label = new TypingLabel(
+                            "...", skin);
+                    label.setWrap(true);
+                    pop.add(label).grow();
+            
                     pop.show(gameScreen.stage);
                 }
                 break;
@@ -60,6 +77,22 @@ public class DialogMaker {
         pop.add(image);
         
         var label = new TypingLabel("I was and YOU will be too. Have at you!!!", skin);
+        label.setWrap(true);
+        pop.add(label).grow();
+        
+        pop.show(gameScreen.stage);
+    }
+    
+    private static void showMessage4() {
+        var pop = createTable(() -> {
+            deltaMultiplier = 1;
+        });
+        
+        var image = new Image(skin.getDrawable("icon-dq"));
+        image.setScaling(Scaling.none);
+        pop.add(image);
+        
+        var label = new TypingLabel("What???", skin);
         label.setWrap(true);
         pop.add(label).grow();
         

@@ -34,7 +34,7 @@ public class PlayerEntity extends Entity {
     public boolean selectingWeapon;
     private float jumpTime;
     private int jumps;
-    public Weapon weapon;
+    public static Weapon weapon;
     public static Array<Weapon> enabledWeapons = new Array<>();
     public static Array<PowerupType> enabledWings = new Array<>();
     private boolean shotgunCharge;
@@ -76,13 +76,11 @@ public class PlayerEntity extends Entity {
         startHealth = playerHealth;
         player = this;
         depth = DEPTH_PLAYER;
-        playerHealth = playerMaxHealth;
         setSkeletonData(skeletonData, animationData);
         animationState.setAnimation(0, animationStand, true);
         animationData.setDefaultMix(.2f);
         setCollisionBox(skeleton.findSlot("bbox"), skeletonBounds, collisionFilter);
         gravityY = playerGravity;
-        weapon = WHIP;
         weaponBone = skeleton.findBone("weapon");
         animationState.addListener(new AnimationStateAdapter() {
             @Override

@@ -27,15 +27,7 @@
           "values": {"spawn": 0}
         },
         {"name": "door", "id": 1, "_eid": "93731365", "x": 2096, "y": 920, "originX": 18, "originY": 170},
-        {"name": "door", "id": 2, "_eid": "93731365", "x": 16, "y": 528, "originX": 18, "originY": 170},
         {"name": "door", "id": 3, "_eid": "93731365", "x": 16, "y": 1112, "originX": 18, "originY": 170},
-        {"name": "jellyfish", "id": 4, "_eid": "85260004", "x": 1192, "y": 1368, "originX": 84, "originY": 106, "rotation": -33},
-        {"name": "jellyfish", "id": 5, "_eid": "85260004", "x": 1440, "y": 1408, "originX": 84, "originY": 106, "rotation": -33},
-        {"name": "jellyfish", "id": 6, "_eid": "85260004", "x": 1696, "y": 1432, "originX": 84, "originY": 106, "rotation": -33},
-        {"name": "blob", "id": 7, "_eid": "83377466", "x": 840, "y": 496, "originX": 145, "originY": 256},
-        {"name": "jellyfish", "id": 8, "_eid": "85260004", "x": 1944, "y": -264, "originX": 84, "originY": 106, "rotation": -149},
-        {"name": "jellyfish", "id": 10, "_eid": "85260004", "x": 1608, "y": -264, "originX": 84, "originY": 106, "rotation": -149},
-        {"name": "jellyfish", "id": 11, "_eid": "85260004", "x": 1320, "y": -288, "originX": 84, "originY": 106, "rotation": -149},
         {
           "name": "player",
           "id": 13,
@@ -46,16 +38,14 @@
           "originY": 100,
           "values": {"spawn": 1}
         },
-        {
-          "name": "player",
-          "id": 14,
-          "_eid": "75139371",
-          "x": 112,
-          "y": 512,
-          "originX": 35,
-          "originY": 100,
-          "values": {"spawn": 2}
-        }
+        {"name": "pirate", "id": 15, "_eid": "86635497", "x": 1376, "y": 896, "originX": 45, "originY": 86},
+        {"name": "pirate", "id": 16, "_eid": "86635497", "x": 528, "y": 528, "originX": 45, "originY": 86},
+        {"name": "heart", "id": 17, "_eid": "85587456", "x": 496, "y": 1096, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 18, "_eid": "85587456", "x": 824, "y": 1096, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 19, "_eid": "85587456", "x": 1088, "y": 520, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 20, "_eid": "85587456", "x": 816, "y": 528, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 21, "_eid": "85587456", "x": 624, "y": 520, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 22, "_eid": "85587456", "x": 280, "y": 520, "originX": 39, "originY": 155}
       ]
     },
     {
@@ -189,23 +179,9 @@
           "originX": 3,
           "originY": 3,
           "nodes": [
-            {"x": -56, "y": 592},
-            {"x": 0, "y": 592},
+            {"x": -56, "y": 8},
+            {"x": -8, "y": 8},
             {"x": -8, "y": 1112}
-          ]
-        },
-        {
-          "name": "bounds",
-          "id": 9,
-          "_eid": "75099729",
-          "x": 0,
-          "y": 536,
-          "originX": 3,
-          "originY": 3,
-          "nodes": [
-            {"x": -48, "y": 536},
-            {"x": -48, "y": 0},
-            {"x": 8, "y": 0}
           ]
         },
         {
@@ -235,22 +211,7 @@
             {"x": 2112, "y": 552},
             {"x": 2112, "y": 904}
           ],
-          "values": {"nextroom": "level5", "transitiondirection": 180, "spawn": 0}
-        },
-        {
-          "name": "exit",
-          "id": 12,
-          "_eid": "75119428",
-          "x": 0,
-          "y": 200,
-          "originX": 3,
-          "originY": 3,
-          "nodes": [
-            {"x": 40, "y": 200},
-            {"x": 32, "y": 544},
-            {"x": -8, "y": 544}
-          ],
-          "values": {"nextroom": "level4", "transitiondirection": 0, "spawn": 0}
+          "values": {"nextroom": "corridor3", "transitiondirection": 180, "spawn": 0}
         },
         {
           "name": "exit",
@@ -265,7 +226,7 @@
             {"x": 48, "y": 784},
             {"x": 40, "y": 1112}
           ],
-          "values": {"nextroom": "level2", "transitiondirection": 0, "spawn": 1}
+          "values": {"nextroom": "level3", "transitiondirection": 0, "spawn": 1}
         }
       ]
     },
@@ -317,7 +278,8 @@
         {"x": 8, "y": 16, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
         {"x": 16, "y": 624, "rotation": 0, "texture": "platform2.png", "originX": 0.5, "originY": 0.5},
         {"x": 16.746227801179202, "y": 690.1524018120087, "rotation": 0, "texture": "platform2.png", "originX": 0.5, "originY": 0.5},
-        {"x": 16, "y": 752, "rotation": 0, "texture": "platform2.png", "originX": 0.5, "originY": 0.5}
+        {"x": 16, "y": 752, "rotation": 0, "texture": "platform2.png", "originX": 0.5, "originY": 0.5},
+        {"x": 8, "y": 360, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5}
       ],
       "folder": "game"
     },

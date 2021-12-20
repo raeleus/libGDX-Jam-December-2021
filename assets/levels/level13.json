@@ -1,0 +1,203 @@
+{
+  "ogmoVersion": "3.4.0",
+  "width": 2152,
+  "height": 2920,
+  "offsetX": 0,
+  "offsetY": 0,
+  "values": {"zoom": 2},
+  "layers": [
+    {
+      "name": "entities",
+      "_eid": "75147812",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 269,
+      "gridCellsY": 365,
+      "entities": [
+        {
+          "name": "player",
+          "id": 20,
+          "_eid": "75139371",
+          "x": 1976,
+          "y": 2832,
+          "originX": 35,
+          "originY": 100,
+          "values": {"spawn": 0}
+        },
+        {"name": "door", "id": 21, "_eid": "93731365", "x": 2088, "y": 2848, "originX": 18, "originY": 170},
+        {
+          "name": "player",
+          "id": 36,
+          "_eid": "75139371",
+          "x": 144,
+          "y": 2784,
+          "originX": 35,
+          "originY": 100,
+          "values": {"spawn": 1}
+        },
+        {"name": "door", "id": 37, "_eid": "93731365", "x": 24, "y": 2848, "originX": 18, "originY": 170},
+        {"name": "heart", "id": 38, "_eid": "85587456", "x": 640, "y": 2816, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 39, "_eid": "85587456", "x": 944, "y": 2816, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 40, "_eid": "85587456", "x": 1232, "y": 2808, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 41, "_eid": "85587456", "x": 1448, "y": 2816, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 42, "_eid": "85587456", "x": 1656, "y": 2808, "originX": 39, "originY": 155},
+        {"name": "skeleton", "id": 69, "_eid": "87898942", "x": 968, "y": 2792, "originX": 47, "originY": 97},
+        {"name": "skeleton", "id": 70, "_eid": "87898942", "x": 752, "y": 2792, "originX": 47, "originY": 97},
+        {"name": "skeleton", "id": 71, "_eid": "87898942", "x": 1264, "y": 2808, "originX": 47, "originY": 97}
+      ]
+    },
+    {
+      "name": "bounds",
+      "_eid": "75096055",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 269,
+      "gridCellsY": 365,
+      "entities": [
+        {
+          "name": "bounds",
+          "id": 0,
+          "_eid": "75099729",
+          "x": -8,
+          "y": 2848,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 2104, "y": 2848},
+            {"x": 2104, "y": 2888},
+            {"x": -8, "y": 2888}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 3,
+          "_eid": "75099729",
+          "x": 2104,
+          "y": 2920,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 2104, "y": 96},
+            {"x": 2152, "y": 96},
+            {"x": 2160, "y": 2920}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 8,
+          "_eid": "75099729",
+          "x": -64,
+          "y": 2848,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": -32, "y": -8},
+            {"x": 8, "y": -8},
+            {"x": -8, "y": 2848}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 10,
+          "_eid": "75099729",
+          "x": -8,
+          "y": -16,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": -8, "y": -56},
+            {"x": 2176, "y": -48},
+            {"x": 2176, "y": -8}
+          ]
+        },
+        {
+          "name": "exit",
+          "id": 11,
+          "_eid": "75119428",
+          "x": 2061,
+          "y": 2854,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 2064, "y": 2496},
+            {"x": 2104, "y": 2496},
+            {"x": 2104, "y": 2848}
+          ],
+          "values": {"nextroom": "level12", "transitiondirection": 180, "spawn": 1}
+        },
+        {
+          "name": "exit",
+          "id": 37,
+          "_eid": "75119428",
+          "x": -3,
+          "y": 2854,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 0, "y": 2496},
+            {"x": 40, "y": 2496},
+            {"x": 40, "y": 2848}
+          ],
+          "values": {"nextroom": "level14", "transitiondirection": 0, "spawn": 0}
+        }
+      ]
+    },
+    {
+      "name": "foreground",
+      "_eid": "75016182",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 269,
+      "gridCellsY": 365,
+      "decals": [],
+      "folder": "game"
+    },
+    {
+      "name": "background",
+      "_eid": "74947545",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 269,
+      "gridCellsY": 365,
+      "decals": [
+        {"x": 104, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 320, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 528, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 744, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 960, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1168, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1384, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1816, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1600, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2032, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2144, "y": 2104, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2144, "y": 1736, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
+        {"x": -8, "y": 1488, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2144, "y": 2352, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
+        {"x": -8, "y": 2224, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
+        {"x": -8, "y": 1856, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5}
+      ],
+      "folder": "game"
+    },
+    {
+      "name": "stationary",
+      "_eid": "79085479",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 269,
+      "gridCellsY": 365,
+      "decals": [],
+      "folder": "game"
+    }
+  ]
+}

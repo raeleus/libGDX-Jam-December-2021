@@ -56,6 +56,7 @@ public class MenuScreen extends JamScreen {
                 defeatedZebra = false;
                 bossAlive = false;
                 playerHealth = playerMaxHealth;
+                PlayerEntity.weapon = Weapon.WHIP;
                 core.transition(new GameScreen());
             }
         });

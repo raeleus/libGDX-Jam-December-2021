@@ -1,0 +1,394 @@
+{
+  "ogmoVersion": "3.4.0",
+  "width": 2152,
+  "height": 2920,
+  "offsetX": 0,
+  "offsetY": 0,
+  "values": {"zoom": 2},
+  "layers": [
+    {
+      "name": "entities",
+      "_eid": "75147812",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 269,
+      "gridCellsY": 365,
+      "entities": [
+        {
+          "name": "player",
+          "id": 20,
+          "_eid": "75139371",
+          "x": 1976,
+          "y": 2832,
+          "originX": 35,
+          "originY": 100,
+          "values": {"spawn": 1}
+        },
+        {"name": "door", "id": 21, "_eid": "93731365", "x": 2088, "y": 2848, "originX": 18, "originY": 170},
+        {"name": "frozen", "id": 30, "_eid": "87580295", "x": 1896, "y": 1968, "originX": 70, "originY": 91},
+        {"name": "frozen", "id": 31, "_eid": "87580295", "x": 416, "y": 2192, "originX": 70, "originY": 91},
+        {"name": "frozen", "id": 32, "_eid": "87580295", "x": 1080, "y": 1392, "originX": 70, "originY": 91},
+        {"name": "frozen", "id": 33, "_eid": "87580295", "x": 440, "y": 704, "originX": 70, "originY": 91},
+        {"name": "frozen", "id": 34, "_eid": "87580295", "x": 1768, "y": 440, "originX": 70, "originY": 91},
+        {"name": "powerup_wings2", "id": 35, "_eid": "85645337", "x": 320, "y": 184, "originX": 70, "originY": 73},
+        {
+          "name": "player",
+          "id": 36,
+          "_eid": "75139371",
+          "x": 144,
+          "y": 2784,
+          "originX": 35,
+          "originY": 100,
+          "values": {"spawn": 0}
+        },
+        {"name": "door", "id": 37, "_eid": "93731365", "x": 24, "y": 2848, "originX": 18, "originY": 170}
+      ]
+    },
+    {
+      "name": "bounds",
+      "_eid": "75096055",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 269,
+      "gridCellsY": 365,
+      "entities": [
+        {
+          "name": "bounds",
+          "id": 0,
+          "_eid": "75099729",
+          "x": -8,
+          "y": 2848,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 2104, "y": 2848},
+            {"x": 2104, "y": 2888},
+            {"x": -8, "y": 2888}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 3,
+          "_eid": "75099729",
+          "x": 2104,
+          "y": 2920,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 2104, "y": 96},
+            {"x": 2152, "y": 96},
+            {"x": 2160, "y": 2920}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 8,
+          "_eid": "75099729",
+          "x": -64,
+          "y": 2848,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": -32, "y": -8},
+            {"x": 8, "y": -8},
+            {"x": -8, "y": 2848}
+          ]
+        },
+        {
+          "name": "bounds",
+          "id": 10,
+          "_eid": "75099729",
+          "x": -8,
+          "y": -16,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": -8, "y": -56},
+            {"x": 2176, "y": -48},
+            {"x": 2176, "y": -8}
+          ]
+        },
+        {
+          "name": "exit",
+          "id": 11,
+          "_eid": "75119428",
+          "x": 2061,
+          "y": 2854,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 2064, "y": 2496},
+            {"x": 2104, "y": 2496},
+            {"x": 2104, "y": 2848}
+          ],
+          "values": {"nextroom": "corridor4", "transitiondirection": 180, "spawn": 0}
+        },
+        {
+          "name": "platform",
+          "id": 22,
+          "_eid": "92196262",
+          "x": 680,
+          "y": 2648,
+          "originX": 0,
+          "originY": 0,
+          "nodes": [
+            {"x": 680, "y": 2632},
+            {"x": 1024, "y": 2632},
+            {"x": 1024, "y": 2648}
+          ]
+        },
+        {
+          "name": "platform",
+          "id": 23,
+          "_eid": "92196262",
+          "x": 106.87570996119246,
+          "y": 2369.494510154406,
+          "originX": 0,
+          "originY": 0,
+          "nodes": [
+            {"x": 106.87570996119246, "y": 2353.494510154406},
+            {"x": 546.8757099611926, "y": 2353.494510154406},
+            {"x": 546.8757099611926, "y": 2369.494510154406}
+          ]
+        },
+        {
+          "name": "platform",
+          "id": 27,
+          "_eid": "92196262",
+          "x": 936,
+          "y": 2240,
+          "originX": 0,
+          "originY": 0,
+          "nodes": [
+            {"x": 936, "y": 2224},
+            {"x": 1280, "y": 2224},
+            {"x": 1280, "y": 2240}
+          ]
+        },
+        {
+          "name": "platform",
+          "id": 28,
+          "_eid": "92196262",
+          "x": 1576,
+          "y": 2320,
+          "originX": 0,
+          "originY": 0,
+          "nodes": [
+            {"x": 1576, "y": 2304},
+            {"x": 1920, "y": 2304},
+            {"x": 1920, "y": 2320}
+          ]
+        },
+        {
+          "name": "platform",
+          "id": 29,
+          "_eid": "92196262",
+          "x": 392,
+          "y": 1872,
+          "originX": 0,
+          "originY": 0,
+          "nodes": [
+            {"x": 392, "y": 1856},
+            {"x": 736, "y": 1856},
+            {"x": 736, "y": 1872}
+          ]
+        },
+        {
+          "name": "platform",
+          "id": 30,
+          "_eid": "92196262",
+          "x": 1440,
+          "y": 1616,
+          "originX": 0,
+          "originY": 0,
+          "nodes": [
+            {"x": 1440, "y": 1600},
+            {"x": 1784, "y": 1600},
+            {"x": 1784, "y": 1616}
+          ]
+        },
+        {
+          "name": "platform",
+          "id": 31,
+          "_eid": "92196262",
+          "x": 760,
+          "y": 1200,
+          "originX": 0,
+          "originY": 0,
+          "nodes": [
+            {"x": 760, "y": 1184},
+            {"x": 1104, "y": 1184},
+            {"x": 1104, "y": 1200}
+          ]
+        },
+        {
+          "name": "platform",
+          "id": 32,
+          "_eid": "92196262",
+          "x": 152,
+          "y": 872,
+          "originX": 0,
+          "originY": 0,
+          "nodes": [
+            {"x": 152, "y": 856},
+            {"x": 496, "y": 856},
+            {"x": 496, "y": 872}
+          ]
+        },
+        {
+          "name": "platform",
+          "id": 33,
+          "_eid": "92196262",
+          "x": 1472,
+          "y": 992,
+          "originX": 0,
+          "originY": 0,
+          "nodes": [
+            {"x": 1472, "y": 976},
+            {"x": 1816, "y": 976},
+            {"x": 1816, "y": 992}
+          ]
+        },
+        {
+          "name": "platform",
+          "id": 34,
+          "_eid": "92196262",
+          "x": 672,
+          "y": 568,
+          "originX": 0,
+          "originY": 0,
+          "nodes": [
+            {"x": 672, "y": 552},
+            {"x": 1016, "y": 552},
+            {"x": 1016, "y": 568}
+          ]
+        },
+        {
+          "name": "platform",
+          "id": 35,
+          "_eid": "92196262",
+          "x": 120,
+          "y": 360,
+          "originX": 0,
+          "originY": 0,
+          "nodes": [
+            {"x": 120, "y": 344},
+            {"x": 464, "y": 344},
+            {"x": 464, "y": 360}
+          ]
+        },
+        {
+          "name": "platform",
+          "id": 36,
+          "_eid": "92196262",
+          "x": 1488,
+          "y": 552,
+          "originX": 0,
+          "originY": 0,
+          "nodes": [
+            {"x": 1488, "y": 536},
+            {"x": 1832, "y": 536},
+            {"x": 1832, "y": 552}
+          ]
+        },
+        {
+          "name": "exit",
+          "id": 37,
+          "_eid": "75119428",
+          "x": -3,
+          "y": 2854,
+          "originX": 3,
+          "originY": 3,
+          "nodes": [
+            {"x": 0, "y": 2496},
+            {"x": 40, "y": 2496},
+            {"x": 40, "y": 2848}
+          ],
+          "values": {"nextroom": "corridor3", "transitiondirection": 180, "spawn": 1}
+        }
+      ]
+    },
+    {
+      "name": "foreground",
+      "_eid": "75016182",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 269,
+      "gridCellsY": 365,
+      "decals": [],
+      "folder": "game"
+    },
+    {
+      "name": "background",
+      "_eid": "74947545",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 269,
+      "gridCellsY": 365,
+      "decals": [
+        {"x": 104, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 320, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 528, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 744, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 960, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1168, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1384, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1816, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1600, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2032, "y": 2880, "rotation": 0, "texture": "platform6.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2144, "y": 2104, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2144, "y": 1736, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
+        {"x": -8, "y": 1488, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
+        {"x": 2144, "y": 2352, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
+        {"x": -8, "y": 2224, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
+        {"x": -8, "y": 1856, "rotation": 0, "texture": "pillar2.png", "originX": 0.5, "originY": 0.5},
+        {"x": 776, "y": 2640, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 952, "y": 2640, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 200, "y": 2360, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 456, "y": 2360, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 336, "y": 2360, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1192, "y": 2232, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1016, "y": 2232, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1848, "y": 2312, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1672, "y": 2312, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 640, "y": 1864, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 464, "y": 1864, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1704, "y": 1608, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1528, "y": 1608, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1016, "y": 1192, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 840, "y": 1192, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1736, "y": 984, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1560, "y": 984, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 440, "y": 864, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 264, "y": 864, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 944, "y": 560, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 768, "y": 560, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1744, "y": 544, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 1568, "y": 544, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 368, "y": 352, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5},
+        {"x": 192, "y": 352, "rotation": 0, "texture": "platform3.png", "originX": 0.5, "originY": 0.5}
+      ],
+      "folder": "game"
+    },
+    {
+      "name": "stationary",
+      "_eid": "79085479",
+      "offsetX": 0,
+      "offsetY": 0,
+      "gridCellWidth": 8,
+      "gridCellHeight": 8,
+      "gridCellsX": 269,
+      "gridCellsY": 365,
+      "decals": [],
+      "folder": "game"
+    }
+  ]
+}
