@@ -1,5 +1,6 @@
 package com.ray3k.template.entities;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.math.MathUtils;
 import com.dongbat.jbump.Collisions;
 import com.dongbat.jbump.Response.Result;
@@ -19,6 +20,7 @@ public class DieAnimEntity extends Entity {
     private boolean explosions;
     public boolean reloadOnDeath;
     private Slot bbox;
+    public boolean creditsOnDeath;
     
     public DieAnimEntity(SkeletonData skeletonData, AnimationStateData animationStateData, Animation currentAnimation, float time, Animation deathAnimation, float x, float y, float rotation, boolean explosions) {
         this.explosions = explosions;
@@ -37,7 +39,10 @@ public class DieAnimEntity extends Entity {
             public void complete(TrackEntry entry) {
                 if (entry.getTrackIndex() == 1) {
                     destroy = true;
-                    if (reloadOnDeath) core.transition(new GameScreen());
+                    Gdx.app.postRunnable(() -> {
+                        if (reloadOnDeath) core.transition(new GameScreen());
+                        else if (creditsOnDeath) core.transition(new CreditsScreen());
+                    });
                 }
             }
         });

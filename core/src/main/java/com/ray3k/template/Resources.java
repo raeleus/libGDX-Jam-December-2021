@@ -1401,7 +1401,7 @@ public class Resources {
 
         public static int podMoveSpeed = 300;
 
-        public static int podHealth = 160;
+        public static int podHealth = 20;
 
         public static int podDamage = 10;
 
@@ -1415,7 +1415,7 @@ public class Resources {
 
         public static float podHurtForceDampenerY = 0.5f;
 
-        public static int podChaseDistance = 800;
+        public static int podChaseDistance = 2000000;
 
         public static int podAttackSpeed = 500;
 
@@ -1591,7 +1591,7 @@ public class Resources {
 
         public static int lyzeForceDirection = 60;
 
-        public static float johnHealth = 300.0f;
+        public static float johnHealth = 1000.0f;
 
         public static int johnDamage = 10;
 

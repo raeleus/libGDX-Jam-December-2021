@@ -162,7 +162,7 @@ public class LyzeEntity extends Entity implements Enemy {
             float playerDirection = Utils.pointDirection(getBboxCenterX(), getBboxCenterY(), player.getBboxCenterX(),
                     player.getBboxCenterY());
             boolean playerToRight = playerDirection < 90 || playerDirection > 270;
-    
+
             for (int i = 0; i < collisions.size(); i++) {
                 var collision = collisions.get(i);
                 if (collision.other.userData instanceof PlayerEntity) {

@@ -25,6 +25,7 @@ public class JohnEntity extends Entity implements Enemy {
             var die = new DieAnimEntity(skeletonData, animationData, animationState.getCurrent(0).getAnimation(),
                     animationState.getCurrent(0).getTrackTime(), animationDie, x, y,
                     skeleton.getRootBone().getRotation(), true);
+            die.creditsOnDeath = true;
             entityController.add(die);
         }
         animationState.setAnimation(1, animationHurt, false);

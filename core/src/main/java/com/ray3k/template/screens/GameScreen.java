@@ -395,6 +395,10 @@ public class GameScreen extends JamScreen {
                     case "dialog":
                         DialogMaker.show(valuesMap.get("index").asInt());
                         break;
+                    case "podspawner":
+                        var podSpawner = new PodSpawnerEntity();
+                        entityController.add(podSpawner);
+                        break;
                 }
             }
     
