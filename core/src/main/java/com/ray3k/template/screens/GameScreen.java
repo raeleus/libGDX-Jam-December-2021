@@ -7,15 +7,16 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.math.Interpolation;
-import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.*;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 import com.badlogic.gdx.scenes.scene2d.actions.TemporalAction;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
+import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ObjectMap;
+import com.badlogic.gdx.utils.viewport.ExtendViewport;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.ray3k.stripe.PopTable;
@@ -41,7 +42,8 @@ public class GameScreen extends JamScreen {
     public Action slowAction;
 
     public static HealthBar healthBar = new HealthBar();
-    
+    public static MobileControlsUi mobileControlsUi = new MobileControlsUi(new ExtendViewport(1024, 576), skin);
+
     @Override
     public void show() {
         super.show();
@@ -88,10 +90,12 @@ public class GameScreen extends JamScreen {
         });
     
         stage.addListener(new DebugListener());
-    
-        InputMultiplexer inputMultiplexer = new InputMultiplexer(stage, this);
-        Gdx.input.setInputProcessor(inputMultiplexer);
-    
+
+        if (NATIVES.isMobile())
+            Gdx.input.setInputProcessor(new InputMultiplexer(stage, mobileControlsUi, this));
+        else
+            Gdx.input.setInputProcessor(new InputMultiplexer(stage, this));
+
         camera = new OrthographicCamera();
         viewport = new FitViewport(1024, 576, camera);
     
@@ -437,10 +441,34 @@ public class GameScreen extends JamScreen {
         };
         stage.addAction(slowAction);
         var selectionImage = new Image(skin.getDrawable("powerup-selection"));
-        var whipImage = new Image(skin.getDrawable("powerup-whip"));
-        var shotgunImage = new Image(skin.getDrawable("powerup-shotgun"));
-        var grenadeImage = new Image(skin.getDrawable("powerup-grenade"));
-        var crossImage = new Image(skin.getDrawable("powerup-cross"));
+        var whipImage = new ImageButton(skin.getDrawable("powerup-whip"));
+        whipImage.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                MOBILE_CONTROLS.setJustPressedOnly(Binding.JUMP, true);
+            }
+        });
+        var shotgunImage = new ImageButton(skin.getDrawable("powerup-shotgun"));
+        shotgunImage.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                MOBILE_CONTROLS.setJustPressedOnly(Binding.LEFT, true);
+            }
+        });
+        var grenadeImage = new ImageButton(skin.getDrawable("powerup-grenade"));
+        grenadeImage.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                MOBILE_CONTROLS.setJustPressedOnly(Binding.RIGHT, true);
+            }
+        });
+        var crossImage = new ImageButton(skin.getDrawable("powerup-cross"));
+        crossImage.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                MOBILE_CONTROLS.setJustPressedOnly(Binding.DOWN, true);
+            }
+        });
         
         var popTable = new PopTable() {
             float hideTimer;
@@ -557,6 +585,8 @@ public class GameScreen extends JamScreen {
             vfxManager.update(delta * deltaMultiplier);
         }
         stage.act(delta);
+        if (NATIVES.isMobile())
+            mobileControlsUi.act(delta);
         healthBar.act(delta);
         GameScreen.gameScreen.healthLabel.setText(Integer.toString(playerHealth));
     }
@@ -580,6 +610,8 @@ public class GameScreen extends JamScreen {
     
         batch.setBlendFunction(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
         stage.draw();
+        if (NATIVES.isMobile())
+            mobileControlsUi.draw();
         healthBar.draw(stage.getViewport(), batch);
     }
     

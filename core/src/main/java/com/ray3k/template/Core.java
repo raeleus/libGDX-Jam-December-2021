@@ -45,6 +45,7 @@ import java.util.Objects;
 import static com.ray3k.template.Resources.*;
 
 public class Core extends JamGame {
+    public static Natives NATIVES;
     public static final String PROJECT_NAME = "libGDX Jam December 2021";
     public final static IntArray keysJustPressed = new IntArray();
     public final static IntArray buttonsJustPressed = new IntArray();
@@ -63,6 +64,7 @@ public class Core extends JamGame {
     public final static int ANY_SCROLL = 0;
     public final static ControllerValue ANY_CONTROLLER_BUTTON = new ControllerValue(null, -1, 0);
     public final static ControllerValue ANY_CONTROLLER_AXIS = new ControllerValue(null, -1, 0);
+    public final static MobileControls MOBILE_CONTROLS = new MobileControls();
     public final static ObjectMap<Controller, ControllerHandler> controllerMap = new ObjectMap<>();
     final static long MS_PER_UPDATE = 10;
     static final int MAX_VERTEX_SIZE = 32767;
@@ -108,7 +110,13 @@ public class Core extends JamGame {
     public static boolean defeatedLyze;
     public static boolean defeatedGroxar;
     public static boolean defeatedJohn;
-    
+
+    public Core(Natives natives) {
+        super();
+
+        NATIVES = natives;
+    }
+
     public static void playBattle() {
         bgm_battle.setLooping(true);
         bgm_battle.setVolume(0);
@@ -357,6 +365,9 @@ public class Core extends JamGame {
     }
     
     public static boolean isBindingPressed(Binding binding) {
+        if (MOBILE_CONTROLS.isPressed(binding))
+            return true;
+
         if (keyBindings.containsKey(binding)) {
             return isKeyPressed(keyBindings.get(binding, Keys.ANY_KEY));
         } else if (buttonBindings.containsKey(binding)) {
@@ -416,6 +427,9 @@ public class Core extends JamGame {
     }
     
     public static boolean isBindingJustPressed(Binding binding) {
+        if (MOBILE_CONTROLS.isJustPressed(binding))
+            return true;
+
         if (keyBindings.containsKey(binding)) {
             return isKeyJustPressed(keyBindings.get(binding, Keys.ANY_KEY));
         } else if (buttonBindings.containsKey(binding)) {

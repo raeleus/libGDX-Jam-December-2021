@@ -20,7 +20,7 @@ public class Lwjgl3Launcher implements CrossPlatformWorker {
 
 	private static Lwjgl3Application createApplication() {
 		crossPlatformWorker = new Lwjgl3Launcher();
-		return new Lwjgl3Application(new Core(), getDefaultConfiguration());
+		return new Lwjgl3Application(new Core(new Lwjgl3Natives()), getDefaultConfiguration());
 	}
 
 	private static Lwjgl3ApplicationConfiguration getDefaultConfiguration() {

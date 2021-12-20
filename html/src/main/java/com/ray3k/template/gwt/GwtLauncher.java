@@ -55,7 +55,7 @@ public class GwtLauncher extends GwtApplication implements CrossPlatformWorker {
     
     @Override
     public ApplicationListener createApplicationListener () {
-        Core core = new Core();
+        Core core = new Core(new GwtNatives());
         crossPlatformWorker = this;
         return core;
     }
