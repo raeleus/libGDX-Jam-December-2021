@@ -11,6 +11,7 @@ import com.esotericsoftware.spine.AnimationState.TrackEntry;
 import com.ray3k.template.*;
 
 import static com.ray3k.template.Core.*;
+import static com.ray3k.template.Resources.*;
 import static com.ray3k.template.Resources.SpineGroxar.*;
 import static com.ray3k.template.Resources.Values.*;
 
@@ -163,6 +164,7 @@ public class GroxarEntity extends Entity implements Enemy {
         bossAlive = false;
         playExplore();
         defeatedGroxar = true;
+        sfx_bossDie.play(sfx);
     }
     
     @Override

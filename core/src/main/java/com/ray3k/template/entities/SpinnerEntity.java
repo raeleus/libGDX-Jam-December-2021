@@ -16,6 +16,7 @@ import com.ray3k.template.Resources.*;
 import java.util.ArrayList;
 
 import static com.ray3k.template.Core.*;
+import static com.ray3k.template.Resources.*;
 import static com.ray3k.template.Resources.SpineSpinner.*;
 import static com.ray3k.template.Resources.Values.*;
 
@@ -99,7 +100,7 @@ public class SpinnerEntity extends Entity implements Enemy {
     
     @Override
     public void destroy() {
-    
+        sfx_hurt.play(sfx);
     }
     
     @Override

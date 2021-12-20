@@ -11,6 +11,7 @@ import com.ray3k.template.Resources.*;
 import com.ray3k.template.*;
 
 import static com.ray3k.template.Core.*;
+import static com.ray3k.template.Resources.*;
 import static com.ray3k.template.Resources.SpineSlimeDog.*;
 import static com.ray3k.template.Resources.Values.*;
 import static com.ray3k.template.entities.PlayerEntity.*;
@@ -127,7 +128,7 @@ public class SlimeDogEntity extends Entity implements Enemy {
     
     @Override
     public void destroy() {
-    
+        sfx_hurt.play(sfx);
     }
     
     @Override

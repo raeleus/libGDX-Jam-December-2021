@@ -9,6 +9,7 @@ import com.dongbat.jbump.Response.Result;
 import com.ray3k.template.Resources.*;
 
 import static com.ray3k.template.Core.*;
+import static com.ray3k.template.Resources.*;
 import static com.ray3k.template.Resources.SpineGrenade.*;
 import static com.ray3k.template.Resources.Values.*;
 
@@ -21,6 +22,7 @@ public class GrenadeEntity extends Entity {
     
     @Override
     public void create() {
+        sfx_grenade.play(sfx);
         setSkeletonData(skeletonData, animationData);
         animationState.setAnimation(0, animationLaunch, false);
         animationState.addAnimation(0, animationAnimation,true, 0);

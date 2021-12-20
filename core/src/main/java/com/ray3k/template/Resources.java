@@ -22,6 +22,8 @@ public class Resources {
 
     public static Skin skin_skin;
 
+    public static Sound sfx_bossDie;
+
     public static Sound sfx_canPop;
 
     public static Sound sfx_canShake;
@@ -32,13 +34,29 @@ public class Resources {
 
     public static Sound sfx_crack;
 
+    public static Sound sfx_cross;
+
+    public static Sound sfx_die;
+
+    public static Sound sfx_explosion;
+
     public static Sound sfx_good;
 
+    public static Sound sfx_grenade;
+
     public static Sound sfx_grinder;
+
+    public static Sound sfx_hurt;
 
     public static Sound sfx_intro;
 
     public static Sound sfx_poot;
+
+    public static Sound sfx_shotgun;
+
+    public static Sound sfx_whip;
+
+    public static Sound sfx_wings;
 
     public static Music bgm_battle;
 
@@ -347,15 +365,24 @@ public class Resources {
         SkinSkinStyles.tfDefault = skin_skin.get("default", TextField.TextFieldStyle.class);
         SkinSkinStyles.ttDefault = skin_skin.get("default", TextTooltip.TextTooltipStyle.class);
         SkinSkinStyles.wDefault = skin_skin.get("default", Window.WindowStyle.class);
+        sfx_bossDie = assetManager.get("sfx/boss-die.mp3");
         sfx_canPop = assetManager.get("sfx/can-pop.mp3");
         sfx_canShake = assetManager.get("sfx/can-shake.mp3");
         sfx_canSpray = assetManager.get("sfx/can-spray.mp3");
         sfx_click = assetManager.get("sfx/click.mp3");
         sfx_crack = assetManager.get("sfx/crack.mp3");
+        sfx_cross = assetManager.get("sfx/cross.mp3");
+        sfx_die = assetManager.get("sfx/die.mp3");
+        sfx_explosion = assetManager.get("sfx/explosion.mp3");
         sfx_good = assetManager.get("sfx/good.mp3");
+        sfx_grenade = assetManager.get("sfx/grenade.mp3");
         sfx_grinder = assetManager.get("sfx/grinder.mp3");
+        sfx_hurt = assetManager.get("sfx/hurt.mp3");
         sfx_intro = assetManager.get("sfx/intro.mp3");
         sfx_poot = assetManager.get("sfx/poot.mp3");
+        sfx_shotgun = assetManager.get("sfx/shotgun.mp3");
+        sfx_whip = assetManager.get("sfx/whip.mp3");
+        sfx_wings = assetManager.get("sfx/wings.mp3");
         bgm_battle = assetManager.get("bgm/battle.ogg");
         bgm_explore = assetManager.get("bgm/explore.ogg");
     }

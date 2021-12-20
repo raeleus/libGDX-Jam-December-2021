@@ -20,6 +20,7 @@ import com.ray3k.template.*;
 import java.util.ArrayList;
 
 import static com.ray3k.template.Core.*;
+import static com.ray3k.template.Resources.*;
 import static com.ray3k.template.Resources.SpineLyze.*;
 import static com.ray3k.template.Resources.Values.*;
 
@@ -150,6 +151,7 @@ public class LyzeEntity extends Entity implements Enemy {
         bossAlive = false;
         playExplore();
         defeatedLyze = true;
+        sfx_bossDie.play(sfx);
     }
     
     @Override

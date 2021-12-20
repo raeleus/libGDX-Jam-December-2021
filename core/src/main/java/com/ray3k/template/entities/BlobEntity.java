@@ -11,6 +11,7 @@ import com.ray3k.template.*;
 import com.ray3k.template.Resources.*;
 
 import static com.ray3k.template.Core.*;
+import static com.ray3k.template.Resources.*;
 import static com.ray3k.template.Resources.SpineBlob.*;
 import static com.ray3k.template.Resources.Values.*;
 
@@ -96,7 +97,7 @@ public class BlobEntity extends Entity implements Enemy {
     
     @Override
     public void destroy() {
-    
+        sfx_die.play(sfx);
     }
     
     @Override

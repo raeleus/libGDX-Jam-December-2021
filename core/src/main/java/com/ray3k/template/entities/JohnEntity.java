@@ -11,6 +11,7 @@ import com.ray3k.template.Resources.*;
 import com.ray3k.template.*;
 
 import static com.ray3k.template.Core.*;
+import static com.ray3k.template.Resources.*;
 import static com.ray3k.template.Resources.SpineJohn.*;
 import static com.ray3k.template.Resources.Values.*;
 
@@ -76,6 +77,7 @@ public class JohnEntity extends Entity implements Enemy {
         bossAlive = false;
         playExplore();
         defeatedJohn = true;
+        sfx_bossDie.play(sfx);
     }
     
     @Override

@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.actions.TemporalAction;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
@@ -25,15 +26,22 @@ public class MenuScreen extends JamScreen {
     public void show() {
         super.show();
     
-        final Music bgm = bgm_explore;
-        if (!bgm.isPlaying()) {
-            bgm.play();
-            bgm.setVolume(core.bgm);
-            bgm.setLooping(true);
-        }
+        
         
         stage = new Stage(new ScreenViewport(), batch);
         Gdx.input.setInputProcessor(stage);
+    
+        bgm_explore.setLooping(true);
+        bgm_explore.setVolume(0);
+        bgm_explore.setPosition(bgm_battle.getPosition());
+        bgm_explore.play();
+        stage.addAction(new TemporalAction(1.0f) {
+            @Override
+            protected void update(float percent) {
+                bgm_explore.setVolume(percent * bgm);
+                bgm_battle.setVolume((1-percent) * bgm);
+            }
+        });
     
         sceneBuilder.build(stage, skin, Gdx.files.internal("menus/main.json"));
         TextButton textButton = stage.getRoot().findActor("play");

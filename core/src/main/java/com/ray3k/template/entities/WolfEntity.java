@@ -11,6 +11,7 @@ import com.ray3k.template.Resources.*;
 import com.ray3k.template.*;
 
 import static com.ray3k.template.Core.*;
+import static com.ray3k.template.Resources.*;
 import static com.ray3k.template.Resources.SpineWolf.*;
 import static com.ray3k.template.Resources.Values.*;
 
@@ -98,7 +99,7 @@ public class WolfEntity extends Entity implements Enemy {
     
     @Override
     public void destroy() {
-    
+        sfx_hurt.play(sfx);
     }
     
     @Override

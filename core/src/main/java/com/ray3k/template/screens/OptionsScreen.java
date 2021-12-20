@@ -68,8 +68,8 @@ public class OptionsScreen extends JamScreen {
             }
         });
     
-        final Music sfx = bgm_explore;
-        sfx.setLooping(true);
+        final Music sound = bgm_explore;
+        sound.setLooping(true);
         
         slider = stage.getRoot().findActor("sfx");
         slider.setValue(Core.sfx);
@@ -79,7 +79,7 @@ public class OptionsScreen extends JamScreen {
                 Core.sfx = ((Slider) actor).getValue();
                 preferences.putFloat("sfx", Core.sfx);
                 preferences.flush();
-                sfx.setVolume(Core.sfx);
+                sound.setVolume(Core.sfx);
             }
         });
         slider.addListener(new DragListener() {
@@ -89,13 +89,13 @@ public class OptionsScreen extends JamScreen {
         
             @Override
             public void dragStart(InputEvent event, float x, float y, int pointer) {
-                sfx.play();
+                sfx_click.play(sfx);
                 bgm.pause();
             }
         
             @Override
             public void dragStop(InputEvent event, float x, float y, int pointer) {
-                sfx.pause();
+                sound.pause();
                 bgm.play();
             }
         });

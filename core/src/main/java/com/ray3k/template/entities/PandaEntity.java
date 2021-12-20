@@ -13,6 +13,7 @@ import com.ray3k.template.*;
 import com.ray3k.template.Resources.*;
 
 import static com.ray3k.template.Core.*;
+import static com.ray3k.template.Resources.*;
 import static com.ray3k.template.Resources.SpinePanda.*;
 import static com.ray3k.template.Resources.Values.*;
 
@@ -137,6 +138,7 @@ public class PandaEntity extends Entity implements Enemy {
         bossAlive = false;
         playExplore();
         defeatedPanda = true;
+        sfx_bossDie.play(sfx);
     }
     
     @Override

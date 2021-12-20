@@ -8,6 +8,7 @@ import com.esotericsoftware.spine.AnimationState.TrackEntry;
 import com.ray3k.template.Resources.*;
 
 import static com.ray3k.template.Core.*;
+import static com.ray3k.template.Resources.*;
 import static com.ray3k.template.Resources.SpineExplosion.*;
 import static com.ray3k.template.Resources.Values.*;
 
@@ -15,6 +16,7 @@ public class ExplosionEntity extends Entity {
     
     @Override
     public void create() {
+        sfx_explosion.play(sfx);
         setSkeletonData(skeletonData, animationData);
         animationState.setAnimation(0, animationAnimation, false);
         animationState.setTimeScale(.7f + MathUtils.random(.6f));

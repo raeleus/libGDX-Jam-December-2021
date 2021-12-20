@@ -10,6 +10,7 @@ import com.dongbat.jbump.Response.Result;
 import com.ray3k.template.Resources.*;
 
 import static com.ray3k.template.Core.*;
+import static com.ray3k.template.Resources.*;
 import static com.ray3k.template.Resources.SpineCross.*;
 import static com.ray3k.template.Resources.Values.*;
 
@@ -23,6 +24,7 @@ public class CrossEntity extends Entity {
     
     @Override
     public void create() {
+        sfx_cross.play(sfx);
         setSkeletonData(skeletonData, animationData);
         animationState.setAnimation(0, animationAnimation, true);
         setMotion(crossLaunchSpeed, goRight ? 0f : 180f);

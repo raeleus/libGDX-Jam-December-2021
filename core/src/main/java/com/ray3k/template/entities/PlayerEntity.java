@@ -25,6 +25,7 @@ import java.util.ArrayList;
 
 import static com.ray3k.template.Core.Binding.*;
 import static com.ray3k.template.Core.*;
+import static com.ray3k.template.Resources.*;
 import static com.ray3k.template.Resources.SpineDragonQueen.*;
 import static com.ray3k.template.Resources.Values.*;
 import static com.ray3k.template.entities.PlayerEntity.Weapon.*;
@@ -51,6 +52,7 @@ public class PlayerEntity extends Entity {
     
     public void hurt(float damage, float force, float forceDirection) {
         if (damageTimer <= 0) {
+            sfx_hurt.play(sfx);
             damageTimer = playerDamageTimer;
             playerHealth -= damage;
             addMotion(force, forceDirection);
@@ -89,6 +91,7 @@ public class PlayerEntity extends Entity {
                 
                 switch (name) {
                     case "spark":
+                        sfx_whip.play(sfx);
                         temp.set(0, 0);
                         weaponBone.localToWorld(temp);
                         itemsTemp.clear();
@@ -138,6 +141,7 @@ public class PlayerEntity extends Entity {
                         }
                         break;
                     case "shoot":
+                        sfx_shotgun.play(sfx);
                         var goRight = skeleton.getScaleX() > 0;
                         if (shotgunCharge) {
                             float angle = goRight ? shotgunChargeAngle : 180 - shotgunChargeAngle;
@@ -252,7 +256,10 @@ public class PlayerEntity extends Entity {
             if (inAir) animationState.setAnimation(1, animationFlap, false);
             
             if (!inAir) jumps = 1;
-            else jumps++;
+            else {
+                jumps++;
+                sfx_wings.play(sfx);
+            }
             inAir = true;
         }
         

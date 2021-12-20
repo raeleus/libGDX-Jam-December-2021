@@ -15,6 +15,7 @@ import com.ray3k.template.Resources.*;
 import com.ray3k.template.*;
 
 import static com.ray3k.template.Core.*;
+import static com.ray3k.template.Resources.*;
 import static com.ray3k.template.Resources.SpineTank.*;
 import static com.ray3k.template.Resources.Values.*;
 import static com.ray3k.template.entities.PlayerEntity.*;
@@ -139,7 +140,7 @@ public class TankEntity extends Entity implements Enemy {
     
     @Override
     public void destroy() {
-    
+        sfx_hurt.play(sfx);
     }
     
     @Override
