@@ -13,6 +13,7 @@ import com.ray3k.template.*;
 import com.ray3k.template.Resources.*;
 
 import static com.ray3k.template.Core.*;
+import static com.ray3k.template.Resources.*;
 import static com.ray3k.template.Resources.SpineZebra.*;
 import static com.ray3k.template.Resources.Values.*;
 
@@ -57,6 +58,7 @@ public class ZebraEntity extends Entity implements Enemy {
     public void create() {
         zebra = this;
         bossAlive = true;
+        playBattle();
         health = zebraHealth;
         setSkeletonData(skeletonData, animationData);
         animationState.setAnimation(0, animationStand, true);
@@ -187,7 +189,7 @@ public class ZebraEntity extends Entity implements Enemy {
     
     @Override
     public void destroy() {
-    
+        Core.playExplore();
     }
     
     @Override

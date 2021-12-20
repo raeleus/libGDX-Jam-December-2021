@@ -25,7 +25,7 @@ public class MenuScreen extends JamScreen {
     public void show() {
         super.show();
     
-        final Music bgm = bgm_menu;
+        final Music bgm = bgm_explore;
         if (!bgm.isPlaying()) {
             bgm.play();
             bgm.setVolume(core.bgm);
@@ -46,7 +46,6 @@ public class MenuScreen extends JamScreen {
                 PlayerEntity.enabledWeapons.clear();
                 PlayerEntity.enabledWeapons.add(Weapon.WHIP);
                 PlayerEntity.enabledWings.clear();
-                bgm.stop();
                 roomToLoad = "level1";
                 spawnIndex = 0;
                 defeatedGroxar = false;

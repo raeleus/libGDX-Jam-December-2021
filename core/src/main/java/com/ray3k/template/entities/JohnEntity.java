@@ -45,6 +45,7 @@ public class JohnEntity extends Entity implements Enemy {
     @Override
     public void create() {
         bossAlive = true;
+        playBattle();
         health = johnHealth;
         setSkeletonData(skeletonData, animationData);
         animationData.setDefaultMix(.5f);
@@ -73,6 +74,7 @@ public class JohnEntity extends Entity implements Enemy {
     @Override
     public void destroy() {
         bossAlive = false;
+        playExplore();
         defeatedJohn = true;
     }
     

@@ -50,6 +50,7 @@ public class PandaEntity extends Entity implements Enemy {
     @Override
     public void create() {
         bossAlive = true;
+        playBattle();
         health = pandaHealth;
         setSkeletonData(skeletonData, animationData);
         animationData.setDefaultMix(.5f);
@@ -134,6 +135,7 @@ public class PandaEntity extends Entity implements Enemy {
     @Override
     public void destroy() {
         bossAlive = false;
+        playExplore();
         defeatedPanda = true;
     }
     

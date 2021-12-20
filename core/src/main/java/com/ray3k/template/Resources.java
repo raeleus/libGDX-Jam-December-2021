@@ -40,9 +40,9 @@ public class Resources {
 
     public static Sound sfx_poot;
 
-    public static Music bgm_audioSample;
+    public static Music bgm_battle;
 
-    public static Music bgm_menu;
+    public static Music bgm_explore;
 
     public static void loadResources(AssetManager assetManager) {
         textures_textures = assetManager.get("textures/textures.atlas");
@@ -356,8 +356,8 @@ public class Resources {
         sfx_grinder = assetManager.get("sfx/grinder.mp3");
         sfx_intro = assetManager.get("sfx/intro.mp3");
         sfx_poot = assetManager.get("sfx/poot.mp3");
-        bgm_audioSample = assetManager.get("bgm/audio-sample.mp3");
-        bgm_menu = assetManager.get("bgm/menu.mp3");
+        bgm_battle = assetManager.get("bgm/battle.ogg");
+        bgm_explore = assetManager.get("bgm/explore.ogg");
     }
 
     public static class SpineBat {

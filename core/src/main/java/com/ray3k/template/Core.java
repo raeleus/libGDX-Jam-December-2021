@@ -17,6 +17,7 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.Actor;
+import com.badlogic.gdx.scenes.scene2d.actions.TemporalAction;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.*;
@@ -107,6 +108,34 @@ public class Core extends JamGame {
     public static boolean defeatedLyze;
     public static boolean defeatedGroxar;
     public static boolean defeatedJohn;
+    
+    public static void playBattle() {
+        bgm_battle.setLooping(true);
+        bgm_battle.setVolume(0);
+        bgm_battle.setPosition(bgm_explore.getPosition());
+        bgm_battle.play();
+        GameScreen.gameScreen.stage.addAction(new TemporalAction(1.0f) {
+            @Override
+            protected void update(float percent) {
+                bgm_battle.setVolume(percent * bgm);
+                bgm_explore.setVolume((1-percent) * bgm);
+            }
+        });
+    }
+    
+    public static void playExplore() {
+        bgm_explore.setLooping(true);
+        bgm_explore.setVolume(0);
+        bgm_explore.setPosition(bgm_battle.getPosition());
+        bgm_explore.play();
+        GameScreen.gameScreen.stage.addAction(new TemporalAction(1.0f) {
+            @Override
+            protected void update(float percent) {
+                bgm_explore.setVolume(percent * bgm);
+                bgm_battle.setVolume((1-percent) * bgm);
+            }
+        });
+    }
     
     public static boolean isKeyJustPressed(int key) {
         return key == Keys.ANY_KEY ? keysJustPressed.size > 0 : keysJustPressed.contains(key);

@@ -53,6 +53,7 @@ public class GroxarEntity extends Entity implements Enemy {
     @Override
     public void create() {
         bossAlive = true;
+        playBattle();
         health = groxarHealth;
         setSkeletonData(skeletonData, animationData);
         animationState.setAnimation(0, animationStatue, true);
@@ -160,6 +161,7 @@ public class GroxarEntity extends Entity implements Enemy {
     @Override
     public void destroy() {
         bossAlive = false;
+        playExplore();
         defeatedGroxar = true;
     }
     

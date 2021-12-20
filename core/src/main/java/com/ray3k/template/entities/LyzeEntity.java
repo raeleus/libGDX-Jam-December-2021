@@ -62,6 +62,7 @@ public class LyzeEntity extends Entity implements Enemy {
     @Override
     public void create() {
         bossAlive = true;
+        playBattle();
         health = lyzeHealth;
         setSkeletonData(skeletonData, animationData);
 
@@ -147,6 +148,7 @@ public class LyzeEntity extends Entity implements Enemy {
     @Override
     public void destroy() {
         bossAlive = false;
+        playExplore();
         defeatedLyze = true;
     }
     
