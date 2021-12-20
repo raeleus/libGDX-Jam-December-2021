@@ -89,7 +89,7 @@ public class DialogMaker {
                     deltaMultiplier = 0;
                     var pop = createTable(() -> showMessageJohn1());
             
-                    var image = new Image(skin.getDrawable("icon-lyze"));
+                    var image = new Image(skin.getDrawable("icon-john"));
                     image.setScaling(Scaling.none);
                     pop.add(image);
             

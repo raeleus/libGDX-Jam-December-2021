@@ -131,7 +131,7 @@
             {"x": 2104, "y": 2496},
             {"x": 2104, "y": 2848}
           ],
-          "values": {"nextroom": "level18", "transitiondirection": 180, "spawn": 1}
+          "values": {"nextroom": "level18", "transitiondirection": 180, "spawn": 0}
         },
         {
           "name": "exit",
