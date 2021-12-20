@@ -16,7 +16,6 @@ public class ExplosionEntity extends Entity {
     
     @Override
     public void create() {
-        sfx_explosion.play(sfx);
         setSkeletonData(skeletonData, animationData);
         animationState.setAnimation(0, animationAnimation, false);
         animationState.setTimeScale(.7f + MathUtils.random(.6f));

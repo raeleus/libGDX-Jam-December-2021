@@ -308,7 +308,7 @@
             {"x": 40, "y": 2496},
             {"x": 40, "y": 2848}
           ],
-          "values": {"nextroom": "corridor3", "transitiondirection": 180, "spawn": 1}
+          "values": {"nextroom": "level6", "transitiondirection": 180, "spawn": 1}
         }
       ]
     },

@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "lliZ4oCwmz4",
+	"hash": "Qor8zykUYGI",
 	"spine": "4.0.55",
 	"x": -167.63,
 	"y": 190.9,
@@ -289,7 +289,7 @@
 					{ "time": 2.0333, "light": "000000ff", "dark": "000000", "curve": "stepped" },
 					{ "time": 4.5667, "light": "000000ff", "dark": "000000" },
 					{ "time": 6.6667, "light": "ffffffff", "dark": "ffffff", "curve": "stepped" },
-					{ "time": 10, "light": "ffffffff", "dark": "ffffff" }
+					{ "time": 7.2667, "light": "ffffffff", "dark": "ffffff" }
 				]
 			},
 			"game/dq-wing2": {

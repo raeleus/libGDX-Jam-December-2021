@@ -90,7 +90,7 @@
   "pirate attack angle" : 45.0,
   "pirate attack distance" : 400,
   "pirate acceleration" : 800,
-  "pirate health" : 100,
+  "pirate health" : 50,
   "pirate damage" : 10,
   "pirate force" : 1000,
   "pirate force direction" : 60,

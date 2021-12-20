@@ -1266,7 +1266,7 @@ public class Resources {
 
         public static int pirateAcceleration = 800;
 
-        public static int pirateHealth = 100;
+        public static int pirateHealth = 50;
 
         public static int pirateDamage = 10;
 

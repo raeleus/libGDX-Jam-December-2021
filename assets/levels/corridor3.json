@@ -125,7 +125,7 @@
             {"x": 2216, "y": 192},
             {"x": 2216, "y": 464}
           ],
-          "values": {"nextroom": "level7", "transitiondirection": 180, "spawn": 0}
+          "values": {"nextroom": "level6", "transitiondirection": 180, "spawn": 0}
         },
         {
           "name": "bounds",
