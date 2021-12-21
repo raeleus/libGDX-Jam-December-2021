@@ -50,7 +50,19 @@ public class DialogPause extends Dialog {
                 detectInput = false;
             }
         });
-        
+
+        textButton = new TextButton("Respawn", skin);
+        table.add(textButton);
+        textButton.addListener(sndChangeListener);
+        textButton.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent event, Actor actor) {
+                fire(new RespawnEvent());
+                hide();
+                detectInput = false;
+            }
+        });
+
         textButton = new TextButton("Quit", skin);
         table.add(textButton);
         textButton.addListener(sndChangeListener);
@@ -99,12 +111,19 @@ public class DialogPause extends Dialog {
     public static class QuitEvent extends Event {
     
     }
+
+    public static class RespawnEvent extends Event {
+
+    }
     
     public static abstract class PauseListener implements EventListener {
         @Override
         public boolean handle(Event event) {
             if (event instanceof ResumeEvent) {
                 resume();
+                return true;
+            } else if (event instanceof RespawnEvent) {
+                respawn();
                 return true;
             } else if (event instanceof QuitEvent) {
                 quit();
@@ -115,6 +134,7 @@ public class DialogPause extends Dialog {
         }
         
         public abstract void resume();
+        public abstract void respawn();
         public abstract void quit();
     }
 }

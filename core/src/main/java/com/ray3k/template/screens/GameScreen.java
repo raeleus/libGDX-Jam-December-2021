@@ -78,7 +78,13 @@ public class GameScreen extends JamScreen {
                         public void resume() {
                             paused = false;
                         }
-                    
+
+                        @Override
+                        public void respawn() {
+                            paused = false;
+                            PlayerEntity.player.hurt(9999, 0, 0);
+                        }
+
                         @Override
                         public void quit() {
                             core.transition(new MenuScreen());
