@@ -35,7 +35,7 @@ public class MobileControlsUi extends Stage {
         Table root = new Table();
         root.setFillParent(true);
 
-        inventoryButton = new ImageButton(new TextureRegionDrawable(new TextureRegion(new Texture("textures/x.png"))));
+        inventoryButton = new ImageButton(skin.getDrawable("x"));
         inventoryButton.addListener(new InputListener() {
             @Override
             public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
@@ -87,7 +87,7 @@ public class MobileControlsUi extends Stage {
         Table root = new Table();
         root.setFillParent(true);
 
-        upButton = new ImageButton(new TextureRegionDrawable(new TextureRegion(new Texture("textures/up.png"))));
+        upButton = new ImageButton(skin.getDrawable("up"));
         upButton.addListener(new InputListener() {
             @Override
             public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
@@ -100,7 +100,7 @@ public class MobileControlsUi extends Stage {
                 MOBILE_CONTROLS.setPressed(Core.Binding.JUMP, false);
             }
         });
-        downButton = new ImageButton(new TextureRegionDrawable(new TextureRegion(new Texture("textures/down.png"))));
+        downButton = new ImageButton(skin.getDrawable("down"));
         downButton.addListener(new InputListener() {
             @Override
             public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
@@ -129,7 +129,7 @@ public class MobileControlsUi extends Stage {
 
         Table leftSide = new Table();
 
-        controlsButton = new ImageButton(new TextureRegionDrawable(new TextureRegion(new Texture("textures/controls.png"))));
+        controlsButton = new ImageButton(skin.getDrawable("controls"));
         controlsButton.addListener(new InputListener() {
             @Override
             public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
