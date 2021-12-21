@@ -128,7 +128,7 @@ public class SlimeDogEntity extends Entity implements Enemy {
     
     @Override
     public void destroy() {
-        sfx_hurt.play(sfx);
+        sfx_die.play(sfx);
     }
     
     @Override

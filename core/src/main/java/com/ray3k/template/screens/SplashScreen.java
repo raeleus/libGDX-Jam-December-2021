@@ -49,7 +49,7 @@ public class SplashScreen extends JamScreen {
                 playerMaxJumps = 4;
                 godMode = true;
                 Gdx.input.setInputProcessor(null);
-                roomToLoad = "level17";
+                roomToLoad = "level1";
                 spawnIndex = 0;
                 defeatedGroxar = false;
                 defeatedJohn = false;

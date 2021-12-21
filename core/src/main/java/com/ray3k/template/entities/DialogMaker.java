@@ -203,7 +203,7 @@ public class DialogMaker {
             @Override
             public void act(float delta) {
                 super.act(delta);
-                if (Core.isAnyKeyJustPressed()) {
+                if (Core.isAnyKeyJustPressed() && !Core.isAnyBindingJustPressed(Binding.LEFT, Binding.RIGHT, Binding.JUMP, Binding.DOWN)) {
                     hide();
                 }
             }

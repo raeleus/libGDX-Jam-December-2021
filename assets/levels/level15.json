@@ -38,20 +38,16 @@
           "values": {"spawn": 0}
         },
         {"name": "door", "id": 15, "_eid": "93731365", "x": 2080, "y": 1096, "originX": 18, "originY": 170},
-        {"name": "vacuum", "id": 17, "_eid": "88178084", "x": 1096, "y": 520, "originX": 176, "originY": 377},
         {"name": "vacuum", "id": 18, "_eid": "88178084", "x": 1328, "y": 512, "originX": 176, "originY": 377},
-        {"name": "vacuum", "id": 19, "_eid": "88178084", "x": 856, "y": 512, "originX": 176, "originY": 377},
         {"name": "vacuum", "id": 20, "_eid": "88178084", "x": 616, "y": 512, "originX": 176, "originY": 377},
         {"name": "tank", "id": 21, "_eid": "88283237", "x": 1168, "y": 976, "originX": 102, "originY": 105},
-        {"name": "vacuum", "id": 23, "_eid": "88178084", "x": 304, "y": 1112, "originX": 176, "originY": 377},
-        {"name": "vacuum", "id": 24, "_eid": "88178084", "x": 616, "y": 1104, "originX": 176, "originY": 377},
-        {"name": "vacuum", "id": 25, "_eid": "88178084", "x": 920, "y": 1112, "originX": 176, "originY": 377},
         {"name": "vacuum", "id": 28, "_eid": "88178084", "x": 1496, "y": 1088, "originX": 176, "originY": 377},
-        {"name": "vacuum", "id": 29, "_eid": "88178084", "x": 728, "y": 1104, "originX": 176, "originY": 377},
-        {"name": "vacuum", "id": 30, "_eid": "88178084", "x": 424, "y": 1088, "originX": 176, "originY": 377},
-        {"name": "vacuum", "id": 31, "_eid": "88178084", "x": 944, "y": 496, "originX": 176, "originY": 377},
-        {"name": "vacuum", "id": 32, "_eid": "88178084", "x": 1152, "y": 496, "originX": 176, "originY": 377},
-        {"name": "vacuum", "id": 33, "_eid": "88178084", "x": 720, "y": 488, "originX": 176, "originY": 377}
+        {"name": "vacuum", "id": 34, "_eid": "88178084", "x": 864, "y": 520, "originX": 176, "originY": 377},
+        {"name": "vacuum", "id": 35, "_eid": "88178084", "x": 1088, "y": 520, "originX": 176, "originY": 377},
+        {"name": "vacuum", "id": 40, "_eid": "88178084", "x": 960, "y": 1096, "originX": 176, "originY": 377},
+        {"name": "vacuum", "id": 41, "_eid": "88178084", "x": 728, "y": 1120, "originX": 176, "originY": 377},
+        {"name": "vacuum", "id": 42, "_eid": "88178084", "x": 488, "y": 1104, "originX": 176, "originY": 377},
+        {"name": "vacuum", "id": 43, "_eid": "88178084", "x": 240, "y": 1104, "originX": 176, "originY": 377}
       ]
     },
     {
@@ -162,7 +158,7 @@
             {"x": 2104, "y": 776},
             {"x": 2096, "y": 1112}
           ],
-          "values": {"nextroom": "level16", "transitiondirection": 0, "spawn": 0}
+          "values": {"nextroom": "level16", "transitiondirection": 180, "spawn": 0}
         },
         {
           "name": "bounds",

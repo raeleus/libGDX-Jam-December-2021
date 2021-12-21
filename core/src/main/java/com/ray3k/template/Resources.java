@@ -1126,7 +1126,7 @@ public class Resources {
 
         public static float crossRotationMultiplier = 0.5f;
 
-        public static int crossDamage = 8;
+        public static int crossDamage = 15;
 
         public static int crossForce = 500;
 
@@ -1148,7 +1148,7 @@ public class Resources {
 
         public static int grenadeForceDirection = 20;
 
-        public static float grenadeHitDelay = 0.1f;
+        public static float grenadeHitDelay = 0.2f;
 
         public static float shotgunProjectileSpeed = 3000.0f;
 
@@ -1238,7 +1238,7 @@ public class Resources {
 
         public static int batMoveSpeed = 600;
 
-        public static int batHealth = 80;
+        public static int batHealth = 20;
 
         public static int batDamage = 10;
 
@@ -1266,7 +1266,7 @@ public class Resources {
 
         public static int pirateAcceleration = 800;
 
-        public static int pirateHealth = 50;
+        public static int pirateHealth = 40;
 
         public static int pirateDamage = 10;
 
@@ -1376,7 +1376,7 @@ public class Resources {
 
         public static int mothMoveSpeed = 600;
 
-        public static int mothHealth = 80;
+        public static int mothHealth = 50;
 
         public static int mothDamage = 10;
 

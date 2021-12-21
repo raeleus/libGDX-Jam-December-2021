@@ -30,7 +30,7 @@ public class PodSpawnerEntity extends Entity {
             temp.set(camera.viewportWidth * camera.zoom, camera.viewportHeight * camera.zoom);
             temp.rotateDeg(MathUtils.random(360f));
             temp.add(camera.position.x, camera.position.y);
-            pod.setPosition(temp.x, temp.y);
+            pod.teleport(temp.x, temp.y);
         }
     }
     

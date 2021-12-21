@@ -167,13 +167,13 @@ public class LyzeEntity extends Entity implements Enemy {
                     player.getBboxCenterY());
             boolean playerToRight = playerDirection < 90 || playerDirection > 270;
 
-            for (int i = 0; i < collisions.size(); i++) {
-                var collision = collisions.get(i);
-                if (collision.other.userData instanceof PlayerEntity) {
-                    PlayerEntity.player.hurt(lyzeDamage, lyzeForce,
-                            playerToRight ? lyzeForceDirection : 180 - lyzeForceDirection);
-                }
-            }
+//            for (int i = 0; i < collisions.size(); i++) {
+//                var collision = collisions.get(i);
+//                if (collision.other.userData instanceof PlayerEntity) {
+//                    PlayerEntity.player.hurt(lyzeDamage, lyzeForce,
+//                            playerToRight ? lyzeForceDirection : 180 - lyzeForceDirection);
+//                }
+//            }
         }
     }
     

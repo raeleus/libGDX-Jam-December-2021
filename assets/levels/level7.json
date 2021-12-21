@@ -43,7 +43,12 @@
           "originY": 100,
           "values": {"spawn": 0}
         },
-        {"name": "door", "id": 37, "_eid": "93731365", "x": 24, "y": 2848, "originX": 18, "originY": 170}
+        {"name": "door", "id": 37, "_eid": "93731365", "x": 24, "y": 2848, "originX": 18, "originY": 170},
+        {"name": "heart", "id": 38, "_eid": "85587456", "x": 1128, "y": 2152, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 39, "_eid": "85587456", "x": 568, "y": 1816, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 40, "_eid": "85587456", "x": 1688, "y": 904, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 41, "_eid": "85587456", "x": 968, "y": 1136, "originX": 39, "originY": 155},
+        {"name": "heart", "id": 42, "_eid": "85587456", "x": 1640, "y": 1544, "originX": 39, "originY": 155}
       ]
     },
     {

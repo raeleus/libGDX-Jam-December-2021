@@ -43,7 +43,8 @@
         {"name": "heart", "id": 40, "_eid": "85587456", "x": 1232, "y": 2808, "originX": 39, "originY": 155},
         {"name": "heart", "id": 41, "_eid": "85587456", "x": 1448, "y": 2816, "originX": 39, "originY": 155},
         {"name": "heart", "id": 42, "_eid": "85587456", "x": 1656, "y": 2808, "originX": 39, "originY": 155},
-        {"name": "skeleton", "id": 69, "_eid": "87898942", "x": 1080, "y": 2792, "originX": 47, "originY": 97}
+        {"name": "skeleton", "id": 69, "_eid": "87898942", "x": 1080, "y": 2792, "originX": 47, "originY": 97},
+        {"name": "heart", "id": 70, "_eid": "85587456", "x": 1088, "y": 2240, "originX": 39, "originY": 155}
       ]
     },
     {

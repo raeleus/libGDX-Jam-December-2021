@@ -55,15 +55,19 @@ public class ShotgunBulletEntity extends Entity {
     public void collision(Collisions collisions) {
         for (int i = 0; i < collisions.size(); i++) {
             var collision = collisions.get(i);
-            destroy = true;
-            for (int j = 0; j < 5; j++) {
-                var spark = new SparkEntity();
-                spark.setPosition(MathUtils.random(getBboxLeft(),  getBboxRight()), MathUtils.random(getBboxBottom(), getBboxTop()));
-                entityController.add(spark);
-            }
-            if (collision.other.userData instanceof Enemy) {
-                var enemy = (Enemy) collision.other.userData;
-                enemy.hurt(shotgunDamage, shotgunForce, x < enemy.getX() ? shotgunForceDirection : 180 - shotgunForceDirection);
+            if (!(collision.other.userData instanceof PlatformEntity)) {
+                destroy = true;
+                for (int j = 0; j < 5; j++) {
+                    var spark = new SparkEntity();
+                    spark.setPosition(MathUtils.random(getBboxLeft(), getBboxRight()),
+                            MathUtils.random(getBboxBottom(), getBboxTop()));
+                    entityController.add(spark);
+                }
+                if (collision.other.userData instanceof Enemy) {
+                    var enemy = (Enemy) collision.other.userData;
+                    enemy.hurt(shotgunDamage, shotgunForce,
+                            x < enemy.getX() ? shotgunForceDirection : 180 - shotgunForceDirection);
+                }
             }
         }
     }
